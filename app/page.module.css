@@ -5,6 +5,7 @@
   align-items: center;
   padding: 6rem;
   min-height: 100vh;
+  border: 1px solid red;
 }
 
 .description {
@@ -44,6 +45,7 @@
   grid-template-columns: repeat(4, minmax(25%, auto));
   max-width: 100%;
   width: var(--max-width);
+  border: 1px solid red;
 }
 
 .card {
@@ -52,6 +54,7 @@
   background: rgba(var(--card-rgb), 0);
   border: 1px solid rgba(var(--card-border-rgb), 0);
   transition: background 200ms, border 200ms;
+  border: 1px solid blue;
 }
 
 .card span {
@@ -105,8 +108,11 @@
 }
 
 .logo {
-  position: relative;
+  /* position: relative; */
+  float: left;
+  /* display: inline-block; */
 }
+
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   .card:hover {
@@ -226,4 +232,33 @@
   to {
     transform: rotate(0deg);
   }
+}
+
+/* test */
+/* .container {
+  max-width: 100%;
+  min-height: 5rem;
+  padding: 0 3rem;
+  margin: 3rem auto 6rem;
+} */
+
+.footer {
+  max-width: 100%;
+  min-height: 5rem;
+  padding-top: 2rem;
+  /* padding: 0 3rem;
+  margin: 3rem auto 6rem; */
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+.header {
+  max-width: 100%;
+  min-height: 5rem;
+  /* padding-top: 2rem; */
+  padding: 0 3rem;
+  /* margin: 3rem auto 6rem; */
+  background-color: white;
+  text-align: right;
 }

@@ -4,8 +4,8 @@ import styles from "../page.module.css";
 
 export default function Resources() {
   return (
-    <div className={styles.center}>
-      <p>Resources Page</p>
+    <main className={styles.main}>
+      <h1>Resources Page</h1>
 
       <div className={styles.grid}>
         <a
@@ -58,6 +58,6 @@ export default function Resources() {
           </p>
         </a>
       </div>
-    </div>
+    </main>
   );
 }

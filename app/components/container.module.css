@@ -1,15 +1,18 @@
-.container {
+/* .container {
   max-width: 100%;
+  min-height: 5rem;
   padding: 0 3rem;
   margin: 3rem auto 6rem;
   border: 1px solid blue;
-}
-.container footer {
+} */
+
+/* .footer {
   max-width: 100%;
+  min-height: 5rem;
+  padding-top: 2rem;
   padding: 0 3rem;
   margin: 3rem auto 6rem;
   text-align: center;
-  border: 1px solid yellow;
   background-color: black;
   color: white;
-}
+} */

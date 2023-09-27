@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main className={styles.main}>
-      <div className={styles.description}>
+      {/* <div className={styles.description}>
         <p>
           Get started by editing&nbsp;
           <code className={styles.code}>app/page.js</code>
@@ -27,9 +27,9 @@ export default function Home() {
             />
           </a>
         </div>
-      </div>
+      </div> */}
 
-      <div className={styles.center}>
+      {/* <div className={styles.center}>
         <Image
           className={styles.logo}
           src="/next.svg"
@@ -38,7 +38,15 @@ export default function Home() {
           height={37}
           priority
         />
-      </div>
+      </div> */}
+
+      <Image
+        className={styles.logo}
+        src="/images/pikachu-ash.png"
+        height={590}
+        width={391}
+        alt="Pikachu + Ash"
+      />
 
       <div className={styles.grid}>
         <a
@@ -90,10 +98,6 @@ export default function Home() {
             Instantly deploy your Next.js site to a shareable URL with Vercel.
           </p>
         </a>
-      </div>
-      <div>
-        <Link href="/pokedex">Pokedex </Link>
-        <Link href="/about">About </Link>
       </div>
     </main>
   );
