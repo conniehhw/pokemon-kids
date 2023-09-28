@@ -9,17 +9,25 @@ function Header() {
   return (
     <Nav className={styles.header}>
       <Image
-        className={styles.logo}
         src="/images/pokemon-logo.png" // Route of the image file
-        height={75} // Desired size with correct aspect ratio
+        height={74} // Desired size with correct aspect ratio
         width={176} // Desired size with correct aspect ratio
         alt="Pokemon Logo"
       />
-
-      <Link href="/">Back to Home </Link>
-      <Link href="/about">About </Link>
-      <Link href="/pokedex">Pokedex </Link>
-      <Link href="/resources">Resources </Link>
+      <div className={styles.nav}>
+        <Link href="/">
+          <p>Back to Home </p>
+        </Link>
+        <Link href="/about">
+          <p>About </p>
+        </Link>
+        <p>
+          <Link href="/pokedex">Pokedex </Link>
+        </p>
+        <p>
+          <Link href="/resources">Resources </Link>
+        </p>
+      </div>
     </Nav>
   );
 }

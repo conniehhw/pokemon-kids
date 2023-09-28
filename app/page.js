@@ -39,14 +39,16 @@ export default function Home() {
           priority
         />
       </div> */}
-
-      <Image
-        className={styles.logo}
-        src="/images/pikachu-ash.png"
-        height={590}
-        width={391}
-        alt="Pikachu + Ash"
-      />
+      <div className={styles.center}>
+        <Image
+          className={styles.logo}
+          src="/images/pikachu-ash.png"
+          height={590}
+          width={391}
+          alt="Pikachu + Ash"
+          style={{ borderRadius: "25px" }}
+        />
+      </div>
 
       <div className={styles.grid}>
         <a
