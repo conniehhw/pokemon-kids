@@ -3,15 +3,12 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding-top: 8rem;
-  /* padding-bottom: 2rem; */
-  padding-right: 4rem;
-  padding-left: 4rem;
+  padding: 4rem;
   min-height: 100vh;
-  /* border: 1px solid red; */
+  border: 1px solid red;
 }
 
-/* .description {
+.description {
   display: inherit;
   justify-content: inherit;
   align-items: inherit;
@@ -102,19 +99,18 @@
   z-index: -1;
 }
 
-.center::before,
-.center::after {
-  content: "";
-  left: 50%;
-  position: absolute;
-  filter: blur(45px);
-  transform: translateZ(0);
-} */
+/* .center::before,
+  .center::after {
+    content: "";
+    left: 50%;
+    position: absolute;
+    filter: blur(45px);
+    transform: translateZ(0);
+  } */
 
 .logo {
   /* position: relative; */
   float: left;
-
   /* display: inline-block; */
 }
 
@@ -241,53 +237,57 @@
 }
 
 /* test */
-.container {
-  padding-left: 25px;
-  padding-right: 25px;
-  max-width: 100%;
-  /* border: 1px solid green; */
-  /* min-height: 5rem;
-  padding: 0 3rem;
-  margin: 3rem auto 6rem; */
-}
+/* .container {
+    max-width: 100%;
+    min-height: 5rem;
+    padding: 0 3rem;
+    margin: 3rem auto 6rem;
+  } */
 
 .footer {
   max-width: 100%;
   min-height: 5rem;
   padding-top: 2rem;
   /* padding: 0 3rem;
-  margin: 3rem auto 6rem; */
+    margin: 3rem auto 6rem; */
   text-align: center;
   background-color: black;
   color: white;
 }
 
-/* .nav {
-  border: solid;
+.header {
+  max-width: 100%;
+  min-height: 5rem;
+  /* padding-top: 2rem; */
+  padding: 0 3rem;
+  /* margin: 3rem auto 6rem; */
+  background-color: white;
+  /* text-align: right; */
+  /* border: solid; */
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.nav {
+  /* border: solid; */
   padding-top: 2rem;
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
   display: flex;
-  gap: 15px;
-  justify-content: flex-end;
-} */
-
-/*.img {
-border-radius: 25px;
-  float: right;
-  padding: 7px;
-  
-  position: absolute;
-  top: -50px;
+  gap: 20px;
 }
 
-
-.logo {
-  padding-left: 32px;
+.img {
+  border-radius: 25px;
+  /* 
+    position: absolute; */
+  /* top: -50px; */
 }
-*/
 
-.navbar {
-  /* border: 1px solid blue; */
-  display: flex;
-  gap: 15px;
+.container {
+  max-width: 100%;
+  min-height: 5rem;
+  padding: 0 3rem;
+  margin: 3rem auto 6rem;
+  border: 1px solid green;
 }

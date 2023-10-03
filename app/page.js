@@ -1,106 +1,49 @@
+// Home Page
 import Image from "next/image";
 import styles from "./page.module.css";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import Button from "react-bootstrap/Button";
 import Link from "next/link";
+import "bootstrap/dist/css/bootstrap.min.css";
+
+export const metadata = {
+  title: "Pokemon Kids Home Page",
+  description: "...",
+};
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      {/* <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/pokemon-logo.png"
-              alt="Pokemon Logo"
-              // className={styles.vercelLogo}
-              width={150}
-              height={50}
-              priority
-            />
-          </a>
-        </div>
-      </div> */}
-
-      {/* <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div> */}
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/images/pikachu-ash.png"
-          height={590}
-          width={391}
-          alt="Pikachu + Ash"
-          style={{ borderRadius: "25px" }}
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
+      {/* <Container> */}
+      <Row className="border border-dark">
+        <Col sm={5} className="text-black border border-dark py-4 px-4">
+          <h1 class="font-weigh-light">Welcome!</h1>
+          <p class="pt-3">
+            So you want to be a pokemon trainer? Follow along with Ash and
+            Pikachu and start your journey.
           </p>
-        </a>
-      </div>
+          <br></br>
+          <Button variant="primary" style={{ color: "blue" }}>
+            <Link href="/about">Let's Go!</Link>
+          </Button>
+        </Col>
+        <Col
+          sm={7}
+          className="text-center"
+          style={{ backgroundColor: "#FFDE00", borderRadius: "25px" }}
+        >
+          <Image
+            className={styles.img}
+            src="/images/pikachu-ash.png"
+            height={590}
+            width={391}
+            alt="Pikachu + Ash"
+          />
+        </Col>
+      </Row>
+      {/* </Container> */}
     </main>
   );
 }

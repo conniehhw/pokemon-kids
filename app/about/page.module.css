@@ -1,0 +1,4 @@
+.main {
+  color: rgb(var(--foreground-rgb));
+  background: gray;
+}

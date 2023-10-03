@@ -4,6 +4,7 @@ import Link from "next/link";
 import styles from "../page.module.css";
 // import Container from "./container";
 // import Image from "next/image";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function Footer() {
   return (
