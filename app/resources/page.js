@@ -3,8 +3,9 @@ import Container from "react-bootstrap/Container";
 import Card from "react-bootstrap/Card";
 import CardImg from "react-bootstrap/CardImg";
 // import Image from "next/image";
-import CardHeader from "react-bootstrap/CardHeader";
+
 import CardBody from "react-bootstrap/CardBody";
+import CardFooter from "react-bootstrap/CardFooter";
 import CardTitle from "react-bootstrap/CardTitle";
 import CardText from "react-bootstrap/CardText";
 import Button from "react-bootstrap/Button";
@@ -16,68 +17,79 @@ function BodyShorthandExample() {
         <Card style={{ width: "18rem" }}>
           <CardImg variant="top" src="/images/pokemon-101.png" />
           <CardBody>
-            <CardTitle>Card Title</CardTitle>
-            <CardText>
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </CardText>
-            <Button variant="primary">Go somewhere</Button>
+            <CardTitle>Pokemon 101</CardTitle>
+            <CardText>A parent's guide to Pokemon. What are pokemon?</CardText>
           </CardBody>
+          <CardFooter>
+            <Button variant="primary bottom">Go somewhere</Button>
+          </CardFooter>
+          {/* </CardBody> */}
         </Card>
+
         <Card style={{ width: "18rem" }}>
           <CardImg variant="top" src="/images/pokemon-101.png" />
           <CardBody>
-            <CardTitle>Card Title</CardTitle>
-            <CardText>
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </CardText>
-            <Button variant="primary">Go somewhere</Button>
+            <CardTitle>Pokemon 101</CardTitle>
+            <CardText>A parent's guide to Pokemon. What are pokemon?</CardText>
           </CardBody>
+          <CardFooter>
+            <Button variant="primary bottom">Go somewhere</Button>
+          </CardFooter>
         </Card>
+
         <Card style={{ width: "18rem" }}>
-          <CardImg variant="top" src="/images/pokemon-101.png" />
+          <CardImg variant="top" src="/images/trading-cards.png" />
           <CardBody>
-            <CardTitle>Card Title</CardTitle>
+            <CardTitle>Pokemon Trading Card Game TCG</CardTitle>
             <CardText>
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+              From collecting cards, types of cards and building decks - a guide
+              for how to play the Pokemon Trading Card Game.
             </CardText>
-            <Button variant="primary">Go somewhere</Button>
           </CardBody>
+          <CardFooter>
+            <Button variant="primary bottom">Go somewhere</Button>
+          </CardFooter>
         </Card>
+
         <Card style={{ width: "18rem" }}>
-          <CardImg variant="top" src="/images/pokemon-101.png" />
+          <CardImg variant="top" src="/images/pokemon-360.png" />
           <CardBody>
-            <CardTitle>Card Title</CardTitle>
+            <CardTitle>Pokemon 360</CardTitle>
             <CardText>
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+              From books, television shows, films to video games - there are
+              plently of ways to explore the Pokemon Universe.
             </CardText>
-            <Button variant="primary">Go somewhere</Button>
           </CardBody>
+          <CardFooter>
+            <Button variant="primary bottom">Go somewhere</Button>
+          </CardFooter>
         </Card>
+
         <Card style={{ width: "18rem" }}>
-          <CardImg variant="top" src="/images/pokemon-101.png" />
+          <CardImg variant="top" src="/images/pokemon-centre.png" />
           <CardBody>
-            <CardTitle>Card Title</CardTitle>
+            <CardTitle>Pokemon Centres</CardTitle>
             <CardText>
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+              What is the difference between Pokemon Centres and Pokemon Stores?
             </CardText>
-            <Button variant="primary">Go somewhere</Button>
           </CardBody>
+          <CardFooter>
+            <Button variant="primary bottom">Go somewhere</Button>
+          </CardFooter>
         </Card>
+
         <Card style={{ width: "18rem" }}>
-          <CardImg variant="top" src="/images/pokemon-101.png" />
+          <CardImg variant="top" src="/images/pokemon-cafe.png" />
           <CardBody>
-            <CardTitle>Card Title</CardTitle>
+            <CardTitle>Pokemon Cafe</CardTitle>
             <CardText>
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+              Eat, drink and be merry. Welcome to the first-ever official
+              Pokémon Cafe.
             </CardText>
-            <Button variant="primary">Go somewhere</Button>
           </CardBody>
+          <CardFooter>
+            <Button variant="primary bottom">Go somewhere</Button>
+          </CardFooter>
         </Card>
       </Container>
     </main>
