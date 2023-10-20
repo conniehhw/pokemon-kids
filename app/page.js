@@ -17,8 +17,8 @@ export default function Home() {
   return (
     <main className={styles.main}>
       {/* <Container> */}
-      <Row className="border border-dark">
-        <Col sm={5} className="text-black border border-dark py-4 px-4">
+      <Row className="">
+        <Col sm={5} className="text-black py-4 px-4">
           <h1 class="font-weigh-light">Welcome!</h1>
           <p class="pt-3">
             So you want to be a pokemon trainer? Follow along with Ash and
@@ -26,7 +26,9 @@ export default function Home() {
           </p>
           <br></br>
           <Button variant="primary" style={{ color: "blue" }}>
-            <Link href="/about">Let's Go!</Link>
+            <Link href="/about">
+              <span style={{ color: "white" }}>Let's Go!</span>
+            </Link>
           </Button>
         </Col>
         <Col

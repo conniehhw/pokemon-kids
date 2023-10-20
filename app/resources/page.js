@@ -1,63 +1,87 @@
-// import Image from "next/image";
 import styles from "../page.module.css";
-// import Link from "next/link";
+import Container from "react-bootstrap/Container";
+import Card from "react-bootstrap/Card";
+import CardImg from "react-bootstrap/CardImg";
+// import Image from "next/image";
+import CardHeader from "react-bootstrap/CardHeader";
+import CardBody from "react-bootstrap/CardBody";
+import CardTitle from "react-bootstrap/CardTitle";
+import CardText from "react-bootstrap/CardText";
+import Button from "react-bootstrap/Button";
 
-export default function Resources() {
+function BodyShorthandExample() {
   return (
     <main className={styles.main}>
-      <h1>Resources Page</h1>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+      <Container className={styles.grid}>
+        <Card style={{ width: "18rem" }}>
+          <CardImg variant="top" src="/images/pokemon-101.png" />
+          <CardBody>
+            <CardTitle>Card Title</CardTitle>
+            <CardText>
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </CardText>
+            <Button variant="primary">Go somewhere</Button>
+          </CardBody>
+        </Card>
+        <Card style={{ width: "18rem" }}>
+          <CardImg variant="top" src="/images/pokemon-101.png" />
+          <CardBody>
+            <CardTitle>Card Title</CardTitle>
+            <CardText>
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </CardText>
+            <Button variant="primary">Go somewhere</Button>
+          </CardBody>
+        </Card>
+        <Card style={{ width: "18rem" }}>
+          <CardImg variant="top" src="/images/pokemon-101.png" />
+          <CardBody>
+            <CardTitle>Card Title</CardTitle>
+            <CardText>
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </CardText>
+            <Button variant="primary">Go somewhere</Button>
+          </CardBody>
+        </Card>
+        <Card style={{ width: "18rem" }}>
+          <CardImg variant="top" src="/images/pokemon-101.png" />
+          <CardBody>
+            <CardTitle>Card Title</CardTitle>
+            <CardText>
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </CardText>
+            <Button variant="primary">Go somewhere</Button>
+          </CardBody>
+        </Card>
+        <Card style={{ width: "18rem" }}>
+          <CardImg variant="top" src="/images/pokemon-101.png" />
+          <CardBody>
+            <CardTitle>Card Title</CardTitle>
+            <CardText>
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </CardText>
+            <Button variant="primary">Go somewhere</Button>
+          </CardBody>
+        </Card>
+        <Card style={{ width: "18rem" }}>
+          <CardImg variant="top" src="/images/pokemon-101.png" />
+          <CardBody>
+            <CardTitle>Card Title</CardTitle>
+            <CardText>
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </CardText>
+            <Button variant="primary">Go somewhere</Button>
+          </CardBody>
+        </Card>
+      </Container>
     </main>
   );
 }
+
+export default BodyShorthandExample;
