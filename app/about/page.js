@@ -30,16 +30,19 @@ export default function About() {
         </Col>
         <Col
           sm={7}
-          className="text-center"
-          style={{ backgroundColor: "#FFDE00", borderRadius: "25px" }}
+          className="text-center py-4 px-4"
+          style={{
+            backgroundColor: "#FFDE00",
+            borderRadius: "25px",
+          }}
         >
-          {/* <Image
+          <Image
             className={styles.img}
-            src="/images/pikachu-ash.png"
-            height={590}
-            width={391}
+            src="/images/pokemon-fans.png"
+            height={200}
+            width={400}
             alt="Pikachu + Ash"
-          /> */}
+          />
         </Col>
       </Row>
 

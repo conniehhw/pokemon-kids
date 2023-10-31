@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap");
+
+/* .pokemain {
+  padding: 0;
+  margin: 0;
+  font-family: "Jost", sans-serif;
+} */
+
+.pokecontainer {
+  width: 90%;
+  margin: auto;
+  padding-top: 100px;
+  display: flex;
+  background-color: #fceec8;
+}
+
+.leftcontent,
+.rightcontent {
+  flex-basis: 50%;
+}
+
+.leftcontent {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 0.5fr));
+  grid-gap: 2rem;
+}
+
+.card {
+  width: 300px;
+  background-color: #9edef9;
+  border-radius: 1rem;
+  /* box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5); */
+  padding: 0 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: botder-box;
+}
+
+.rightcontent {
+  width: 50%;
+  text-align: center;
+  color: black;
+  position: fixed;
+  top: 100px;
+  right: 10px;
+}
+
+.rightcontent img {
+  margin: 2rem;
+  width: 137.5px;
+  height: 137.5px;
+}
+
+.btngroup {
+  display: flex;
+}
+
+.btngroup button {
+  outline: none;
+  border: none;
+  width: 150px;
+  padding: 0.3rem 0;
+  margin: 1rem;
+  font-size: 17px;
+  font-weight: bold;
+  color: white;
+  background-color: red;
+  border-radius: 8px;
+}
+
+/* .img {
+  border-radius: 25px;
+  /* float: right;
+    padding: 7px;
+    
+    position: absolute;
+    top: -50px; */
