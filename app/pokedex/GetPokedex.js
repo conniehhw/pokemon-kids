@@ -2,34 +2,35 @@
 
 import React from "react";
 
-const GetPokedex = () => {
+const GetPokedex = ({ data }) => {
+  console.log(data);
   return (
     <>
-      <p>Pokemon Name</p>
-      {/* <Image
-        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/4.png"
-        height={auto}
-        width={auto}
-        alt="Placeholder image"
-      /> */}
-      <img
-        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/4.png"
-        alt="pokemon card"
-      />
-      <div className="abilities">
-        <div className="group">
-          <p>Pokemon Ability1</p>
-        </div>
-        <div className="group">
-          <p>Pokemon Ability2</p>
-        </div>
-      </div>
-      <div className="base-stat">
-        <p>Pokemon Base Stat 1</p>
-        <p>Pokemon Base Stat 1</p>
-        <p>Pokemon Base Stat 1</p>
-      </div>
-      <div></div>
+      {!data ? (
+        ""
+      ) : (
+        <>
+          <p>{data.name}</p>
+          <img
+            src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${data.id}.svg`}
+            alt="pokemon card"
+          />
+          <div className="abilities">
+            <div className="group">
+              <p>Pokemon Ability1</p>
+            </div>
+            <div className="group">
+              <p>Pokemon Ability2</p>
+            </div>
+          </div>
+          <div className="base-stat">
+            <p>Pokemon Base Stat 1</p>
+            <p>Pokemon Base Stat 1</p>
+            <p>Pokemon Base Stat 1</p>
+          </div>
+          <div></div>
+        </>
+      )}
     </>
   );
 };

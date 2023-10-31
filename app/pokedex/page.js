@@ -13,12 +13,13 @@ const Pokedex = () => {
   const [url, setUrl] = useState("https://pokeapi.co/api/v2/pokemon/");
   const [nextUrl, setNextUrl] = useState();
   const [prevUrl, setPrevUrl] = useState();
+  const [pokeDex, setPokeDex] = useState();
 
   const pokeFun = async () => {
     setLoading(true);
     const res = await axios.get(url);
     console.log(res.data);
-    console.log(res.data.results);
+    // console.log(res.data.results);
     setNextUrl(res.data.next);
     setPrevUrl(res.data.previous);
     getPokemon(res.data.results);
@@ -31,15 +32,17 @@ const Pokedex = () => {
       // console.log(item.url);
       // console.log(item.name);
       const result = await axios.get(item.url);
-      console.log(result);
-      console.log(result.data);
+      // console.log(result);
+      // console.log(result.data);
       // store all this objects in one array, so we call the setPokeData function inside this function. We create a new array, first
       // we store all the elements of existing array and then we add the new item in the array [result.data] and return state
 
       setPokeData((state) => {
         state = [...state, result.data];
+        state.sort((a, b) => (a.id > b.id ? 1 : -1));
         return state;
         // basically this will work like a push function in array
+        // use sort to place in order, if a.id is > b.id, then return 1, else we return -1
       });
     });
   };
@@ -55,15 +58,20 @@ const Pokedex = () => {
     <main className={styles.main}>
       <div className={styles.pokecontainer}>
         <div className={styles.leftcontent}>
-          <Card pokemon={pokeData} loading={loading} />
+          <Card
+            pokemon={pokeData}
+            loading={loading}
+            infoPokemon={(poke) => setPokeDex(poke)}
+          />
 
           <div className={styles.btngroup}>
             <button className={styles.button}>Previous</button>
             <button>Next</button>
           </div>
         </div>
+
         <div className={styles.rightcontent}>
-          <GetPokedex />
+          <GetPokedex data={pokeDex} />
         </div>
       </div>
     </main>
