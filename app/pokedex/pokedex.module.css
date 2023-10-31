@@ -44,12 +44,40 @@
   position: fixed;
   top: 100px;
   right: 10px;
+  border: solid black 1px;
 }
 
 .rightcontent img {
   margin: 2rem;
   width: 137.5px;
   height: 137.5px;
+}
+
+.rightcontent p {
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.abilities {
+  width: 35%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.group {
+  background-color: blue;
+  color: white;
+  padding: 0.5rem;
+  font-size: 16px;
+  border-radius: 8px;
+}
+
+.basestat {
+  margin-top: 2rem;
 }
 
 .btngroup {

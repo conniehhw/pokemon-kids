@@ -1,6 +1,7 @@
 // Can use State hook to setState vs. manual card
 
 import React from "react";
+import styles from "../pokedex/pokedex.module.css";
 
 const GetPokedex = ({ data }) => {
   console.log(data);
@@ -15,20 +16,28 @@ const GetPokedex = ({ data }) => {
             src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${data.id}.svg`}
             alt="pokemon card"
           />
-          <div className="abilities">
-            <div className="group">
-              <p>Pokemon Ability1</p>
-            </div>
-            <div className="group">
-              <p>Pokemon Ability2</p>
-            </div>
+          <div className={styles.abilities}>
+            {data.abilities.map((poke) => {
+              return (
+                <>
+                  <div className={styles.group}>
+                    <p>{poke.ability.name}</p>
+                  </div>
+                </>
+              );
+            })}
           </div>
-          <div className="base-stat">
-            <p>Pokemon Base Stat 1</p>
-            <p>Pokemon Base Stat 1</p>
-            <p>Pokemon Base Stat 1</p>
+          <div className={styles.basestat}>
+            {data.stats.map((poke) => {
+              return (
+                <>
+                  <p>
+                    {poke.stat.name}: {poke.base_stat}
+                  </p>
+                </>
+              );
+            })}
           </div>
-          <div></div>
         </>
       )}
     </>

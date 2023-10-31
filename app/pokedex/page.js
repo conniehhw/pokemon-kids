@@ -65,8 +65,28 @@ const Pokedex = () => {
           />
 
           <div className={styles.btngroup}>
-            <button className={styles.button}>Previous</button>
-            <button>Next</button>
+            {prevUrl && (
+              <button
+                className={styles.button}
+                onClick={() => {
+                  setPokeData([]);
+                  setUrl(prevUrl);
+                }}
+              >
+                Previous
+              </button>
+            )}
+
+            {nextUrl && (
+              <button
+                onClick={() => {
+                  setPokeData([]);
+                  setUrl(nextUrl);
+                }}
+              >
+                Next
+              </button>
+            )}
           </div>
         </div>
 
