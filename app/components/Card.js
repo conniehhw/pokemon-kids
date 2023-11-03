@@ -5,7 +5,7 @@ import Image from "next/image";
 // check data is coming from card component
 // check if loading is true/false, if true - data is not fetched yet.
 const Card = ({ pokemon, loading, infoPokemon }) => {
-  // console.log(pokemon);
+  console.log(pokemon);
   return (
     <>
       {loading ? (
