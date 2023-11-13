@@ -273,7 +273,7 @@
 } */
 
 .img {
-  border-radius: 25px;
+  border-radius: 10px;
   /* float: right;
   padding: 7px;
   
@@ -294,7 +294,7 @@
 
 .grid {
   display: flex;
-  /* flex-direction: row;  */
+  flex-direction: row;
   flex-wrap: wrap;
   gap: 20px 30px;
   justify-content: space-evenly;

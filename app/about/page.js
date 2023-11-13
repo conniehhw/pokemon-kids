@@ -23,7 +23,7 @@ export default function About() {
           </p>
           <br></br>
           <Button variant="primary" style={{ color: "blue" }}>
-            <Link href="/about">
+            <Link href="/resources">
               <span style={{ color: "white" }}>Let's Go!</span>
             </Link>
           </Button>
@@ -33,7 +33,7 @@ export default function About() {
           className="text-center py-4 px-4"
           style={{
             backgroundColor: "#FFDE00",
-            borderRadius: "25px",
+            borderRadius: "15px",
           }}
         >
           <Image

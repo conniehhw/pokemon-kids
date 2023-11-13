@@ -2,6 +2,7 @@ import styles from "../page.module.css";
 import Container from "react-bootstrap/Container";
 import Card from "react-bootstrap/Card";
 import CardImg from "react-bootstrap/CardImg";
+import Link from "next/link";
 // import Image from "next/image";
 
 import CardBody from "react-bootstrap/CardBody";
@@ -10,7 +11,7 @@ import CardTitle from "react-bootstrap/CardTitle";
 import CardText from "react-bootstrap/CardText";
 import Button from "react-bootstrap/Button";
 
-function BodyShorthandExample() {
+function Resources() {
   return (
     <main className={styles.main}>
       <Container className={styles.grid}>
@@ -21,7 +22,9 @@ function BodyShorthandExample() {
             <CardText>A parent's guide to Pokemon. What are pokemon?</CardText>
           </CardBody>
           <CardFooter>
-            <Button variant="primary bottom">Go somewhere</Button>
+            <Button variant="primary bottom">
+              <Link href="/resources/poke101">Go somewhere</Link>
+            </Button>
           </CardFooter>
           {/* </CardBody> */}
         </Card>
@@ -96,4 +99,4 @@ function BodyShorthandExample() {
   );
 }
 
-export default BodyShorthandExample;
+export default Resources;

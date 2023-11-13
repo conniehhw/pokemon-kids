@@ -5,6 +5,7 @@ import axios from "axios";
 import styles from "./pokedex.module.css";
 import Card from "../components/Card";
 import GetPokedex from "./GetPokedex";
+
 import { useState, useEffect } from "react";
 
 const Pokedex = () => {

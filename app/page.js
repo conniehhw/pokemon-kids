@@ -34,7 +34,7 @@ export default function Home() {
         <Col
           sm={7}
           className="text-center"
-          style={{ backgroundColor: "#FFDE00", borderRadius: "25px" }}
+          style={{ backgroundColor: "#FFDE00", borderRadius: "15px" }}
         >
           <Image
             className={styles.img}
