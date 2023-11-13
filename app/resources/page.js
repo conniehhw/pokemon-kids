@@ -23,7 +23,9 @@ function Resources() {
           </CardBody>
           <CardFooter>
             <Button variant="primary bottom">
-              <Link href="/resources/poke101">Go somewhere</Link>
+              <Link href="/resources/poke101">
+                <span style={{ color: "white" }}>Go somewhere</span>
+              </Link>
             </Button>
           </CardFooter>
           {/* </CardBody> */}
@@ -36,7 +38,11 @@ function Resources() {
             <CardText>A parent's guide to Pokemon. What are pokemon?</CardText>
           </CardBody>
           <CardFooter>
-            <Button variant="primary bottom">Go somewhere</Button>
+            <Button variant="primary bottom">
+              <Link href="/resources/poke101">
+                <span style={{ color: "white" }}>Go somewhere</span>
+              </Link>
+            </Button>
           </CardFooter>
         </Card>
 
@@ -50,7 +56,11 @@ function Resources() {
             </CardText>
           </CardBody>
           <CardFooter>
-            <Button variant="primary bottom">Go somewhere</Button>
+            <Button variant="primary bottom">
+              <Link href="/resources/poketcg">
+                <span style={{ color: "white" }}>Go somewhere</span>
+              </Link>
+            </Button>
           </CardFooter>
         </Card>
 
@@ -64,7 +74,11 @@ function Resources() {
             </CardText>
           </CardBody>
           <CardFooter>
-            <Button variant="primary bottom">Go somewhere</Button>
+            <Button variant="primary bottom">
+              <Link href="/resources/pokemedia">
+                <span style={{ color: "white" }}>Go somewhere</span>
+              </Link>
+            </Button>
           </CardFooter>
         </Card>
 
@@ -77,7 +91,11 @@ function Resources() {
             </CardText>
           </CardBody>
           <CardFooter>
-            <Button variant="primary bottom">Go somewhere</Button>
+            <Button variant="primary bottom">
+              <Link href="/resources/pokecenter">
+                <span style={{ color: "white" }}>Go somewhere</span>
+              </Link>
+            </Button>
           </CardFooter>
         </Card>
 
@@ -91,7 +109,11 @@ function Resources() {
             </CardText>
           </CardBody>
           <CardFooter>
-            <Button variant="primary bottom">Go somewhere</Button>
+            <Button variant="primary bottom">
+              <Link href="/resources/pokecafe">
+                <span style={{ color: "white" }}>Go somewhere</span>
+              </Link>
+            </Button>
           </CardFooter>
         </Card>
       </Container>
