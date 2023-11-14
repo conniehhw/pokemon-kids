@@ -41,7 +41,7 @@ export default function About() {
             src="/images/pokemon-fans.png"
             height={200}
             width={400}
-            alt="Pikachu + Ash"
+            alt="Kids with pokemon backpack"
           />
         </Col>
       </Row>
