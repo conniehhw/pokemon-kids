@@ -28,14 +28,19 @@ export default function About() {
             </Link>
           </Button>
         </Col>
-        <Col
-          sm={7}
-          className="text-center py-4 px-4"
-          style={{
+        <Col sm={7} className="text-center py-4 px-4 mb-3 mt-4">
+          {/* style={{
             backgroundColor: "#FFDE00",
             borderRadius: "15px",
-          }}
-        >
+          }} */}
+
+          <Image
+            className={styles.img}
+            src="/images/baby-pokemon.png"
+            height={180}
+            width={300}
+            alt="pokemon stuffies"
+          />
           <Image
             className={styles.img}
             src="/images/pokemon-fans.png"

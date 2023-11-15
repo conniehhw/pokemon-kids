@@ -2,3 +2,16 @@
   color: rgb(var(--foreground-rgb));
   background: gray;
 }
+
+.img {
+  border-radius: 10px;
+  /* display: block;
+  margin-left: auto;
+  margin-right: auto; */
+  text-align: center;
+  /* float: right;
+  padding: 7px;
+  
+  position: absolute;
+  top: -50px; */
+}

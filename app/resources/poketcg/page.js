@@ -12,7 +12,7 @@ import CarouselCaption from "react-bootstrap/CarouselCaption";
 function poketcg() {
   return (
     <main className={styles.main}>
-      <div className={styles.title}>poketcg page</div>
+      {/* <div className={styles.title}>poketcg page</div> */}
 
       <Row className={styles.row}>
         {/* <Col sm={4} className="text-black py-4 px-4"> */}
@@ -34,6 +34,7 @@ function poketcg() {
           className={styles.col}
           style={{
             backgroundColor: "#FFDE00",
+            borderColor: "black",
             borderRadius: "15px",
           }}
         >
@@ -49,7 +50,7 @@ function poketcg() {
               {/* <div className={styles.div}> */}
               <CarouselCaption className={styles.div}>
                 <LoremIpsum
-                  p={4}
+                  p={2}
                   avgWordsPerSentence={5}
                   avgSentencesPerParagraph={2}
                 />
@@ -62,7 +63,7 @@ function poketcg() {
               </CarouselCaption> */}
             </CarouselItem>
 
-            <CarouselItem>
+            <CarouselItem className={styles.item}>
               <Image
                 src="/images/pokemoncard2.png"
                 rounded
@@ -79,7 +80,7 @@ function poketcg() {
               </CarouselCaption>
             </CarouselItem>
 
-            <CarouselItem>
+            <CarouselItem className={styles.item}>
               <Image
                 src="/images/pokemoncard.png"
                 rounded
@@ -89,7 +90,7 @@ function poketcg() {
               />
               <CarouselCaption className={styles.div}>
                 <LoremIpsum
-                  p={1}
+                  p={2}
                   avgWordsPerSentence={5}
                   avgSentencesPerParagraph={2}
                 />

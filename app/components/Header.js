@@ -12,7 +12,12 @@ import styles from "../page.module.css";
 
 function TextLinkExample() {
   return (
-    <Navbar className="bg-white" collapseOnSelect expand="sm" fixed="top">
+    <Navbar
+      className="bg-white border-bottom"
+      collapseOnSelect
+      expand="sm"
+      fixed="top"
+    >
       <Container className={styles.container}>
         <NavbarBrand href="/">
           <Image
