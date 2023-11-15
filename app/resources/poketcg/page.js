@@ -33,15 +33,23 @@ function poketcg() {
           // className="text-center py-4 px-4"
           className={styles.col}
           style={{
-            backgroundColor: "#FFDE00",
+            backgroundColor: "#0A285F",
             borderColor: "black",
             borderRadius: "15px",
           }}
         >
           <Carousel>
+            {/* <Image
+              src="/images/pokemon-species-name.png"
+              rounded
+              height={400}
+              width={250}
+              alt="Pokemon Card"
+              className=""
+            /> */}
             <CarouselItem className={styles.item}>
               <Image
-                src="/images/pokemoncard.png"
+                src="/images/pokemon-species-name.png"
                 rounded
                 height={400}
                 width={250}
@@ -65,7 +73,7 @@ function poketcg() {
 
             <CarouselItem className={styles.item}>
               <Image
-                src="/images/pokemoncard2.png"
+                src="/images/pokemon-evol-stage.png"
                 rounded
                 height={400}
                 width={250}
@@ -82,7 +90,7 @@ function poketcg() {
 
             <CarouselItem className={styles.item}>
               <Image
-                src="/images/pokemoncard.png"
+                src="/images/pokemon-type.png"
                 rounded
                 height={400}
                 width={250}
