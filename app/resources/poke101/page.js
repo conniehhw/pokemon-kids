@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "../poke101/poke101.module.css";
-
+import Image from "next/image";
 import Accordion from "react-bootstrap/Accordion";
 import AccordionHeader from "react-bootstrap/AccordionHeader";
 import AccordionItem from "react-bootstrap/AccordionItem";
@@ -9,7 +9,9 @@ import AccordionBody from "react-bootstrap/AccordionBody";
 function poke101() {
   return (
     <main className={styles.main}>
-      <div className={styles.title}>poke101 page</div>
+      <div className={styles.title}>
+        Pokemon 101: Frequently Asked Questions
+      </div>
       <Accordion defaultActiveKey="0" flush>
         <AccordionItem className={styles.item} eventKey="0">
           <AccordionHeader>
@@ -26,15 +28,29 @@ function poke101() {
             </svg>
             &nbsp;&nbsp;What is a Pokemon?
           </AccordionHeader>
-          <AccordionBody>
-            A pokemon is a kind of creature. They can learn different moves. But
-            the same species always have the same moves. Some pokemons have
-            strong power; like Legendaries, Megas, Mythicals and Ultra beasts.
+          <AccordionBody className={styles.clearfix}>
+            <Image
+              className={styles.img}
+              src="/images/pokemon-group.png"
+              height={154}
+              width={250}
+              alt="Pokemon All Kinds"
+            />
+            A pokemon is a kind of creature. They can learn different moves.
+            Some pokemons have strong power; like Legendaries, Megas, Mythicals
+            and Ultra beasts.
           </AccordionBody>
         </AccordionItem>
         <AccordionItem eventKey="1">
           <AccordionHeader>What is a Poke Ball?</AccordionHeader>
-          <AccordionBody>
+          <AccordionBody className={styles.clearfix}>
+            <Image
+              className={styles.img}
+              src="/images/pokeball.png"
+              height={250}
+              width={300}
+              alt="Pokeball Chart"
+            />
             A ball that catches pokemon, when you throw the ball. There are
             different kinds of poke balls; like the Quick ball, Ultra ball,
             Master ball and Apecorn ball.
@@ -57,7 +73,14 @@ function poke101() {
 
         <AccordionItem eventKey="3">
           <AccordionHeader>What are pokemon battles?</AccordionHeader>
-          <AccordionBody>
+          <AccordionBody className={styles.clearfix}>
+            <Image
+              className={styles.img}
+              src="/images/pokemon-battle.png"
+              height={168}
+              width={300}
+              alt="Pokemon Battle"
+            />
             Pokemons and their trainers compete in battles. These take place in
             different arenas. The trainer calls on a pokemon to battle against
             another trainer and pokemon pair. What you want to do, is pick a
@@ -72,7 +95,14 @@ function poke101() {
             {" "}
             What are pokemon types and abilities?
           </AccordionHeader>
-          <AccordionBody>
+          <AccordionBody className={styles.clearfix}>
+            <Image
+              className={styles.img}
+              src="/images/pokemon-type.png"
+              height={225}
+              width={400}
+              alt="Pokemon Type"
+            />
             There are 18 types: Grass, Fire, Water, Electric, Steel, Psychic,
             Fighting, Fairy, Dark, Dragon, Ice, Poison, Bug, Rock, Flying,
             Ground, Ghost and Normal. Each type has their unique strengths and
@@ -85,7 +115,14 @@ function poke101() {
             {" "}
             What are Evolutions? Why does Pikachu have 2 other names?
           </AccordionHeader>
-          <AccordionBody>
+          <AccordionBody className={styles.clearfix}>
+            <Image
+              className={styles.img}
+              src="/images/pokemon-evol.png"
+              height={297}
+              width={500}
+              alt="Pokemon Evolutions"
+            />
             Some pokemons can evolve 2 times. For instance, Pichu is basic,
             Pikachu is stage 1 and Raichu is stage 2. As it evolves from basic
             to stage 1 and 2, it becomes more powerful. However, some pokemons

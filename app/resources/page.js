@@ -19,7 +19,10 @@ function Resources() {
           <CardImg variant="top" src="/images/pokemon-101.png" />
           <CardBody>
             <CardTitle>Pokemon 101</CardTitle>
-            <CardText>A parent's guide to Pokemon. What are pokemon?</CardText>
+            <CardText>
+              A parent's guide to Pokemon. What are pokemon? Answers to your
+              Frequently Asked Questions.
+            </CardText>
           </CardBody>
           <CardFooter>
             <Button variant="primary bottom">
