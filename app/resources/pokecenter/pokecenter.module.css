@@ -1,25 +1,121 @@
+/* main .themeImage {
+  width: 100%;
+  margin-top: 102px;
+} */
+
 .main {
   display: flex;
   flex-direction: column;
   /* justify-content: space-between; */
-  align-items: center;
-  padding-top: 8rem;
+  /* align-items: center; */
+  padding-top: 7rem;
   /* padding-bottom: 2rem; */
-  padding-right: 4rem;
-  padding-left: 4rem;
+  /* padding-right: 4rem;
+  padding-left: 4rem; */
   /* margin-bottom: 4rem; */
   min-height: 100vh;
-  border: 1px solid red;
+  border-style: 1px solid;
+  border-color: #919191 #ffffff #ffffff #ffffff; /* red top, green right, blue bottom and yellow left */
 }
 
-.title {
-  /* background-color: #1847d7; */
-  background-color: #1c4cbd;
-  color: white;
-  height: 100px;
-  width: 100%;
-  padding: 1rem;
-  margin: 2rem;
-  margin-top: 0;
-  border-radius: 15px;
+/* 12 column grid */
+
+.welcome {
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  /* grid-template-rows: repeat(2fr, 1fr); */
+  gap: 32pt;
+  border: 1px solid black;
+  /* background-color: hotpink; */
+}
+
+.welcome > image {
+  max-width: 100%;
+}
+
+.welcometext {
+  text-align: left;
+  padding: 24pt;
+}
+
+.welcomeimg {
+  padding: 0;
+}
+
+.welcome > a {
+  text-align: left;
+  /* background: grey; */
+  /* padding: 48pt; */
+  border: 1px solid black;
+}
+
+.welcome a:nth-child(1) {
+  grid-column: 2/6;
+  grid-row: 1;
+  padding: 48pt;
+}
+
+.welcome a:nth-child(2) {
+  /* text-align: center; */
+  grid-column: 6/11;
+  grid-row: 1;
+}
+
+/*  */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  /* grid-template-rows: repeat(2fr, 1fr); */
+  gap: 32pt;
+  border: 1px solid black;
+  /* background-color: hotpink; */
+}
+
+.projects > image {
+  max-width: 100%;
+}
+
+.projects > a {
+  text-align: center;
+  /* background: grey; */
+  margin-top: 24pt;
+  margin-bottom: 24pt;
+  /* padding: 24pt; */
+  border: 1px solid black;
+}
+
+.projectimg {
+  /* border: 20px solid white; */
+}
+
+.projecttext {
+  text-align: left;
+  padding: 24pt;
+}
+
+.projects a:nth-child(1) {
+  grid-column: 2/5;
+  grid-row: 1;
+}
+
+.projects a:nth-child(2) {
+  grid-column: 5/8;
+  grid-row: 1;
+}
+
+.projects a:nth-child(3) {
+  grid-column: 8/11;
+  grid-row: 1;
+}
+
+/* Small Tablet Styles */
+@media (max-width: 620px) {
+  .projects {
+  }
+}
+
+/* Lg tablets & laptop Styles */
+@media (max-width: 960px) {
+  .projects {
+  }
 }
