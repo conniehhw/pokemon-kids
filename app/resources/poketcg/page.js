@@ -72,10 +72,11 @@ function poketcg() {
               />
               <CarouselCaption className={styles.caption}>
                 <h5>Evolutionary Form</h5>
+                <p>Some Pokemon can evolve into different forms.</p>
                 <p>
-                  Some Pokemon can evolve into different forms. The stages are:
-                  Basic, Stage 1, Stage 2 & Mega etc. Stage 1 and Stage 2
-                  Pokémon are also called Evolution cards.
+                  {" "}
+                  The stages are: Basic, Stage 1, Stage 2 & Mega etc. Stage 1
+                  and Stage 2 Pokémon are also called Evolution cards.
                 </p>
                 {/* <LoremIpsum
                   p={2}
@@ -302,11 +303,12 @@ function poketcg() {
             />
 
             <h5>Pokemon Cards</h5>
-            <LoremIpsum
-              p={1}
-              avgWordsPerSentence={10}
-              avgSentencesPerParagraph={3}
-            />
+            <p>
+              Most Pokemon cards are Basic Pokemon, Stage 1 Pokemon or Stage 2
+              Pokemon. Stage 1 & 2 are also called Evolution card. Look at the
+              upper-left corner and you will see the Pokemon's Stage and the
+              Pokemon it evolves from, if any.
+            </p>
           </div>
           <div className={styles.clearfix}>
             <Image
@@ -316,12 +318,13 @@ function poketcg() {
               width={150}
               alt="Energy Cards"
             />
-            <h5>Pokemon Cards</h5>
-            <LoremIpsum
-              p={1}
-              avgWordsPerSentence={10}
-              avgSentencesPerParagraph={3}
-            />
+            <h5>Energy Cards</h5>
+            <p>
+              Most of the time, Pokemon can't attack without Energy cards.
+              You'll need to match the symbols of the attack cost to the Energy
+              card, but any kind of Energy can be used for the colourless/normal
+              energy.
+            </p>
           </div>
           <div className={styles.clearfix}>
             <Image
@@ -331,12 +334,13 @@ function poketcg() {
               width={300}
               alt="Trainer Cards"
             />
-            <h5>Pokemon Cards</h5>
-            <LoremIpsum
-              p={1}
-              avgWordsPerSentence={10}
-              avgSentencesPerParagraph={3}
-            />
+            <h5>Trainer Cards</h5>
+            <p>
+              Trainer cards represent the Items, Supporters, and Stadiums a
+              Trainer can use in battle. You can see the specific Trainer
+              subtype in the upper-right corner and any special rules for that
+              subtype at the bottom of the card.
+            </p>
           </div>
         </div>
 
@@ -395,14 +399,14 @@ function poketcg() {
           </div>
 
           <p>
-            For the full rules & guidebook on how to play, visit
+            For the full rules & guidebook on how to play, visit&nbsp;
             <a
               href="https://media.pocketmonsters.net/pdf/Black_White_Rulebook.pdf"
               target="_blank"
             >
               The Pokemon Trading Card Game Rules Book.
             </a>
-            It will contain all the information you need to get started!
+            &nbsp;It will contain all the information you need to get started!
           </p>
         </div>
 
@@ -428,10 +432,10 @@ function poketcg() {
             With the game layout set up, it's time to start your game - with
             fair play, integrity and spirit. Let the battle begin!{" "}
           </p>
-          <p>
+          {/* <p>
             For more information, visit
             https://media.pocketmonsters.net/pdf/Black_White_Rulebook.pdf
-          </p>
+          </p> */}
         </div>
       </Container>
     </main>

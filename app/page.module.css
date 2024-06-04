@@ -243,15 +243,14 @@
 }
 
 /* test */
-.container {
+/* .container {
   padding-left: 25px;
   padding-right: 25px;
   max-width: 100%;
-  border: 1px solid green;
-  /* min-height: 5rem;
+  border: 1px solid green; */
+/* min-height: 5rem;
   padding: 0 3rem;
   margin: 3rem auto 6rem; */
-}
 
 .footer {
   max-width: 100%;

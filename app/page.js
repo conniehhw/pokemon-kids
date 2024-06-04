@@ -25,7 +25,7 @@ export default function Home() {
       {/* <Container> */}
       <Row className={styles.row}>
         <Col md={7} className="text-black px-3 py-3">
-          <h1 class="font-weigh-light">Welcome!</h1>
+          <h1 class="font-weight-light">Welcome!</h1>
           <p class="pt-3">
             So you want to be a pokemon trainer? Follow along with Ash and
             Pikachu and start your journey.

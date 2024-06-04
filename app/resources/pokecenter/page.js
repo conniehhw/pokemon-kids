@@ -9,7 +9,7 @@ function pokecenter() {
       <main className={styles.main}>
         <div className={styles.welcome}>
           <a href="">
-            <div className={styles.projecttext}>
+            <div className={styles.welcometext}>
               <h1 class="font-weight-light">Welcome!</h1>
               <h4>
                 So you want to be a pokemon trainer? Follow along with Ash and
