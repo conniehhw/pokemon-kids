@@ -9,19 +9,19 @@ function pokecenter() {
       <main className={styles.main}>
         <div className={styles.welcome}>
           <a href="">
-            <div className={styles.welcometext}>
-              <h1 class="font-weight-light">Welcome!</h1>
-              <h4>
-                So you want to be a pokemon trainer? Follow along with Ash and
-                Pikachu and start your journey.
-              </h4>
-              <br></br>
-              <Button variant="primary" style={{ color: "blue" }}>
-                <Link href="/about">
-                  <span style={{ color: "white" }}>Let's Go!</span>
-                </Link>
-              </Button>
-            </div>
+            {/* <div className={styles.welcometext}> */}
+
+            <h1 class="font-weight-light">Welcome!</h1>
+            <h6>
+              So you want to be a pokemon trainer? Follow along with Ash and
+              Pikachu and start your journey.
+            </h6>
+            <br></br>
+            <Button variant="primary" style={{ color: "blue" }}>
+              <Link href="/about">
+                <span style={{ color: "white" }}>Let's Go!</span>
+              </Link>
+            </Button>
           </a>
 
           <a href="">
