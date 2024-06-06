@@ -26,6 +26,7 @@ function pokecenter() {
 
           <a href="">
             <Image
+              className={styles.img}
               src="/images/pikachu-ash.png"
               layout="responsive"
               height={790}
@@ -39,6 +40,7 @@ function pokecenter() {
           <a href="">
             <div className={styles.projectimg}>
               <Image
+                className={styles.img}
                 src="/images/pikachu-ash-example.png"
                 layout="responsive"
                 height={180}
@@ -54,6 +56,7 @@ function pokecenter() {
           <a href="">
             <div className={styles.projectimg}>
               <Image
+                className={styles.img}
                 // className={styles.projectsimg}
                 src="/images/pokeball.png"
                 layout="responsive"
@@ -71,6 +74,7 @@ function pokecenter() {
             <div className={styles.projectimg}>
               <Image
                 // className={styles.projectsimg}
+                className={styles.img}
                 src="/images/poke-cafe1.png"
                 layout="responsive"
                 height={180}
