@@ -9,6 +9,19 @@ import AccordionBody from "react-bootstrap/AccordionBody";
 function poke101() {
   return (
     <main className={styles.main}>
+      <ul className={styles.breadcrumb}>
+        <li>
+          <a href="/">Home</a>
+        </li>
+        <li>
+          <a href="/resources">Resources</a>
+        </li>
+        {/* <li>
+          <a href="#">Summer 15</a>
+        </li>
+        <li>Italy</li> */}
+      </ul>
+
       <div className={styles.title}>
         Pokemon 101: Frequently Asked Questions
       </div>

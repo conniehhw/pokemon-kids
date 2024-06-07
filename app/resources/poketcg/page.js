@@ -12,6 +12,18 @@ import CarouselCaption from "react-bootstrap/CarouselCaption";
 function poketcg() {
   return (
     <main className={styles.main}>
+      <ul className={styles.breadcrumb}>
+        <li>
+          <a href="/">Home</a>
+        </li>
+        <li>
+          <a href="/resources">Resources</a>
+        </li>
+        {/* <li>
+          <a href="#">Summer 15</a>
+        </li>
+        <li>Italy</li> */}
+      </ul>
       <div className={styles.title}>Pokemon Trading Card Game</div>
       <Row className={styles.row}>
         <Col sm={4} className="text-black py-4 px-4">

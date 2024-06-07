@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import styles from "../components/components.module.css";
+
 // import "bootstrap/dist/css/bootstrap.min.css";
 
 import Container from "react-bootstrap/Container";
