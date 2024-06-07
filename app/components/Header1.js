@@ -10,95 +10,85 @@ import Navbar from "react-bootstrap/Navbar";
 import NavbarBrand from "react-bootstrap/NavbarBrand";
 import NavbarToggle from "react-bootstrap/NavbarToggle";
 import NavbarCollapse from "react-bootstrap/NavbarCollapse";
+import Offcanvas from "react-bootstrap/Offcanvas";
+import NavbarOffcanvas from "react-bootstrap/NavbarOffcanvas";
+import OffcanvasHeader from "react-bootstrap/OffcanvasHeader";
+import OffcanvasTitle from "react-bootstrap/OffcanvasTitle";
+import OffcanvasBody from "react-bootstrap/OffcanvasBody";
+import NavLink from "react-bootstrap/NavLink";
 
 function Header1() {
   return (
-    <Navbar
-      className="bg-white border-bottom"
-      collapseOnSelect
-      expand="sm"
-      fixed="top"
-    >
-      <Container className={styles.container}>
-        <NavbarBrand href="/">
-          <Image
-            src="/images/pokemon-logo.png"
-            height={75}
-            width={175}
-            alt="Pikachu + Ash"
-          />
-        </NavbarBrand>
+    <>
+      <Navbar expand="sm" fixed="top" className="bg-white border-bottom">
+        {/* <Container fluid> */}
+        <Container className={styles.container}>
+          <NavbarBrand href="/">
+            <Image
+              src="/images/pokemon-logo.png"
+              height={75}
+              width={175}
+              alt="Pikachu + Ash"
+            />
+          </NavbarBrand>
+          <NavbarToggle />
+          <NavbarOffcanvas placement="end">
+            <OffcanvasHeader closeButton>
+              <OffcanvasTitle>Pokemon</OffcanvasTitle>
+            </OffcanvasHeader>
+            <OffcanvasBody>
+              <Nav className="justify-content-end flex-grow-1 pe-3">
+                <NavLink href="/">Home</NavLink>
+                <NavLink href="/about">About</NavLink>
+                <NavLink href="/resources">Resources</NavLink>
+                <NavLink href="/pokedex">Pokedex</NavLink>
+              </Nav>
+            </OffcanvasBody>
+          </NavbarOffcanvas>
+        </Container>
+      </Navbar>
+    </>
 
-        <NavbarToggle />
-        <NavbarCollapse className="justify-content-end">
-          {/* <NavbarOffcanvas placement="end"> */}
-          <Navbar className={styles.navbar}>
-            <Link href="/" class="nav-link">
-              Home
-            </Link>
+    // <Navbar
+    //   className="bg-white border-bottom"
+    //   collapseOnSelect
+    //   expand="sm"
+    //   fixed="top"
+    // >
+    //   <Container className={styles.container}>
+    //     <NavbarBrand href="/">
+    //       <Image
+    //         src="/images/pokemon-logo.png"
+    //         height={75}
+    //         width={175}
+    //         alt="Pikachu + Ash"
+    //       />
+    //     </NavbarBrand>
 
-            <Link href="/about" class="nav-link">
-              About
-            </Link>
+    //     <NavbarToggle />
+    //     <NavbarCollapse className="justify-content-end">
+    //       <Navbar className={styles.navbar}>
+    //         <Link href="/" class="nav-link">
+    //           Home
+    //         </Link>
 
-            {/* <Link href="#deets" class="nav-link">
-            More deets
-          </Link> */}
+    //         <Link href="/about" class="nav-link">
+    //           About
+    //         </Link>
 
-            <Link eventKey={2} href="/resources" class="nav-link">
-              Resources
-            </Link>
+    //         <Link eventKey={2} href="/resources" class="nav-link">
+    //           Resources
+    //         </Link>
 
-            <Link eventKey={2} href="/pokedex" class="nav-link">
-              Pokedex
-            </Link>
-            {/* Signed in as: <a href="#login">Mark Otto</a> */}
-          </Navbar>
-          {/* </NavbarOffcanvas> */}
-        </NavbarCollapse>
-      </Container>
-    </Navbar>
+    //         <Link eventKey={2} href="/pokedex" class="nav-link">
+    //           Pokedex
+    //         </Link>
+    //       </Navbar>
+    //     </NavbarCollapse>
+    //   </Container>
+    // </Navbar>
   );
 }
-
-// <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
-//   <Container>
-//     <NavbarBrand>
-//       <div className={styles.nav1}>
-//         <div>
-//           <Link href="/home">
-//             <Image
-//               src="/images/pokemon-logo.png"
-//               height={75}
-//               width={175}
-//               alt="Pokemon Logo"
-//             />
-//           </Link>
-//         </div>
-//       </div>
-//     </NavbarBrand>
-
-//     <NavbarToggle aria-controls="responsive-navbar-nav" />
-//     <NavbarCollapse id="responsive-navbar-nav">
-//       <Nav className={styles.nav1}>
-//         <div className={styles.nav1}>
-//           <Link href="/about">About</Link>
-//         </div>
-//         <div>
-//           <Link href="/pokedex">Pokedex</Link>
-//         </div>
-
-//         <div>
-//           <Link href="/resources">Resources</Link>
-//         </div>
-
-//         <div>
-//           <Link href="/contact">Contact</Link>
-//         </div>
-//       </Nav>
-//     </NavbarCollapse>
-//   </Container>
-// </Navbar>
 
 export default Header1;
 
