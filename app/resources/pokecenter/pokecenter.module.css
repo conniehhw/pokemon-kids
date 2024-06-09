@@ -19,7 +19,7 @@
 }
 
 .img {
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 .navmenu {
@@ -363,8 +363,12 @@ Tablet–landscape */
   }
 
   .projecttext {
-    text-align: left;
-    padding: 24pt;
+    /* text-align: left; */
+    /* padding: 24pt; */
+    padding-top: 8pt;
+    padding-right: 8pt;
+    padding-left: 4pt;
+    padding-bottom: 8pt;
   }
 
   .projects a:nth-child(1) {

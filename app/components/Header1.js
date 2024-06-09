@@ -23,7 +23,8 @@ function Header1() {
     <>
       <Navbar expand="sm" fixed="top" className="bg-white border-bottom">
         {/* <Container fluid> */}
-        <Container className={styles.container}>
+        {/* className="bg-white border-bottom" */}
+        <Container className={styles.container} fluid>
           <NavbarBrand href="/">
             <Image
               src="/images/pokemon-logo.png"
@@ -38,6 +39,7 @@ function Header1() {
               <OffcanvasTitle>Pokemon</OffcanvasTitle>
             </OffcanvasHeader>
             <OffcanvasBody>
+              {/* <Nav className="justify-content-end flex-grow-1 pe-3"> */}
               <Nav className="justify-content-end flex-grow-1 pe-3">
                 <NavLink href="/">Home</NavLink>
                 <NavLink href="/about">About</NavLink>
