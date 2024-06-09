@@ -49,20 +49,16 @@ function pokecenter() {
             <div className={styles.projectimg}>
               <Image
                 className={styles.img}
-                src="/images/pokemon-101.png"
+                src="/images/pokemon-101a.png"
                 layout="responsive"
-                height={180}
+                height={200}
                 width={200}
                 alt="All Pokemon Visual"
               />
             </div>
             <div className={styles.projecttext}>
               <h5>Pokemon 101</h5>
-              <h6>
-                A parent's guide to Pokemon. What are pokemon? Answers to your
-                Frequently Asked Questions.
-              </h6>
-              <br></br>
+              <h6>A parent's guide. What are pokemon?</h6>
 
               <Link href="/resources/poke101">
                 <Button>Learn More</Button>
@@ -75,7 +71,7 @@ function pokecenter() {
               <Image
                 className={styles.img}
                 // className={styles.projectsimg}
-                src="/images/trading-cards.png"
+                src="/images/trading-cards1.png"
                 layout="responsive"
                 height={200}
                 width={200}
@@ -83,12 +79,9 @@ function pokecenter() {
               />
             </div>
             <div className={styles.projecttext}>
-              <h5>Pokemon Trading Card Game</h5>
-              <h6>
-                TCG From collecting cards, types of cards and building decks - a
-                guide for how to play the Pokemon Trading Card Game.
-              </h6>
-              <br></br>
+              <h5>Trading Card Game</h5>
+              <h6>Collections, types of cards and building decks.</h6>
+
               <Link href="/resources/poketcg">
                 <Button>Learn More</Button>
               </Link>
@@ -100,20 +93,17 @@ function pokecenter() {
               <Image
                 // className={styles.projectsimg}
                 className={styles.img}
-                src="/images/pokemon-group.png"
+                src="/images/pokedex.png"
                 layout="responsive"
-                height={180}
+                height={200}
                 width={200}
                 alt="Pokemon Group"
               />
             </div>
             <div className={styles.projecttext}>
               <h5>Pokedex</h5>
-              <h6>
-                Discover your favourite pokemon's type, abilities, attacks and
-                much more!
-              </h6>
-              <br></br>
+              <h6>Get the stats on your favourite Pokemon & more</h6>
+
               <Link href="/pokedex">
                 <Button>Learn More</Button>
               </Link>
