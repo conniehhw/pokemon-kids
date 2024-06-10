@@ -22,17 +22,17 @@
   border-radius: 20px;
 }
 
-.navmenu {
+/* .navmenu {
   text-align: left;
   margin-top: 80pt;
   font-size: 32px;
   display: grid;
   grid-template-columns: 1fr;
   margin-left: 24pt;
-  /* margin-right: 24pt;
+  margin-right: 24pt;
   padding-top: 24pt;
-  margin-bottom: 24pt; */
-}
+  margin-bottom: 24pt;
+} */
 
 /* mobile grid */
 /* collapsible @ 575px */
