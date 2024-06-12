@@ -110,6 +110,56 @@ function pokecenter() {
             </div>
           </a>
         </div>
+
+        {/* <div>
+        <div className={styles.Title}>Title</div>
+        <div>
+          <div className={styles.scrollingwrapper} class="scrolling-wrapper">
+            <div className={styles.card}>
+              <Image
+                className={styles.img}
+                src="/images/pokemon-101a.png"
+                layout="responsive"
+                height={200}
+                width={200}
+                alt="All Pokemon Visual"
+              />
+              <div className={styles.cardtext}>
+                <h5>Pokemon 101</h5>
+                <h6>Frequently Asked Questions</h6>
+              </div>
+            </div>
+            <div className={styles.card}>
+              <Image
+                className={styles.img}
+                src="/images/pokemon-101a.png"
+                layout="responsive"
+                height={200}
+                width={200}
+                alt="All Pokemon Visual"
+              />
+              <div className={styles.cardtext}>
+                <h5>Pokemon 101</h5>
+                <h6>Frequently Asked Questions</h6>
+              </div>
+            </div>
+            <div className={styles.card}>
+              <Image
+                className={styles.img}
+                src="/images/pokemon-101a.png"
+                layout="responsive"
+                height={200}
+                width={200}
+                alt="All Pokemon Visual"
+              />{" "}
+              <div className={styles.cardtext}>
+                <h5>Pokemon 101</h5>
+                <h6>Frequently Asked Questions</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> */}
       </main>
     </div>
   );

@@ -16,7 +16,7 @@
   display: grid;
   grid-template-columns: repeat(11, 1fr);
   gap: 8pt;
-  background-color: hotpink;
+  /* background-color: hotpink; */
 
   .card {
     display: inline-block;

@@ -11,7 +11,9 @@ import Image from "next/image";
 export default function About() {
   return (
     <div>
-      <div className={styles.Title}>Title</div>
+      <div className={styles.Title}>
+        <h5>Title</h5>
+      </div>
       <div>
         <div className={styles.scrollingwrapper} class="scrolling-wrapper">
           <div className={styles.card}>
