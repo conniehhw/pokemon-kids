@@ -1,6 +1,53 @@
 .navbar {
 }
 
+.scrollbutton {
+  /* display: none; */
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.scrollbutton:hover {
+  background-color: #555;
+}
+
+/* .goTopHidden {
+  display: none;
+}
+
+.button {
+  position: fixed;
+  width: 100%;
+  left: 50%;
+  bottom: 40px;
+  height: 20px;
+  font-size: 3rem;
+  z-index: 1;
+  cursor: pointer;
+  color: green;
+} */
+
+/* .goTop {
+  display: block;
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  border-radius: 25px;
+  cursor: pointer;
+  text-align: center;
+  line-height: 30px;
+} */
+
 /* small tablet styles */
 @media screen and (min-width: 620px) {
   .container {
