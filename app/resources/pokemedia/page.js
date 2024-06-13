@@ -74,19 +74,29 @@ function pokemedia() {
       <div className={styles.sectioncopy}>
         <div>Pokemon Cards</div>
         <p>
-          Most Pokemon cards are Basic Pokemon, Stage 1 Pokemon or Stage 2
-          Pokemon. Stage 1 & 2 are also called Evolution card. Look at the
-          upper-left corner and you will see the Pokemon's Stage and the Pokemon
-          it evolves from, if any.
+          These cards are Basic, Stage 1 or Stage 2. Look at the upper-left
+          corner and you will see the Pokémon’s Stage and the Pokémon it evolves
+          from, if any.
         </p>
-        <Image
-          className={styles.img}
-          src="/images/pokemon-card.png"
-          layout="responsive"
-          height={201}
-          width={601}
-          alt="pokemon card"
-        />
+        <p>
+          <Image
+            className={styles.img}
+            src="/images/pokemon-card.png"
+            layout="responsive"
+            height={201}
+            width={601}
+            alt="pokemon card"
+          />
+        </p>
+
+        <p>
+          Learn more about all the{" "}
+          <a href="" target="blank">
+            parts of a Pokemon Card
+          </a>{" "}
+          and where to find its name, evolved form, type, Health Points (HP),
+          energy, type, attack, damage, weakness and much more.
+        </p>
       </div>
       <div className={styles.sectioncopy}>
         <div>Energy Cards</div>
@@ -97,11 +107,11 @@ function pokemedia() {
         </p>
         <Image
           className={styles.img}
-          src="/images/energy-cards.png"
+          src="/images/energy-card-water.png"
           layout="responsive"
-          height={201}
-          width={150}
-          alt="Energy Cards"
+          height={702}
+          width={522}
+          alt="Water Energy Card"
         />
       </div>
       <div className={styles.sectioncopy}>
@@ -131,7 +141,7 @@ function pokemedia() {
         </p>
         <p>
           To build your deck around a type of Pokemon such as the Electric
-          Pokemons - you will need:{" "}
+          Pokemons - you would need:{" "}
         </p>
         <p>
           <ul>
@@ -150,6 +160,119 @@ function pokemedia() {
           width={225}
           alt="card deck"
         />
+      </div>
+      <div className={styles.section}>
+        <div>Setting Up the Game</div>
+      </div>
+      <div className={styles.sectioncopy}>
+        <p>
+          Layout your cards; each player will have the same set up on their
+          respective sides. There are 5 areas: Bench, Active, Deck, Prize Cards
+          and a Discard Pile.
+        </p>
+
+        <p>
+          For help with setting up your first Pokemon Trading Card Game, visit
+          the official Pokemon website to{" "}
+          <a
+            href="https://tcg.pokemon.com/en-us/learn-to-play/"
+            target="_blank"
+          >
+            {" "}
+            view a quick video
+          </a>
+          .
+        </p>
+        <p>
+          <Image
+            className={styles.img}
+            src="/images/tcg-layout-board.png"
+            layout="responsive"
+            height={362}
+            width={602}
+            alt="tcg game board"
+          />
+        </p>
+
+        <p>
+          The game boards are available in different game kits but you can also
+          layout your cards without one or make your own like this printable{" "}
+          <a
+            href="https://www.pokemon.com/static-assets/content-assets/cms2/pdf/play-pokemon/pokemon-club/playmat/pokemon-tcg-playmat-2.pdf"
+            target="_blank"
+          >
+            Evie
+          </a>{" "}
+          and
+          <a
+            href="https://www.pokemon.com/static-assets/content-assets/cms2/pdf/play-pokemon/pokemon-club/playmat/pokemon-tcg-playmat-1.pdf"
+            target="_blank"
+          >
+            &nbsp;Pikachu
+          </a>{" "}
+          playmat.
+        </p>
+
+        <p>
+          <Image
+            className={styles.imgnbr}
+            src="/images/tcg-layout-easy.png"
+            layout="responsive"
+            height={362}
+            width={602}
+            alt="tcg layout easy level"
+          />
+        </p>
+      </div>
+      <div className={styles.section}>
+        <div>Start your Game</div>
+      </div>
+      <div className={styles.sectioncopy}>
+        <p>
+          To win the game, you will need to have a strategy and a plan. There
+          are 3 ways to win a game:
+          <ul>
+            <li>i) Collect all of your Prize cards or</li>
+            <li>ii) Knock out all of your opponent's Pokemon in play or</li>
+            <li>iii) If your opponent has no more cards in their deck.</li>
+          </ul>
+        </p>
+      </div>
+      <div className={styles.sectioncopy}>
+        Parts of a Turn
+        <p>
+          Each turn has 3 main parts:
+          <ul>
+            <li>1. Draw a card.</li>
+            <li>
+              2. Do any actions; put Basic Pokemon cards onto your bench, evolve
+              your Pokemon, attach Energy cards, Play Trainer cards, retreat
+              your Active pokemon and use Abilities.
+            </li>
+            <li>3. Attack. Then, end your turn. </li>
+          </ul>
+        </p>
+        <p>
+          For more detailed instructions, the{" "}
+          <a
+            href="https://www.pokemon.com/static-assets/content-assets/cms2/pdf/trading-card-game/rulebook/twm_rulebook_en.pdf"
+            target="blank"
+          >
+            rulebook{" "}
+          </a>
+          for the TCG game contains all the information you need to get started
+          and more.
+        </p>
+        <p>
+          <Image
+            className={styles.img}
+            src="/images/kids-play-tcg.png"
+            layout="responsive"
+            height={362}
+            width={602}
+            alt="kids playing at tcg tournament"
+          />
+        </p>
       </div>
     </div>
   );
