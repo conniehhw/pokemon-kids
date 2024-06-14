@@ -15,6 +15,7 @@ function pokemedia() {
           <li>
             <a href="/resources">Resources</a>
           </li>
+          <li>TCG</li>
           {/* <li>
           <a href="#">Summer 15</a>
         </li>
@@ -91,7 +92,7 @@ function pokemedia() {
 
         <p>
           Learn more about all the{" "}
-          <a href="" target="blank">
+          <a href="/resources/poketcg/pokecard" target="blank">
             parts of a Pokemon Card
           </a>{" "}
           and where to find its name, evolved form, type, Health Points (HP),
