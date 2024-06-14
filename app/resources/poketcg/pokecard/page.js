@@ -28,11 +28,11 @@ function pokecard() {
           {" "}
           <Image
             className={styles.img}
-            src="/images/tradingcards-banner.png"
+            src="/images/pokemon-card.png"
             layout="responsive"
             height={160}
             width={390}
-            alt="trading cards banner"
+            alt="pokemon card evolutions"
           />
         </div>
       </div>

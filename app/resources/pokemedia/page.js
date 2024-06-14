@@ -86,7 +86,7 @@ function pokemedia() {
             layout="responsive"
             height={201}
             width={601}
-            alt="pokemon card"
+            alt="pokemon card evolutions"
           />
         </p>
 
