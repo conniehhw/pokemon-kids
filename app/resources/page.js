@@ -1,125 +1,127 @@
-import styles from "../page.module.css";
-import Container from "react-bootstrap/Container";
-import Card from "react-bootstrap/Card";
-import CardImg from "react-bootstrap/CardImg";
+// import styles from "../page.module.css";
+import styles from "../resources/resources.module.css";
+// import Container from "react-bootstrap/Container";
+// import Card from "react-bootstrap/Card";
+// import CardImg from "react-bootstrap/CardImg";
 import Link from "next/link";
-// import Image from "next/image";
+import Image from "next/image";
 
-import CardBody from "react-bootstrap/CardBody";
-import CardFooter from "react-bootstrap/CardFooter";
-import CardTitle from "react-bootstrap/CardTitle";
-import CardText from "react-bootstrap/CardText";
+// import CardBody from "react-bootstrap/CardBody";
+// import CardFooter from "react-bootstrap/CardFooter";
+// import CardTitle from "react-bootstrap/CardTitle";
+// import CardText from "react-bootstrap/CardText";
 import Button from "react-bootstrap/Button";
 
 function Resources() {
   return (
     <main className={styles.main}>
-      <Container className={styles.grid}>
-        <Card style={{ width: "18rem" }}>
-          <CardImg variant="top" src="/images/pokemon-101.png" />
-          <CardBody>
-            <CardTitle>Pokemon 101</CardTitle>
-            <CardText>
-              A parent's guide to Pokemon. What are pokemon? Answers to your
-              Frequently Asked Questions.
-            </CardText>
-          </CardBody>
-          <CardFooter>
-            <Button variant="primary bottom">
-              <Link href="/resources/poke101">
-                <span style={{ color: "white" }}>Go somewhere</span>
-              </Link>
-            </Button>
-          </CardFooter>
-          {/* </CardBody> */}
-        </Card>
+      <div>
+        <ul className={styles.breadcrumb}>
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>Resources</li>
+        </ul>
+      </div>
 
-        <Card style={{ width: "18rem" }}>
-          <CardImg variant="top" src="/images/pokemon-101.png" />
-          <CardBody>
-            <CardTitle>Pokemon 101</CardTitle>
-            <CardText>A parent's guide to Pokemon. What are pokemon?</CardText>
-          </CardBody>
-          <CardFooter>
-            <Button variant="primary bottom">
-              <Link href="/resources/poke101">
-                <span style={{ color: "white" }}>Go somewhere</span>
-              </Link>
-            </Button>
-          </CardFooter>
-        </Card>
-
-        <Card style={{ width: "18rem" }}>
-          <CardImg variant="top" src="/images/trading-cards.png" />
-          <CardBody>
-            <CardTitle>Pokemon Trading Card Game TCG</CardTitle>
-            <CardText>
-              From collecting cards, types of cards and building decks - a guide
-              for how to play the Pokemon Trading Card Game.
-            </CardText>
-          </CardBody>
-          <CardFooter>
-            <Button variant="primary bottom">
-              <Link href="/resources/poketcg">
-                <span style={{ color: "white" }}>Go somewhere</span>
-              </Link>
-            </Button>
-          </CardFooter>
-        </Card>
-
-        <Card style={{ width: "18rem" }}>
-          <CardImg variant="top" src="/images/pokemon-360.png" />
-          <CardBody>
-            <CardTitle>Pokemon 360</CardTitle>
-            <CardText>
-              From books, television shows, films to video games - there are
-              plently of ways to explore the Pokemon Universe.
-            </CardText>
-          </CardBody>
-          <CardFooter>
-            <Button variant="primary bottom">
-              <Link href="/resources/pokemedia">
-                <span style={{ color: "white" }}>Go somewhere</span>
-              </Link>
-            </Button>
-          </CardFooter>
-        </Card>
-
-        <Card style={{ width: "18rem" }}>
-          <CardImg variant="top" src="/images/pokemon-centre.png" />
-          <CardBody>
-            <CardTitle>Pokemon Centres</CardTitle>
-            <CardText>
-              What is the difference between Pokemon Centres and Pokemon Stores?
-            </CardText>
-          </CardBody>
-          <CardFooter>
-            <Button variant="primary bottom">
-              <Link href="/resources/pokecenter">
-                <span style={{ color: "white" }}>Go somewhere</span>
-              </Link>
-            </Button>
-          </CardFooter>
-        </Card>
-
-        <Card style={{ width: "18rem" }}>
-          <CardImg variant="top" src="/images/pokemon-cafe.png" />
-          <CardBody>
-            <CardTitle>Pokemon Cafe</CardTitle>
-            <CardText>
-              Eat, drink and be merry. Welcome to the first-ever official
-              Pokémon Cafe.
-            </CardText>
-          </CardBody>
-          <CardFooter>
-            <Button variant="primary bottom">
-              <Link href="/resources/pokecafe">
-                <span style={{ color: "white" }}>Go somewhere</span>
-              </Link>
-            </Button>
-          </CardFooter>
-        </Card>
-      </Container>
+      <div className={styles.grid}>
+        <div>
+          <Image
+            // className={styles.projectsimg}
+            className={styles.img}
+            src="/images/pokemon-101.png"
+            layout="responsive"
+            height={200}
+            width={200}
+            alt="Pokemon Group"
+          />
+          <h6>Pokemon 101</h6>
+          Text Blurb
+          <Link href="resources/poke101">
+            <Button className={styles.button}>Read more</Button>
+          </Link>
+        </div>
+        <div>
+          <Image
+            // className={styles.projectsimg}
+            className={styles.img}
+            src="/images/trading-cards.png"
+            layout="responsive"
+            height={200}
+            width={200}
+            alt="Trading Cards"
+          />
+          <h6>Trading Card Game</h6>
+          Text Blurb
+          <Link href="resources/poketcg">
+            <Button className={styles.button}>Read more</Button>
+          </Link>
+        </div>
+        <div>
+          <Image
+            // className={styles.projectsimg}
+            className={styles.img}
+            src="/images/pokedex.png"
+            layout="responsive"
+            height={200}
+            width={200}
+            alt="Regions"
+          />
+          <h6>Regions</h6>
+          Text Blurb
+          <Link href="resources/pokeregions">
+            <Button className={styles.button}>Read more</Button>
+          </Link>
+        </div>
+        <div>
+          <Image
+            // className={styles.projectsimg}
+            className={styles.img}
+            src="/images/pokemon-360.png"
+            layout="responsive"
+            height={200}
+            width={200}
+            alt="Pokemon Media"
+          />
+          <h6>Media</h6>
+          Text Blurb
+          <Link href="resources/pokemedia">
+            <Button className={styles.button}>Read more</Button>
+          </Link>
+        </div>
+        <div>
+          <Image
+            // className={styles.projectsimg}
+            className={styles.img}
+            src="/images/pokemon-centre.png"
+            layout="responsive"
+            height={200}
+            width={200}
+            alt="Pokemon Group"
+          />
+          <h6>Pokemon Centres</h6>
+          Text Blurb
+          <Link href="resources/pokecenter">
+            <Button className={styles.button}>Read more</Button>
+          </Link>
+        </div>
+        <div>
+          <Image
+            // className={styles.projectsimg}
+            className={styles.img}
+            src="/images/pokemon-cafe2.png"
+            layout="responsive"
+            height={200}
+            width={200}
+            alt="Pokemon Group"
+          />
+          <h6>Pokemon Cafe</h6>
+          Text Blurb
+          <Link href="resources/pokecafe">
+            <Button className={styles.button}>Read more</Button>
+          </Link>
+        </div>
+      </div>
     </main>
   );
 }
