@@ -1,10 +1,7 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
-
-module.exports = nextConfig;
-
-module.exports = {
+const nextConfig = {
   images: {
+    domains: ["cdn.coinranking.com"],
     remotePatterns: [
       {
         protocol: "https",
@@ -15,3 +12,18 @@ module.exports = {
     ],
   },
 };
+
+// module.exports = {
+//   images: {
+//     remotePatterns: [
+//       {
+//         protocol: "https",
+//         hostname: "raw.githubusercontent.com",
+//         port: "",
+//         pathname: "/PokeAPI/sprites/master/sprites/pokemon/**",
+//       },
+//     ],
+//   },
+// };
+
+module.exports = nextConfig;
