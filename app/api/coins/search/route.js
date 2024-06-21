@@ -20,6 +20,7 @@ export async function GET(request) {
   const coins = await fetchCoins();
   const { searchParams } = new URL(request.url);
   console.log(request.url);
+  console.log(searchParams.get("query"));
   const query = searchParams.get("query");
   //access queries with SearchParams, get the query value, .get(`query`) allow us to get the input typed inside search and store inside query
 
