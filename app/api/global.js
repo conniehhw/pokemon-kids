@@ -27,6 +27,9 @@ const reducer = (state, action) => {
 
     case GET_ALL_POKEMON:
       return { ...state, allPokemon: action.payload, loading: false };
+
+    case GET_POKEMON:
+      return { ...state, pokemon: action.payload, loading: false };
   }
   return state;
 };
@@ -69,6 +72,14 @@ export const GlobalProvider = ({ children }) => {
     setAllPokemonData(allPokemonData);
   };
 
+  //get pokemon
+  const getPokemon = async (name) => {
+    dispatch({ type: "LOADING" });
+    const res = await fetch(`${baseUrl}pokemon/${name}`);
+    const data = await res.json();
+    dispatch({ type: "GET_POKEMON", payload: data });
+  };
+
   useEffect(() => {
     allPokemon();
   }, []);
@@ -78,6 +89,7 @@ export const GlobalProvider = ({ children }) => {
       value={{
         ...state,
         allPokemonData, // spread the values
+        getPokemon,
       }}
     >
       {children}

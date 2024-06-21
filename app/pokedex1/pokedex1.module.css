@@ -11,6 +11,10 @@
   list-style: none;
 }
 
+.slug {
+  margin-top: 84pt;
+}
+
 /* mobile */
 @media screen and (min-width: 390px) {
 }

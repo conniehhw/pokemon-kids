@@ -33,7 +33,16 @@ export const metadata = {
 //   );
 // }
 
-export default function RootLayout({ children }) {
+// export default function RootLayout({ children }) {
+
+// adding the async await fetch in layout.js means this data is now up one layer in the tree and can be shared when I navigate to other routes, ex: still have full name and composed content from the /routepage
+export default async function RootLayout({ children }) {
+  // const res = await fetch("https://api.github.com/repos/vercel/next.js");
+  // const res = await fetch(
+  //   "http://worldtimeapi.org/api/timezone/America/Chicago"
+  // );
+  // const data = await res.json();
+
   return (
     <>
       <html lang="en">
@@ -41,6 +50,8 @@ export default function RootLayout({ children }) {
           <GlobalProvider>
             <Header1 />
             {children}
+            {/* <h1>{data.full_name}</h1> */}
+            {/* <h1>{data.datetime}</h1> */}
 
             <ScrollToTopButton />
 
