@@ -25,6 +25,10 @@
 
 /* lg tablets & laptop */
 @media screen and (min-width: 960px) {
+  .title {
+    margin: 50px;
+    text-align: center;
+  }
 }
 
 /* desktop styles */

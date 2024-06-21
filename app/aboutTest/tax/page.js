@@ -5,6 +5,7 @@
 import styles from "../../pokedex1/pokedex1.module.css";
 import { useState, useEffect } from "react";
 import Coins from "../../components/Coins";
+import SearchCoins from "../../components/SearchCoins";
 
 export default function TaxPage() {
   const [coins, setCoins] = useState([]);
@@ -21,7 +22,8 @@ export default function TaxPage() {
   return (
     <>
       <p className={styles.slug}>Tax Page - nested in About</p>
-      <h1>Cryto Coins</h1>
+      <h1 className={styles.title}>Cryto Coins</h1>
+      <SearchCoins getSearchResults={(results) => setCoins(results)} />
       <Coins coins={coins} />
     </>
   );
