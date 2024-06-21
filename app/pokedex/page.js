@@ -5,6 +5,7 @@ import axios from "axios";
 import styles from "./pokedex.module.css";
 import Card from "../components/Card";
 import GetPokedex from "./GetPokedex";
+import Link from "next/link";
 
 import { useState, useEffect } from "react";
 
@@ -67,7 +68,7 @@ const Pokedex = () => {
             infoPokemon={(poke) => setPokeDex(poke)}
           />
 
-          <div className={styles.btngroup}>
+          {/* <div className={styles.btngroup}>
             {prevUrl && (
               <button
                 className={styles.button}
@@ -90,7 +91,7 @@ const Pokedex = () => {
                 Next
               </button>
             )}
-          </div>
+          </div> */}
         </div>
 
         <div className={styles.rightcontent}>

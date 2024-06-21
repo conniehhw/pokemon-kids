@@ -13,6 +13,8 @@ li {
   margin: 0;
   padding: 0;
   text-decoration: none;
+  box-sizing: border-box;
+  list-style: none;
 }
 li {
   list-style-type: none;
@@ -20,7 +22,7 @@ li {
 
 /* base styles */
 body {
-  background: var(--secondary);
+  /* background: var(--secondary); */
   overflow-x: hidden; /*push elements off the screen but eliminate scroll bar */
 }
 .button {
@@ -61,10 +63,12 @@ a:active {
 
 /* fonts */
 @font-face {
-  font-family: "Rubik Regular";
-  src: url("../public/assets/fonts/Rubik-Regular.ttf");
+  /* font-family: "Rubik Regular";
+  src: url("../public/assets/fonts/Rubik-Regular.ttf"); */
+  font-family: "Inter";
+  src: url("../public//assets/fonts/Inter/Inter-VariableFont_slnt\,wght.ttf");
 }
-h1,
+/* h1,
 h2,
 h3,
 h4 {
@@ -78,14 +82,15 @@ li {
 }
 h1,
 h3 {
-  font-size: 1.2em; /*multiple px by 1.2 per media query*/
-}
-h2 {
+  font-size: 1.2em; 
+} */
+/*multiple px by 1.2 per media query*/
+/* h2 {
   font-size: 1.6em;
 }
 h4 {
   font-size: 1.1em;
-}
+} */
 /*
 .leading{
   font-size: 1.1em;
@@ -108,7 +113,7 @@ h4 {
 /* lg tablets & laptop styles */
 @media screen and (min-width: 960px) {
   body {
-    font-size: 18px;
+    /* font-size: 18px; */
   }
 
   .projects {
@@ -118,7 +123,7 @@ h4 {
 /* desktop styles */
 @media screen and (min-width: 1200px) {
   body {
-    font-size: 20px;
+    /* font-size: 20px; */
   }
   .projects {
   }
