@@ -1,3 +1,18 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  /* align-items: center; */
+  /* padding-top: 7rem; */
+  /* padding-bottom: 2rem; */
+  /* padding-right: 4rem;
+  padding-left: 4rem; */
+  /* margin-bottom: 4rem; */
+  min-height: 100vh;
+  border-style: 1px solid;
+  border-color: #919191 #ffffff #ffffff #ffffff; /* red top, green right, blue bottom and yellow left */
+}
+
 .breadcrumb {
   /* padding: 10px 16px; */
   list-style: none;

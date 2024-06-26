@@ -8,23 +8,45 @@ import AccordionBody from "react-bootstrap/AccordionBody";
 
 function poke101() {
   return (
-    <main className={styles.main}>
-      <ul className={styles.breadcrumb}>
-        <li>
-          <a href="/">Home</a>
-        </li>
-        <li>
-          <a href="/resources">Resources</a>
-        </li>
-        {/* <li>
-          <a href="#">Summer 15</a>
-        </li>
-        <li>Italy</li> */}
-      </ul>
-
-      <div className={styles.title}>
-        Pokemon 101: Frequently Asked Questions
+    <div className={styles.main}>
+      <div>
+        <ul className={styles.breadcrumb}>
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/resources">Resources</a>
+          </li>
+          <li>Pokemon 101</li>
+        </ul>
       </div>
+
+      <div className={styles.grid}>
+        <div>
+          <Image
+            className={styles.img}
+            src="/images/pokemon101-banner.png"
+            layout="responsive"
+            height={361}
+            width={902}
+            alt="pokemons at school banner"
+          />
+        </div>
+      </div>
+      {/* <div>Photo by Thimo Pedersen on Unsplash</div> */}
+
+      <div className={styles.content}>
+        <div>
+          <div>
+            <h2>Crash Course Pokemon 101</h2>
+            <h4>Answers to Frequently Asked Questions</h4>
+          </div>
+        </div>
+      </div>
+
+      {/* <div className={styles.title}>
+        Pokemon 101: Frequently Asked Questions
+      </div> */}
       <Accordion defaultActiveKey="0" flush>
         <AccordionItem className={styles.item} eventKey="0">
           <AccordionHeader>
@@ -75,6 +97,13 @@ function poke101() {
             What are trainers? Who are Professors?
           </AccordionHeader>
           <AccordionBody>
+            <Image
+              className={styles.imgnbr}
+              src="/images/pokemon-professors.png"
+              height={271}
+              width={632}
+              alt="Pokemon professors"
+            />
             Pokemon trainers are people that catch Pokemon, battle with Pokemon
             and research pokemon. You have to be at least 10 years old to become
             a trainer. You will work with a professor, who will assign to you a
@@ -156,7 +185,7 @@ function poke101() {
           </AccordionBody>
         </AccordionItem> */}
       </Accordion>
-    </main>
+    </div>
   );
 }
 

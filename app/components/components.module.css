@@ -1,6 +1,17 @@
 .navbar {
 }
 
+.footer {
+  max-width: 100%;
+  min-height: 5rem;
+  padding-top: 2rem;
+  /* padding: 0 3rem;
+  margin: 3rem auto 6rem; */
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
 .scrollbutton {
   /* display: none; */
   position: fixed;

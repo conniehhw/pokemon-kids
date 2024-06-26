@@ -1,13 +1,14 @@
 import React from "react";
-// import styles from "../pokemedia/pokemedia.module.css";
-import styles from "../../pokemedia/pokemedia.module.css";
+
+// import styles from "../../pokemedia/pokemedia.module.css";
+import styles from "../../poketcg/poketcg.module.css";
 // import Badge from "react-bootstrap/Badge";
 import Image from "next/image";
 import Link from "next/link";
 
 function pokecard() {
   return (
-    <div>
+    <div className={styles.main}>
       <div>
         <ul className={styles.breadcrumb}>
           <li>
@@ -20,9 +21,9 @@ function pokecard() {
             <a href="/resources/poketcg">TCG</a>
           </li>
           <li>Pokecard</li>
-          {/*<li>Italy</li> */}
         </ul>
       </div>
+
       <div className={styles.grid}>
         <div>
           {" "}
@@ -36,6 +37,7 @@ function pokecard() {
           />
         </div>
       </div>
+
       <div className={styles.content}>
         <div>
           <div>
@@ -46,10 +48,8 @@ function pokecard() {
             </h4>
           </div>
         </div>
-        {/* <div>Testing 1</div>
-        <div>testing 1</div>
-        <div>testing 2</div> */}
       </div>
+
       <div className={styles.section}>
         <div>Pokemon Type, HP, Card Name & Stage</div>
       </div>
@@ -58,7 +58,7 @@ function pokecard() {
         <p>
           Most Pokémon belong to a single type. However, however some may belong
           to two types. There are{" "}
-          <Link href="" target="_blank">
+          <Link href="/resources/poketcg/energytypes" target="_blank">
             11 Energy types
           </Link>{" "}
           and each powers different attacks.

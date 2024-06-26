@@ -54,7 +54,6 @@ export default async function RootLayout({ children }) {
             {/* <h1>{data.datetime}</h1> */}
 
             <ScrollToTopButton />
-
             <Footer />
           </GlobalProvider>
         </body>

@@ -1,13 +1,13 @@
 import React from "react";
 // import styles from "../pokemedia/pokemedia.module.css";
-import styles from "../../pokemedia/pokemedia.module.css";
+import styles from "../../poketcg/poketcg.module.css";
 // import Badge from "react-bootstrap/Badge";
 import Image from "next/image";
 import Link from "next/link";
 
 function energytypes() {
   return (
-    <div>
+    <div className={styles.main}>
       <div>
         <ul className={styles.breadcrumb}>
           <li>
@@ -20,7 +20,6 @@ function energytypes() {
             <a href="/resources/poketcg">TCG</a>
           </li>
           <li>Energy Types</li>
-          {/*<li>Italy</li> */}
         </ul>
       </div>
       <div className={styles.grid}>
@@ -44,6 +43,7 @@ function energytypes() {
               Pokémon Knock Out opposing Pokémon by using attacks or Abilities.
               To power their attacks, Pokémon need Energy cards.
             </p>
+            x
           </div>
         </div>
         {/* <div>Testing 1</div>

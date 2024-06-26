@@ -1,9 +1,11 @@
 "use client";
 
-import { useGlobalContext } from "../api/global";
-import { useRouter } from "next/navigation";
+// Home page for Pokedex - renders api response results for all Pokemon data limit 20
 
-// import Router from "next/router";
+import { useGlobalContext } from "../api/global";
+
+import Router from "next/router";
+import { useRouter } from "next/navigation";
 import styles from "./pokedex1.module.css";
 import Image from "next/image";
 
@@ -12,7 +14,7 @@ export default function PokedexHome() {
   const router = useRouter();
   //   const g = useGlobalContext();
   //   console.log(g);
-  //   console.log(allPokemonData);
+  // console.log(allPokemonData);
 
   return (
     <>
@@ -26,7 +28,7 @@ export default function PokedexHome() {
                   className={styles.card}
                   onClick={() => {
                     // router.push(`/pokedex1/slug/${pokemon.name}`);
-                    router.push(`/pokedex1/${pokemon.name}`);
+                    router.push(`/pokeName/${pokemon.name}`);
                   }}
                 >
                   <div className={styles.card_image}>

@@ -16,110 +16,112 @@ function Resources() {
   return (
     <main className={styles.main}>
       <div>
-        <ul className={styles.breadcrumb}>
-          <li>
-            <a href="/">Home</a>
-          </li>
-          <li>Resources</li>
-        </ul>
-      </div>
+        <div>
+          <ul className={styles.breadcrumb}>
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li>Resources</li>
+          </ul>
+        </div>
 
-      <div className={styles.grid}>
-        <div>
-          <Image
-            // className={styles.projectsimg}
-            className={styles.img}
-            src="/images/pokemon-101.png"
-            layout="responsive"
-            height={200}
-            width={200}
-            alt="Pokemon Group"
-          />
-          <h6>Pokemon 101</h6>
-          Text Blurb
-          <Link href="resources/poke101">
-            <Button className={styles.button}>Read more</Button>
-          </Link>
-        </div>
-        <div>
-          <Image
-            // className={styles.projectsimg}
-            className={styles.img}
-            src="/images/trading-cards.png"
-            layout="responsive"
-            height={200}
-            width={200}
-            alt="Trading Cards"
-          />
-          <h6>Trading Card Game</h6>
-          Text Blurb
-          <Link href="resources/poketcg">
-            <Button className={styles.button}>Read more</Button>
-          </Link>
-        </div>
-        <div>
-          <Image
-            // className={styles.projectsimg}
-            className={styles.img}
-            src="/images/pokedex.png"
-            layout="responsive"
-            height={200}
-            width={200}
-            alt="Regions"
-          />
-          <h6>Regions</h6>
-          Text Blurb
-          <Link href="resources/pokeregions">
-            <Button className={styles.button}>Read more</Button>
-          </Link>
-        </div>
-        <div>
-          <Image
-            // className={styles.projectsimg}
-            className={styles.img}
-            src="/images/pokemon-360.png"
-            layout="responsive"
-            height={200}
-            width={200}
-            alt="Pokemon Media"
-          />
-          <h6>Media</h6>
-          Text Blurb
-          <Link href="resources/pokemedia">
-            <Button className={styles.button}>Read more</Button>
-          </Link>
-        </div>
-        <div>
-          <Image
-            // className={styles.projectsimg}
-            className={styles.img}
-            src="/images/pokemon-centre.png"
-            layout="responsive"
-            height={200}
-            width={200}
-            alt="Pokemon Group"
-          />
-          <h6>Pokemon Centres</h6>
-          Text Blurb
-          <Link href="resources/pokecenter">
-            <Button className={styles.button}>Read more</Button>
-          </Link>
-        </div>
-        <div>
-          <Image
-            // className={styles.projectsimg}
-            className={styles.img}
-            src="/images/pokemon-cafe2.png"
-            layout="responsive"
-            height={200}
-            width={200}
-            alt="Pokemon Group"
-          />
-          <h6>Pokemon Cafe</h6>
-          Text Blurb
-          <Link href="resources/pokecafe">
-            <Button className={styles.button}>Read more</Button>
-          </Link>
+        <div className={styles.grid}>
+          <div>
+            <Image
+              // className={styles.projectsimg}
+              className={styles.img}
+              src="/images/pokemon-101.png"
+              layout="responsive"
+              height={200}
+              width={200}
+              alt="Pokemon Group"
+            />
+            <h6>Pokemon 101</h6>
+            Text Blurb
+            <Link href="resources/poke101">
+              <Button className={styles.button}>Read more</Button>
+            </Link>
+          </div>
+          <div>
+            <Image
+              // className={styles.projectsimg}
+              className={styles.img}
+              src="/images/trading-cards.png"
+              layout="responsive"
+              height={200}
+              width={200}
+              alt="Trading Cards"
+            />
+            <h6>Trading Card Game</h6>
+            Text Blurb
+            <Link href="resources/poketcg">
+              <Button className={styles.button}>Read more</Button>
+            </Link>
+          </div>
+          <div>
+            <Image
+              // className={styles.projectsimg}
+              className={styles.img}
+              src="/images/pokedex.png"
+              layout="responsive"
+              height={200}
+              width={200}
+              alt="Regions"
+            />
+            <h6>Regions</h6>
+            Text Blurb
+            <Link href="resources/pokeregions">
+              <Button className={styles.button}>Read more</Button>
+            </Link>
+          </div>
+          <div>
+            <Image
+              // className={styles.projectsimg}
+              className={styles.img}
+              src="/images/pokemon-360.png"
+              layout="responsive"
+              height={200}
+              width={200}
+              alt="Pokemon Media"
+            />
+            <h6>Media</h6>
+            Text Blurb
+            <Link href="resources/pokemedia">
+              <Button className={styles.button}>Read more</Button>
+            </Link>
+          </div>
+          <div>
+            <Image
+              // className={styles.projectsimg}
+              className={styles.img}
+              src="/images/pokemon-centre.png"
+              layout="responsive"
+              height={200}
+              width={200}
+              alt="Pokemon Group"
+            />
+            <h6>Pokemon Centres</h6>
+            Text Blurb
+            <Link href="resources/pokecenter">
+              <Button className={styles.button}>Read more</Button>
+            </Link>
+          </div>
+          <div>
+            <Image
+              // className={styles.projectsimg}
+              className={styles.img}
+              src="/images/pokemon-cafe2.png"
+              layout="responsive"
+              height={200}
+              width={200}
+              alt="Pokemon Group"
+            />
+            <h6>Pokemon Cafe</h6>
+            Text Blurb
+            <Link href="resources/pokecafe">
+              <Button className={styles.button}>Read more</Button>
+            </Link>
+          </div>
         </div>
       </div>
     </main>

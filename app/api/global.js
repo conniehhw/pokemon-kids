@@ -1,5 +1,7 @@
 "use client";
 
+// route for API
+
 import React, {
   createContext,
   useContext,
@@ -50,14 +52,15 @@ export const GlobalProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, initialState);
   const [allPokemonData, setAllPokemonData] = useState([]);
 
+  //test
   const allPokemon = async () => {
     dispatch({ type: "LOADING" });
     const res = await fetch(`${baseUrl}pokemon?limit=20`);
     const data = await res.json();
     dispatch({ type: "GET_ALL_POKEMON", payload: data.results });
-    // console.log(data);
+    console.log(data);
 
-    //fetch character data using for loop
+    // fetch character data using for loop
     const allPokemonData = [];
 
     for (const pokemon of data.results) {
@@ -65,7 +68,7 @@ export const GlobalProvider = ({ children }) => {
       const pokemonRes = await fetch(pokemon.url);
       //   console.log(pokemonRes);
       const pokemonData = await pokemonRes.json();
-      console.log(pokemonData);
+      // console.log(pokemonData);
       allPokemonData.push(pokemonData);
     }
 
@@ -77,11 +80,16 @@ export const GlobalProvider = ({ children }) => {
     dispatch({ type: "LOADING" });
     const res = await fetch(`${baseUrl}pokemon/${name}`);
     const data = await res.json();
+
     dispatch({ type: "GET_POKEMON", payload: data });
   };
 
   useEffect(() => {
     allPokemon();
+  }, []);
+
+  useEffect(() => {
+    getPokemon();
   }, []);
 
   return (

@@ -7,13 +7,16 @@ import Link from "next/link";
 
 function resources() {
   return (
-    <div>
+    <div className={styles.main}>
       <div>
         <ul className={styles.breadcrumb}>
           <li>
             <a href="/">Home</a>
           </li>
-          <li>Resources</li>
+          <li>
+            <a href="/resources">Resources</a>
+          </li>
+          <li>Poke Regions</li>
         </ul>
       </div>
       <div className={styles.grid}>

@@ -9,6 +9,17 @@ import Image from "next/image";
 function pokecafe() {
   return (
     <main className={styles.main}>
+      <div>
+        <ul className={styles.breadcrumb}>
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/resources">Resources</a>
+          </li>
+          <li>Pokemon Cafe</li>
+        </ul>
+      </div>
       {/* <div className={styles.title}>
         pokecafe page
         <p>

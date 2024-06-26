@@ -8,26 +8,55 @@ function pokecenter() {
   return (
     <div>
       <main className={styles.main}>
-        {/* <div className={styles.navmenu}>
-          <MdArrowBack />
-        </div> */}
-        <div className={styles.welcome}>
-          <a href="">
-            {/* <div className={styles.welcometext}> */}
+        <div>
+          <ul className={styles.breadcrumb}>
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="/resources">Resources</a>
+            </li>
+            <li>Pokemon Centres</li>
+          </ul>
+        </div>
+      </main>
+    </div>
+  );
+}
 
-            <h1 class="font-weight-light">Welcome!</h1>
+export default pokecenter;
+
+{
+  /* <div className={styles.navmenu}>
+          <MdArrowBack />
+        </div> */
+}
+{
+  /* <div className={styles.welcome}>
+          <a href=""> */
+}
+{
+  /* <div className={styles.welcometext}> */
+}
+
+{
+  /* <h1 class="font-weight-light">Welcome!</h1>
             <h6>
               So you want to be a pokemon trainer? Follow along with Ash and
               Pikachu and start your journey.
             </h6>
-            <br></br>
+            <br></br> */
+}
 
-            {/* <Button className={styles.button}>
+{
+  /* <Button className={styles.button}>
               <Link href="/about">
                 <span>Let's Go!</span>
               </Link>
-            </Button> */}
-            <Link href="/about">
+            </Button> */
+}
+{
+  /* <Link href="/about">
               <Button>Let's Go!</Button>
             </Link>
           </a>
@@ -64,13 +93,17 @@ function pokecenter() {
                 <Button>Learn More</Button>
               </Link>
             </div>
-          </a>
+          </a> */
+}
 
-          <a href="">
+{
+  /* <a href="">
             <div className={styles.projectimg}>
               <Image
-                className={styles.img}
-                // className={styles.projectsimg}
+                className={styles.img} */
+}
+{
+  /* // className={styles.projectsimg}
                 src="/images/trading-cards1.png"
                 layout="responsive"
                 height={200}
@@ -86,9 +119,11 @@ function pokecenter() {
                 <Button>Learn More</Button>
               </Link>
             </div>
-          </a>
+          </a> */
+}
 
-          <a href="">
+{
+  /* <a href="">
             <div className={styles.projectimg}>
               <Image
                 // className={styles.projectsimg}
@@ -109,9 +144,11 @@ function pokecenter() {
               </Link>
             </div>
           </a>
-        </div>
+        </div> */
+}
 
-        {/* <div>
+{
+  /* <div>
         <div className={styles.Title}>Title</div>
         <div>
           <div className={styles.scrollingwrapper} class="scrolling-wrapper">
@@ -159,10 +196,5 @@ function pokecenter() {
             </div>
           </div>
         </div>
-      </div> */}
-      </main>
-    </div>
-  );
+      </div> */
 }
-
-export default pokecenter;

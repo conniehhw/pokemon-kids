@@ -1,5 +1,5 @@
 // import styles from "../page.module.css";
-import styles from "../about/page.module.css";
+import styles from "../about/about.module.css";
 
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";

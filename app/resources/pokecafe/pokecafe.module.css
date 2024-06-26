@@ -1,30 +1,50 @@
 .main {
-  /* display: flex;
-  flex-direction: column; */
+  display: flex;
+  flex-direction: column;
   /* justify-content: space-between; */
-  /* align-items: center;
-  padding-top: 8rem; */
+  /* align-items: center; */
+  /* padding-top: 7rem; */
   /* padding-bottom: 2rem; */
   /* padding-right: 4rem;
   padding-left: 4rem; */
   /* margin-bottom: 4rem; */
-  /* min-height: 100vh;
-  border: 1px solid red; */
+  min-height: 100vh;
+  border-style: 1px solid;
+  border-color: #919191 #ffffff #ffffff #ffffff; /* red top, green right, blue bottom and yellow left */
 }
 
-.main {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 8rem;
-  /* padding-bottom: 2rem; */
-  padding-right: 4rem;
-  padding-left: 4rem;
-  /* margin-bottom: 4rem; */
-  min-height: 100vh;
-  border-style: 10px solid;
-  border-color: #919191 #ffffff #ffffff #ffffff; /* red top, green right, blue bottom and yellow left */
+.breadcrumb {
+  /* padding: 10px 16px; */
+  list-style: none;
+  background-color: none;
+  margin-top: 84pt;
+  margin-left: 0pt;
+  text-align: left;
+}
+
+/* Display list items side by side */
+.breadcrumb > li {
+  display: inline;
+  font-size: 16px;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+.breadcrumb > li + li:before {
+  padding: 8px;
+  color: black;
+  content: " \003E";
+}
+
+/* Add a color to all links inside the list */
+.breadcrumb > li a {
+  color: #0275d8;
+  text-decoration: none;
+}
+
+/* Add a color on mouse-over */
+.breadcrumb > li a:hover {
+  color: #01447e;
+  text-decoration: underline;
 }
 
 .title {

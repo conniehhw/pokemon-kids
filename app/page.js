@@ -1,18 +1,8 @@
 // Home Page
-import Image from "next/image";
 import styles from "./page.module.css";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+import Image from "next/image";
 import Button from "react-bootstrap/Button";
 import Link from "next/link";
-import "bootstrap/dist/css/bootstrap.min.css";
-import Card from "react-bootstrap/Card";
-import CardImg from "react-bootstrap/CardImg";
-import CardBody from "react-bootstrap/CardBody";
-import CardFooter from "react-bootstrap/CardFooter";
-import CardTitle from "react-bootstrap/CardTitle";
-import CardText from "react-bootstrap/CardText";
 
 export const metadata = {
   title: "Pokemon Kids Home Page",
@@ -21,86 +11,90 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      {/* <Container> */}
-      <Row className={styles.row}>
-        <Col md={7} className="text-black px-3 py-3">
-          <h1 class="font-weight-light">Welcome!</h1>
-          <p class="pt-3">
+    <div className={styles.main}>
+      <div className={styles.welcome}>
+        <div>
+          <h1>Welcome!</h1>
+          <h6>
             So you want to be a pokemon trainer? Follow along with Ash and
             Pikachu and start your journey.
-          </p>
+          </h6>
           <br></br>
-          <Button variant="primary" style={{ color: "blue" }}>
-            <Link href="/about">
-              <span style={{ color: "white" }}>Let's Go!</span>
-            </Link>
-          </Button>
-        </Col>
-        <Col
-          md={5}
-          // style={{ backgroundColor: "#FFDE00", borderRadius: "10px" }}
-          style={{ backgroundColor: "", borderRadius: "10px" }}
-        >
+          <Link href="/resources">
+            <Button>Let's Go!</Button>
+          </Link>
+        </div>
+
+        <div>
           <Image
             className={styles.img}
             src="/images/pikachu-ash.png"
-            height={590}
-            width={391}
-            alt="Pikachu + Ash"
+            layout="responsive"
+            height={790}
+            width={591}
+            alt="pikachu ash full"
           />
-        </Col>
-      </Row>
-      <Container className={styles.gridmain}>
-        <Card style={{ width: "18rem" }}>
-          <CardImg variant="top" src="/images/pokemon-101.png" />
-          <CardBody>
-            <CardTitle>Pokemon 101</CardTitle>
-            <CardText>A parent's guide to Pokemon. What are pokemon?</CardText>
-          </CardBody>
-          <CardFooter>
-            <Button variant="primary bottom">
-              <Link href="/resources/poke101">
-                <span style={{ color: "white" }}>Go somewhere</span>
-              </Link>
-            </Button>
-          </CardFooter>
-          {/* </CardBody> */}
-        </Card>
+        </div>
+      </div>
 
-        <Card style={{ width: "18rem" }}>
-          <CardImg variant="top" src="/images/pokemon-101.png" />
-          <CardBody>
-            <CardTitle>Pokemon 101</CardTitle>
-            <CardText>A parent's guide to Pokemon. What are pokemon?</CardText>
-          </CardBody>
-          <CardFooter>
-            <Button variant="primary bottom">
-              <Link href="/resources/poke101">
-                <span style={{ color: "white" }}>Go somewhere</span>
-              </Link>
-            </Button>
-          </CardFooter>
-        </Card>
+      <div className={styles.projects}>
+        <div className={styles.projectimg}>
+          <Image
+            className={styles.img}
+            src="/images/pokemon-101a.png"
+            layout="responsive"
+            height={200}
+            width={200}
+            alt="All Pokemon Visual"
+          />
+        </div>
+        <div className={styles.projecttext}>
+          <h5>Pokemon 101</h5>
+          <h6>A parent's guide. What are pokemon?</h6>
 
-        <Card style={{ width: "18rem" }}>
-          <CardImg variant="top" src="/images/trading-cards.png" />
-          <CardBody>
-            <CardTitle>Pokemon Trading Card Game TCG</CardTitle>
-            <CardText>
-              From collecting cards, types of cards and building decks - a guide
-              for how to play the Pokemon Trading Card Game.
-            </CardText>
-          </CardBody>
-          <CardFooter>
-            <Button variant="primary bottom">
-              <Link href="/resources/poketcg">
-                <span style={{ color: "white" }}>Go somewhere</span>
-              </Link>
-            </Button>
-          </CardFooter>
-        </Card>
-      </Container>
-    </main>
+          <Link href="/resources/poke101">
+            <Button>Learn More</Button>
+          </Link>
+        </div>
+
+        <div className={styles.projectimg}>
+          <Image
+            className={styles.img}
+            src="/images/trading-cards1.png"
+            layout="responsive"
+            height={200}
+            width={200}
+            alt="Pokemon cards"
+          />
+        </div>
+        <div className={styles.projecttext}>
+          <h5>Trading Card Game</h5>
+          <h6>Collections, types of cards and building decks.</h6>
+
+          <Link href="/resources/poketcg">
+            <Button>Learn More</Button>
+          </Link>
+        </div>
+
+        <div className={styles.projectimg}>
+          <Image
+            className={styles.img}
+            src="/images/pokedex.png"
+            layout="responsive"
+            height={200}
+            width={200}
+            alt="Pokemon Group"
+          />
+        </div>
+        <div className={styles.projecttext}>
+          <h5>Pokedex</h5>
+          <h6>Get the stats on your favourite Pokemon & more</h6>
+
+          <Link href="/pokedex1">
+            <Button>Learn More</Button>
+          </Link>
+        </div>
+      </div>
+    </div>
   );
 }
