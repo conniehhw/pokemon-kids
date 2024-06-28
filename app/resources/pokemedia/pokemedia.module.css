@@ -186,6 +186,15 @@
   margin-bottom: 16pt;
 }
 
+.videowrapper {
+  /* display: block;
+  overflow: hidden;
+  border-radius: 20px; */
+
+  /* transform: translateY(0px); */
+  /* transform: translateX(0px); */
+}
+
 /* Scrolling Wrapper */
 .scrollingwrapper {
   overflow-x: scroll;

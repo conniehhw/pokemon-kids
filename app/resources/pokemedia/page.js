@@ -15,10 +15,164 @@ function pokemedia() {
             <li>
               <a href="/resources">Resources</a>
             </li>
-            <li>Poke Media</li>
+            <li>Pokemon Universe</li>
           </ul>
         </div>
-        {/* <div className={styles.grid}>
+
+        <div className={styles.grid}>
+          <div>
+            <Image
+              className={styles.img}
+              src="/images/pokemon-battle.png"
+              layout="responsive"
+              height={140}
+              width={350}
+              alt="pokemon video game battle"
+            />
+          </div>
+        </div>
+        {/* <div>Photo by Thimo Pedersen on Unsplash</div> */}
+
+        <div className={styles.content}>
+          <div>
+            <div>
+              <h2>More ways Pokemon!</h2>
+              <h4>
+                Besides collecting the cards, there are many other ways to enjoy
+                Pokemon!
+              </h4>
+            </div>
+          </div>
+        </div>
+
+        {/* <div className={styles.section}>
+        <div>Cafes in Tokyo & Osaka</div>
+      </div> */}
+        {/* <div className={styles.sectioncopy}>
+          <p>
+            Pokemon TCG, Pokemon Anime, Pokemon Video Games. The TV anime series
+            is up season 25. Video games include 'Pokemon Scarlet', 'Pokemon
+            Go', 'Pokemon Cafe Remix'{" "}
+          </p>
+          <Image
+            className={styles.img}
+            src="/images/pokemon-tv.png"
+            layout="responsive"
+            height={302}
+            width={564}
+            alt="pokemon tv anime"
+          />
+        </div> */}
+
+        <div className={styles.section}>
+          <div>Pokemon Animation</div>
+        </div>
+
+        <div className={styles.sectioncopy}>
+          <div>Television & Films</div>
+          <p>
+            The first televsion animation launched in 1997. Since then, the
+            series has expanded to 25 seasons. Adding to the series, is the
+            latest released in 2023, titled "Pokemon Horizons".
+          </p>
+          <p className={styles.videowrapper}>
+            <iframe
+              width="350"
+              height="315"
+              src="https://www.youtube-nocookie.com/embed/sq2RftrcEKc?si=qg7fiSyA7QGMwlUM/autoplay=1&mute=1&rel=0&border=0&modestbranding=1"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+            {/* Add a warning /alert or something it will reroute to exteranl site Youtube for trailer */}
+          </p>
+          <p>
+            As of 2020, there are 23 Pokemon films along with one live-action
+            film, "Pokemon Detective Pikachu". With the popularity of the
+            franchise, a stop-motion animation,{" "}
+            <a href="https://www.netflix.com/ca/title/81186864" target="_blank">
+              Pokemon Concierge"
+            </a>{" "}
+            premiered on Netflix in 2023. Visit the{" "}
+            <a href="https://www.pokemon.com/us/animation" target="_blank">
+              animation
+            </a>{" "}
+            page on the official website to learn more, including where to
+            watch.
+          </p>
+        </div>
+
+        <div className={styles.sectioncopy}>
+          <div>Video Games</div>
+          <p>
+            {/* Add video link to Youtube for trailer */}
+            Pokemon has several types of video games, some of which are played
+            on Nintendo Game Devices or Consoles or on a tablet and mobile
+            phone.
+          </p>
+          <p>
+            For instance, in{" "}
+            <a
+              href="https://www.pokemon.com/us/pokemon-video-games/pokemon-scarlet-and-pokemon-violet"
+              target="_blank"
+            >
+              Pokemon Scarlet & Violet
+            </a>
+            , in this role playing game, the player catches and trades Pokemons
+            and battle other Pokemon Trainers while exploring different regions.
+          </p>
+          <p>
+            Then there is popular{" "}
+            <a
+              href="https://www.pokemon.com/us/pokemon-video-games/pokemon-go"
+              target="_blank"
+            >
+              Pokemon Go{" "}
+            </a>
+            mobile game which uses the phone's GPS together with augmented
+            reality technology - allowing as though Pokemons appear around you,
+            as you move your avatar within your real world surroundings. The
+            main goal of the game to find and catch Pokemons.{" "}
+          </p>
+          <p>
+            <a
+              href="https://www.pokemon.com/us/pokemon-video-games/new-pokemon-snap"
+              target="_blank"
+            >
+              Pokemon Snap{" "}
+            </a>{" "}
+            is a new adventure where you, the player explore the Lental region,
+            research and encounter wild Pokemon as your snap photos for your
+            album. In the game
+            <a href="https://cafemix.pokemon.com/en-us/" target="_blank">
+              {" "}
+              Pokemon Cafe Remix,
+            </a>{" "}
+            the player completes puzzles to create drinks and dishes to server
+            at your Pokemon Cafe. You can find a full list of{" "}
+            <a
+              href="https://www.pokemon.com/us/pokemon-video-games/all-pokemon-games"
+              target="_blank"
+            >
+              Pokemon games
+            </a>{" "}
+            on the official website.
+          </p>
+        </div>
+        <div className={styles.sectioncopy}>
+          <div>Other</div>
+          <p>{/* Add video link to Youtube for trailer */}Tezt rwzt zfsa</p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default pokemedia;
+{
+  /* <div className={styles.grid}>
           <div>
             {" "}
             <Image
@@ -270,10 +424,5 @@ function pokemedia() {
               alt="kids playing at tcg tournament"
             />
           </p>
-        </div> */}
-      </div>
-    </div>
-  );
+        </div> */
 }
-
-export default pokemedia;
