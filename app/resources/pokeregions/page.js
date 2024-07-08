@@ -20,6 +20,19 @@ function resources() {
         </ul>
       </div>
       <div className={styles.grid}>
+        <div>
+          <Image
+            className={styles.img}
+            src="/images/pokemon-regions.png"
+            layout="responsive"
+            height={140}
+            width={350}
+            alt="pokemon regions"
+          />
+        </div>
+      </div>
+
+      {/* <div className={styles.grid}>
         Grid
         <div>Test1</div>
         <div>Test2</div>
@@ -27,7 +40,7 @@ function resources() {
         <div>Test</div>
         <div>Test</div>
         <div>Test</div>
-      </div>
+      </div> */}
     </div>
   );
 }

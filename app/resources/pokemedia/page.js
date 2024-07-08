@@ -23,7 +23,7 @@ function pokemedia() {
           <div>
             <Image
               className={styles.img}
-              src="/images/pokemon-battle.png"
+              src="/images/pokemon-media-banner.png"
               layout="responsive"
               height={140}
               width={350}
@@ -123,6 +123,16 @@ function pokemedia() {
             , in this role playing game, the player catches and trades Pokemons
             and battle other Pokemon Trainers while exploring different regions.
           </p>
+          <div>
+            <Image
+              className={styles.img}
+              src="/images/pokemon-go.png"
+              layout="responsive"
+              height={481}
+              width={582}
+              alt="pokemon go"
+            />
+          </div>
           <p>
             Then there is popular{" "}
             <a
@@ -130,6 +140,7 @@ function pokemedia() {
               target="_blank"
             >
               Pokemon Go{" "}
+              {/* Add a note to be careful of surroiunding when playing supervised*/}
             </a>
             mobile game which uses the phone's GPS together with augmented
             reality technology - allowing as though Pokemons appear around you,
@@ -162,8 +173,29 @@ function pokemedia() {
           </p>
         </div>
         <div className={styles.sectioncopy}>
-          <div>Other</div>
-          <p>{/* Add video link to Youtube for trailer */}Tezt rwzt zfsa</p>
+          <div>Books</div>
+          <p>
+            Other ways to immerse yourself in the Pokemon Universe is through
+            reading.
+          </p>{" "}
+          <p>
+            The Pokemon Visual Companion is a fact-packed illustrated guide to
+            the animated series to learn more about characters like Ash,
+            Professor Sycamore, essential gears and more. The Pokemon Essential
+            Handbook series contain the latest list of all the Pokemons and
+            their stats. Or follow their adventures in one of many chapter books
+            collection.
+          </p>
+          <div>
+            <Image
+              className={styles.img}
+              src="/images/pokemon-books.png"
+              layout="responsive"
+              height={231}
+              width={452}
+              alt="pokemon books"
+            />
+          </div>
         </div>
       </div>
     </div>

@@ -30,7 +30,7 @@ function Resources() {
             <Image
               // className={styles.projectsimg}
               className={styles.img}
-              src="/images/pokemon-101.png"
+              src="/images/pokemon-101b.png"
               layout="responsive"
               height={200}
               width={200}
@@ -39,7 +39,7 @@ function Resources() {
             <h6>Pokemon 101</h6>
             Text Blurb
             <Link href="resources/poke101">
-              <Button className={styles.button}>Read more</Button>
+              <Button className={styles.button}>Learn more</Button>
             </Link>
           </div>
           <div>
@@ -55,14 +55,14 @@ function Resources() {
             <h6>Trading Card Game</h6>
             Text Blurb
             <Link href="resources/poketcg">
-              <Button className={styles.button}>Read more</Button>
+              <Button className={styles.button}>Learn more</Button>
             </Link>
           </div>
           <div>
             <Image
               // className={styles.projectsimg}
               className={styles.img}
-              src="/images/pokedex.png"
+              src="/images/pokemon-regions-icon.png"
               layout="responsive"
               height={200}
               width={200}
@@ -71,23 +71,23 @@ function Resources() {
             <h6>Regions</h6>
             Text Blurb
             <Link href="resources/pokeregions">
-              <Button className={styles.button}>Read more</Button>
+              <Button className={styles.button}>Learn more</Button>
             </Link>
           </div>
           <div>
             <Image
               // className={styles.projectsimg}
               className={styles.img}
-              src="/images/pokemon-360.png"
+              src="/images/pokemon-media-icon.png"
               layout="responsive"
               height={200}
               width={200}
               alt="Pokemon Media"
             />
-            <h6>Media</h6>
+            <h6>Pokemon Universe</h6>
             Text Blurb
             <Link href="resources/pokemedia">
-              <Button className={styles.button}>Read more</Button>
+              <Button className={styles.button}>Learn more</Button>
             </Link>
           </div>
           <div>
@@ -98,28 +98,28 @@ function Resources() {
               layout="responsive"
               height={200}
               width={200}
-              alt="Pokemon Group"
+              alt="Pokemon Center"
             />
             <h6>Pokemon Centres</h6>
             Text Blurb
             <Link href="resources/pokecenter">
-              <Button className={styles.button}>Read more</Button>
+              <Button className={styles.button}>Learn more</Button>
             </Link>
           </div>
           <div>
             <Image
               // className={styles.projectsimg}
               className={styles.img}
-              src="/images/pokemon-cafe2.png"
+              src="/images/pokemon-cafe-sign1.png"
               layout="responsive"
               height={200}
               width={200}
-              alt="Pokemon Group"
+              alt="Pokemon Cafe Sign"
             />
             <h6>Pokemon Cafe</h6>
             Text Blurb
             <Link href="resources/pokecafe">
-              <Button className={styles.button}>Read more</Button>
+              <Button className={styles.button}>learn more</Button>
             </Link>
           </div>
         </div>

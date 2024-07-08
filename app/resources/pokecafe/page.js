@@ -157,14 +157,14 @@ function pokecafe() {
           Remember to book a reservation if you decide to visit the cafe as it
           is quite popular.
         </p>
-        <Image
+        {/* <Image
           className={styles.img}
           src="/images/evie-character-greet.png"
           layout="responsive"
           height={251}
           width={502}
           alt="evie character greet"
-        />
+        /> */}
       </div>
 
       {/* <div className={styles.title}>
