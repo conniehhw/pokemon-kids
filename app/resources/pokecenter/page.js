@@ -7,7 +7,7 @@ import { MdArrowBack } from "react-icons/md";
 function pokecenter() {
   return (
     <div>
-      <main className={styles.main}>
+      <div className={styles.main}>
         <div>
           <ul className={styles.breadcrumb}>
             <li>
@@ -19,7 +19,140 @@ function pokecenter() {
             <li>Pokemon Centres</li>
           </ul>
         </div>
-      </main>
+
+        <div className={styles.grid}>
+          <div>
+            <Image
+              className={styles.img}
+              src="/images/pokemoncenter-anime.png"
+              layout="responsive"
+              height={280}
+              width={564}
+              alt="pokemoncenter in anime"
+            />
+          </div>
+        </div>
+
+        <div className={styles.content}>
+          <div>
+            <div>
+              <h2>Pokecenters</h2>
+              <h4>An important destination for trainers, pokemons & fans</h4>
+            </div>
+          </div>
+        </div>
+
+        <div className={styles.section}>
+          <div>Pokemon Centers Inside the Pokemon World</div>
+        </div>
+        <div className={styles.sectioncopy}>
+          {/* <div className={styles.sectioncopy}> */}
+          {/* <div>Pokemon Centers Inside Pokemon World</div> */}
+          <p>
+            In Pokemon world, the Pokemon Center is where characters and
+            Pokemons can heal after battle. Every center has a Nurse Joy to help
+            Pokemons recover their strength. Pokemon centers are alos gathering
+            centers for trainers with access to tools to help their journeys as
+            well as food and lodging. In the games series, Poke Marts are also
+            featured inside Pokemon Centers, where supplies can be purchased to
+            help with Pokemon training, including potions and healing items.
+          </p>
+        </div>
+
+        <div className={styles.section}>
+          <div>Pokemon Centers in Real Life</div>
+        </div>
+        <div className={styles.sectioncopy}>
+          <p>
+            However, there are real life Pokemon Centers fans can visit! Pokemon
+            Centers are official shops where you can find original and exclusive
+            Pokemon merchandise such as your favourite plushie, stationery,
+            cards, key chains and much more.
+          </p>
+          <div>
+            <Image
+              className={styles.img}
+              src="/images/pokemoncenter-tokyoDX.png"
+              layout="responsive"
+              height={392}
+              width={392}
+              alt="pokemoncenter Tokyo DX"
+            />
+          </div>
+          <p>
+            Also you can find the latest information on all things Pokemon.
+            There are 16 Pokemon Center locations in Japan, each one is based on
+            a different concept with special events such as Pokemon Design Lab
+            where you can design your own T-shirt, life size characters, trading
+            card and game stations, touch screen Pokedex and much more.
+          </p>
+          <div>
+            <Image
+              className={styles.imgnbr}
+              src="/images/pokemoncenter-shibuya.png"
+              layout="responsive"
+              height={392}
+              width={392}
+              alt="pokemoncenter Shibuya"
+            />
+          </div>
+          <div>
+            <Image
+              className={styles.imgnbr}
+              src="/images/pokemoncenter-skytree.png"
+              layout="responsive"
+              height={392}
+              width={392}
+              alt="pokemoncenter skytree"
+            />
+          </div>
+          <div>
+            <Image
+              className={styles.imgnbr}
+              src="/images/pokemoncenter-megatokyo.png"
+              layout="responsive"
+              height={392}
+              width={392}
+              alt="pokemoncenter mega tokyo"
+            />
+          </div>
+        </div>
+        <div className={styles.sectioncopy}>
+          <p>
+            No plans to travel in the near future? Check out what is available
+            at the{" "}
+            <a href="https://www.pokemoncenter.com/en-ca" target="_blank">
+              official online Pokemon Center.
+            </a>
+          </p>
+        </div>
+        <div className={styles.grid}>
+          <div>
+            <Image
+              className={styles.img}
+              src="/images/pokemon-plush.png"
+              layout="responsive"
+              height={150}
+              width={350}
+              alt="pokemon plush"
+            />
+          </div>
+        </div>
+
+        {/* <p className={styles.videowrapper}>
+            <iframe
+              width="350"
+              height="315"
+              src="https://www.youtube-nocookie.com/embed/sq2RftrcEKc?si=qg7fiSyA7QGMwlUM/autoplay=1&mute=1&rel=0&border=0&modestbranding=1"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+            {/* Add a warning /alert or something it will reroute to exteranl site Youtube for trailer
+          </p> */}
+      </div>
     </div>
   );
 }

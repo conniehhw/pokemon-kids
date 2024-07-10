@@ -37,7 +37,7 @@ function Resources() {
               alt="Pokemon Group"
             />
             <h6>Pokemon 101</h6>
-            Text Blurb
+
             <Link href="resources/poke101">
               <Button className={styles.button}>Learn more</Button>
             </Link>
@@ -53,7 +53,7 @@ function Resources() {
               alt="Trading Cards"
             />
             <h6>Trading Card Game</h6>
-            Text Blurb
+
             <Link href="resources/poketcg">
               <Button className={styles.button}>Learn more</Button>
             </Link>
@@ -69,7 +69,7 @@ function Resources() {
               alt="Regions"
             />
             <h6>Regions</h6>
-            Text Blurb
+
             <Link href="resources/pokeregions">
               <Button className={styles.button}>Learn more</Button>
             </Link>
@@ -85,7 +85,7 @@ function Resources() {
               alt="Pokemon Media"
             />
             <h6>Pokemon Universe</h6>
-            Text Blurb
+
             <Link href="resources/pokemedia">
               <Button className={styles.button}>Learn more</Button>
             </Link>
@@ -94,14 +94,14 @@ function Resources() {
             <Image
               // className={styles.projectsimg}
               className={styles.img}
-              src="/images/pokemon-centre.png"
+              src="/images/pokemoncenter-animeicon.png"
               layout="responsive"
               height={200}
               width={200}
               alt="Pokemon Center"
             />
             <h6>Pokemon Centres</h6>
-            Text Blurb
+
             <Link href="resources/pokecenter">
               <Button className={styles.button}>Learn more</Button>
             </Link>
@@ -117,7 +117,7 @@ function Resources() {
               alt="Pokemon Cafe Sign"
             />
             <h6>Pokemon Cafe</h6>
-            Text Blurb
+
             <Link href="resources/pokecafe">
               <Button className={styles.button}>learn more</Button>
             </Link>

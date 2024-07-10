@@ -27,7 +27,7 @@ function pokemedia() {
               layout="responsive"
               height={140}
               width={350}
-              alt="pokemon video game battle"
+              alt="pokeball with black background"
             />
           </div>
         </div>

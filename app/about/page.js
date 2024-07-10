@@ -10,59 +10,95 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <div>
-      <div className={styles.Title}>
-        <h5>Title</h5>
-      </div>
+    <div className={styles.main}>
       <div>
-        <div className={styles.scrollingwrapper} class="scrolling-wrapper">
-          <div className={styles.card}>
-            <Image
-              className={styles.img}
-              src="/images/pokemon-101a.png"
-              layout="responsive"
-              height={200}
-              width={200}
-              alt="All Pokemon Visual"
-            />
-            <div className={styles.cardtext}>
-              <h5>Pokemon 101</h5>
-              <h6>Frequently Asked Questions</h6>
-            </div>
-          </div>
-          <div className={styles.card}>
-            <Image
-              className={styles.img}
-              src="/images/pokemon-101a.png"
-              layout="responsive"
-              height={200}
-              width={200}
-              alt="All Pokemon Visual"
-            />
-            <div className={styles.cardtext}>
-              <h5>Pokemon 101</h5>
-              <h6>Frequently Asked Questions</h6>
-            </div>
-          </div>
-          <div className={styles.card}>
-            <Image
-              className={styles.img}
-              src="/images/pokemon-101a.png"
-              layout="responsive"
-              height={200}
-              width={200}
-              alt="All Pokemon Visual"
-            />{" "}
-            <div className={styles.cardtext}>
-              <h5>Pokemon 101</h5>
-              <h6>Frequently Asked Questions</h6>
-            </div>
+        <ul className={styles.breadcrumb}>
+          <li>
+            <a href="/">Home</a>
+          </li>
+          {/* <li>
+            <a href="/resources">Resources</a>
+          </li> */}
+          <li>About</li>
+        </ul>
+      </div>
+      <div className={styles.grid}>
+        <div>
+          <Image
+            className={styles.img}
+            src="/images/pokemon-babies.png"
+            layout="responsive"
+            height={280}
+            width={501}
+            alt="pokemon babies"
+          />
+        </div>
+      </div>
+      {/* <div>Photo by Thimo Pedersen on Unsplash</div> */}
+
+      <div className={styles.content}>
+        <div>
+          <div>
+            <h2>About</h2>
+            <h4>Text Blurb</h4>
           </div>
         </div>
       </div>
     </div>
   );
 }
+// <div>
+//   <div className={styles.Title}>
+//     <h5>Title</h5>
+//   </div>
+//   <div>
+//     <div className={styles.scrollingwrapper} class="scrolling-wrapper">
+//       <div className={styles.card}>
+//         <Image
+//           className={styles.img}
+//           src="/images/pokemon-101a.png"
+//           layout="responsive"
+//           height={200}
+//           width={200}
+//           alt="All Pokemon Visual"
+//         />
+//         <div className={styles.cardtext}>
+//           <h5>Pokemon 101</h5>
+//           <h6>Frequently Asked Questions</h6>
+//         </div>
+//       </div>
+//       <div className={styles.card}>
+//         <Image
+//           className={styles.img}
+//           src="/images/pokemon-101a.png"
+//           layout="responsive"
+//           height={200}
+//           width={200}
+//           alt="All Pokemon Visual"
+//         />
+//         <div className={styles.cardtext}>
+//           <h5>Pokemon 101</h5>
+//           <h6>Frequently Asked Questions</h6>
+//         </div>
+//       </div>
+//       <div className={styles.card}>
+//         <Image
+//           className={styles.img}
+//           src="/images/pokemon-101a.png"
+//           layout="responsive"
+//           height={200}
+//           width={200}
+//           alt="All Pokemon Visual"
+//         />{" "}
+//         <div className={styles.cardtext}>
+//           <h5>Pokemon 101</h5>
+//           <h6>Frequently Asked Questions</h6>
+//         </div>
+//       </div>
+//     </div>
+//   </div>
+// </div>
+
 /* <div className={styles.card}>
           <h2>Card</h2>
         </div>
