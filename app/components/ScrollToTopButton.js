@@ -2,7 +2,10 @@
 
 import { useEffect, useState } from "react";
 // import { BiSolidChevronUpSquare } from "react-icons/bi";
-import { FaChevronUp } from "react-icons/fa";
+// import { FaChevronUp } from "react-icons/fa";
+// import { BiArrowToTop } from "react-icons/bi";
+import { GoMoveToTop } from "react-icons/go";
+
 import styles from "./components.module.css";
 
 const ScrollToTopButton = () => {
@@ -39,10 +42,7 @@ const ScrollToTopButton = () => {
       } ${styles.scrollbutton}`}
       onClick={scrollToTop}
     >
-      <FaChevronUp />
-      <br></br>
-      Back
-      <br></br>to Top
+      <GoMoveToTop />
     </button>
   );
 };

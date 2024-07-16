@@ -47,14 +47,16 @@ export default function Home() {
             width={200}
             alt="All Pokemon Visual"
           />
-        </div>
-        <div className={styles.projecttext}>
-          <h5>Pokemon 101</h5>
-          <h6>A parent's guide. What are pokemon?</h6>
 
-          <Link href="/resources/poke101">
-            <Button>Learn More</Button>
-          </Link>
+          <div className={styles.projecttext}>
+            <h5>Pokemon 101</h5>
+            <h6>A parent's guide. What are pokemon?</h6>
+            <br></br>
+
+            <Link href="/resources/poke101">
+              <Button>Learn More</Button>
+            </Link>
+          </div>
         </div>
 
         <div className={styles.projectimg}>
@@ -66,14 +68,15 @@ export default function Home() {
             width={200}
             alt="Pokemon cards"
           />
-        </div>
-        <div className={styles.projecttext}>
-          <h5>Trading Card Game</h5>
-          <h6>Collections, types of cards and building decks.</h6>
 
-          <Link href="/resources/poketcg">
-            <Button>Learn More</Button>
-          </Link>
+          <div className={styles.projecttext}>
+            <h5>Trading Card Game</h5>
+            <h6>Collections, types of cards and building decks.</h6>
+            <br></br>
+            <Link href="/resources/poketcg">
+              <Button>Learn More</Button>
+            </Link>
+          </div>
         </div>
 
         <div className={styles.projectimg}>
@@ -85,14 +88,15 @@ export default function Home() {
             width={200}
             alt="Pokemon Group"
           />
-        </div>
-        <div className={styles.projecttext}>
-          <h5>Pokedex</h5>
-          <h6>Get the stats on your favourite Pokemon & more</h6>
 
-          <Link href="/pokedex1">
-            <Button>Learn More</Button>
-          </Link>
+          <div className={styles.projecttext}>
+            <h5>Pokedex</h5>
+            <h6>Get the stats on your favourite Pokemon & more</h6>
+            <br></br>
+            <Link href="/pokedex1">
+              <Button>Learn More</Button>
+            </Link>
+          </div>
         </div>
       </div>
     </div>
