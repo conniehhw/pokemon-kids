@@ -215,7 +215,7 @@
   }
 }
 
-/* small tablet styles */
+/* lg tablet styles */
 @media screen and (min-width: 1024px) {
   .grid {
     display: grid;

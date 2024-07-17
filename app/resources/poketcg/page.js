@@ -47,27 +47,36 @@ function poketcg() {
       <div className={styles.section}>
         <div>The Cards</div>
       </div>
+
       <div className={styles.sectioncopy}>
-        <p>
+        <p classNamer={styles.clearfix}>
+          {/* Each player builds a deck of 60 cards which include Pokemon
+          characters, energy cards and supporting cards. Pokemon cards will list
+          the specie's abilities, attacks and the numeric damage it will
+          inflict. */}
+          {/* </p>
+        <p> */}
+          <Image
+            className={styles.imgFloatTest}
+            src="/images/card-deck.png"
+            // layout="responsive"
+            height={94}
+            width={225}
+            alt="card deck"
+          />
           Each player builds a deck of 60 cards which include Pokemon
           characters, energy cards and supporting cards. Pokemon cards will list
           the specie's abilities, attacks and the numeric damage it will
           inflict.
         </p>
-        <Image
-          className={styles.img}
-          src="/images/card-deck.png"
-          layout="responsive"
-          height={94}
-          width={225}
-          alt="card deck"
-        />
       </div>
+
       <div className={styles.section}>
         <div>Pokemon, Energy & Trainer</div>
       </div>
+
       <div className={styles.sectioncopy}>
-        <div>Pokemon Cards</div>
+        <div className={styles.subtitle}>Pokemon Cards</div>
         <p>
           These cards are Basic, Stage 1 or Stage 2. Look at the upper-left
           corner and you will see the Pokémon’s Stage and the Pokémon it evolves
@@ -93,82 +102,95 @@ function poketcg() {
           energy, type, attack, damage, weakness and much more.
         </p>
       </div>
+
       <div className={styles.sectioncopy}>
-        <div>Energy Cards</div>
-        <p>
+        <div className={styles.subtitle}>Energy Cards</div>
+        <p className={styles.clearfix}>
+          {/* Most of the time, Pokemon can't attack without Energy cards. You'll
+          need to match the symbols of the attack cost to the Energy card, but
+          any kind of Energy can be used for the colourless/normal energy. */}
+          <Image
+            className={styles.imgFloatTest1}
+            src="/images/energy-card-water.png"
+            // layout="responsive"
+            height={702}
+            width={522}
+            alt="Water Energy Card"
+          />
           Most of the time, Pokemon can't attack without Energy cards. You'll
           need to match the symbols of the attack cost to the Energy card, but
           any kind of Energy can be used for the colourless/normal energy.
         </p>
-        <Image
-          className={styles.img}
-          src="/images/energy-card-water.png"
-          layout="responsive"
-          height={702}
-          width={522}
-          alt="Water Energy Card"
-        />
       </div>
+
       <div className={styles.sectioncopy}>
-        <div>Trainer Cards</div>
-        <p>
+        <div className={styles.subtitle}>Trainer Cards</div>
+        <p className={styles.clearfix}>
+          {/* Trainer cards represent the Items, Supporters, and Stadiums a Trainer
+          can use in battle. You can see the specific Trainer subtype in the
+          upper-right corner and any special rules for that subtype at the
+          bottom of the card.
+        </p> */}
+          <Image
+            className={styles.imgFloatTest2}
+            src="/images/trainer-cards.png"
+            // layout="responsive"
+            height={201}
+            width={300}
+            alt="Trainer Cards"
+          />
           Trainer cards represent the Items, Supporters, and Stadiums a Trainer
           can use in battle. You can see the specific Trainer subtype in the
           upper-right corner and any special rules for that subtype at the
           bottom of the card.
         </p>
-        <Image
-          className={styles.img}
-          src="/images/trainer-cards.png"
-          layout="responsive"
-          height={201}
-          width={300}
-          alt="Trainer Cards"
-        />
       </div>
+
       <div className={styles.section}>
         <div>Building Your Deck</div>
       </div>
       <div className={styles.sectioncopy}>
-        <p>
+        <p className={styles.clearfix}>
+          <Image
+            className={styles.imgFloatTest2}
+            src="/images/pokemon-card-deck.png"
+            // layout="responsive"
+            height={94}
+            width={225}
+            alt="card deck"
+          />
           Like building your team - you need your players, coaches and sometimes
-          gear.
-        </p>
-        <p>
-          To build your deck around a type of Pokemon such as the Electric
-          Pokemons - you would need:{" "}
-        </p>
-        <p>
-          <ul>
+          gear. To build your deck around a type of Pokemon such as the Electric
+          Pokemons - you would need: 12 pokemon cards, 14 energy cards and 34
+          trainer cards ~ a mix of Items, Supporters and Stadiums.
+          {/* <ul>
             <li>12 pokemon cards</li>
             <li>14 energy cards</li>
             <li>
               34 Trainer cards ~ A mix of Items, Supporters, and Stadiums.
             </li>
-          </ul>
+          </ul> */}
         </p>
-        <Image
-          className={styles.img}
-          src="/images/pokemon-card-deck.png"
-          layout="responsive"
-          height={94}
-          width={225}
-          alt="card deck"
-        />
       </div>
+
       <div className={styles.section}>
         <div>Setting Up the Game</div>
       </div>
+
       <div className={styles.sectioncopy}>
-        <p>
+        <p className={styles.clearfix}>
+          <Image
+            className={styles.imgFloatTest2}
+            src="/images/tcg-layout-board.png"
+            // layout="responsive"
+            height={362}
+            width={602}
+            alt="tcg game board"
+          />
           Layout your cards; each player will have the same set up on their
           respective sides. There are 5 areas: Bench, Active, Deck, Prize Cards
-          and a Discard Pile.
-        </p>
-
-        <p>
-          For help with setting up your first Pokemon Trading Card Game, visit
-          the official Pokemon website to{" "}
+          and a Discard Pile. For help with setting up your first Pokemon
+          Trading Card Game, visit the official Pokemon website to{" "}
           <a
             href="https://tcg.pokemon.com/en-us/learn-to-play/"
             target="_blank"
@@ -178,17 +200,9 @@ function poketcg() {
           </a>
           .
         </p>
-        <p>
-          <Image
-            className={styles.img}
-            src="/images/tcg-layout-board.png"
-            layout="responsive"
-            height={362}
-            width={602}
-            alt="tcg game board"
-          />
-        </p>
+      </div>
 
+      <div className={styles.sectioncopy}>
         <p>
           The game boards are available in different game kits but you can also
           layout your cards without one or make your own like this printable{" "}
@@ -219,34 +233,32 @@ function poketcg() {
           />
         </p>
       </div>
+
       <div className={styles.section}>
         <div>Start your Game</div>
       </div>
+
       <div className={styles.sectioncopy}>
-        <p>
-          To win the game, you will need to have a strategy and a plan. There
-          are 3 ways to win a game:
-          <ul>
-            <li>i) Collect all of your Prize cards or</li>
-            <li>ii) Knock out all of your opponent's Pokemon in play or</li>
-            <li>iii) If your opponent has no more cards in their deck.</li>
-          </ul>
-        </p>
+        To win the game, you will need to have a strategy and a plan. There are
+        3 ways to win a game:
+        <ul>
+          <li>i) Collect all of your Prize cards or</li>
+          <li>ii) Knock out all of your opponent's Pokemon in play or</li>
+          <li>iii) If your opponent has no more cards in their deck.</li>
+        </ul>
       </div>
+
       <div className={styles.sectioncopy}>
-        Parts of a Turn
-        <p>
-          Each turn has 3 main parts:
-          <ul>
-            <li>1. Draw a card.</li>
-            <li>
-              2. Do any actions; put Basic Pokemon cards onto your bench, evolve
-              your Pokemon, attach Energy cards, Play Trainer cards, retreat
-              your Active pokemon and use Abilities.
-            </li>
-            <li>3. Attack. Then, end your turn. </li>
-          </ul>
-        </p>
+        Parts of a Turn Each turn has 3 main parts:
+        <ul>
+          <li>1. Draw a card.</li>
+          <li>
+            2. Do any actions; put Basic Pokemon cards onto your bench, evolve
+            your Pokemon, attach Energy cards, Play Trainer cards, retreat your
+            Active pokemon and use Abilities.
+          </li>
+          <li>3. Attack. Then, end your turn. </li>
+        </ul>
         <p>
           For more detailed instructions, the{" "}
           <a
@@ -267,6 +279,26 @@ function poketcg() {
           alt="kids playing at tcg tournament"
         />
       </div>
+
+      {/* <div className={styles.section}>
+        <div>Float Right</div>
+      </div>
+
+      <div className={styles.sectioncopy}>
+        <p className={styles.clearfix}>
+      
+          <Image
+            className={styles.imgFloatTest}
+            src="/images/card-deck.png"
+    
+            height={94}
+            width={225}
+            alt="card deck"
+          />
+          In this example, the image will float to the right in the paragraph,
+          and the text in the paragraph will wrap around the image.
+        </p>
+      </div> */}
     </div>
   );
 }

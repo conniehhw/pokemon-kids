@@ -53,64 +53,74 @@ function pokecard() {
       <div className={styles.section}>
         <div>Pokemon Type, HP, Card Name & Stage</div>
       </div>
+
       <div className={styles.sectioncopy}>
-        <div>Pokemon Type</div>
-        <p>
-          Most Pokémon belong to a single type. However, however some may belong
-          to two types. There are{" "}
+        <p className={styles.clearfix}>
+          <Image
+            className={styles.imgFloatTest3}
+            src="/images/pokemon-card-parts.png"
+            // layout="responsive"
+            height={1002}
+            width={842}
+            alt="pokemon card parts diagram 1"
+          />
+          Pokemon Type
+          <br></br> Most Pokémon belong to a single type. However, however some
+          may belong to two types. There are{" "}
           <Link href="/resources/poketcg/energytypes" target="_blank">
             11 Energy types
           </Link>{" "}
           and each powers different attacks.
-        </p>
-      </div>
-      <div className={styles.sectioncopy}>
-        <div>Health Points (HP)</div>
-        <p>
-          This number represents the Pokemon's total health points at the
-          beginning ofthe battle. When a Pokemon exceeds or reaches its HP, it
-          is considered "Knocked Out".
-        </p>
-      </div>
-      <div className={styles.sectioncopy}>
-        <div>Card Name & Stage</div>
-        <p>
+          <br></br>
+          <br></br>
+          {/* <div className={styles.sectioncopy}> */}
+          Health Points (HP)
+          <br></br>This number represents the Pokemon's total health points at
+          the beginning ofthe battle. When a Pokemon exceeds or reaches its HP,
+          it is considered "Knocked Out".
+          {/* </div> */}
+          {/* <div className={styles.sectioncopy}> */}
+          <br></br>
+          <br></br>
+          Card Name & Stage
+          <br></br>
+          {/* <Image
+            className={styles.imgFloatTest1}
+            src="/images/pokemon-card-parts.png"
+            layout="responsive"
+            height={1002}
+            width={842}
+            alt="pokemon card parts diagram 1"
+          /> */}
           This is the Pokemon's name and what evolutionary stage it is in. Some
           Pokemon can evolve into different forms while others remain in basic
           form. The stages are: Basic, Stage 1, Stage 2 & Mega etc. It shows an
           image of which pokemon it evolves from.
         </p>
-        <Image
-          className={styles.img}
-          src="/images/pokemon-card-parts.png"
-          layout="responsive"
-          height={1002}
-          width={842}
-          alt="pokemon card parts diagram 1"
-        />
       </div>
+
       <div className={styles.section}>
         <div>Energy Needs, Attacks & Damage</div>
       </div>
       <div className={styles.sectioncopy}>
-        <div>Energy Needs</div>
+        <div className={styles.subtitle}>Energy Needs</div>
         <p>
           These symbols show which and how many energy cards the Pokemon needs
           to power up their attack.
         </p>
       </div>
       <div className={styles.sectioncopy}>
-        <div>Attacks</div>
+        <div className={styles.subtitle}>Attacks</div>
         <p>
           The names of your Pokemon's attacks. Some Pokemon cards have more then
           one attack.
         </p>
       </div>
       <div className={styles.sectioncopy}>
-        <div>Damage</div>
+        <div className={styles.subtitle}>Damage</div>
         <p> The damage the Pokemon's attacks can inflict on another's HP.</p>
         <Image
-          className={styles.img}
+          className={styles.imgnbr}
           src="/images/energy-attack-damage.png"
           layout="responsive"
           height={1002}
@@ -122,14 +132,14 @@ function pokecard() {
         <div>Weakness, Resistance & Retreat</div>
       </div>
       <div className={styles.sectioncopy}>
-        <div>Weakness</div>
+        <div className={styles.subtitle}>Weakness</div>
         <p>
           Damages from attacks that use this energy type do extra damage to the
           Pokemon.
         </p>
       </div>
       <div className={styles.sectioncopy}>
-        <div>Resistance</div>
+        <div className={styles.subtitle}>Resistance</div>
         <p>
           Attacks from this energy type do less damage to the Pokemon, as they
           have a resistance to it. For example: Escavalier has resistance to
@@ -137,7 +147,7 @@ function pokecard() {
         </p>
       </div>
       <div className={styles.sectioncopy}>
-        <div>Cost to Retreat</div>
+        <div className={styles.subtitle}>Cost to Retreat</div>
         <p>
           {" "}
           The amount of energy needed to switch the Pokemon out of the
@@ -145,7 +155,7 @@ function pokecard() {
           bench, you will need two energy cards of any type to retreat.
         </p>
         <Image
-          className={styles.img}
+          className={styles.imgnbr}
           src="/images/weakness-resist-retreat.png"
           layout="responsive"
           height={1002}
