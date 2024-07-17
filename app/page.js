@@ -78,6 +78,26 @@ export default function Home() {
             </Link>
           </div>
         </div>
+        {/* 
+        <div className={styles.projectimg}>
+          <Image
+            className={styles.img}
+            src="/images/trading-cards1.png"
+            layout="responsive"
+            height={200}
+            width={200}
+            alt="Pokemon cards"
+          />
+
+          <div className={styles.projecttext}>
+            <h5>Trading Card Game</h5>
+            <h6>Collections, types of cards and building decks.</h6>
+            <br></br>
+            <Link href="/resources/poketcg">
+              <Button>Learn More</Button>
+            </Link>
+          </div>
+        </div> */}
 
         <div className={styles.projectimg}>
           <Image
