@@ -45,31 +45,12 @@ function pokemedia() {
           </div>
         </div>
 
-        {/* <div className={styles.section}>
-        <div>Cafes in Tokyo & Osaka</div>
-      </div> */}
-        {/* <div className={styles.sectioncopy}>
-          <p>
-            Pokemon TCG, Pokemon Anime, Pokemon Video Games. The TV anime series
-            is up season 25. Video games include 'Pokemon Scarlet', 'Pokemon
-            Go', 'Pokemon Cafe Remix'{" "}
-          </p>
-          <Image
-            className={styles.img}
-            src="/images/pokemon-tv.png"
-            layout="responsive"
-            height={302}
-            width={564}
-            alt="pokemon tv anime"
-          />
-        </div> */}
-
         <div className={styles.section}>
-          <div>Pokemon Animation</div>
+          <div>Pokemon Universe</div>
         </div>
 
         <div className={styles.sectioncopy}>
-          <div>Television & Films</div>
+          <div className={styles.subtitle}>Television & Films</div>
           <p>
             The first televsion animation launched in 1997. Since then, the
             series has expanded to 25 seasons. Adding to the series, is the
@@ -77,8 +58,9 @@ function pokemedia() {
           </p>
           <p className={styles.videowrapper}>
             <iframe
-              width="350"
-              height="315"
+              className={styles.responsiveiframe}
+              // width="350"
+              // height="300"
               src="https://www.youtube-nocookie.com/embed/sq2RftrcEKc?si=qg7fiSyA7QGMwlUM/autoplay=1&mute=1&rel=0&border=0&modestbranding=1"
               title="YouTube video player"
               frameborder="0"
@@ -105,12 +87,28 @@ function pokemedia() {
         </div>
 
         <div className={styles.sectioncopy}>
-          <div>Video Games</div>
+          <div className={styles.subtitle}>Video Games</div>
           <p>
             {/* Add video link to Youtube for trailer */}
             Pokemon has several types of video games, some of which are played
             on Nintendo Game Devices or Consoles or on a tablet and mobile
             phone.
+          </p>
+          <p className={styles.videowrapper1}>
+            {/* <p className={styles.videowrapper}> */}
+            <iframe
+              className={styles.responsiveiframe1}
+              // width="350"
+              // height="300"
+
+              src="https://www.youtube.com/embed/dAQBo9BGRdA?si=OE2gFFz91pmcztxZ/autoplay=1&mute=1&rel=0&border=0&modestbranding=1"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+            {/* Add a warning /alert or something it will reroute to exteranl site Youtube for trailer */}
           </p>
           <p>
             For instance, in{" "}
@@ -123,17 +121,16 @@ function pokemedia() {
             , in this role playing game, the player catches and trades Pokemons
             and battle other Pokemon Trainers while exploring different regions.
           </p>
-          <div>
+          {/* <div> */}
+          <p className={styles.clearfix}>
             <Image
-              className={styles.img}
+              className={styles.imgFloatTest1}
               src="/images/pokemon-go.png"
-              layout="responsive"
+              // layout="responsive"
               height={481}
               width={582}
               alt="pokemon go"
             />
-          </div>
-          <p>
             Then there is popular{" "}
             <a
               href="https://www.pokemon.com/us/pokemon-video-games/pokemon-go"
@@ -147,7 +144,16 @@ function pokemedia() {
             as you move your avatar within your real world surroundings. The
             main goal of the game to find and catch Pokemons.{" "}
           </p>
-          <p>
+
+          <p className={styles.clearfix}>
+            <Image
+              className={styles.imgFloatTest}
+              src="/images/pokemon-snap.png"
+              // layout="responsive"
+              height={481}
+              width={582}
+              alt="pokemon snap"
+            />
             <a
               href="https://www.pokemon.com/us/pokemon-video-games/new-pokemon-snap"
               target="_blank"
@@ -156,7 +162,18 @@ function pokemedia() {
             </a>{" "}
             is a new adventure where you, the player explore the Lental region,
             research and encounter wild Pokemon as your snap photos for your
-            album. In the game
+            album.
+          </p>
+          <p className={styles.imgFloatCopy}>
+            <Image
+              className={styles.imgFloatTest}
+              src="/images/pokemon-caferemix.png"
+              // layout="responsive"
+              height={481}
+              width={582}
+              alt="pokemon cafe remix"
+            />
+            In the game
             <a href="https://cafemix.pokemon.com/en-us/" target="_blank">
               {" "}
               Pokemon Cafe Remix,
@@ -172,12 +189,13 @@ function pokemedia() {
             on the official website.
           </p>
         </div>
+
         <div className={styles.sectioncopy}>
-          <div>Books</div>
+          <div className={styles.subtitle}>Books</div>
           <p>
             Other ways to immerse yourself in the Pokemon Universe is through
             reading.
-          </p>{" "}
+          </p>
           <p>
             The Pokemon Visual Companion is a fact-packed illustrated guide to
             the animated series to learn more about characters like Ash,
@@ -186,16 +204,14 @@ function pokemedia() {
             their stats. Or follow their adventures in one of many chapter books
             collection.
           </p>
-          <div>
-            <Image
-              className={styles.img}
-              src="/images/pokemon-books.png"
-              layout="responsive"
-              height={231}
-              width={452}
-              alt="pokemon books"
-            />
-          </div>
+          <Image
+            className={styles.imgFloatTest2}
+            src="/images/pokemon-books.png"
+            layout="responsive"
+            height={231}
+            width={452}
+            alt="pokemon books"
+          />
         </div>
       </div>
     </div>
