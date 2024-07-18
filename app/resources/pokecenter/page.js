@@ -62,84 +62,128 @@ function pokecenter() {
         <div className={styles.section}>
           <div>Pokemon Centers in Real Life</div>
         </div>
+
         <div className={styles.sectioncopy}>
-          <p>
+          <p className={styles.clearfix}>
+            <Image
+              className={styles.img}
+              src="/images/pokemoncenter-tokyoDX.png"
+              // layout="responsive"
+              height={392}
+              width={392}
+              alt="pokemoncenter Tokyo DX"
+            />
             However, there are real life Pokemon Centers fans can visit! Pokemon
             Centers are official shops where you can find original and exclusive
             Pokemon merchandise such as your favourite plushie, stationery,
             cards, key chains and much more.
           </p>
-          <div>
-            <Image
+
+          {/* <div> */}
+          {/* <Image
               className={styles.img}
               src="/images/pokemoncenter-tokyoDX.png"
-              layout="responsive"
+              // layout="responsive"
               height={392}
               width={392}
               alt="pokemoncenter Tokyo DX"
+            /> */}
+          {/* </div> */}
+
+          <p className={styles.clearfix}>
+            <Image
+              className={styles.img}
+              src="/images/pokemoncenter-shibuya.png"
+              // layout="responsive"
+              height={392}
+              width={392}
+              alt="pokemoncenter Shibuya"
             />
-          </div>
-          <p>
             Also you can find the latest information on all things Pokemon.
             There are 16 Pokemon Center locations in Japan, each one is based on
             a different concept with special events such as Pokemon Design Lab
             where you can design your own T-shirt, life size characters, trading
             card and game stations, touch screen Pokedex and much more.
           </p>
-          <div>
-            <Image
-              className={styles.imgnbr}
-              src="/images/pokemoncenter-shibuya.png"
-              layout="responsive"
-              height={392}
-              width={392}
-              alt="pokemoncenter Shibuya"
-            />
+
+          <div className={styles.grid_small}>
+            <div>
+              <Image
+                className={styles.img3}
+                src="/images/pokemoncenter-skytree.png"
+                layout="responsive"
+                height={392}
+                width={392}
+                alt="pokemoncenter skytree"
+              />
+            </div>
+            <div>
+              <Image
+                className={styles.img3}
+                src="/images/pokemoncenter-megatokyo.png"
+                layout="responsive"
+                height={392}
+                width={392}
+                alt="pokemoncenter mega tokyo"
+              />
+            </div>
+            <div>
+              <Image
+                className={styles.img3}
+                src="/images/pokemoncenter-kyoto.png"
+                layout="responsive"
+                height={392}
+                width={392}
+                alt="pokemoncenter Kyoto"
+              />
+            </div>
           </div>
-          <div>
-            <Image
-              className={styles.imgnbr}
-              src="/images/pokemoncenter-skytree.png"
-              layout="responsive"
-              height={392}
-              width={392}
-              alt="pokemoncenter skytree"
-            />
-          </div>
-          <div>
-            <Image
-              className={styles.imgnbr}
-              src="/images/pokemoncenter-megatokyo.png"
-              layout="responsive"
-              height={392}
-              width={392}
-              alt="pokemoncenter mega tokyo"
-            />
-          </div>
-        </div>
-        <div className={styles.sectioncopy}>
-          <p>
+
+          <p className={styles.clearfix}>
             No plans to travel in the near future? Check out what is available
             at the{" "}
             <a href="https://www.pokemoncenter.com/en-ca" target="_blank">
               official online Pokemon Center.
             </a>
-          </p>
-        </div>
-        <div className={styles.grid}>
-          <div>
             <Image
-              className={styles.img}
+              className={styles.img1}
               src="/images/pokemon-plush.png"
-              layout="responsive"
-              height={150}
-              width={350}
-              alt="pokemon plush"
+              // layout="responsive"
+              height={392}
+              width={392}
+              alt="pokemoncenter plush"
             />
-          </div>
-        </div>
+            {/* No plans to travel in the near future? Check out what is available
+            at the{" "}
+            <a href="https://www.pokemoncenter.com/en-ca" target="_blank">
+              official online Pokemon Center.
+            </a> */}
+          </p>
 
-        {/* <p className={styles.videowrapper}>
+          {/* <div className={styles.sectioncopy}>
+            <p>
+              No plans to travel in the near future? Check out what is available
+              at the{" "}
+              <a href="https://www.pokemoncenter.com/en-ca" target="_blank">
+                official online Pokemon Center.
+              </a>
+            </p>
+          </div> */}
+
+          {/* <div className={styles.grid}>
+            <div>
+              <Image
+                className={styles.img}
+                src="/images/pokemon-plush.png"
+                layout="responsive"
+                height={150}
+                width={350}
+                alt="pokemon plush"
+              />
+            </div>
+          </div> */}
+
+          {/* <p className={styles.videowrapper}>
             <iframe
               width="350"
               height="315"
@@ -152,6 +196,7 @@ function pokecenter() {
             ></iframe>
             {/* Add a warning /alert or something it will reroute to exteranl site Youtube for trailer
           </p> */}
+        </div>
       </div>
     </div>
   );

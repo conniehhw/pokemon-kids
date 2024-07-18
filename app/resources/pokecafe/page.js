@@ -64,7 +64,7 @@ function pokecafe() {
       </div>
 
       <div className={styles.sectioncopy}>
-        Pokemon Themes
+        <div className={styles.subtitle}>Pokemon Themes</div>
         {/* <div>Energy Cards</div> */}
         <p>
           Besides the Pokemon Menu, you will find small and large Pokemon
