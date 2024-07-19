@@ -33,6 +33,7 @@ const reducer = (state, action) => {
     case GET_POKEMON:
       return { ...state, pokemon: action.payload, loading: false };
   }
+
   return state;
 };
 
@@ -56,6 +57,7 @@ export const GlobalProvider = ({ children }) => {
   const allPokemon = async () => {
     dispatch({ type: "LOADING" });
     const res = await fetch(`${baseUrl}pokemon?limit=20`);
+    // const res = await fetch(`${baseUrl}pokemon?/${name}`);
     const data = await res.json();
     dispatch({ type: "GET_ALL_POKEMON", payload: data.results });
     console.log(data);
@@ -65,6 +67,7 @@ export const GlobalProvider = ({ children }) => {
 
     for (const pokemon of data.results) {
       console.log(pokemon);
+
       const pokemonRes = await fetch(pokemon.url);
       //   console.log(pokemonRes);
       const pokemonData = await pokemonRes.json();
@@ -78,11 +81,12 @@ export const GlobalProvider = ({ children }) => {
   //get pokemon
   const getPokemon = async (name) => {
     dispatch({ type: "LOADING" });
-    const res = await fetch(`${baseUrl}pokemon/${name}`);
+    const res = await fetch(`${baseUrl}pokemon?/${name}`);
     const data = await res.json();
 
-    dispatch({ type: "GET_POKEMON", payload: data });
+    dispatch({ type: "GET_POKEMON", payload: data.results }); //testing, adding data.results
   };
+  // console.log(data);
 
   useEffect(() => {
     allPokemon();

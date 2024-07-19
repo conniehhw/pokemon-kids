@@ -24,8 +24,9 @@ function Pokemon() {
   const { pokemon } = router.query;
   const { getPokemon, loading, pokemon: pokemonItem } = useGlobalContext();
 
-  console.log(pokemon);
+  // console.log(pokemonItem);
 
+  // initial render //
   useEffect(() => {
     if (pokemon) {
       getPokemon(pokemon);
@@ -39,6 +40,7 @@ function Pokemon() {
 
   if (pokemonItem?.sprites?.other) {
     const { "official-artwork": link } = pokemonItem?.sprites.other;
+    console.log(link.front_default);
     myLink = link.front_default;
   }
 
@@ -49,19 +51,30 @@ function Pokemon() {
   return (
     <div>
       {pokemonItem && (
-        <div>
-          <img
-            src={
-              pokemonItem.sprites?.other?.home.front_default
-                ? pokemonItem?.sprites?.other?.home.front_default
-                : myLink
-            }
-            alt=""
-          />
+        <>
+          <div>
+            <img
+              src={
+                pokemonItem?.sprites?.other?.home.front_default
+                  ? pokemonItem?.sprites?.other?.home.front_default
+                  : myLink
+              }
+              alt=""
+            />
+          </div>
           <div>
             <h2>{pokemonItem?.name}</h2>
+            <div>
+              <h5>Name: </h5>
+              <p>{pokemonItem?.name}, </p>
+            </div>
+
+            <div>
+              <h5>Name: </h5>
+              <p></p>
+            </div>
           </div>
-        </div>
+        </>
       )}
     </div>
   );

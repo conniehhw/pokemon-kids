@@ -32,9 +32,11 @@ export default function PokedexPage() {
 
   console.log(pokemons);
 
+  // console.log(pokemons.data);
+
   return (
     <>
-      <p>Pokedex Page</p>
+      <p className={styles.top}>Pokedex Page</p>
 
       <SearchPokemons getSearchResults={(results) => setPokemons(results)} />
       <Pokemons pokemons={pokemons} />

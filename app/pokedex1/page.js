@@ -43,7 +43,7 @@ export default function PokedexHome() {
                       alt={pokemon.name}
                       height={250}
                       width={250}
-                      //   layout="responsive"
+                      // layout="responsive"
                     />
                   </div>
                   <div className={styles.card_body}>

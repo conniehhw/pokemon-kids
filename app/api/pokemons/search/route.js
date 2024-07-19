@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 
 async function fetchPokemons() {
-  const response = await fetch("https://pokeapi.co/api/v2//pokemon?limit=30/", {
+  const response = await fetch("https://pokeapi.co/api/v2/pokemon?limit=30/", {
     method: "GET",
   });
 

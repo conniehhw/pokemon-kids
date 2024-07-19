@@ -54,7 +54,8 @@ export default function SearchPokemons({ getSearchResults }) {
 
     // const response = await fetch("/api/coins");
 
-    const response = await fetch(`/api/pokemons/search?query=${query}`); // pass query into the search parameter; dynamic value of query, need to change string to template literal
+    const response = await fetch(`/api/pokemons/search?query=${query}`);
+    // pass query into the search parameter; dynamic value of query, need to change string to template literal
 
     const pokemon = await response.json();
 
