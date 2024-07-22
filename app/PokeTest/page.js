@@ -40,7 +40,7 @@ function PokeTest() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await fetch("https://pokeapi.co/api/v2/pokemon/ditto");
+      const response = await fetch("https://pokeapi.co/api/v2/pokemon/pikachu");
       const data = await response.json();
       setData(data);
     };
@@ -48,6 +48,13 @@ function PokeTest() {
   }, []);
 
   console.log(data);
+
+  // pokemon card bg colors
+  const pkColors = ["#f8d5a3", "#f5b7b1", "#c39bd3", "aed6f1", "a3e4d7"];
+
+  const randomColor = pkColors[Math.floor(Math.random() * pkColors.length)];
+
+  console.log(randomColor);
 
   // //async await method
   // async function fetchData() {
@@ -77,27 +84,79 @@ function PokeTest() {
   return (
     <>
       <div style={{ marginTop: "84pt" }}>
-        <input
+        {/* <input
           className={styles.font}
           type="text"
           id="pokemonName"
           placeholder="Enter Pokemon Name"
         />
         <button onClick="">Fetch Pokemon</button>
-        <br></br>
+        <br></br> */}
+      </div>
+      <div
+        className={styles.PokemonBg}
+        style={{
+          background: randomColor,
+        }}
+      >
+        <div className={styles.PokemonImage}>
+          <img
+            src={data?.sprites?.other?.home.front_default}
+            alt="pokemon sprite"
+            height={250}
+            width={250}
+          />
+        </div>
+        <div className={styles.PokemonBody}>
+          <div className={styles.card_body}>
+            <h3>{data?.name}</h3>
+          </div>
 
-        <div>Name: {data.name}</div>
-        <div>Id: {data.id}</div>
-        <div>Weight: {data.weight}</div>
+          <div className={styles.PokemonInfo}>
+            {/* <div className={styles.PokemonInfoItem}>
+              <h6>Name: {data?.name}</h6>
+            </div> */}
+            <div className={styles.PokemonInfoItem}>
+              <p className={styles.heading}>Id: </p>
+              <p>{data?.id}, </p>
+            </div>
 
-        <img
-          src={data.sprites.other.home.front_shiny}
-          alt="pokemon sprite"
-          height={250}
-          width={250}
+            <div className={styles.PokemonInfoItem}>
+              <p className={styles.heading}>Type: </p>
+              {data?.types?.map((type) => {
+                return <p key={type.type.name}>{type.type.name},</p>;
+              })}
+            </div>
 
-          // style={{ display: "none" }}
-        />
+            <div className={styles.PokemonInfoItem}>
+              <p className={styles.heading}>Height: </p>
+              <p>{data?.height} </p>
+              {/* <p>{data?.height}, </p> */}
+            </div>
+
+            <div className={styles.PokemonInfoItem}>
+              <p className={styles.heading}>Abilities: </p>
+              {data?.abilities?.map((ability) => {
+                return (
+                  <p key={ability.ability.name}>{ability.ability.name},</p>
+                );
+              })}
+            </div>
+
+            {/* <div className={styles.PokemonInfoItem}>
+              <p className={styles.heading}>Stats: </p>
+              {data?.stats?.map((stat) => {
+                return <p key={stat.stat.name}>{stat.stat.name}, </p>;
+              })}
+            </div> */}
+            <div className={styles.PokemonInfoItem}>
+              <p className={styles.heading}>Moves: </p>
+              {data?.moves?.slice(0, 4).map((move) => {
+                return <p key={move.move.name}>{move.move.name}, </p>;
+              })}
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );
