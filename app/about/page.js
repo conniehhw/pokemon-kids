@@ -1,11 +1,11 @@
 // import styles from "../page.module.css";
 import styles from "../about/about.module.css";
 
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import Button from "react-bootstrap/Button";
-import Link from "next/link";
-import { LoremIpsum } from "react-lorem-ipsum";
+// import Row from "react-bootstrap/Row";
+// import Col from "react-bootstrap/Col";
+// import Button from "react-bootstrap/Button";
+// import Link from "next/link";
+// import { LoremIpsum } from "react-lorem-ipsum";
 import Image from "next/image";
 
 export default function About() {
@@ -35,18 +35,10 @@ export default function About() {
         </div>
       </div>
       {/* <div>Photo by Thimo Pedersen on Unsplash</div> */}
-
-      <div className={styles.content}>
-        <div>
-          <div>
-            <h2>About</h2>
-            <h4>Text Blurb</h4>
-          </div>
-        </div>
-      </div>
     </div>
   );
 }
+
 // <div>
 //   <div className={styles.Title}>
 //     <h5>Title</h5>

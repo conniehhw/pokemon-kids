@@ -4,7 +4,7 @@ import styles from "../pokedex1/pokedex1.module.css";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import Pokemons from "../components/Pokemons";
-import SearchPokemons from "../components/SearchPokemons";
+import SearchPokemons from "../components/SearchForm";
 
 // const AboutPage = () => {
 //   return (

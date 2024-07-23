@@ -2,17 +2,7 @@
 import styles from "../PokeTest/PokeTest.module.css";
 import { useState, useEffect } from "react";
 
-// import React, { useState, useEffect } from "react";
-
-// function PokeTest() {
-// const url = "https://pokeapi.co/api/v2/pokemon/jigglypuff";
-// const [data, setData] = useState([]);
-
-// const fetchInfo = () => {
-//   return fetch(url)
-//     .then((res) => res.json())
-//     .then((d) => setData(d));
-// };
+import { useGlobalContext } from "../api/global";
 
 //   fetch("https://pokeapi.co/api/v2/pokemon/ditto") // pass the url into the fetch function as a string ""
 //     // .then((response) => console.log(response)) // (response) = response object, arrow do this, console - body contains data, need to convert to readable method, ie. json method
@@ -35,12 +25,20 @@ import { useState, useEffect } from "react";
 
 function PokeTest() {
   // fetchData();
-
   const [data, setData] = useState([]);
+
+  const [search, setSearch] = useState("");
+
+  const handleChange = (e) => {
+    setSearch(e.target.value);
+  };
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await fetch("https://pokeapi.co/api/v2/pokemon/pikachu");
+      const response = await fetch(
+        "https://pokeapi.co/api/v2/pokemon/bulbasaur"
+      );
+
       const data = await response.json();
       setData(data);
     };
@@ -51,48 +49,33 @@ function PokeTest() {
 
   // pokemon card bg colors
   const pkColors = ["#f8d5a3", "#f5b7b1", "#c39bd3", "aed6f1", "a3e4d7"];
-
   const randomColor = pkColors[Math.floor(Math.random() * pkColors.length)];
 
   console.log(randomColor);
 
-  // //async await method
-  // async function fetchData() {
-  //   try {
-  //     // const pokemonName = document
-  //     //   .getElementById("pokemonName")
-  //     //   .value.toLowerCase();
-
-  //     const response = await fetch("https://pokeapi.co/api/v2/pokemon/ditto");
-
-  //     // const response = await fetch(
-  //     //   `https://pokeapi.co/api/v2/pokemon/${pokemonName}`
-  //     // );
-
-  //     if (!response.ok) {
-  //       throw new Error("Could not fetch resource"); // if response is okay, we will create a const
-  //     }
-
-  //     const data = await response.json(); // this also returns a promise, why we are using await
-  //     console.log(data.id);
-  //     return data;
-  //   } catch (error) {
-  //     console.error(error);
-  //   }
-  // }
-
   return (
     <>
       <div style={{ marginTop: "84pt" }}>
-        {/* <input
-          className={styles.font}
-          type="text"
-          id="pokemonName"
-          placeholder="Enter Pokemon Name"
-        />
-        <button onClick="">Fetch Pokemon</button>
-        <br></br> */}
+        <form action="" className={styles.searchForm} onSubmit={handleChange}>
+          <div className={styles.inputControl}>
+            <input
+              type="text"
+              placeholder="Search for a Pokemon..."
+              value={search}
+              onChange={handleChange}
+              style={{ color: "black" }}
+              id="pokemonName"
+            />
+            <button className={styles.submitBtn} type="submit">
+              Search
+            </button>
+          </div>
+        </form>
       </div>
+
+      {search && <div className={styles.searchResults}></div>}
+      <div></div>
+
       <div
         className={styles.PokemonBg}
         style={{
@@ -113,9 +96,6 @@ function PokeTest() {
           </div>
 
           <div className={styles.PokemonInfo}>
-            {/* <div className={styles.PokemonInfoItem}>
-              <h6>Name: {data?.name}</h6>
-            </div> */}
             <div className={styles.PokemonInfoItem}>
               <p className={styles.heading}>Id: </p>
               <p>{data?.id}, </p>
@@ -131,7 +111,6 @@ function PokeTest() {
             <div className={styles.PokemonInfoItem}>
               <p className={styles.heading}>Height: </p>
               <p>{data?.height} </p>
-              {/* <p>{data?.height}, </p> */}
             </div>
 
             <div className={styles.PokemonInfoItem}>
@@ -143,12 +122,6 @@ function PokeTest() {
               })}
             </div>
 
-            {/* <div className={styles.PokemonInfoItem}>
-              <p className={styles.heading}>Stats: </p>
-              {data?.stats?.map((stat) => {
-                return <p key={stat.stat.name}>{stat.stat.name}, </p>;
-              })}
-            </div> */}
             <div className={styles.PokemonInfoItem}>
               <p className={styles.heading}>Moves: </p>
               {data?.moves?.slice(0, 4).map((move) => {

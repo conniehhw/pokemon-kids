@@ -1,9 +1,12 @@
 import { NextResponse } from "next/server";
 
 async function fetchPokemons() {
-  const response = await fetch("https://pokeapi.co/api/v2/pokemon?limit=30/", {
-    method: "GET",
-  });
+  const response = await fetch(
+    "https://pokeapi.co/api/v2/pokemon?limit=100000&offset=0",
+    {
+      method: "GET",
+    }
+  );
 
   const pokemons = await response.json();
   return pokemons;
