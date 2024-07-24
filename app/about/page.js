@@ -1,14 +1,19 @@
 // import styles from "../page.module.css";
-import styles from "../about/about.module.css";
+"use client";
 
-// import Row from "react-bootstrap/Row";
-// import Col from "react-bootstrap/Col";
-// import Button from "react-bootstrap/Button";
-// import Link from "next/link";
-// import { LoremIpsum } from "react-lorem-ipsum";
+import styles from "../about/about.module.css";
+import { SearchBar } from "../components/SearchBar";
+import { SearchResultsList } from "../components/SearchResultsList";
+import { useState } from "react";
+
 import Image from "next/image";
 
 export default function About() {
+  const [results, setResults] = useState([]);
+  // we want to create another stateful variable
+  // which will contain the results we've gotten back from the API, b/c we want to be able to modify
+  // this array using the search bar and we want to send it into our search results component so it can render it out
+
   return (
     <div className={styles.main}>
       <div>
@@ -22,6 +27,14 @@ export default function About() {
           <li>About</li>
         </ul>
       </div>
+
+      <SearchBar setResults={setResults} />
+      {/* we want SearchBar to be responsible for modifying this array, so we'll pass it in as a prop, 
+      so we say setResults is equal to the setResults function we have */}
+
+      <SearchResultsList results={results} />
+      {/* cancel out the <div>Search results</div>, to render results, use new component pass the results variable as a prop into this */}
+
       <div className={styles.grid}>
         <div>
           <Image
@@ -38,107 +51,3 @@ export default function About() {
     </div>
   );
 }
-
-// <div>
-//   <div className={styles.Title}>
-//     <h5>Title</h5>
-//   </div>
-//   <div>
-//     <div className={styles.scrollingwrapper} class="scrolling-wrapper">
-//       <div className={styles.card}>
-//         <Image
-//           className={styles.img}
-//           src="/images/pokemon-101a.png"
-//           layout="responsive"
-//           height={200}
-//           width={200}
-//           alt="All Pokemon Visual"
-//         />
-//         <div className={styles.cardtext}>
-//           <h5>Pokemon 101</h5>
-//           <h6>Frequently Asked Questions</h6>
-//         </div>
-//       </div>
-//       <div className={styles.card}>
-//         <Image
-//           className={styles.img}
-//           src="/images/pokemon-101a.png"
-//           layout="responsive"
-//           height={200}
-//           width={200}
-//           alt="All Pokemon Visual"
-//         />
-//         <div className={styles.cardtext}>
-//           <h5>Pokemon 101</h5>
-//           <h6>Frequently Asked Questions</h6>
-//         </div>
-//       </div>
-//       <div className={styles.card}>
-//         <Image
-//           className={styles.img}
-//           src="/images/pokemon-101a.png"
-//           layout="responsive"
-//           height={200}
-//           width={200}
-//           alt="All Pokemon Visual"
-//         />{" "}
-//         <div className={styles.cardtext}>
-//           <h5>Pokemon 101</h5>
-//           <h6>Frequently Asked Questions</h6>
-//         </div>
-//       </div>
-//     </div>
-//   </div>
-// </div>
-
-/* <div className={styles.card}>
-          <h2>Card</h2>
-        </div>
-        <div className={styles.card}>
-          <h2>Card</h2>
-          <div className={styles.card}>
-            <h2>Card</h2>
-          </div>
-          <div className={styles.card}>
-            <h2>Card</h2>
-          </div>
-          <div className={styles.card}>
-            <h2>Card</h2>
-          </div>
-          <div className={styles.card}>
-            <h2>Card</h2>
-          </div> */
-
-/* <div className={styles.container}>
-        <div>One</div>
-        <div>Two</div>
-        <div>Three</div>
-        <div>Four</div>
-        <div>Five</div>
-        <div>Six</div>
-        <div>Seven</div>
-        <div>Eight</div>
-        <div>Nine</div>
-        <div>Ten</div>
-        <div>Eleven</div>
-        <div>Twelve</div>
-      </div>
-      <div className={styles.parent}>
-        <col></col>
-        <col></col>
-        <col></col>
-        <col></col>
-        <col></col>
-        <col></col>
-        <col></col>
-        <col></col>
-        <col></col>
-        <col></col>
-        <col></col>
-        <col></col>
-        <row></row>
-        <row></row>
-        <row></row>
-        <row></row>
-        <row></row>
-      </div> */

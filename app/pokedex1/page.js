@@ -7,6 +7,7 @@ import { useGlobalContext } from "../api/global";
 import { useState } from "react";
 import Router from "next/router";
 import { useRouter } from "next/navigation";
+
 import styles from "./pokedex1.module.css";
 import Image from "next/image";
 
@@ -37,19 +38,19 @@ export default function PokedexHome() {
       return (
         <div
           key={pokemon.id}
-          onClick={() => {
-            Router.push(`/pokemon?/${pokemon}`); // how to route so we get all pokemon data
-          }}
+          // onClick={() => {
+          //   Router.push(`/pokemon?/${pokemon}`); // how to route so we get all pokemon data
+          // }}
         >
           {" "}
-          {pokemon.url}
-          {pokemon.name}
+          <p>{pokemon.url}</p>
+          <p>{pokemon.name}</p>
         </div>
       );
     });
   };
 
-  // const router = useRouter();
+  const router = useRouter();
   //   const g = useGlobalContext();
   //   console.log(g);
   // console.log(allPokemonData);
@@ -85,8 +86,8 @@ export default function PokedexHome() {
                   key={pokemon.id}
                   className={styles.card}
                   onClick={() => {
-                    // router.push(`/pokedex1/slug/${pokemon.name}`);
-                    router.push(`/pokemon?/${pokemon}`);
+                    router.push(`/pokedex1/slug/${pokemon.name}`);
+                    // router.push(`/pokemon?/${pokemon}`);
                   }}
                 >
                   <div className={styles.card_image}>

@@ -25,6 +25,7 @@ import { useGlobalContext } from "../api/global";
 
 function PokeTest() {
   // fetchData();
+
   const [data, setData] = useState([]);
 
   const [search, setSearch] = useState("");
@@ -73,8 +74,8 @@ function PokeTest() {
         </form>
       </div>
 
-      {search && <div className={styles.searchResults}></div>}
-      <div></div>
+      {/* {search && <div className={styles.searchResults}></div>} */}
+      {/* <div className="searchResults">{displaySearchResults()}</div> */}
 
       <div
         className={styles.PokemonBg}

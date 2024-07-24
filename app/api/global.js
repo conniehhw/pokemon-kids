@@ -82,14 +82,14 @@ export const GlobalProvider = ({ children }) => {
     dispatch({ type: "GET_ALL_POKEMON", payload: data });
     // console.log(data);
 
-    // fetch character data using for loop
+    /// fetch character data using for loop
     const allPokemonData = [];
 
     for (const pokemon of data.results) {
       console.log(pokemon);
 
       const pokemonRes = await fetch(pokemon.url);
-      //   console.log(pokemonRes);
+      // console.log(pokemonRes);
       const pokemonData = await pokemonRes.json();
       // console.log(pokemonData);
       allPokemonData.push(pokemonData);
@@ -102,6 +102,7 @@ export const GlobalProvider = ({ children }) => {
   const getPokemon = async (name) => {
     dispatch({ type: "LOADING" });
     const res = await fetch(`${baseUrl}pokemon?/${name}`);
+
     const data = await res.json();
 
     dispatch({ type: "GET_POKEMON", payload: data.results }); //testing, adding data.results
@@ -114,6 +115,7 @@ export const GlobalProvider = ({ children }) => {
 
     const res = await fetch(`${baseUrl}pokemon?limit=100000&offset=0`);
     const data = await res.json();
+    console.log(data);
 
     dispatch({ type: "GET_POKEMON_DATABASE", payload: data.results });
   };
@@ -128,7 +130,10 @@ export const GlobalProvider = ({ children }) => {
     const newPokemonData = [];
     for (const pokemon of data.results) {
       const pokemonRes = await fetch(pokemon.url);
+      // console.log(pokemonRes);
+
       const pokemonData = await pokemonRes.json();
+      console.log(pokemonData);
       newPokemonData.push(pokemonData);
     }
 
@@ -158,9 +163,9 @@ export const GlobalProvider = ({ children }) => {
   //   allPokemon();
   // }, []);
 
-  // useEffect(() => {
-  //   getPokemon();
-  // }, []);
+  useEffect(() => {
+    getPokemon();
+  }, []);
 
   // useEffect(() => {
   //   getPokemonDatabase();
