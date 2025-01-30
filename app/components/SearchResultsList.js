@@ -22,7 +22,7 @@ export const SearchResultsList = ({ results }) => {
       </div>
       {/* <div className={styles.resultsList}>
         {results.map((result, id) => {
-          return <div key={id}>{result.name}</div>;
+          return <div key={id}>{result.name}</div>
         })}
       </div> */}
     </div>

@@ -4,13 +4,15 @@ import styles from "../components/components.module.css";
 import { useState } from "react"; // use state hook to figure out what the user has input
 
 export const SearchBar = ({ setResults }) => {
-  //we take it in as a prop (from the jsx page), by opening up the braces
+  //we take it (setResults) in as a prop (from the jsx page), by opening up the braces
   const [input, setInput] = useState(""); // input = variable to store the value inputted, setInput = use to change the variable's value is, initial state is empty string
 
   // const fetchData will take in some value which is the text to search for, make call to API
   const fetchData = (value) => {
-    fetch("https://jsonplaceholder.typicode.com/users") // we need to call this function whenever the tx changes in the search bar
-      .then((response) => response.json()) //fetch() is asynchronous; returns a value later on intime, change .then, which awaits for the result and then performs actions on i, then convert response to json format for readable to javascript
+    fetch("https://jsonplaceholder.typicode.com/users")
+      // we need to call this function whenever the tx changes in the search bar
+      .then((response) => response.json()) //fetch() is asynchronous; returns a value later on in time, 
+      //change .then, which awaits for the result and then performs actions on i, then convert response to json format for readable to javascript
       .then((json) => {
         // chain another .then get back the json value,
         console.log(json);

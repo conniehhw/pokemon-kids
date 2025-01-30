@@ -3,6 +3,7 @@ import React from "react";
 import styles from "../pokeregions/pokeregions.module.css";
 // import Badge from "react-bootstrap/Badge";
 import Image from "next/image";
+import PokemonCard from "../../components/PokemonCard";
 import Link from "next/link";
 
 function resources() {
@@ -31,6 +32,7 @@ function resources() {
           />
         </div>
       </div>
+      <PokemonCard />
 
       {/* <div className={styles.grid}>
         Grid

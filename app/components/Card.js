@@ -1,5 +1,6 @@
 import React from "react";
-import styles from "../pokedex/pokedex.module.css";
+import styles from "../pokedex1/pokedex1.module.css";
+// import styles from "../pokedex/pokedex.module.css";
 import Image from "next/image";
 
 // check data is coming from card component
