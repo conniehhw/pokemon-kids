@@ -45,6 +45,7 @@ function Header1() {
                 <NavLink href="/about">About</NavLink>
                 <NavLink href="/resources">Resources</NavLink>
                 <NavLink href="/pokedex1">Pokedex</NavLink>
+                <NavLink href="/PokedexHome">Pokedex</NavLink>
               </Nav>
             </OffcanvasBody>
           </NavbarOffcanvas>
