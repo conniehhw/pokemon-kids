@@ -1,0 +1,104 @@
+.body {
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  background-color: "#f5b7b1";
+  font-size: 1.2rem;
+  font-family: "Inter" sans-serif;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  border-style: 1px solid;
+  border-color: #919191 #ffffff #ffffff #ffffff; /* red top, green right, blue bottom and yellow left */
+}
+
+.breadcrumb {
+  list-style: none;
+  background-color: none;
+  margin-top: 84pt;
+  margin-left: 0pt;
+  text-align: left;
+}
+
+/* Display list items side by side */
+.breadcrumb > li {
+  display: inline;
+  font-size: 16px;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+.breadcrumb > li + li:before {
+  padding: 8px;
+  color: black;
+  content: " \003E";
+}
+
+/* Add a color to all links inside the list */
+.breadcrumb > li a {
+  color: #0275d8;
+  text-decoration: none;
+}
+
+/* Add a color on mouse-over */
+.breadcrumb > li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+}
+
+.PokemonBg {
+  /* position: absolute; */
+  /* top: 50%;
+  left: 50%; */
+  /* transform: translate(-50%, -50%); */
+  /* width: 400px;
+  height: 280px; */
+  border-radius: 12px;
+
+  width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.1);
+  /* border: 1px solid black; */
+}
+
+/* styling for card */
+
+.pokeCardContainer {
+  border: 1px solid blue;
+  background-color: pink;
+}
+
+.pokeCard {
+  border: 1px solid black;
+  margin: 5rem;
+  padding: 2rem;
+  width: auto-fit;
+}
+
+.img {
+  border: 1px solid black;
+}
+
+.stats {
+  display: grid;
+  /* grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  grid-gap: 0.5rem; */
+  padding: 0.25rem;
+  border: 1px solid black;
+  background-color: white;
+}
+
+.stats .card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+}

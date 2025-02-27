@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import { PokemonCard } from "../components/PokemonCard";
-import styles from "../pokedex1/pokedex1.module.css";
+import styles from "../PokedexHome/pokedex.module.css";
 
 export function PokedexGrid({ allPokemons }) {
   const [searchText, setSearchText] = useState(""); // empty string
@@ -18,7 +18,6 @@ export function PokedexGrid({ allPokemons }) {
   return (
     <>
       <main className={styles.body}>
-        {/* <div className={styles.top}> */}
         {/* <h3>Search for your Pokemon!</h3> */}
         <form action="" className={styles.searchForm}>
           <div className={styles.inputControl}>
@@ -31,7 +30,7 @@ export function PokedexGrid({ allPokemons }) {
               //autoComplete= "off"
               placeholder="Search for a Pokemon... "
               onChange={(e) => setSearchText(e.target.value)}
-              className={styles.searchForm}
+              // className={styles.searchForm}
               // listen for onChange event from client, take the event of that change
               // (the text typed to be saved onto 'e' variable), whenever we type in, it will set Search Text into our actual text
               // we have an array of data we can filter, we can look at every element in the list and filter- if contains "P", keep it and js filter the name
@@ -41,6 +40,7 @@ export function PokedexGrid({ allPokemons }) {
             </button>
           </div>
         </form>
+
         {/* <div>
           <h3>Pokemon Collection</h3>
         </div> */}
@@ -52,9 +52,9 @@ export function PokedexGrid({ allPokemons }) {
             return (
               <PokemonCard
                 name={pokemon.name}
-                height={pokemon.height}
                 id={pokemon.id}
                 sprites={pokemon.sprites.other.home.front_default}
+                type={pokemon.type}
 
                 //   pokemonStats={pokemonStats.name}
               />
