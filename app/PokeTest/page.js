@@ -74,12 +74,10 @@ function PokeTest() {
           </div>
         </form>
       </div>
-
+      gc
       <TestSearchBar />
-
       {/* {search && <div className={styles.searchResults}></div>} */}
       {/* <div className="searchResults">{displaySearchResults()}</div> */}
-
       <div
         className={styles.PokemonBg}
         style={{

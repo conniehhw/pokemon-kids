@@ -53,7 +53,9 @@ export function PokedexGrid({ allPokemons }) {
               <PokemonCard
                 name={pokemon.name}
                 id={pokemon.id}
-                sprites={pokemon.sprites.other.home.front_default}
+                sprites={
+                  pokemon.sprites.other["official-artwork"].front_default
+                }
                 type={pokemon.type}
 
                 //   pokemonStats={pokemonStats.name}
