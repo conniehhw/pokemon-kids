@@ -13,7 +13,7 @@ import Link from "next/link";
 
 // pokemonName = "pikachu" -> show the Pikachu page
 
-export default async function PokemonPage({ params, sprites }) {
+export default async function PokemonPage({ params }) {
   // object destructuring
   const { pokemonName } = params;
   // pikachu
@@ -73,42 +73,68 @@ export default async function PokemonPage({ params, sprites }) {
                 <h3 className="text-4xl">
                   {pokemonName.charAt(0).toUpperCase() + pokemonName.slice(1)}
                 </h3>
-                <div className={styles.card_text}>
-                  {/* <div className="flex-col"> */}
-                  <h5>Types:</h5>
-                  {pokemonObject.types.map((typeObject) => {
-                    const typeName = typeObject.type.name;
-                    // const statValue = statObject.base_stat;
-                    return (
-                      <div
-                        // className="flex items-stretch"
-                        // style={{ width: "500px", display: "inline" }}
-                        key={typeName}
-                        // className="flex items p-3 w-2/4"
-                      >
-                        {typeName}
-                      </div>
-                    );
-                  })}
-                  <h5>Weight:</h5>
-                  {pokemonObject.weight}
-                  <h5>Height:</h5> {pokemonObject.height}
-                  {/* <div className="flex-col"> */}
-                  <p>Abilities: </p>
-                  {pokemonObject.abilities.map((abilityObject) => {
-                    const abilityName = abilityObject.ability.name;
-                    // const statValue = statObject.base_stat;
-                    return (
-                      <div
-                        // className="flex items-stretch"
+
+                <div className={styles.card_stats}>
+                  <ul className={styles.alignMe}>
+                    <li>
+                      <b>Types</b>
+                      {pokemonObject.types.map((typeObject) => {
+                        const typeName = typeObject.type.name;
+
+                        return <>{typeName}&nbsp;</>;
+                      })}
+                    </li>
+                    <li>
+                      <b>Weight</b>
+                      {pokemonObject.weight}
+                    </li>
+                    <li>
+                      <b>Height</b>
+                      {pokemonObject.height}
+                    </li>
+                    <li>
+                      <b>Abilities</b>
+                      {pokemonObject.abilities.map((abilityObject) => {
+                        const abilityName = abilityObject.ability.name;
+                        // const statValue = statObject.base_stat;
+                        return (
+                          <>
+                            {/* // className="flex items-stretch"
                         // style={{ width: "500px" }}
 
-                        key={abilityName}
-                      >
-                        {abilityName}
-                      </div>
-                    );
-                  })}
+                        key={abilityName} */}
+                            {abilityName}&nbsp;
+                          </>
+                        );
+                      })}
+                    </li>
+                  </ul>
+
+                  {/* <div className={styles.card_stats}>
+                 
+                    <h5>Types:</h5>
+                
+                    {pokemonObject.types.map((typeObject) => {
+           
+                      return <>{typeObject.type.name}</>;
+                    })}
+                    <h5>Weight:</h5>
+                    {pokemonObject.weight}
+                    <h5>Height:</h5> {pokemonObject.height}
+        
+                    <p>Abilities: </p>
+                    {pokemonObject.abilities.map((abilityObject) => {
+                      const abilityName = abilityObject.ability.name;
+          
+                      return (
+                        <div
+                          key={abilityName}
+                        >
+                          {abilityName}
+                        </div>
+                      );
+                    })}
+                  </div> */}
                 </div>
               </div>
               {/* <button className={styles.submitBtn} type="submit">
