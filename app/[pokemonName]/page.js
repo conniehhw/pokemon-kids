@@ -23,6 +23,55 @@ export default async function PokemonPage({ params }) {
 
   console.log(pokemonObject);
 
+  // pokemon card bg colors
+  // const pkColors = ["#f8d5a3", "#f5b7b1", "#c39bd3", "aed6f1", "a3e4d7"];
+  // const randomColor = pkColors[Math.floor(Math.random() * pkColors.length)];
+
+  // console.log(randomColor);
+
+  //if .. .else test
+  const time = new Date().getHours();
+  let greeting;
+  if (time < 10) {
+    greeting = "good morning";
+  } else if (time < 20) {
+    greeting = "good day";
+  } else {
+    greeting = "Good evening";
+  }
+
+  const height = `${pokemonObject.height}`;
+  let color;
+  if (height < 10) {
+    color = "short";
+  } else if (height > 10) {
+    color = "tall";
+  } else {
+    color = "medium";
+  }
+
+  // const type = `${pokemonName}`;
+  // let colour;
+  // if (type === "charmander") {
+  //   colour = "red";
+  // } else if (type === "bulbasaur") {
+  //   colour = "green";
+  // } else {
+  //   colour = "black";
+  // }
+
+  const type = `${pokemonObject.types[0].type.name}`;
+  let colour;
+  if (type === "grass") {
+    colour = "#00FF00";
+  } else if (type === "fire") {
+    colour = "#FF0000";
+  } else if (type === "poison") {
+    colour = "#A020F0";
+  } else {
+    colour = "black";
+  }
+
   return (
     <>
       <main className={styles.main}>
@@ -47,6 +96,7 @@ export default async function PokemonPage({ params }) {
                   position: "relative",
                   width: "300px",
                   height: "300px",
+                  // background: randomColor,
                 }}
               >
                 <PokemonImage
@@ -81,7 +131,7 @@ export default async function PokemonPage({ params }) {
                       {pokemonObject.types.map((typeObject) => {
                         const typeName = typeObject.type.name;
 
-                        return <>{typeName}&nbsp;</>;
+                        return <>{typeName}-&nbsp;</>;
                       })}
                     </li>
                     <li>
@@ -94,6 +144,7 @@ export default async function PokemonPage({ params }) {
                     </li>
                     <li>
                       <b>Abilities</b>
+
                       {pokemonObject.abilities.map((abilityObject) => {
                         const abilityName = abilityObject.ability.name;
                         // const statValue = statObject.base_stat;
@@ -103,12 +154,33 @@ export default async function PokemonPage({ params }) {
                         // style={{ width: "500px" }}
 
                         key={abilityName} */}
-                            {abilityName}&nbsp;
+                            {abilityName}-&nbsp;
                           </>
                         );
                       })}
                     </li>
                   </ul>
+                  {/* <p>{greeting}</p>
+                  <p>{color}</p> */}
+                  {/* <p
+                    style={{
+                      // position: "relative",
+                      width: "300px",
+                      height: "300px",
+                      background: colour,
+                    }}
+                  >
+                    {pokemonObject.types[0].type.name}
+                  </p> */}
+                  <button
+                    style={{
+                      background: colour,
+                      color: "white",
+                    }}
+                    className={styles.pill}
+                  >
+                    {pokemonObject.types[0].type.name}
+                  </button>
 
                   {/* <div className={styles.card_stats}>
                  

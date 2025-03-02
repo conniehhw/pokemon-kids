@@ -154,6 +154,20 @@
   right: 10px;
 }
 
+.pill {
+  border: none;
+  color: none;
+  border-radius: 20px;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 500;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  /* padding-top: 0.25rem;
+  padding-bottom: 0.25rem; */
+  text-align: center;
+}
+
 .submitBtn {
   /* position: absolute; */
   /* top: 50%;
