@@ -23,6 +23,9 @@ export default async function PokemonPage({ params }) {
 
   console.log(pokemonObject);
 
+  const numericId = ("00" + pokemonObject.id).slice(-3);
+  // const pokeObj = [pokemonObject.types];
+
   // pokemon card bg colors
   // const pkColors = ["#f8d5a3", "#f5b7b1", "#c39bd3", "aed6f1", "a3e4d7"];
   // const randomColor = pkColors[Math.floor(Math.random() * pkColors.length)];
@@ -30,25 +33,25 @@ export default async function PokemonPage({ params }) {
   // console.log(randomColor);
 
   //if .. .else test
-  const time = new Date().getHours();
-  let greeting;
-  if (time < 10) {
-    greeting = "good morning";
-  } else if (time < 20) {
-    greeting = "good day";
-  } else {
-    greeting = "Good evening";
-  }
+  // const time = new Date().getHours();
+  // let greeting;
+  // if (time < 10) {
+  //   greeting = "good morning";
+  // } else if (time < 20) {
+  //   greeting = "good day";
+  // } else {
+  //   greeting = "Good evening";
+  // }
 
-  const height = `${pokemonObject.height}`;
-  let color;
-  if (height < 10) {
-    color = "short";
-  } else if (height > 10) {
-    color = "tall";
-  } else {
-    color = "medium";
-  }
+  // const height = `${pokemonObject.height}`;
+  // let color;
+  // if (height < 10) {
+  //   color = "short";
+  // } else if (height > 10) {
+  //   color = "tall";
+  // } else {
+  //   color = "medium";
+  // }
 
   // const type = `${pokemonName}`;
   // let colour;
@@ -60,17 +63,71 @@ export default async function PokemonPage({ params }) {
   //   colour = "black";
   // }
 
+  // const type = `${pokemonObject.types[0].type.name}`;
+  // const type = `${typeObject.type.name}`;
+
+  // let colour;
+  // if (type === "grass") {
+  //   colour = "#7AC74C";
+  // } else if (type === "fire") {
+  //   colour = "#EE8130";
+  // } else if (type === "poison") {
+  //   colour = "#A33EA1";
+  // } else {
+  //   colour = "black";
+  // }
+
+  // const pokeType = `${pokemonObject.types[0].type.name}`
   const type = `${pokemonObject.types[0].type.name}`;
-  let colour;
-  if (type === "grass") {
-    colour = "#00FF00";
-  } else if (type === "fire") {
-    colour = "#FF0000";
-  } else if (type === "poison") {
-    colour = "#A020F0";
-  } else {
-    colour = "black";
+
+  // const type = `${pokemonObject.types}`;
+  // let pokeType = { pokemonObject };
+  let pokeColor = "";
+
+  switch (type) {
+    case "grass":
+      pokeColor = "#7AC74C";
+      break;
+
+    case "poison":
+      pokeColor = "#A33EA1";
+      break;
+
+    case "fire":
+      pokeColor = "#EE8130";
+      break;
+
+    case "water":
+      pokeColor = "#6390F0";
+      break;
+
+    default:
+      pokeColor = "gray";
   }
+
+  console.log(pokeColor);
+  console.log(type);
+
+  // let colours = {
+  //   normal: "#A8A77A",
+  //   fire: "#EE8130",
+  //   water: "#6390F0",
+  //   electric: "#F7D02C",
+  //   grass: "#7AC74C",
+  //   ice: "#96D9D6",
+  //   fighting: "#C22E28",
+  //   poison: "#A33EA1",
+  //   ground: "#E2BF65",
+  //   flying: "#A98FF3",
+  //   psychic: "#F95587",
+  //   bug: "#A6B91A",
+  //   rock: "#B6A136",
+  //   ghost: "#735797",
+  //   dragon: "#6F35FC",
+  //   dark: "#705746",
+  //   steel: "#B7B7CE",
+  //   fairy: "#D685AD",
+  // };
 
   return (
     <>
@@ -119,11 +176,12 @@ export default async function PokemonPage({ params }) {
               </div>
 
               <div className={styles.card_text}>
-                <h6># {pokemonObject.id}</h6>
+                <h6># {numericId}</h6>
                 <h3 className="text-4xl">
                   {pokemonName.charAt(0).toUpperCase() + pokemonName.slice(1)}
                 </h3>
 
+                {/* map types*/}
                 <div className={styles.card_stats}>
                   <ul className={styles.alignMe}>
                     <li>
@@ -131,7 +189,19 @@ export default async function PokemonPage({ params }) {
                       {pokemonObject.types.map((typeObject) => {
                         const typeName = typeObject.type.name;
 
-                        return <>{typeName}-&nbsp;</>;
+                        return (
+                          <>
+                            <button
+                              style={{
+                                backgroundColor: pokeColor,
+                                color: "white",
+                              }}
+                              className={styles.pill}
+                            >
+                              {typeName}
+                            </button>
+                          </>
+                        );
                       })}
                     </li>
                     <li>
@@ -141,6 +211,10 @@ export default async function PokemonPage({ params }) {
                     <li>
                       <b>Height</b>
                       {pokemonObject.height}
+                    </li>
+                    <li>
+                      <b>Type Test</b>
+                      {/* {pokeObj} */}
                     </li>
                     <li>
                       <b>Abilities</b>
@@ -154,7 +228,17 @@ export default async function PokemonPage({ params }) {
                         // style={{ width: "500px" }}
 
                         key={abilityName} */}
-                            {abilityName}-&nbsp;
+                            <button
+                              style={{
+                                backgroundColor: "white",
+                                border: "none",
+                                // color: "white",
+                              }}
+                              className={styles.invPill}
+                            >
+                              {abilityName}
+                            </button>
+                            {/* {abilityObject.ability.name} */}
                           </>
                         );
                       })}
@@ -172,15 +256,31 @@ export default async function PokemonPage({ params }) {
                   >
                     {pokemonObject.types[0].type.name}
                   </p> */}
-                  <button
+
+                  {/* {pokemonObject.types.map((typeObject) => {
+                    const typeName = typeObject.type.name;
+
+                    return (
+                      <>
+                        <button
+                          style={{
+                            background: pokeColor,
+                            color: "white",
+                          }}
+                          className={styles.pill}
+                        >
+                          {typeName}
+                          {typeObject.type.name}
+                        </button>
+                      </>
+                    );
+                  })} */}
+                  {/* <button
                     style={{
-                      background: colour,
-                      color: "white",
+                      background: pokeColor,
+                      height: "50px",
                     }}
-                    className={styles.pill}
-                  >
-                    {pokemonObject.types[0].type.name}
-                  </button>
+                  ></button> */}
 
                   {/* <div className={styles.card_stats}>
                  

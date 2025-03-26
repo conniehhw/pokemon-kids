@@ -112,7 +112,7 @@ a:active {
 .pill {
   border: none;
   color: none;
-  border-radius: 8px;
+  border-radius: 20px;
   font-family: inherit;
   font-size: inherit;
   font-weight: 500;
@@ -121,6 +121,22 @@ a:active {
   /* padding-top: 0.25rem;
   padding-bottom: 0.25rem; */
   text-align: center;
+  margin: 0.5rem;
+}
+
+.invPill {
+  border: none;
+  color: none;
+  border-radius: 20px;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 500;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  /* padding-top: 0.25rem;
+  padding-bottom: 0.25rem; */
+  text-align: center;
+  margin: 0.5rem;
 }
 
 /* .card_body h3 {

@@ -1,6 +1,8 @@
 "use client";
 import { useState } from "react";
+
 import { PokemonCard } from "../components/PokemonCard";
+
 import styles from "../PokedexHome/pokedex.module.css";
 
 export function PokedexGrid({ allPokemons }) {
@@ -14,6 +16,53 @@ export function PokedexGrid({ allPokemons }) {
 
   // save the filtered array of objects
   const filteredPokemonList = searchFilter(allPokemons);
+  console.log(filteredPokemonList);
+  console.log(allPokemons);
+
+  // map through the array
+  // let response = [
+  //   {
+  //     id: 1,
+  //     organization: "org1",
+  //     projects: [
+  //       { project_year: "2020", project_name: "prj11" },
+  //       { project_year: "2020", project_name: "prj12" },
+  //     ],
+  //   },
+  //   {
+  //     id: 2,
+  //     organization: "org2",
+  //     projects: [
+  //       { project_year: "2021", project_name: "prj21" },
+  //       { project_year: "2021", project_name: "prj21" },
+  //     ],
+  //   },
+  // ];
+
+  // response.map((array) => {
+  //   array.projects.map((project) => {
+  //     console.log(project.project_year, project.project_name);
+  //   });
+  // });
+
+  // let response1 = [
+  //   {
+  //     id: 1,
+  //     name: "weedle",
+  //     types: [{ type_name: "poison" }, { type_name: "test" }],
+  //   },
+  //   {
+  //     id: 2,
+  //     name: "kakuna",
+  //     types: [{ type_name: "bug" }, { type_name: "poison" }],
+  //   },
+  // ];
+
+  // response1.map((array) => {
+  //   return array.types.map((type) => {
+  //     console.log(type.type_name);
+  //   });
+  // });
 
   return (
     <>
@@ -41,27 +90,86 @@ export function PokedexGrid({ allPokemons }) {
           </div>
         </form>
 
-        {/* <div>
-          <h3>Pokemon Collection</h3>
-        </div> */}
-        {/* </div> */}
+        {/* <b>Test Response 1</b> */}
+        {/* <li>
+          <b>Types</b>
+          {allPokemons.map((pokemon) => {
+            console.log(pokemon.name);
+            return pokemon.types.map((type) => {
+              console.log(type.type.name);
+
+              return (
+                <>
+                  <div>
+                    <button className={styles.pill}>{pokemon.name}</button>
+                    {pokemon.types.map((type) => {
+                      return (
+                        <>
+                          <button>{type.type.name}</button>
+                        </>
+                      );
+                    })}
+
+                    <button>{type.type.name}</button>
+                  </div>
+                </>
+              );
+            });
+          })}
+        </li> */}
+
+        {/* {allPokemons.map((pokemon) => {
+          return (
+            <>
+              <button className={styles.pill}>{pokemon.name}</button>
+            </>
+          );
+        })} */}
+
+        {/* testing */}
+        {/* {allPokemons.map((pokemon) => {
+          return pokemon.moves.map((move) => {
+            console.log(pokemon.name);
+            console.log(move.move.name);
+
+            return (
+              <>
+                <button></button>
+              </>
+            );
+          });
+        })} */}
+
         <div className={styles.all_pokemon}>
           {/* //loop through each item in the api data array and create a unqiue carda with anme of each pokemon */}
           {/* {pokemonList.map((pokemon) => { */}
           {filteredPokemonList.map((pokemon) => {
-            return (
-              <PokemonCard
-                name={pokemon.name}
-                id={pokemon.id}
-                sprites={
-                  pokemon.sprites.other["official-artwork"].front_default
-                }
-                type={pokemon.type}
+            return pokemon.types.map((type) => {
+              console.log(type.type.name);
+              //   })
+              // )
 
-                //   pokemonStats={pokemonStats.name}
-              />
-            );
+              return (
+                <PokemonCard
+                  name={pokemon.name}
+                  id={pokemon.id}
+                  sprites={
+                    pokemon.sprites.other["official-artwork"].front_default
+                  }
+                  // types={type.type.name}
+                  // types={pokemon.types[0].type.name}
+                  height={pokemon.height}
+                  type={type.type.name}
+                  pokemon={pokemon}
+                  // allPokemons={allPokemons}
+                  // type={pokemon.type}
+
+                  //   pokemonStats={pokemonStats.name}
+                />
+              );
+            });
           })}
+
           {/* <IndPokemonCard name="Pikachu" />
         <IndPokemonCard />
         <IndPokemonCard /> */}
@@ -70,3 +178,85 @@ export function PokedexGrid({ allPokemons }) {
     </>
   );
 }
+
+// const typeName = type.type_name;
+// let colour;
+// if (typeName === "grass") {
+//   colour = "#7AC74C";
+// } else if (typeName === "fire") {
+//   colour = "#EE8130";
+// } else if (typeName === "poison") {
+//   colour = "#A33EA1";
+// } else {
+//   colour = "green";
+// }
+
+// console.log(colour);
+
+// response1.map((array) => {
+//   array.types.map((type) => {
+//     console.log(type.type_name);
+//   });
+// });
+
+{
+  /* {response1.map((array) => {
+          return array.types.map((type) => {
+            console.log(type.type_name);
+            return (
+              <>
+                <button
+                // style={
+                //   {
+                //     background: colour,
+                //   }
+                // }
+                >
+                  {type.type_name}{" "}
+                </button>
+              </>
+            );
+          });
+        })} */
+}
+
+{
+  /* {product.map((data) => (
+          <tr key={data.id}>
+            <td>{data.name}</td>
+            <td>{data.description}</td>
+
+            {data.color.map((datas) => {
+              return (
+                <tr key={datas.id_color}>
+                  <td>{datas.color}</td>
+                  <td>{datas.quantity}</td>
+                </tr>
+              );
+            })}
+          </tr>
+        ))} */
+}
+
+{
+  /* {response.map((array) => {
+          return array.projects.map((project) => {
+            console.log(project.project_year, project.project_name);
+            return <>{project.project_name}</>;
+          });
+        })} */
+}
+
+// const pokeName = pokemon.name;
+// console.log(pokeName);
+
+// pokemon.types.map((pokemons) => {
+//   const pokeType = pokemons.type;
+//   console.log(pokeType);
+// });
+
+// return (
+//   <>
+//     <button className={styles.pill}>{pokeName}</button>
+//   </>
+// );

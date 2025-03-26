@@ -38,6 +38,7 @@ function PokedexHome() {
     }
 
     createPokemonObject(data.results);
+    console.log(data.results);
   };
   const initialized = useRef(false);
 
