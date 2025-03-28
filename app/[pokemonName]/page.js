@@ -185,15 +185,57 @@ export default async function PokemonPage({ params }) {
                 <div className={styles.card_stats}>
                   <ul className={styles.alignMe}>
                     <li>
-                      <b>Types</b>
+                      <b>Type</b>
                       {pokemonObject.types.map((typeObject) => {
                         const typeName = typeObject.type.name;
+
+                        const test = typeName;
+                        let colour;
+                        if (test === "grass") {
+                          colour = "#7AC74C";
+                        } else if (test === "fire") {
+                          colour = "#EE8130";
+                        } else if (test === "poison") {
+                          colour = "#A33EA1";
+                        } else if (test === "normal") {
+                          colour = "#A8A77A";
+                        } else if (test === "electric") {
+                          colour = "#F7D02C";
+                        } else if (test === "dragon") {
+                          colour = "#6F35FC";
+                        } else if (test === "ice") {
+                          colour = "#96D9D6";
+                        } else if (test === "fighting") {
+                          colour = "C22E28";
+                        } else if (test === "ground") {
+                          colour = "#E2BF65";
+                        } else if (test === "psychic") {
+                          colour = "#F95587";
+                        } else if (test === "bug") {
+                          colour = "#A6B91A";
+                        } else if (test === "flying") {
+                          colour = "#A98FF3";
+                        } else if (test === "rock") {
+                          colour = "#B6A136";
+                        } else if (test === "water") {
+                          colour = "#6390F0";
+                        } else if (test === "ghost") {
+                          colour = "#735797";
+                        } else if (test === "dark") {
+                          colour = "#705746";
+                        } else if (test === "steel") {
+                          colour = "#B7B7CE";
+                        } else if (test === "fairy") {
+                          colour = "#D685AD";
+                        } else {
+                          colour = "black";
+                        }
 
                         return (
                           <>
                             <button
                               style={{
-                                backgroundColor: pokeColor,
+                                backgroundColor: colour,
                                 color: "white",
                               }}
                               className={styles.pill}
@@ -212,10 +254,7 @@ export default async function PokemonPage({ params }) {
                       <b>Height</b>
                       {pokemonObject.height}
                     </li>
-                    <li>
-                      <b>Type Test</b>
-                      {/* {pokeObj} */}
-                    </li>
+
                     <li>
                       <b>Abilities</b>
 
@@ -228,16 +267,20 @@ export default async function PokemonPage({ params }) {
                         // style={{ width: "500px" }}
 
                         key={abilityName} */}
+
                             <button
-                              style={{
-                                backgroundColor: "white",
-                                border: "none",
-                                // color: "white",
-                              }}
+                              style={
+                                {
+                                  // backgroundColor: "white",
+                                  // border: "none",
+                                  // color: "white",
+                                }
+                              }
                               className={styles.invPill}
                             >
                               {abilityName}
                             </button>
+
                             {/* {abilityObject.ability.name} */}
                           </>
                         );
@@ -315,7 +358,14 @@ export default async function PokemonPage({ params }) {
             </div>
           </div>
           <button className={styles.submitBtn} type="submit">
-            <Link href="/PokedexHome">Explore More Pokemon</Link>
+            <Link
+              href="/PokedexHome"
+              style={{
+                color: "white",
+              }}
+            >
+              Explore More Pokemon
+            </Link>
           </button>
         </div>
       </main>

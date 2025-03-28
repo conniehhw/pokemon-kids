@@ -1,9 +1,10 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 
 import { PokemonCard } from "../components/PokemonCard";
 
 import styles from "../PokedexHome/pokedex.module.css";
+import { typescript } from "@/next.config";
 
 export function PokedexGrid({ allPokemons }) {
   const [searchText, setSearchText] = useState(""); // empty string
@@ -16,53 +17,33 @@ export function PokedexGrid({ allPokemons }) {
 
   // save the filtered array of objects
   const filteredPokemonList = searchFilter(allPokemons);
-  console.log(filteredPokemonList);
-  console.log(allPokemons);
+  console.log(filteredPokemonList); // log filtered/searched pokemon name
+  console.log(allPokemons); // logs all fetched 20 pokemons (all info)
 
-  // map through the array
-  // let response = [
-  //   {
-  //     id: 1,
-  //     organization: "org1",
-  //     projects: [
-  //       { project_year: "2020", project_name: "prj11" },
-  //       { project_year: "2020", project_name: "prj12" },
-  //     ],
-  //   },
-  //   {
-  //     id: 2,
-  //     organization: "org2",
-  //     projects: [
-  //       { project_year: "2021", project_name: "prj21" },
-  //       { project_year: "2021", project_name: "prj21" },
-  //     ],
-  //   },
-  // ];
+  // testing how to merge new arrays into original
+  const animals = ["pigs", "goats", "sheep"]; // animals array
 
-  // response.map((array) => {
-  //   array.projects.map((project) => {
-  //     console.log(project.project_year, project.project_name);
-  //   });
-  // });
+  const hey = animals.push("cows", "dog"); // adds 2 elements to animals array
 
-  // let response1 = [
-  //   {
-  //     id: 1,
-  //     name: "weedle",
-  //     types: [{ type_name: "poison" }, { type_name: "test" }],
-  //   },
-  //   {
-  //     id: 2,
-  //     name: "kakuna",
-  //     types: [{ type_name: "bug" }, { type_name: "poison" }],
-  //   },
-  // ];
+  console.log(animals); // logs all the items in the array called 'Animals'
+  console.log(hey); // logs number of elements in 'hey' variable which contains new length of the array
+  //(5) ["pigs", "goats", "sheep", "cows", "dog"]
+  //5
 
-  // response1.map((array) => {
-  //   return array.types.map((type) => {
-  //     console.log(type.type_name);
-  //   });
-  // });
+  animals.push("kiwi"); // adds 1 more elements to animals array
+  console.log(animals); // logs all the items in the array called 'Animals'
+  console.log(hey); // 'hey' variable contains new length of the array
+  //(6) ["pigs", "goats", "sheep", "cows", "dog", "kiwi"]
+  //6
+
+  const vegetables = ["parsnip", "potato"]; //array 1
+  const moreVegs = ["celery", "beetroot", "carrot"]; //array 2
+
+  // Merge the second array into the first one using spread syntax
+  vegetables.push(...moreVegs);
+
+  console.log(vegetables); // ['parsnip', 'potato', 'celery', 'beetroot', 'carrot']
+  console.log(moreVegs); // this array remains unchanged
 
   return (
     <>
@@ -141,33 +122,34 @@ export function PokedexGrid({ allPokemons }) {
         })} */}
 
         <div className={styles.all_pokemon}>
-          {/* //loop through each item in the api data array and create a unqiue carda with anme of each pokemon */}
+          {/* //loop through each item in the api data array and create a unique card with name of each pokemon */}
           {/* {pokemonList.map((pokemon) => { */}
           {filteredPokemonList.map((pokemon) => {
-            return pokemon.types.map((type) => {
-              console.log(type.type.name);
-              //   })
-              // )
+            // return pokemon.types.map((type) => {
+            //   console.log(type.type.name); //log pokemon type
+            //   })
+            // )
 
-              return (
-                <PokemonCard
-                  name={pokemon.name}
-                  id={pokemon.id}
-                  sprites={
-                    pokemon.sprites.other["official-artwork"].front_default
-                  }
-                  // types={type.type.name}
-                  // types={pokemon.types[0].type.name}
-                  height={pokemon.height}
-                  type={type.type.name}
-                  pokemon={pokemon}
-                  // allPokemons={allPokemons}
-                  // type={pokemon.type}
+            return (
+              <PokemonCard
+                name={pokemon.name}
+                id={pokemon.id}
+                sprites={
+                  pokemon.sprites.other["official-artwork"].front_default
+                }
+                // types={type.type.name}
+                // types={pokemon.types[0].type.name}
+                height={pokemon.height}
+                // type={type.type.name}
+                // types={types}
+                pokemon={pokemon}
+                // allPokemons={allPokemons}
+                // type={pokemon.type}
 
-                  //   pokemonStats={pokemonStats.name}
-                />
-              );
-            });
+                //   pokemonStats={pokemonStats.name}
+              />
+            );
+            // });
           })}
 
           {/* <IndPokemonCard name="Pikachu" />
@@ -260,3 +242,48 @@ export function PokedexGrid({ allPokemons }) {
 //     <button className={styles.pill}>{pokeName}</button>
 //   </>
 // );
+
+// map through the array
+// let response = [
+//   {
+//     id: 1,
+//     organization: "org1",
+//     projects: [
+//       { project_year: "2020", project_name: "prj11" },
+//       { project_year: "2020", project_name: "prj12" },
+//     ],
+//   },
+//   {
+//     id: 2,
+//     organization: "org2",
+//     projects: [
+//       { project_year: "2021", project_name: "prj21" },
+//       { project_year: "2021", project_name: "prj21" },
+//     ],
+//   },
+// ];
+
+// response.map((array) => {
+//   array.projects.map((project) => {
+//     console.log(project.project_year, project.project_name);
+//   });
+// });
+
+// let response1 = [
+//   {
+//     id: 1,
+//     name: "weedle",
+//     types: [{ type_name: "poison" }, { type_name: "test" }],
+//   },
+//   {
+//     id: 2,
+//     name: "kakuna",
+//     types: [{ type_name: "bug" }, { type_name: "poison" }],
+//   },
+// ];
+
+// response1.map((array) => {
+//   return array.types.map((type) => {
+//     console.log(type.type_name);
+//   });
+// });

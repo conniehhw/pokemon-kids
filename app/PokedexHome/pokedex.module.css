@@ -116,16 +116,21 @@ a:active {
   font-family: inherit;
   font-size: inherit;
   font-weight: 500;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
   /* padding-top: 0.25rem;
   padding-bottom: 0.25rem; */
   text-align: center;
-  margin: 0.5rem;
+  /* margin: 0.5rem; */
+  /* margin-left: 1rem; */
+  /* margin-right: 0.5rem; */
+  margin: auto;
+  margin-right: 1rem;
 }
 
 .invPill {
   border: none;
+  background-color: #fafafa;
   color: none;
   border-radius: 20px;
   font-family: inherit;
