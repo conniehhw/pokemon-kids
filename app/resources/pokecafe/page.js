@@ -74,10 +74,7 @@ function pokecafe() {
         </p>
         <p>
           You can find more visting information at the official{" "}
-          <a
-            href="https://www.pokemoncenter-online.com/cafe/en/"
-            target="_blank"
-          >
+          <a href="https://www.pokemon-cafe.jp/en/cafe/" target="_blank">
             Pokemon Cafe website.
           </a>
         </p>

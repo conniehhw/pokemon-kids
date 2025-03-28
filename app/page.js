@@ -50,7 +50,7 @@ export default function Home() {
 
           <div className={styles.projecttext}>
             <h5>Pokemon 101</h5>
-            <h6>A parent's guide. What are pokemon?</h6>
+            <h6>A parent's guide to the world of Pokemon.</h6>
             <br></br>
 
             <Link href="/resources/poke101">
@@ -113,7 +113,7 @@ export default function Home() {
             <h5>Pokedex</h5>
             <h6>Get the stats on your favourite Pokemon & more</h6>
             <br></br>
-            <Link href="/pokedex1">
+            <Link href="/PokedexHome">
               <Button>Learn More</Button>
             </Link>
           </div>

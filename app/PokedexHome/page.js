@@ -11,7 +11,7 @@ function PokedexHome() {
 
   const getAllPokemons = async () => {
     const res = await fetch(
-      "https://pokeapi.co/api/v2/pokemon?limit=10&offset=0"
+      "https://pokeapi.co/api/v2/pokemon?limit=30&offset=0"
     );
 
     const data = await res.json();

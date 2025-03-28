@@ -4,8 +4,6 @@ import { Inter } from "next/font/google";
 import Header1 from "./components/Header1";
 import Footer from "./components/Footer";
 import ScrollToTopButton from "./components/ScrollToTopButton";
-// import { GlobalProvider } from "@/context/global";
-import { GlobalProvider } from "./api/global";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -47,15 +45,13 @@ export default async function RootLayout({ children }) {
     <>
       <html lang="en">
         <body className={inter.className}>
-          <GlobalProvider>
-            <Header1 />
-            {children}
-            {/* <h1>{data.full_name}</h1> */}
-            {/* <h1>{data.datetime}</h1> */}
+          <Header1 />
+          {children}
+          {/* <h1>{data.full_name}</h1> */}
+          {/* <h1>{data.datetime}</h1> */}
 
-            <ScrollToTopButton />
-            <Footer />
-          </GlobalProvider>
+          <ScrollToTopButton />
+          <Footer />
         </body>
       </html>
     </>

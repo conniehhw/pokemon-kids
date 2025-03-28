@@ -2,10 +2,10 @@
 "use client";
 
 import styles from "../about/about.module.css";
-import { SearchBar1 } from "../components/SearchBar1";
-import { SearchBar } from "../components/SearchBar";
-import { SearchResultsList1 } from "../components/SearchResultsList1";
-import { SearchResultsList } from "../components/SearchResultsList";
+// import { SearchBar1 } from "../components/SearchBar1";
+// import { SearchBar } from "../components/SearchBar";
+// import { SearchResultsList1 } from "../components/SearchResultsList1";
+// import { SearchResultsList } from "../components/SearchResultsList";
 import { useState } from "react";
 
 import Image from "next/image";
@@ -31,14 +31,14 @@ export default function About() {
         </ul>
       </div>
 
-      <SearchBar1 setResults={setResults} />
-      <SearchBar setResults={setResults} />
+      {/* <SearchBar1 setResults={setResults} />
+      <SearchBar setResults={setResults} /> */}
 
       {/* we want SearchBar to be responsible for modifying this array, so we'll pass it in as a prop, 
       so we say setResults is equal to the setResults function we have */}
 
-      <SearchResultsList1 results={results} />
-      <SearchResultsList results={results} />
+      {/* <SearchResultsList1 results={results} />
+      <SearchResultsList results={results} /> */}
       {/* cancel out the <div>Search results</div>, to render results, use new component pass the results variable as a prop into this */}
 
       <div className={styles.grid}>
