@@ -2,16 +2,13 @@
 "use client";
 
 import styles from "../about/about.module.css";
-// import { SearchBar1 } from "../components/SearchBar1";
-// import { SearchBar } from "../components/SearchBar";
-// import { SearchResultsList1 } from "../components/SearchResultsList1";
-// import { SearchResultsList } from "../components/SearchResultsList";
+import Button from "react-bootstrap/Button";
 import { useState } from "react";
 
 import Image from "next/image";
 
 export default function About() {
-  const [results, setResults] = useState([]);
+  // const [results, setResults] = useState([]);
 
   // we want to create another stateful variable
   // which will contain the results we've gotten back from the API, b/c we want to be able to modify
@@ -24,22 +21,9 @@ export default function About() {
           <li>
             <a href="/">Home</a>
           </li>
-          {/* <li>
-            <a href="/resources">Resources</a>
-          </li> */}
           <li>About</li>
         </ul>
       </div>
-
-      {/* <SearchBar1 setResults={setResults} />
-      <SearchBar setResults={setResults} /> */}
-
-      {/* we want SearchBar to be responsible for modifying this array, so we'll pass it in as a prop, 
-      so we say setResults is equal to the setResults function we have */}
-
-      {/* <SearchResultsList1 results={results} />
-      <SearchResultsList results={results} /> */}
-      {/* cancel out the <div>Search results</div>, to render results, use new component pass the results variable as a prop into this */}
 
       <div className={styles.grid}>
         <div>
@@ -54,7 +38,285 @@ export default function About() {
         </div>
       </div>
 
+      <div className={styles.myDIV}>
+        <p>Set the flex-grow property</p>
+        <div className={styles.mymain}>
+          <div
+            style={{
+              backgroundColor: "coral",
+            }}
+            className={styles.reddiv}
+          >
+            <Image
+              // className={styles.projectsimg}
+              // className={styles.img}
+              src="/images/pokeball.png"
+              // layout="responsive"
+              height={200}
+              width={200}
+              alt="pokeball"
+              className={styles.imgTest}
+            />
+          </div>
+          <div
+            style={{
+              backgroundColor: "lightblue",
+            }}
+            className={styles.bluediv}
+          >
+            A parent's guide to the world of Pokemon. A parent's guide to theA
+            parent's guide to the world of Pokemon. A parent's guide to the A
+            parent's guide to the world of Pokemon. A parent's guide to the
+          </div>
+          <div
+            style={{
+              backgroundColor: "yellow",
+            }}
+            className={styles.yellowdiv}
+          >
+            yellow div
+          </div>
+          <div
+            style={{
+              backgroundColor: "pink",
+            }}
+            className={styles.pinkdiv}
+          >
+            pink div
+          </div>
+        </div>
+
+        <div className={styles.mymain}>
+          <div
+            style={{
+              backgroundColor: "coral",
+            }}
+            className={styles.reddiv2}
+          >
+            <Image
+              // className={styles.projectsimg}
+              // className={styles.img}
+              src="/images/pokeball.png"
+              // layout="responsive"
+              height={200}
+              width={200}
+              alt="Trading Cards"
+              className={styles.imgTest}
+            />
+          </div>
+          <div
+            style={{
+              backgroundColor: "lightblue",
+            }}
+            className={styles.bluediv}
+          >
+            A parent's guide to the world of Pokemon.
+          </div>
+          <div
+            style={{
+              backgroundColor: "yellow",
+            }}
+            className={styles.yellowdiv}
+          >
+            yellow div
+          </div>
+          <div
+            style={{
+              backgroundColor: "pink",
+            }}
+            className={styles.pinkdiv}
+          >
+            pink div
+          </div>
+        </div>
+      </div>
+
+      <div className={styles.parentContainer}>
+        <div className={styles.cardContainer}>
+          {/* <div className={styles.cardImage}> */}
+          <Image
+            // className={styles.projectsimg}
+            // className={styles.img}
+            src="/images/pokeball.png"
+            layout="responsive"
+            height={150}
+            width={150}
+            alt="Trading Cards"
+          />
+          {/* </div> */}
+
+          <div className={styles.cardText}>
+            <h6>
+              A parent's guide to the world of Pokemon. A parent's guide to the
+              world of Pokemon.
+            </h6>
+          </div>
+          <div className={styles.cardFooter}>
+            <button>Learn More</button>
+          </div>
+        </div>
+
+        <div className={styles.cardContainer}>
+          {/* <div className={styles.cardImage}> */}
+          <Image
+            // className={styles.projectsimg}
+            // className={styles.img}
+            src="/images/trading-cards.png"
+            layout="responsive"
+            height={150}
+            width={150}
+            alt="Trading Cards"
+          />
+          {/* </div> */}
+          <div className={styles.cardText}>
+            A parent's guide to the world of Pokemon. A parent's guide to the
+            world of Pokemon. A parent's guide to the world of Pokemon. A
+            parent's guide to the world of Pokemon.
+          </div>
+          <div className={styles.cardFooter}>
+            <button>Learn More</button>
+          </div>
+        </div>
+
+        <div className={styles.cardContainer}>
+          {/* <div className={styles.cardImage}> */}
+          <Image
+            // className={styles.projectsimg}
+            // className={styles.img}
+            src="/images/trading-cards.png"
+            layout="responsive"
+            height={150}
+            width={150}
+            alt="Trading Cards"
+          />
+          {/* </div> */}
+          <div className={styles.cardText}>
+            A parent's guide to the world of Pokemon.
+          </div>
+          <div className={styles.cardFooter}>
+            <button>Learn More</button>
+          </div>
+        </div>
+
+        <div className={styles.cardContainer}>
+          {/* <div className={styles.cardImage}> */}
+          <Image
+            // className={styles.projectsimg}
+            // className={styles.img}
+            src="/images/trading-cards.png"
+            layout="responsive"
+            height={150}
+            width={150}
+            alt="Trading Cards"
+          />
+          {/* </div> */}
+
+          <div className={styles.cardText}>
+            A parent's guide to the world of Pokemon.
+          </div>
+          <div className={styles.cardFooter}>
+            <button>Learn More</button>
+          </div>
+        </div>
+      </div>
+
+      <div className={styles.parent}>
+        <div className={styles.itemTest}>
+          Item
+          <div className={styles.pic}>
+            {" "}
+            <Image
+              // className={styles.projectsimg}
+              // className={styles.img}
+              src="/images/pokeball.png"
+              // layout="responsive"
+              height={200}
+              width={200}
+              alt="Trading Cards"
+              className={styles.imgTest}
+            />
+          </div>
+          <div className={styles.text}>
+            text box: A parent's guide to the world of Pokemon.
+          </div>
+          <div className={styles.button}>Button</div>
+        </div>
+        <div className={styles.itemTest}>
+          Item
+          <div className={styles.pic}>image box</div>
+          <div className={styles.text}>
+            text box: A parent's guide to the world of Pokemon. A parent's guide
+            to the world of Pokemon. A parent's guide to the world of Pokemon. A
+            parent's guide to the world of Pokemon.
+          </div>
+          <div className={styles.button}>
+            <button className={styles.b}>Learn More</button>
+          </div>
+        </div>
+        <div className={styles.itemTest}>
+          Item
+          <div className={styles.pic}>image box</div>
+          <div className={styles.text}>
+            text box: A parent's guide to the world of Pokemon.A parent's guide
+            to the world of Pokemon.
+          </div>
+          <div className={styles.button}>Button</div>
+        </div>
+      </div>
+
       {/* <div>Photo by Thimo Pedersen on Unsplash</div> */}
     </div>
   );
+}
+
+{
+  /* <section className={styles.cards}>
+        <article>
+          <Image
+            // className={styles.projectsimg}
+            className={styles.img}
+            src="/images/pokemon-101b.png"
+            layout="responsive"
+            height={200}
+            width={200}
+            alt="Pokemon Group"
+          />
+          <h6>
+            Card 1 So you want to be a pokemon trainer? Follow along with Ash
+            and Pikachu and start your journey.
+          </h6>
+          <Button className={styles.btn}>Learn more</Button>
+        </article>
+
+        <article>
+          <Image
+            // className={styles.projectsimg}
+            className={styles.img}
+            src="/images/pokemon-101b.png"
+            layout="responsive"
+            height={200}
+            width={200}
+            alt="Pokemon Group"
+          />
+          <h6>
+            Card 2 So you want to be a pokemon trainer? Follow along with Ash
+            and Pikachu and start your journey. So you want to be a pokemon
+            trainer? Follow along with Ash and Pikachu and start your journey.
+          </h6>
+          <Button className={styles.button}>Learn more</Button>
+        </article>
+        <article>
+          <Image
+            // className={styles.projectsimg}
+            className={styles.img}
+            src="/images/pokemon-101b.png"
+            layout="responsive"
+            height={200}
+            width={200}
+            alt="Pokemon Group"
+          />
+          <h6>Card 3</h6>
+          <Button className={styles.button}>Learn more</Button>
+        </article>
+      </section> */
 }

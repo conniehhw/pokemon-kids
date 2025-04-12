@@ -212,6 +212,40 @@
   border: 2px solid rgb(79 185 227);
 } */
 
+.flexContainer {
+  /* display: flex; */
+  /* min-width: 300px;
+  min-height: 500px; */
+  /* flex-wrap: wrap; */
+  /* gap: 1em; */
+  /* justify-content: center;
+  border: 1px solid red; */
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: center;
+  border: 3px solid black;
+  /* margin-left: 16pt;
+  margin-right: 16pt; */
+}
+
+.cards > article {
+  flex: none;
+  width: 20em;
+  /* min-width: 10em; */
+  border: 1px solid blue;
+  padding: 2em;
+  /* padding: auto; */
+}
+
+.btn {
+  /* position: absolute;
+  bottom: 0; */
+}
+
 /* Medium devices tablets */
 @media screen and (max-width: 900px) {
 }
@@ -222,4 +256,138 @@
 
 /* Mobile & small tablets */
 @media screen and (max-width: 475px) {
+}
+
+.imgTest {
+  width: 100%;
+  height: 100%;
+}
+
+.myDIV {
+  height: 500px;
+  background-color: #ffffff;
+  border: 2px solid black;
+  display: flex;
+  column-gap: 20px;
+}
+
+.mymain {
+  /* width: 100%;
+  height: 100px; */
+  height: 100%;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid blue;
+}
+
+.reddiv {
+  /* flex-grow: 1;
+  object-fit: cover; */
+
+  /* height: 100px; */
+}
+
+.reddiv2 {
+  /* flex-grow: 1;
+  object-fit: cover; */
+
+  /* height: 100px; */
+}
+
+.bluediv {
+  flex-grow: 2;
+}
+
+.yellowdiv {
+  flex-grow: 1;
+}
+
+.pinkdiv {
+  flex-grow: 0.5;
+}
+
+/* test */
+.parent {
+  border: 3px solid black;
+  display: flex;
+  height: 500px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background: orange;
+  align-content: center;
+  row-gap: 20px;
+}
+
+.itemTest {
+  border: 1px solid black;
+  background: yellow;
+  width: 200px;
+}
+
+.pic {
+  background: white;
+  height: 200px;
+  border: 1px solid black;
+}
+
+.text {
+  background: white;
+  height: 200px;
+  border: 1px solid black;
+}
+
+.button {
+  background: white;
+  height: 50px;
+  border: 1px solid black;
+  display: flex;
+}
+
+.b {
+  /* margin-top: 10px;
+  margin-bottom: 10px; */
+  /* margin-right: 20px;
+  margin-left: 20px; */
+  margin: auto;
+}
+
+/* grid box */
+.parentContainer {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: gray;
+  justify-content: center;
+  /* row-gap: 30px; */
+  /* column-gap: 20px; */
+}
+
+/* */
+.cardContainer {
+  flex-wrap: column wrap;
+  border: 3px solid red;
+  max-width: 300px;
+}
+
+.cardImage {
+  background-color: orange;
+  /* flex: 1 21%; */
+  /* min-width: 400px; */
+}
+
+.cardText {
+  padding: 20px;
+  text-wrap: wrap;
+
+  border: 1px solid black;
+  background-color: yellow;
+}
+
+.cardFooter {
+  margin: auto;
+
+  /* margin-top: 20px; */
+
+  border: 1px solid black;
+  background-color: white;
 }

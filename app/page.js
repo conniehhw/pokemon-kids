@@ -50,7 +50,10 @@ export default function Home() {
 
           <div className={styles.projecttext}>
             <h5>Pokemon 101</h5>
-            <h6>A parent's guide to the world of Pokemon.</h6>
+            <h6>
+              A parent's guide to the world of Pokemon. A parent's guide to the
+              world of Pokemon. A parent's guide to the world of Pokemon.
+            </h6>
             <br></br>
 
             <Link href="/resources/poke101">
