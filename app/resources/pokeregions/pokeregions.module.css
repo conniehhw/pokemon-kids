@@ -233,3 +233,122 @@
     grid-row: 1;
   }
 } */
+
+.wrapper {
+  border: 2px solid #f76707;
+  border-radius: 5px;
+  background-color: #fff4e6;
+}
+
+.box {
+  border: 2px solid #ffa94d;
+  border-radius: 5px;
+  background-color: #ffd8a8;
+  padding: 1em;
+  color: #d9480f;
+  justify-content: center;
+  overflow: hidden;
+  /* display: flex; */
+}
+
+.nested {
+  border: 2px solid #ffec99;
+  border-radius: 5px;
+  background-color: #fff9db;
+  padding: 1em;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  /* overflow-y: auto; USE LATER FOR SMALL SCREENS MIN*/
+}
+
+.box1 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  min-width: 0;
+
+  /* display: contents; */
+}
+
+.itemTest {
+  border: 1px solid black;
+  background: yellow;
+  width: 300px;
+  /* flex: 1 1 0; */
+  min-width: 0;
+  /* margin-top: 20px;
+  margin-bottom: 20px; */
+}
+
+.imgTest {
+  width: 100%;
+  height: 100%;
+}
+
+.pic {
+  /* background: white;
+  height: 4u9u8zs200px;
+  border: 1px solid black; */
+}
+
+.text {
+  background: white;
+  height: 200px;
+  border: 1px solid black;
+}
+
+.button {
+  background: white;
+  height: 50px;
+  border: 1px solid black;
+  display: flex;
+}
+
+.b {
+  /* margin-top: 10px;
+  margin-bottom: 10px; */
+  /* margin-right: 20px;
+  margin-left: 20px; */
+  margin: auto;
+}
+
+@media screen and (min-width: 800px) {
+  .wrapper {
+    border: 2px solid #f76707;
+    border-radius: 5px;
+    background-color: #fff4e6;
+  }
+
+  .box {
+    border: 2px solid #ffa94d;
+    border-radius: 5px;
+    background-color: #ffd8a8;
+    padding: 1em;
+    color: #d9480f;
+    justify-content: center;
+    display: flex;
+  }
+
+  .nested {
+    border: 2px solid #ffec99;
+    border-radius: 5px;
+    background-color: #fff9db;
+    padding: 1em;
+  }
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+  }
+
+  .box1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+
+    /* display: contents; */
+  }
+}

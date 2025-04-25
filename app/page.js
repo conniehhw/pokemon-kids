@@ -21,7 +21,7 @@ export default function Home() {
           </h6>
           <br></br>
           <Link href="/resources">
-            <Button>Let's Go!</Button>
+            <Button className={styles.b}>Let's Go!</Button>
           </Link>
         </div>
 
@@ -39,48 +39,52 @@ export default function Home() {
 
       <div className={styles.projects}>
         <div className={styles.projectimg}>
-          <Image
-            className={styles.img}
-            src="/images/pokemon-101a.png"
-            layout="responsive"
-            height={200}
-            width={200}
-            alt="All Pokemon Visual"
-          />
-
+          <div>
+            <Image
+              className={styles.img1}
+              src="/images/pokemon101.png"
+              layout="responsive"
+              height={200}
+              width={200}
+              alt="All Pokemon Visual"
+            />
+          </div>
           <div className={styles.projecttext}>
-            <h5>Pokemon 101</h5>
-            <h6>
-              A parent's guide to the world of Pokemon. A parent's guide to the
-              world of Pokemon. A parent's guide to the world of Pokemon.
-            </h6>
-            <br></br>
-
-            <Link href="/resources/poke101">
-              <Button>Learn More</Button>
-            </Link>
+            <h6>Pokemon 101</h6>
+            <p>A parent's guide to the world of Pokemon.</p>
+          </div>
+          <div className={styles.button}>
+            <button className={styles.b}>Learn More</button>
           </div>
         </div>
+
+        {/* <Link href="/resources/poke101">
+              <Button>Learn More</Button>
+            </Link> */}
 
         <div className={styles.projectimg}>
-          <Image
-            className={styles.img}
-            src="/images/trading-cards1.png"
-            layout="responsive"
-            height={200}
-            width={200}
-            alt="Pokemon cards"
-          />
-
-          <div className={styles.projecttext}>
-            <h5>Trading Card Game</h5>
-            <h6>Collections, types of cards and building decks.</h6>
-            <br></br>
-            <Link href="/resources/poketcg">
-              <Button>Learn More</Button>
-            </Link>
+          <div>
+            <Image
+              className={styles.img1}
+              src="/images/tradingcards.png"
+              layout="responsive"
+              height={200}
+              width={200}
+              alt="Pokemon cards"
+            />
           </div>
+          <div className={styles.projecttext}>
+            <h6>Trading Card Game</h6>
+            <p>Collections, types of cards and building decks.</p>
+          </div>
+          <div className={styles.button}>
+            <button className={styles.b}>Learn More</button>
+          </div>
+          {/* <Link href="/resources/poketcg">
+              <Button>Learn More</Button>
+            </Link> */}
         </div>
+
         {/* 
         <div className={styles.projectimg}>
           <Image
@@ -103,23 +107,26 @@ export default function Home() {
         </div> */}
 
         <div className={styles.projectimg}>
-          <Image
-            className={styles.img}
-            src="/images/pokedex.png"
-            layout="responsive"
-            height={200}
-            width={200}
-            alt="Pokemon Group"
-          />
-
-          <div className={styles.projecttext}>
-            <h5>Pokedex</h5>
-            <h6>Get the stats on your favourite Pokemon & more</h6>
-            <br></br>
-            <Link href="/PokedexHome">
-              <Button>Learn More</Button>
-            </Link>
+          <div>
+            <Image
+              className={styles.img1}
+              src="/images/pokedex.png"
+              layout="responsive"
+              height={200}
+              width={200}
+              alt="Pokedex"
+            />
           </div>
+          <div className={styles.projecttext}>
+            <h6>Pokedex</h6>
+            <p>Get the stats on your favourite Pokemon & more.</p>
+          </div>
+          <div className={styles.button}>
+            <button className={styles.b}>Learn More</button>
+          </div>
+          {/* <Link href="/PokedexHome">
+              <Button>Learn More</Button>
+            </Link> */}
         </div>
       </div>
     </div>

@@ -256,6 +256,43 @@
 
 /* Mobile & small tablets */
 @media screen and (max-width: 475px) {
+  .itemTest {
+    border: 1px solid black;
+    background: yellow;
+    width: 400px;
+    /* flex: 1 1 0; */
+    min-width: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 16pt;
+    margin-right: 16pt;
+  }
+}
+
+/* desktop styles */
+@media screen and (min-width: 1200px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    /* gap: 16pt; */
+    /* row-gap: 8pt; */
+    /* margin-top: 84pt; */
+    margin-left: 150px;
+    margin-right: 150px;
+    /* padding-top: 24pt; */
+    /* margin-bottom: 16pt; */
+    /* border: 1px solid black; */
+    /* background-color: lightpink; */
+  }
+
+  .grid div:nth-child(1) {
+    grid-column: 1/12;
+    grid-row: 1;
+    /* border: 1px solid black; */
+    /* background-color: hotpink; */
+    /* margin-left: 16pt;
+    margin-right: 16pt; */
+  }
 }
 
 .imgTest {
@@ -263,72 +300,40 @@
   height: 100%;
 }
 
-.myDIV {
-  height: 500px;
-  background-color: #ffffff;
-  border: 2px solid black;
-  display: flex;
-  column-gap: 20px;
-}
-
-.mymain {
-  /* width: 100%;
-  height: 100px; */
-  height: 100%;
-  width: 300px;
-  display: flex;
-  flex-direction: column;
-  border: 2px solid blue;
-}
-
-.reddiv {
-  /* flex-grow: 1;
-  object-fit: cover; */
-
-  /* height: 100px; */
-}
-
-.reddiv2 {
-  /* flex-grow: 1;
-  object-fit: cover; */
-
-  /* height: 100px; */
-}
-
-.bluediv {
-  flex-grow: 2;
-}
-
-.yellowdiv {
-  flex-grow: 1;
-}
-
-.pinkdiv {
-  flex-grow: 0.5;
-}
-
 /* test */
 .parent {
   border: 3px solid black;
   display: flex;
-  height: 500px;
+  /* height: 800px; */
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
   background: orange;
   align-content: center;
   row-gap: 20px;
+  min-width: 0;
+  margin-left: 150px;
+  margin-right: 150px;
+  /* min-width: 0;
+  flex-shrink: 0; */
+  /* flex-flow: row wrap; */
+  /* flex: 1 1 auto; */
+  /* flex-basis: 0; */
 }
 
 .itemTest {
   border: 1px solid black;
   background: yellow;
-  width: 200px;
+  width: 400px;
+  /* flex: 1 1 0; */
+  min-width: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .pic {
-  background: white;
-  height: 200px;
-  border: 1px solid black;
+  /* background: white;
+  height: 4u9u8zs200px;
+  border: 1px solid black; */
 }
 
 .text {
@@ -350,44 +355,4 @@
   /* margin-right: 20px;
   margin-left: 20px; */
   margin: auto;
-}
-
-/* grid box */
-.parentContainer {
-  display: flex;
-  flex-wrap: wrap;
-  background-color: gray;
-  justify-content: center;
-  /* row-gap: 30px; */
-  /* column-gap: 20px; */
-}
-
-/* */
-.cardContainer {
-  flex-wrap: column wrap;
-  border: 3px solid red;
-  max-width: 300px;
-}
-
-.cardImage {
-  background-color: orange;
-  /* flex: 1 21%; */
-  /* min-width: 400px; */
-}
-
-.cardText {
-  padding: 20px;
-  text-wrap: wrap;
-
-  border: 1px solid black;
-  background-color: yellow;
-}
-
-.cardFooter {
-  margin: auto;
-
-  /* margin-top: 20px; */
-
-  border: 1px solid black;
-  background-color: white;
 }

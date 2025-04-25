@@ -30,7 +30,7 @@ function Resources() {
             <Image
               // className={styles.projectsimg}
               className={styles.img}
-              src="/images/pokemon-101b.png"
+              src="/images/pokemon101.png"
               layout="responsive"
               height={200}
               width={200}
@@ -46,7 +46,7 @@ function Resources() {
             <Image
               // className={styles.projectsimg}
               className={styles.img}
-              src="/images/trading-cards.png"
+              src="/images/tradingcards.png"
               layout="responsive"
               height={200}
               width={200}

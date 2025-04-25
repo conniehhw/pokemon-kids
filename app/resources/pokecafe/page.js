@@ -20,6 +20,7 @@ function pokecafe() {
           <li>Pokemon Cafe</li>
         </ul>
       </div>
+
       <div className={styles.grid}>
         <div>
           <Image
