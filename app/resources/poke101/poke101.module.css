@@ -95,6 +95,10 @@
   margin-bottom: 16pt;
 }
 
+.imgr1 {
+  width: 100%;
+}
+
 .content {
   display: grid;
   grid-template-columns: repeat(11, 1fr);
@@ -210,8 +214,26 @@
     height: 150px; */
   }
 
+  .textbox {
+    width: 60%;
+  }
+
+  .textbox1 {
+    margin-top: 20pt;
+    width: 100%;
+  }
+
   .clearfix {
     overflow: auto;
+  }
+}
+
+@media screen and (min-width: 820px) {
+  .imgr1 {
+    width: 500px;
+    height: 297px;
+    margin-left: 100pt;
+    margin-right: 100pt;
   }
 }
 
@@ -249,6 +271,25 @@
     margin-right: 48pt;
   }
 
+  .textbox {
+    width: 65%;
+  }
+
+  .textbox1 {
+    width: 100%;
+  }
+
+  .shrink {
+    margin-left: 64pt;
+    margin-right: 64pt;
+  }
+
+  /* temporary bandaid fix */
+  .shrink1 {
+    /* margin-left: 100pt;
+    margin-right: 100pt; */
+  }
+
   .img {
     float: right;
     width: 225px;
@@ -261,12 +302,19 @@
     height: 175px;
   }
 
+  .imgr1 {
+    margin-right: 0;
+    /* width: 500px;
+    height: 297px; */
+  }
+
   .imgnbr {
     /* float: right;
     width: 150px;
     height: 150px; */
-    margin-left: 10px;
-    margin-right: 10px;
+    /* margin-left: 30px; */
+    /* margin-right: 40px; */
+    size: 90%;
   }
 
   .clearfix {
@@ -309,6 +357,16 @@
   .accordion {
     margin-left: 150px;
     margin-right: 150px;
+  }
+
+  .imgr1 {
+    float: right;
+    width: 500px;
+    height: 297px;
+  }
+
+  .textbox1 {
+    width: 100%;
   }
 
   .content {

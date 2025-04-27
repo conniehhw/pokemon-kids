@@ -71,9 +71,11 @@ function poke101() {
               width={250}
               alt="Pokemon All Kinds"
             />
-            A pokemon is a kind of creature. They can learn different moves.
-            Some pokemons have strong power; like Legendaries, Megas, Mythicals
-            and Ultra beasts.
+            <div className={styles.textbox}>
+              A pokemon is a kind of creature. They can learn different moves.
+              Some pokemons have strong power; like Legendaries, Megas,
+              Mythicals and Ultra beasts.
+            </div>
           </AccordionBody>
         </AccordionItem>
         <AccordionItem eventKey="1">
@@ -86,9 +88,11 @@ function poke101() {
               width={300}
               alt="Pokeball Chart"
             />
-            A ball that catches pokemon, when you throw the ball. There are
-            different kinds of poke balls; like the Quick ball, Ultra ball,
-            Master ball and Apecorn ball.
+            <div className={styles.textbox}>
+              A ball that catches pokemon, when you throw the ball. There are
+              different kinds of poke balls; like the Quick ball, Ultra ball,
+              Master ball and Apecorn ball.
+            </div>
           </AccordionBody>
         </AccordionItem>
 
@@ -97,13 +101,15 @@ function poke101() {
             What are trainers? Who are Professors?
           </AccordionHeader>
           <AccordionBody>
-            <Image
-              className={styles.imgnbr}
-              src="/images/pokemon-professors.png"
-              height={271}
-              width={632}
-              alt="Pokemon professors"
-            />
+            <div className={styles.shrink}>
+              <Image
+                className={styles.imgnbr}
+                src="/images/pokemon-professors.png"
+                height={271}
+                width={632}
+                alt="Pokemon professors"
+              />
+            </div>
             Pokemon trainers are people that catch Pokemon, battle with Pokemon
             and research pokemon. You have to be at least 10 years old to become
             a trainer. You will work with a professor, who will assign to you a
@@ -123,12 +129,14 @@ function poke101() {
               width={300}
               alt="Pokemon Battle"
             />
-            Pokemons and their trainers compete in battles. These take place in
-            different arenas. The trainer calls on a pokemon to battle against
-            another trainer and pokemon pair. What you want to do, is pick a
-            pokemon from your team that has abilities and attacks which can win
-            over the opposing pokemon. When you start, you might say "Snorlex
-            Go!"
+            <div className={styles.textbox}>
+              Pokemons and their trainers compete in battles. These take place
+              in different arenas. The trainer calls on a pokemon to battle
+              against another trainer and pokemon pair. <br></br>
+              <br></br>What you want to do, is pick a pokemon from your team
+              that has abilities and attacks which can win over the opposing
+              pokemon. When you start, you might say "Snorlex Go!"
+            </div>
           </AccordionBody>
         </AccordionItem>
 
@@ -145,30 +153,40 @@ function poke101() {
               width={400}
               alt="Pokemon Type"
             />
-            There are 18 types: Grass, Fire, Water, Electric, Steel, Psychic,
-            Fighting, Fairy, Dark, Dragon, Ice, Poison, Bug, Rock, Flying,
-            Ground, Ghost and Normal. Each type has their unique strengths and
-            weaknesses.
+            <div className={styles.textbox}>
+              There are 18 types: Grass, Fire, Water, Electric, Steel, Psychic,
+              Fighting, Fairy, Dark, Dragon, Ice, Poison, Bug, Rock, Flying,
+              Ground, Ghost and Normal. Each type has their unique strengths and
+              weaknesses.
+            </div>
           </AccordionBody>
         </AccordionItem>
 
         <AccordionItem eventKey="5">
           <AccordionHeader>
             {" "}
-            What are Evolutions? Why does Pikachu have 2 other names?
+            What are Evolutions? Why do some pokemons have 2 other names?
           </AccordionHeader>
           <AccordionBody className={styles.clearfix}>
+            {/* <div className={styles.shrink1}> */}
             <Image
-              className={styles.imgr}
+              className={styles.imgr1}
+              // className={styles.imgnbr}
               src="/images/pokemon-evol.png"
               height={297}
               width={500}
               alt="Pokemon Evolutions"
             />
-            Some pokemons can evolve 2 times. For instance, Pichu is basic,
-            Pikachu is stage 1 and Raichu is stage 2. As it evolves from basic
-            to stage 1 and 2, it becomes more powerful. However, some pokemons
-            do not evolve.
+            {/* </div> */}
+            <div className={styles.textbox1}>
+              Some pokemons can evolve 2 times. As it evolves from basic to
+              stage 1 and 2, it becomes more powerful. However, some pokemons do
+              not evolve. <br></br>
+              <br></br>The pokemon in the first row is Charmander in its basic
+              form, it evolves to Charmeleon in its stage 1 form and then
+              Charizard - stage 2 form and then can evolve to a temporary
+              transformation, the Mega Charizard X.
+            </div>
           </AccordionBody>
         </AccordionItem>
 

@@ -53,9 +53,11 @@ export default function Home() {
             <h6>Pokemon 101</h6>
             <p>A parent's guide to the world of Pokemon.</p>
           </div>
-          <div className={styles.button}>
-            <button className={styles.b}>Learn More</button>
-          </div>
+          <Link href="resources/poke101">
+            <div className={styles.button}>
+              <button className={styles.b}>Learn More</button>
+            </div>
+          </Link>
         </div>
 
         {/* <Link href="/resources/poke101">
@@ -77,40 +79,18 @@ export default function Home() {
             <h6>Trading Card Game</h6>
             <p>Collections, types of cards and building decks.</p>
           </div>
-          <div className={styles.button}>
-            <button className={styles.b}>Learn More</button>
-          </div>
-          {/* <Link href="/resources/poketcg">
-              <Button>Learn More</Button>
-            </Link> */}
+          <Link href="resources/poketcg">
+            <div className={styles.button}>
+              <button className={styles.b}>Learn More</button>
+            </div>
+          </Link>
         </div>
-
-        {/* 
-        <div className={styles.projectimg}>
-          <Image
-            className={styles.img}
-            src="/images/trading-cards1.png"
-            layout="responsive"
-            height={200}
-            width={200}
-            alt="Pokemon cards"
-          />
-
-          <div className={styles.projecttext}>
-            <h5>Trading Card Game</h5>
-            <h6>Collections, types of cards and building decks.</h6>
-            <br></br>
-            <Link href="/resources/poketcg">
-              <Button>Learn More</Button>
-            </Link>
-          </div>
-        </div> */}
 
         <div className={styles.projectimg}>
           <div>
             <Image
               className={styles.img1}
-              src="/images/pokedex.png"
+              src="/images/pokedex-home.png"
               layout="responsive"
               height={200}
               width={200}
@@ -121,12 +101,11 @@ export default function Home() {
             <h6>Pokedex</h6>
             <p>Get the stats on your favourite Pokemon & more.</p>
           </div>
-          <div className={styles.button}>
-            <button className={styles.b}>Learn More</button>
-          </div>
-          {/* <Link href="/PokedexHome">
-              <Button>Learn More</Button>
-            </Link> */}
+          <Link href="/PokedexHome">
+            <div className={styles.button}>
+              <button className={styles.b}>Learn More</button>
+            </div>
+          </Link>
         </div>
       </div>
     </div>

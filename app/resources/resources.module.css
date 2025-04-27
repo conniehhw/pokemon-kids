@@ -42,6 +42,8 @@
 
 /* main grid */
 .grid {
+  display: flex;
+  flex-wrap: wrap;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   /* grid-template-rows: repeat(3, 1fr); */
@@ -111,9 +113,9 @@
   /* border: 1px solid black; */
 }
 
-.gridtext {
+/* .gridtext {
   margin-bottom: 16pt;
-}
+} */
 
 .img {
   border-radius: 20px;
@@ -121,8 +123,40 @@
   margin-bottom: 8pt;
 }
 
+.gridchild {
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  /* border: 1px solid black; */
+  margin-top: 24pt;
+}
+
+.text {
+  /* border: 1px solid black; */
+  height: 100px;
+}
+
+.btnbox {
+  background: white;
+  height: 40px;
+  /* border: 1px solid black; */
+  display: flex;
+
+  padding-bottom: 12pt;
+  /* border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px; */
+  /* padding-left: 10pt; */
+}
+
 .button {
-  width: 100%;
+  background-color: #599dd0;
+  border: none;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 8px;
+  padding-left: 10pt;
+  /* padding-top: 10px;
+  padding-bottom: 10px; */
+  padding-right: 10pt;
 }
 
 /* small tablet styles */
@@ -131,8 +165,8 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     /* gap: 20pt; */
-    margin-left: 16pt;
-    margin-right: 16pt;
+    margin-left: 24pt;
+    margin-right: 24pt;
   }
 
   .grid > div {
@@ -172,8 +206,99 @@
 @media screen and (min-width: 820px) {
   .grid {
     display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 24pt;
+    margin-right: 24pt;
+    /* grid-template-columns: repeat(11, 1fr);
+    gap: 24pt; */
+    /* margin-top: 84pt; */
+  }
+
+  .grid > div {
+  }
+
+  .grid div:nth-child(1) {
+    grid-column: 1/1;
+    grid-row: 1;
+    /* grid-column: 2/5;
+    grid-row: 1; */
+
+    /* border: 1px solid black; */
+
+    /* margin-left: 16pt;
+      margin-right: 16pt; */
+  }
+
+  .grid div:nth-child(2) {
+    grid-column: 2/2;
+    grid-row: 1;
+    /* grid-column: 5/8;
+    grid-row: 1;
+    padding-bottom: 8pt; */
+    /* border: 1px solid black; */
+
+    /* margin-left: 16pt;
+      margin-right: 16pt; */
+  }
+
+  .grid div:nth-child(3) {
+    grid-column: 1/1;
+    grid-row: 2;
+    /* grid-column: 8/11;
+    grid-row: 1;
+    padding-bottom: 8pt; */
+    /* border: 1px solid black; */
+
+    /* margin-left: 16pt;
+      margin-right: 16pt; */
+  }
+
+  .grid div:nth-child(4) {
+    grid-column: 2/2;
+    grid-row: 2;
+    /* grid-column: 2/5;
+    grid-row: 2; */
+
+    /* border: 1px solid black; */
+
+    /* margin-left: 16pt;
+      margin-right: 16pt; */
+  }
+
+  .grid div:nth-child(5) {
+    grid-column: 1/1;
+    grid-row: 3;
+    /* grid-column: 5/8;
+    grid-row: 2; */
+
+    /* border: 1px solid black; */
+
+    /* margin-left: 16pt;
+      margin-right: 16pt; */
+  }
+
+  .grid div:nth-child(6) {
+    grid-column: 2/2;
+    grid-row: 3;
+    /* grid-column: 8/11;
+    grid-row: 2; */
+
+    /* border: 1px solid black; */
+
+    /* margin-left: 16pt;
+      margin-right: 16pt; */
+  }
+}
+
+/* lg tablets & laptop */
+@media screen and (min-width: 1024px) {
+  .grid {
+    display: grid;
     grid-template-columns: repeat(11, 1fr);
-    gap: 24pt;
+    column-gap: 20pt;
+    /* gap: 36pt; */
+    /* margin-left: 24pt;
+    margin-right: 24pt; */
     /* margin-top: 84pt; */
   }
 
@@ -248,68 +373,5 @@
     grid-template-columns: repeat(11, 1fr);
     gap: 36pt;
     /* margin-top: 84pt; */
-  }
-
-  .grid > div {
-  }
-
-  .grid div:nth-child(1) {
-    grid-column: 2/5;
-    grid-row: 1;
-
-    /* border: 1px solid black; */
-
-    /* margin-left: 16pt;
-      margin-right: 16pt; */
-  }
-
-  .grid div:nth-child(2) {
-    grid-column: 5/8;
-    grid-row: 1;
-    padding-bottom: 8pt;
-    /* border: 1px solid black; */
-
-    /* margin-left: 16pt;
-      margin-right: 16pt; */
-  }
-
-  .grid div:nth-child(3) {
-    grid-column: 8/11;
-    grid-row: 1;
-    padding-bottom: 8pt;
-    /* border: 1px solid black; */
-
-    /* margin-left: 16pt;
-      margin-right: 16pt; */
-  }
-
-  .grid div:nth-child(4) {
-    grid-column: 2/5;
-    grid-row: 2;
-
-    /* border: 1px solid black; */
-
-    /* margin-left: 16pt;
-      margin-right: 16pt; */
-  }
-
-  .grid div:nth-child(5) {
-    grid-column: 5/8;
-    grid-row: 2;
-
-    /* border: 1px solid black; */
-
-    /* margin-left: 16pt;
-      margin-right: 16pt; */
-  }
-
-  .grid div:nth-child(6) {
-    grid-column: 8/11;
-    grid-row: 2;
-
-    /* border: 1px solid black; */
-
-    /* margin-left: 16pt;
-      margin-right: 16pt; */
   }
 }
