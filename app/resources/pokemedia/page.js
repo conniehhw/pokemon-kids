@@ -15,12 +15,12 @@ function pokemedia() {
             <li>
               <a href="/resources">Resources</a>
             </li>
-            <li>Pokemon Universe</li>
+            <li>Pokemon 360</li>
           </ul>
         </div>
 
         <div className={styles.grid}>
-          <div>
+          {/* <div>
             <Image
               className={styles.img}
               src="/images/pokemon-media-banner.png"
@@ -29,7 +29,7 @@ function pokemedia() {
               width={350}
               alt="pokeball with black background"
             />
-          </div>
+          </div> */}
         </div>
         {/* <div>Photo by Thimo Pedersen on Unsplash</div> */}
 
@@ -46,7 +46,7 @@ function pokemedia() {
         </div>
 
         <div className={styles.section}>
-          <div>Pokemon Universe</div>
+          <div>Pokemon 360</div>
         </div>
 
         <div className={styles.sectioncopy}>
@@ -54,14 +54,16 @@ function pokemedia() {
           <p>
             The first televsion animation launched in 1997. Since then, the
             series has expanded to 25 seasons. Adding to the series, is the
-            latest released in 2023, titled "Pokemon Horizons".
+            latest released in 2025, titled "Pokemon Horizons: Season 2 - The
+            Search for Laqua".
           </p>
           <p className={styles.videowrapper}>
             <iframe
               className={styles.responsiveiframe}
               // width="350"
               // height="300"
-              src="https://www.youtube-nocookie.com/embed/sq2RftrcEKc?si=qg7fiSyA7QGMwlUM/autoplay=1&mute=1&rel=0&border=0&modestbranding=1"
+              src="https://www.youtube-nocookie.com/embed/sHV8QP5OK2s?&autoplay=0&mute=1&rel=0&border=0&modestbranding=1"
+              // src="https://www.youtube-nocookie.com/embed/sq2RftrcEKc?si=qg7fiSyA7QGMwlUM/autoplay=1&mute=1&rel=0&border=0&modestbranding=1"
               title="YouTube video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

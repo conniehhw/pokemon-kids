@@ -22,7 +22,7 @@ function poke101() {
       </div>
 
       <div className={styles.grid}>
-        <div>
+        {/* <div>
           <Image
             className={styles.img}
             src="/images/pokemon101-banner.png"
@@ -31,7 +31,7 @@ function poke101() {
             width={902}
             alt="pokemons at school banner"
           />
-        </div>
+        </div> */}
       </div>
       {/* <div>Photo by Thimo Pedersen on Unsplash</div> */}
 

@@ -21,7 +21,7 @@ function pokecenter() {
         </div>
 
         <div className={styles.grid}>
-          <div>
+          {/* <div>
             <Image
               className={styles.img}
               src="/images/pokemoncenter-anime.png"
@@ -30,7 +30,7 @@ function pokecenter() {
               width={564}
               alt="pokemoncenter in anime"
             />
-          </div>
+          </div> */}
         </div>
 
         <div className={styles.content}>

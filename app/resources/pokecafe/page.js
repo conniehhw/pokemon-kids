@@ -22,7 +22,7 @@ function pokecafe() {
       </div>
 
       <div className={styles.grid}>
-        <div>
+        {/* <div>
           <Image
             className={styles.img}
             src="/images/pokemon-cafe-banner.png"
@@ -31,7 +31,7 @@ function pokecafe() {
             width={350}
             alt="pokemon cafe sign banner"
           />
-        </div>
+        </div> */}
       </div>
       {/* <div>Photo by Thimo Pedersen on Unsplash</div> */}
 

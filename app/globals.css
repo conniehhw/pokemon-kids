@@ -49,15 +49,20 @@ textarea {
 }
 
 a:link {
-  text-decoration: none;
+  text-decoration: underlined;
+  color: black;
 }
 a:visited {
   text-decoration: none;
+  text-decoration: underlined;
+  color: black;
 }
 a:hover {
   text-decoration: underline;
+  color: blue;
 }
 a:active {
+  /* text-decoration: none; */
   text-decoration: underline;
 }
 
