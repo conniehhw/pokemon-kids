@@ -86,18 +86,18 @@ function poketcg() {
           <div className={styles.sectionText}>
             <h6>Pokemon Cards</h6>
             <p>
-              These cards are Basic, Stage 1 or Stage 2. Look at the upper-left
-              corner and you will see the Pokémon’s Stage and the Pokémon it
-              evolves from, if any.
+              These cards shown here are Basic, Stage 1 or Stage 2 Pokémon. Look
+              at the upper-left corner and you will see the Pokémon’s Stage and
+              the Pokémon it evolves from, if any.
             </p>
 
             <p>
               Learn more about all the{" "}
               <a href="/resources/poketcg/pokecard" target="blank">
-                parts of a Pokemon Card
+                parts of a Pokémon Card
               </a>{" "}
-              and where to find its name, evolved form, type, Health Points
-              (HP), energy, type, attack, damage, weakness and much more.
+              and where to find its name, evolved form, hit points (HP), type,
+              attacks, damage, weaknesses and much more.
             </p>
           </div>
         </div>
