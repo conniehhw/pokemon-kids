@@ -15,7 +15,7 @@ function pokemedia() {
             <li>
               <a href="/resources">Resources</a>
             </li>
-            <li>Pokemon 360</li>
+            <li>Pokemon Media</li>
           </ul>
         </div>
 
@@ -39,181 +39,276 @@ function pokemedia() {
               <h2>More ways Pokemon!</h2>
               <h4>
                 Besides collecting the cards, there are many other ways to enjoy
-                Pokemon!
+                Pokemon.
               </h4>
             </div>
           </div>
         </div>
 
         <div className={styles.section}>
-          <div>Pokemon 360</div>
+          <div>TV Shows & Films</div>
         </div>
 
         <div className={styles.sectioncopy}>
-          <div className={styles.subtitle}>Television & Films</div>
-          <p>
-            The first televsion animation launched in 1997. Since then, the
-            series has expanded to 25 seasons. Adding to the series, is the
-            latest released in 2025, titled "Pokemon Horizons: Season 2 - The
-            Search for Laqua".
-          </p>
-          <p className={styles.videowrapper}>
-            <iframe
-              className={styles.responsiveiframe}
-              // width="350"
-              // height="300"
-              src="https://www.youtube-nocookie.com/embed/sHV8QP5OK2s?&autoplay=0&mute=1&rel=0&border=0&modestbranding=1"
-              // src="https://www.youtube-nocookie.com/embed/sq2RftrcEKc?si=qg7fiSyA7QGMwlUM/autoplay=1&mute=1&rel=0&border=0&modestbranding=1"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
-            ></iframe>
+          <div className={styles.container}>
+            <div className={styles.videowrapper}>
+              <iframe
+                className={styles.responsiveiframe}
+                // width="350"
+                // height="300"
+                src="https://www.youtube-nocookie.com/embed/sHV8QP5OK2s?&autoplay=0&mute=1&rel=0&border=0&modestbranding=1"
+                // src="https://www.youtube-nocookie.com/embed/sq2RftrcEKc?si=qg7fiSyA7QGMwlUM/autoplay=1&mute=1&rel=0&border=0&modestbranding=1"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+
+            <div className={styles.sectionText}>
+              {/* <h6>TV Shows & Films</h6> */}
+              {/* <div className={styles.subtitle}>Television & Films</div> */}
+              <p>
+                The first televsion animation launched in 1997. Since then, the
+                series has expanded to 25 seasons. Adding to the series, is the
+                latest released in 2025, titled "Pokemon Horizons: Season 2 -
+                The Search for Laqua".
+              </p>
+
+              <p>
+                As of 2020, there are 23 Pokemon films along with one
+                live-action film, "Pokemon Detective Pikachu". With the
+                popularity of the franchise, a stop-motion animation,{" "}
+                <a
+                  href="https://www.netflix.com/ca/title/81186864"
+                  target="_blank"
+                >
+                  Pokemon Concierge"
+                </a>{" "}
+                premiered on Netflix in 2023. Visit the{" "}
+                <a href="https://www.pokemon.com/us/animation" target="_blank">
+                  animation
+                </a>{" "}
+                page on the official website to learn more, including where to
+                watch.
+              </p>
+            </div>
+
             {/* Add a warning /alert or something it will reroute to exteranl site Youtube for trailer */}
-          </p>
-          <p>
-            As of 2020, there are 23 Pokemon films along with one live-action
-            film, "Pokemon Detective Pikachu". With the popularity of the
-            franchise, a stop-motion animation,{" "}
-            <a href="https://www.netflix.com/ca/title/81186864" target="_blank">
-              Pokemon Concierge"
-            </a>{" "}
-            premiered on Netflix in 2023. Visit the{" "}
-            <a href="https://www.pokemon.com/us/animation" target="_blank">
-              animation
-            </a>{" "}
-            page on the official website to learn more, including where to
-            watch.
-          </p>
+            {/* </p> */}
+          </div>
+        </div>
+
+        <div className={styles.section}>
+          <div>Video & Mobile Games</div>
+        </div>
+        <div className={styles.sectioncopy}>
+          <div className={styles.container}>
+            <div className={styles.videowrapper}>
+              <iframe
+                className={styles.responsiveiframe}
+                // width="350"
+                // height="300"
+
+                src="https://www.youtube.com/embed/dAQBo9BGRdA?si=OE2gFFz91pmcztxZ/autoplay=1&mute=1&rel=0&border=0&modestbranding=1"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+
+            <div className={styles.sectionText}>
+              <h6>Console Games</h6>
+
+              {/* <div className={styles.subtitle}>Video Games</div> */}
+              <p>
+                {/* Add video link to Youtube for trailer */}
+                Pokemon has several types of video games, some of which are
+                played on Nintendo Game Devices or Consoles or on a tablet and
+                mobile phone.
+              </p>
+              {/* <br></br> */}
+              {/* </div> */}
+              {/* <div className={styles.sectionText}> */}
+              <p>
+                For instance, in{" "}
+                <a
+                  href="https://www.pokemon.com/us/pokemon-video-games/pokemon-scarlet-and-pokemon-violet"
+                  target="_blank"
+                >
+                  Pokemon Scarlet & Violet
+                </a>
+                , in this role playing game, the player catches and trades
+                Pokemons and battle other Pokemon Trainers while exploring
+                different regions.
+              </p>
+            </div>
+          </div>
         </div>
 
         <div className={styles.sectioncopy}>
-          <div className={styles.subtitle}>Video Games</div>
-          <p>
-            {/* Add video link to Youtube for trailer */}
-            Pokemon has several types of video games, some of which are played
-            on Nintendo Game Devices or Consoles or on a tablet and mobile
-            phone.
-          </p>
-          <p className={styles.videowrapper1}>
-            {/* <p className={styles.videowrapper}> */}
-            <iframe
-              className={styles.responsiveiframe1}
-              // width="350"
-              // height="300"
+          <div className={styles.container}>
+            {/* <p className={styles.clearfix}> */}
 
-              src="https://www.youtube.com/embed/dAQBo9BGRdA?si=OE2gFFz91pmcztxZ/autoplay=1&mute=1&rel=0&border=0&modestbranding=1"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
-            ></iframe>
-            {/* Add a warning /alert or something it will reroute to exteranl site Youtube for trailer */}
-          </p>
-          <p>
-            For instance, in{" "}
-            <a
-              href="https://www.pokemon.com/us/pokemon-video-games/pokemon-scarlet-and-pokemon-violet"
-              target="_blank"
-            >
-              Pokemon Scarlet & Violet
-            </a>
-            , in this role playing game, the player catches and trades Pokemons
-            and battle other Pokemon Trainers while exploring different regions.
-          </p>
-          {/* <div> */}
-          <p className={styles.clearfix}>
             <Image
-              className={styles.imgFloatTest1}
-              src="/images/pokemon-go.png"
-              // layout="responsive"
-              height={481}
-              width={582}
-              alt="pokemon go"
-            />
-            Then there is popular{" "}
-            <a
-              href="https://www.pokemon.com/us/pokemon-video-games/pokemon-go"
-              target="_blank"
-            >
-              Pokemon Go{" "}
-              {/* Add a note to be careful of surroiunding when playing supervised*/}
-            </a>
-            mobile game which uses the phone's GPS together with augmented
-            reality technology - allowing as though Pokemons appear around you,
-            as you move your avatar within your real world surroundings. The
-            main goal of the game to find and catch Pokemons.{" "}
-          </p>
-
-          <p className={styles.clearfix}>
-            <Image
-              className={styles.imgFloatTest}
+              className={styles.imgShrink}
               src="/images/pokemon-snap.png"
               // layout="responsive"
-              height={481}
-              width={582}
+              height={281}
+              width={382}
               alt="pokemon snap"
             />
-            <a
-              href="https://www.pokemon.com/us/pokemon-video-games/new-pokemon-snap"
-              target="_blank"
-            >
-              Pokemon Snap{" "}
-            </a>{" "}
-            is a new adventure where you, the player explore the Lental region,
-            research and encounter wild Pokemon as your snap photos for your
-            album.
-          </p>
-          <p className={styles.imgFloatCopy}>
+
+            <div className={styles.sectionText}>
+              <p>
+                For the younger Pokemon fans,{" "}
+                <a
+                  href="https://www.pokemon.com/us/pokemon-video-games/new-pokemon-snap"
+                  target="_blank"
+                >
+                  Pokemon Snap
+                </a>{" "}
+                may be a better fit. It is a console game where you - as the
+                player - explore the Lental region, research and encounter wild
+                Pokemon as you snap photos for your album.
+              </p>
+            </div>
+          </div>
+        </div>
+        {/* </div> */}
+
+        {/* 
+          <div className={styles.sectioncopy}> */}
+        {/* <div className={styles.sectionText}> */}
+        <div className={styles.sectioncopy}>
+          <div className={styles.container}>
             <Image
-              className={styles.imgFloatTest}
-              src="/images/pokemon-caferemix.png"
+              className={styles.imgShrink}
+              src="/images/pokemon-go.png"
               // layout="responsive"
-              height={481}
-              width={582}
+              height={281}
+              width={382}
+              alt="pokemon go"
+            />
+            <div className={styles.sectionText}>
+              <h6>Mobile Games</h6>
+              <p>
+                {" "}
+                Then there is popular{" "}
+                <a
+                  href="https://www.pokemon.com/us/pokemon-video-games/pokemon-go"
+                  target="_blank"
+                >
+                  Pokemon Go{" "}
+                  {/* Add a note to be careful of surroiunding when playing supervised*/}
+                </a>
+                mobile game which uses the phone's GPS together with augmented
+                reality technology - allowing as though Pokemons appear around
+                you, as you move your avatar within your real world
+                surroundings. The main goal of the game to find and catch
+                Pokemons.
+              </p>
+              <p>
+                You can find a full list of{" "}
+                <a
+                  href="https://www.pokemon.com/us/pokemon-video-games/all-pokemon-games"
+                  target="_blank"
+                >
+                  Pokemon games
+                </a>{" "}
+                on the official website.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* <div className={styles.sectioncopy}>
+          <div className={styles.container}>
+            <Image
+              className={styles.imgShrink}
+              src="/images/pokemon-caferemix.png"
+ 
+              height={660}
+              width={1140}
               alt="pokemon cafe remix"
             />
-            In the game
-            <a href="https://cafemix.pokemon.com/en-us/" target="_blank">
-              {" "}
-              Pokemon Cafe Remix,
-            </a>{" "}
-            the player completes puzzles to create drinks and dishes to server
-            at your Pokemon Cafe. You can find a full list of{" "}
-            <a
-              href="https://www.pokemon.com/us/pokemon-video-games/all-pokemon-games"
-              target="_blank"
-            >
-              Pokemon games
-            </a>{" "}
-            on the official website.
-          </p>
+            <div className={styles.sectionText}>
+              <p>
+                In the game{" "}
+                <a href="https://cafemix.pokemon.com/en-us/" target="_blank">
+                  {" "}
+                  Pokemon Cafe Remix,
+                </a>{" "}
+                the player completes puzzles to create drinks and dishes to
+                server at your Pokemon Cafe. You can find a full list of{" "}
+                <a
+                  href="https://www.pokemon.com/us/pokemon-video-games/all-pokemon-games"
+                  target="_blank"
+                >
+                  Pokemon games
+                </a>{" "}
+                on the official website.
+              </p>
+            </div>
+          </div>
+        </div> */}
+
+        <div className={styles.section}>
+          <div>Books</div>
+        </div>
+        <div className={styles.sectioncopy}>
+          <div className={styles.containerBooks}>
+            <Image
+              className={styles.imgShrink}
+              src="/images/pokemon-visual-companion.png"
+              // layout="responsive"
+              height={200}
+              width={200}
+              alt="pokemon visual companion book"
+            />
+            <div className={styles.sectionText}>
+              <p>
+                Books are a great way for you and your kiddo to immerse in the
+                Pokemon Universe.
+              </p>
+              <h6>Recommended Reading</h6>
+              <p>
+                The <i>Pokemon Visual Companion</i> is a fact-packed illustrated
+                guide to the animated series to learn more about characters like
+                Ash, Professor Sycamore, essential gears and more.{" "}
+              </p>
+            </div>
+          </div>
         </div>
 
         <div className={styles.sectioncopy}>
-          <div className={styles.subtitle}>Books</div>
-          <p>
-            Other ways to immerse yourself in the Pokemon Universe is through
-            reading.
-          </p>
-          <p>
-            The Pokemon Visual Companion is a fact-packed illustrated guide to
-            the animated series to learn more about characters like Ash,
-            Professor Sycamore, essential gears and more. The Pokemon Essential
-            Handbook series contain the latest list of all the Pokemons and
-            their stats. Or follow their adventures in one of many chapter books
-            collection.
-          </p>
-          <Image
-            className={styles.imgFloatTest2}
-            src="/images/pokemon-books.png"
-            layout="responsive"
-            height={231}
-            width={452}
-            alt="pokemon books"
-          />
+          <div className={styles.containerBooks}>
+            <Image
+              className={styles.imgShrink}
+              src="/images/essential-handbook.jpg"
+              // layout="responsive"
+              // height={960}
+              // width={660}
+              height={660}
+              width={360}
+              alt="pokemon essential handbook 2024"
+            />
+            <div className={styles.sectionText}>
+              {/* <br></br> */}
+              <p>
+                <i>The Pokemon Essential Handbook</i> series contain the latest
+                list of all the Pokemons and their stats because you "Gotta
+                catch'em all".
+              </p>
+
+              <p>
+                For stories, there are also many chapter books and collections.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>

@@ -167,11 +167,10 @@ function poketcg() {
             alt="card deck"
           />
           <div className={styles.sectionText}>
-            Like building your team - you need your players, coaches and
-            sometimes gear. To build your deck around a type of Pokemon such as
-            a Water-type deck - you would need for example: 15 pokemon cards, 9
-            energy cards and 36 trainer cards ~ a mix of Items, Supporters and
-            Stadiums.
+            Like building a team - you need players, coaches and sometimes gear.
+            To build your deck around a type of Pokemon such as a Water-type
+            deck - you would need for example: 15 pokemon cards, 9 energy cards
+            and 36 trainer cards ~ a mix of Items, Supporters and Stadiums.
           </div>
         </div>
       </div>

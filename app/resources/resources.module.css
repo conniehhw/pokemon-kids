@@ -207,8 +207,10 @@
   .grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin-left: 24pt;
-    margin-right: 24pt;
+    /* margin-left: 24pt;
+    margin-right: 24pt; */
+    margin-left: 48pt;
+    margin-right: 48pt;
     /* grid-template-columns: repeat(11, 1fr);
     gap: 24pt; */
     /* margin-top: 84pt; */

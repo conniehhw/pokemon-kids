@@ -124,7 +124,7 @@ function Resources() {
               </Link>
             </div>
             <div className={styles.text}>
-              <h6>Pokemon 360</h6>
+              <h6>Pokemon Media</h6>
               <p>Even more pokemon: tv, film, video games and books.</p>
             </div>
             <div className={styles.btnbox}>

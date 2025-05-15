@@ -235,6 +235,24 @@
     margin-left: 100pt;
     margin-right: 100pt;
   }
+
+  .accordion {
+    margin-left: 24pt;
+    margin-right: 24pt;
+  }
+
+  .content {
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    gap: 16pt;
+    margin-top: 16pt;
+    margin-left: 24pt;
+    margin-right: 24pt;
+    /* padding-top: 24pt; */
+    margin-bottom: 16pt;
+    /* border: 1px solid black;
+    background-color: lightyellow; */
+  }
 }
 
 /* lg tablet styles */
