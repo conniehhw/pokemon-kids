@@ -190,6 +190,102 @@ function poke101() {
           </AccordionBody>
         </AccordionItem>
 
+        <AccordionItem eventKey="6">
+          <AccordionHeader> Where do Pokemons come from?</AccordionHeader>
+          <AccordionBody className={styles.clearfix}>
+            <div className={styles.shrink}>
+              <figure className={styles.figure}>
+                <Image
+                  className={styles.imgnbr}
+                  src="/images/pokemon-regions.png"
+                  height={271}
+                  width={632}
+                  alt="Pokemon Regions"
+                />
+                <figcaption className={styles.figCap}>
+                  A map of Kanto, Johto, Hoenn, and Sinnoh regions along with
+                  the Sevii Islands and the Orange Islands, from the animated
+                  series's 10th anniversary.
+                </figcaption>
+              </figure>
+            </div>
+            {/* 
+            <div className={styles.textbox}> */}
+            <p>
+              The Pokemon World is mapped into regions on separate continents.
+              Some of the main regions are Kanto, Johto, Paldea, Hoenn, Alola
+              and Sinnoh.
+            </p>
+            <p>
+              Kanto is modern and technological and Professor Oak is the
+              resident Pokémon Professor who gives Pokémon Trainers a choice
+              between Bulbasaur, Charmander, or Squirtle as their starter
+              Pokémon.
+            </p>
+            <br></br>
+            {/* </div> */}
+          </AccordionBody>
+        </AccordionItem>
+        <AccordionItem eventKey="7">
+          <AccordionHeader> What do Pokemons eat?</AccordionHeader>
+          <AccordionBody className={styles.clearfix}>
+            {/* <div className={styles.shrink1}> */}
+            <Image
+              className={styles.imgr}
+              // className={styles.imgnbr}
+              src="/images/pokemon-berries.png"
+              height={240}
+              width={180}
+              alt="Pokemon Berries"
+            />
+            {/* </div> */}
+            <div className={styles.textbox}>
+              In the wild, Pokemon have been known to eat plants and berries.
+              With each new generation of Pokemon in games and series, Pokemon
+              consume a variety of items such as: bait, healing drinks,
+              Pokeblock, Poffin, Honey, Poke Puffs, Poke beans, curry and
+              sandwiches. <br></br>
+            </div>
+          </AccordionBody>
+        </AccordionItem>
+
+        <AccordionItem eventKey="8">
+          <AccordionHeader>
+            {" "}
+            Do Pokemon talk? How do they communicate?
+          </AccordionHeader>
+          <AccordionBody className={styles.clearfix}>
+            {/* <div className={styles.shrink1}> */}
+            <div className={styles.videowrapper}>
+              <iframe
+                className={styles.responsiveiframe}
+                // width="560"
+                // height="315"
+                src="https://www.youtube.com/embed/4IeZZ9p4zY4?si=x8wWWaqiAXiT0uRU&amp;autoplay=0&mute=1&start=3&rel=0&border=0&modestbranding=1"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+            {/* </div> */}
+            <div className={styles.textbox1}>
+              <p>
+                It appears all Pokemon can understand human speech however
+                Pokemon communicate with humans using their species unique
+                cries, body language and sounds like chirps and buzzes.
+              </p>
+              <p>
+                Often, you will hear Pokemon speak their own names or a
+                variation of it as a form of communication. Pikachu would say
+                "Pika-CHU!" or "pika-pika-chu" in different tones and intensity
+                to convey its emotion.
+              </p>
+            </div>
+          </AccordionBody>
+        </AccordionItem>
+
         {/* <AccordionItem eventKey="6">
           <AccordionHeader>Accordion Item #7</AccordionHeader>
           <AccordionBody>
