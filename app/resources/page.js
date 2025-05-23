@@ -80,11 +80,11 @@ function Resources() {
             </div>
           </div>
 
-          <div className={styles.gridchild}>
+          {/* <div className={styles.gridchild}>
             <div>
               <Link href="resources/pokeregions">
                 <Image
-                  // className={styles.projectsimg}
+            
                   className={styles.img}
                   src="/images/pokemon-regions-icon.png"
                   a
@@ -105,10 +105,10 @@ function Resources() {
             <div className={styles.btnbox}>
               <Link href="resources/pokeregions">
                 Explore regions
-                {/* <Button className={styles.button}>Learn more</Button> */}
+
               </Link>
             </div>
-          </div>
+          </div> */}
 
           <div className={styles.gridchild}>
             <div>

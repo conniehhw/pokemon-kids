@@ -23,20 +23,49 @@ export default function About() {
         </ul>
       </div>
 
-      <div className={styles.grid}>
+      <div className={styles.welcome}>
         <div>
           <Image
             className={styles.img}
-            src="/images/pokemonbabies1.png"
-            layout="responsive"
-            height={280}
-            width={501}
-            alt="pokemon babies"
+            src="/images/talkative-pikachu.png"
+            // layout="responsive"
+            height={580}
+            width={580}
+            alt="talkative Pikachu"
           />
+        </div>
+        <div>
+          <h3>"Mom, mom! DID YOU KNOW that Pokemon Poke Po ..."</h3>
+          <p>
+            Imagine this ... now times infinity ... and 24/7 well okay not
+            quite. My 6 year old would be talking about Pokemon as we walk to
+            and from school, in the car, while at the shopping for food, etc.
+          </p>
+          <p>
+            His new love was Pokemon and I wanted to be able to talk to him
+            about his favourite subject. Not the usual, "Hmm, really? Okay,
+            that's cool" but really be able to engage with him and ask
+            meaningful questions. So I watched a few Youtube videos, read a few
+            articles, browsed some books and the official website so I knew what
+            on earth he was talking about.
+          </p>
+          <div>
+            <p>
+              Of course, this idea came about and "Wouldn't it be nice if there
+              was one resource that gave me all the basics I needed to know AND
+              it would only take 30 minutes to go through?" and this website was
+              started. I hope you will find this website helpful :)
+            </p>
+            <p>
+              A special shout out and thank you to my son for his help and kind
+              words.
+            </p>
+          </div>
         </div>
       </div>
 
       {/* <div>Photo by Thimo Pedersen on Unsplash</div> */}
+      {/* create a form to email and receive comments */}
     </div>
   );
 }
