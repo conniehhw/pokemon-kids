@@ -1,7 +1,8 @@
 // import styles from "../page.module.css";
 
 import styles from "../about/about.module.css";
-import Button from "react-bootstrap/Button";
+// import Button from "react-bootstrap/Button";
+import WebForm from "../components/WebForm";
 
 import Image from "next/image";
 
@@ -24,7 +25,7 @@ export default function About() {
       </div>
 
       <div className={styles.welcome}>
-        <div>
+        <div className={styles.alignimg}>
           <Image
             className={styles.img}
             src="/images/talkative-pikachu.png"
@@ -62,6 +63,11 @@ export default function About() {
             </p>
           </div>
         </div>
+      </div>
+
+      <div className={styles.contact}>
+        {/* <p>If you have any questions, drop me a line!</p> */}
+        <WebForm />
       </div>
 
       {/* <div>Photo by Thimo Pedersen on Unsplash</div> */}

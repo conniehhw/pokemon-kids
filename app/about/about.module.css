@@ -47,6 +47,7 @@
   margin-right: 24pt;
   padding-top: 24pt;
   margin-bottom: 24pt;
+  row-gap: 10pt;
 }
 
 .welcome > image {
@@ -55,7 +56,8 @@
 
 .welcome > div {
   text-align: left;
-  padding-bottom: 24pt;
+  /* padding-bottom: 24pt; */
+
   /* margin-left: 24pt;
   margin-right: 24pt;
   margin-bottom: 24pt; */
@@ -96,11 +98,15 @@
   border: 1px solid black; */
 }
 
+.alignimg {
+}
+
 .img {
   border-radius: 20px;
   width: 100%;
   height: auto;
-  margin-bottom: 8pt;
+  /* margin-bottom: 24pt; */
+  /* border: 1px solid black; */
 }
 
 .imgnbr {
@@ -224,7 +230,7 @@
 
   .welcome > div {
     text-align: left;
-    padding-bottom: 15pt;
+    /* padding-bottom: 5pt; */
 
     /* padding-left: 15pt; */
     padding-right: 15pt;
@@ -238,6 +244,14 @@
     width: 80%;
     height: auto;
     margin-bottom: 8pt;
+  }
+
+  .contact {
+    margin-left: 24pt;
+    margin-right: 24pt;
+    /* padding-top: 24pt; */
+    margin-bottom: 24pt;
+    /* margin-left: 44pt; */
   }
 }
 
@@ -277,6 +291,13 @@
     padding-left: 0;
     /* padding-left: 15pt; */
     /* padding-right: 15pt; */
+  }
+
+  .contact {
+    margin-left: 44pt;
+    margin-right: 24pt;
+    /* padding-top: 24pt; */
+    margin-bottom: 24pt;
   }
 }
 

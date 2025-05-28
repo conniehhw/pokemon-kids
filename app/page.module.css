@@ -160,6 +160,7 @@ button box */
   /* padding-top: 10px;
   padding-bottom: 10px; */
   padding-right: 10pt;
+  /* width: 100%; */
 }
 
 .projects div:nth-child(1) {

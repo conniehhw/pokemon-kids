@@ -202,10 +202,10 @@ function poketcg() {
               {" "}
               view the video series
             </a>{" "}
-            or to follow along with this{" "}
+            or to download the{" "}
             <a href="https://tcg.pokemon.com/en-us/learn/" target="_blank">
               {" "}
-              quick start rulebook
+              quick start guide.
             </a>
           </div>
         </div>
