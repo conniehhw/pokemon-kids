@@ -61,14 +61,27 @@ function pokecenter() {
               healing items.
               {/* </p> */}
             </div>
-            <Image
-              className={styles.img}
-              src="/images/pokemon-center.png"
-              // layout="responsive"
-              height={392}
-              width={392}
-              alt="pokemoncenter anime"
-            />
+            <div className={styles.img}>
+              <figure className={styles.figure}>
+                <Image
+                  className={styles.img}
+                  src="/images/pokemon-center.png"
+                  // layout="responsive"
+                  height={392}
+                  width={392}
+                  alt="pokemoncenter anime"
+                />
+
+                <figcaption className={styles.figcaption}>
+                  A scene from the video game "Pokémon: Let's Go, Eevee!". The
+                  player character is inside a Pokémon Center, with a Nurse Joy
+                  and a Chansey at the counter (Image from&nbsp;
+                  <a href="https://Pokémon.fandom.com/wiki/Pokémon_CenterPokemon.fandom.com)">
+                    Pokémon.fandom.com)
+                  </a>
+                </figcaption>
+              </figure>
+            </div>
           </div>
         </div>
 

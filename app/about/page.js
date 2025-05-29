@@ -75,13 +75,12 @@ export default function About() {
         </div>
       </div>
 
-      <div className={styles.contact}>
-        {/* <p>If you have any questions, drop me a line!</p> */}
-        <WebForm />
+      <div className={styles.lgbg}>
+        <div className={styles.contact}>
+          {/* <p>If you have any questions, drop me a line!</p> */}
+          <WebForm />
+        </div>
       </div>
-
-      {/* <div>Photo by Thimo Pedersen on Unsplash</div> */}
-      {/* create a form to email and receive comments */}
     </div>
   );
 }
