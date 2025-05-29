@@ -1,6 +1,7 @@
 /* Style the list */
 .main {
   display: flex;
+  /* background-color: yellow; */
   flex-direction: column;
   min-height: 100vh;
   border-style: 1px solid;
@@ -74,7 +75,7 @@
   }
 }
 
-.figure {
+.figureCard {
   display: flex;
   flex-flow: column;
   border: thin #c0c0c0 solid;
@@ -152,10 +153,11 @@
 
 .img {
   border-radius: 10px;
+
   width: 100%;
   height: auto;
   margin-bottom: 16pt;
-  border: thin #c0c0c0 solid;
+  /* border: thin #c0c0c0 solid; */
 }
 
 .imgShrink {
@@ -283,6 +285,18 @@
   margin-top: 4pt;
 }
 
+.figure {
+  /* margin-left: 32px;
+    margin-right: 32px; */
+  /* margin-top: 32px; */
+}
+
+.figcaption {
+  font-size: 12px;
+  font-style: italic;
+  text-align: left;
+}
+
 /* small tablet styles */
 @media screen and (min-width: 620px) {
   .grid {
@@ -351,7 +365,7 @@
     background-color: lightyellow; */
   }
 
-  .figure {
+  .figureCard {
     display: flex;
     flex-flow: row;
     border: thin #c0c0c0 solid;
@@ -435,6 +449,22 @@
   }
 
   .figure {
+    /* margin-left: 32px;
+    margin-right: 32px; */
+    /* margin-top: 32px; */
+  }
+
+  .img {
+    border-radius: 20px;
+  }
+
+  .figcaption {
+    font-size: 14px;
+    font-style: italic;
+    text-align: left;
+  }
+
+  .figureCard {
     display: flex;
     flex-flow: row;
     border: thin #c0c0c0 solid;
@@ -457,7 +487,6 @@
 
   .figCap {
     text-align: left;
-
     margin-right: 24pt;
     font-style: italic;
     padding-top: 16pt;
@@ -506,17 +535,31 @@
       margin-right: 24pt; */
       margin-left: 48pt;
       margin-right: 48pt;
+      /* margin-left: 64px;
+      margin-right: 64px; */
       /* padding-top: 24pt; */
       /* margin-bottom: 16pt; */
-      /* border: 1px solid black; */
+      border: 1px solid black;
       /* background-color: lightpink; */
     }
   }
 
   .figure {
+    /* margin-left: 48pt;
+    margin-right: 48pt; */
+    /* margin-top: 32px; */
+  }
+
+  .figcaption {
+    font-size: 14px;
+    font-style: italic;
+    text-align: left;
+  }
+
+  .figureCard {
     display: flex;
     flex-flow: row;
-    border: thin #c0c0c0 solid;
+    /* border: thin #c0c0c0 solid; */
     border-radius: 20px;
     /* gap: 4pt; */
     margin-top: 16pt;
@@ -550,10 +593,12 @@
     margin-top: 16pt;
     margin-left: 48pt;
     margin-right: 48pt;
+
     /* padding-top: 24pt; */
     margin-bottom: 16pt;
     /* border: 1px solid black;
     background-color: lightyellow; */
+    /* border: 1px solid black; */
   }
 
   .section {
@@ -563,6 +608,7 @@
     margin-top: 16pt;
     margin-left: 48pt;
     margin-right: 48pt;
+    /* border: 1px solid black; */
   }
 
   .sectioncopy {
@@ -572,20 +618,23 @@
     margin-left: 48pt;
     margin-right: 48pt;
   }
+  /* border: 1px solid black;
+  } */
+
+  /* .section {
+    margin-left: 48pt;
+    margin-right: 48pt;
+  }
+
+  .sectioncopy {
+    margin-left: 48pt;
+    margin-right: 48pt;
+  } */
 
   .sectionText {
+    width: 80%;
+    padding-right: 30pt;
     padding-top: 0;
-    padding-left: 0;
-    padding-right: 26px;
-    width: 800px;
-
-    /* width: 100%; */
-    /* padding: 10pt; */
-    /* padding-right: 10pt;
-    padding-left: 10pt; */
-    /* padding-top: 8pt; */
-    /* padding-bottom: 10pt; */
-    /* border: 1px solid black; */
   }
 
   .container {
@@ -611,7 +660,7 @@
     /* width: auto; */
     width: 100%;
     height: auto;
-    border: thin #c0c0c0 solid;
+    /* border: thin #c0c0c0 solid; */
 
     /* margin-left: 48pt; */
     /* margin-right: 48pt; */
@@ -699,7 +748,7 @@
     margin-right: 16pt; */
   }
 
-  .figure {
+  .figureCard {
     display: flex;
     flex-flow: row;
     border: thin #c0c0c0 solid;
@@ -812,19 +861,20 @@
     margin-bottom: 16pt;
   }
 
-  .sectionText {
+  /* .sectionText {
     padding-top: 0;
     padding-left: 0;
     padding-right: 26px;
 
     width: 900px;
 
-    /* width: 100%; */
-    /* padding: 10pt; */
-    /* padding-right: 10pt;
-    padding-left: 10pt; */
-    /* padding-top: 8pt; */
-    /* padding-bottom: 10pt; */
+
+    border: 1px solid black;
+  } */
+  .sectionText {
+    width: 80%;
+    padding-right: 30pt;
+    padding-top: 0;
     /* border: 1px solid black; */
   }
 

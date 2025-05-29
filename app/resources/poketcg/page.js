@@ -50,14 +50,28 @@ function poketcg() {
 
       <div className={styles.sectioncopy}>
         <div className={styles.container}>
-          <Image
-            className={styles.img}
-            src="/images/card-deck-char.png"
-            // layout="responsive"
-            height={400}
-            width={400}
-            alt="card deck"
-          />
+          <div className={styles.img}>
+            <figure className={styles.figure}>
+              <Image
+                style={{ borderRadius: "20px" }}
+                // className={styles.img}
+                src="/images/card-deck-char.png"
+                // layout="responsive"
+                height={400}
+                width={400}
+                alt="card deck"
+              />
+
+              <figcaption className={styles.figcaption}>
+                Photo by{" "}
+                <a href="https://unsplash.com/@giorgiotrovato">
+                  Giorgio Trovato
+                </a>{" "}
+                on Unsplash{" "}
+              </figcaption>
+            </figure>
+          </div>
+
           <div className={styles.sectionText}>
             Each player builds a deck of 60 cards which include Pokemon
             characters, energy cards and supporting cards. Pokemon cards will
@@ -109,6 +123,7 @@ function poketcg() {
         <div className={styles.container}>
           <Image
             className={styles.img}
+            style={{ borderRadius: "0" }}
             src="/images/energy-cards.png"
             // layout="responsive"
             height={530}

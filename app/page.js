@@ -3,6 +3,7 @@ import styles from "./page.module.css";
 import Image from "next/image";
 import Button from "react-bootstrap/Button";
 import Link from "next/link";
+import { FigureCaption } from "react-bootstrap";
 
 export const metadata = {
   title: "Pokemon Kids Home Page",
@@ -119,6 +120,16 @@ export default function Home() {
             <button className={styles.b}>Learn More</button>
           </div> */}
         </div>
+      </div>
+      <div>
+        <figure className={styles.figure}>
+          <figcaption className={styles.figcaption}>
+            <i>
+              Source of images: From Nintendo, Game Freak and Creatures Inc. and
+              https://www.pokemon.com, otherwise indicated elsewhere.
+            </i>
+          </figcaption>
+        </figure>
       </div>
     </div>
   );

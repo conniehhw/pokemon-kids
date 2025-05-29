@@ -67,8 +67,8 @@ function poke101() {
             <Image
               className={styles.imgr}
               src="/images/pokemon-group.png"
-              height={154}
-              width={250}
+              height={273}
+              width={335}
               alt="Pokemon All Kinds"
             />
             <div className={styles.textbox}>
@@ -299,6 +299,26 @@ function poke101() {
           </AccordionBody>
         </AccordionItem> */}
       </Accordion>
+      <div>
+        <figure className={styles.figure}>
+          <figcaption className={styles.figcaption}>
+            Source of images: 'Who are Professors, Where do Pokemons come from'
+            from{" "}
+            <a href="https://bulbapedia.bulbagarden.net/wiki/Pokémon_Professor#Other_fields_of_Pok.C3.A9mon_study">
+              bulbapedia.bulbagarden.net
+            </a>
+            , 'What are Evolutions' from{" "}
+            <a href="https://vk.com/pokegorussiacommunity">
+              vk.com.pokegorussiacommunity,
+            </a>{" "}
+            'What do Pokemons eat' from{" "}
+            <a href="https://Pokémon.fandom.com/wiki/Berry">
+              pokemon.fandom.com
+            </a>
+            {/* https://bulbapedia.bulbagarden.net/wiki/Region, */}
+          </figcaption>
+        </figure>
+      </div>
     </div>
   );
 }

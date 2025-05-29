@@ -11,6 +11,7 @@ import Image from "next/image";
 // import CardTitle from "react-bootstrap/CardTitle";
 // import CardText from "react-bootstrap/CardText";
 import Button from "react-bootstrap/Button";
+import { FigureCaption } from "react-bootstrap";
 
 function Resources() {
   return (
@@ -41,14 +42,16 @@ function Resources() {
               </Link>
             </div>
             <div className={styles.text}>
-              <h6>Pokemon 101</h6>
+              <Link href="resources/poke101">
+                <h6>Pokemon 101</h6>
+              </Link>
               <p>A parent's guide to the world of Pokemon.</p>
             </div>
             <div className={styles.btnbox}>
-              <Link href="resources/poke101">
+              {/* <Link href="resources/poke101">
                 Answers to FAQs
-                {/* <Button className={styles.button}>Learn more</Button> */}
-              </Link>
+     
+              </Link> */}
             </div>
           </div>
 
@@ -68,15 +71,18 @@ function Resources() {
             </div>
 
             <div className={styles.text}>
-              <h6>Trading Card Game</h6>
+              <Link href="resources/poketcg">
+                {" "}
+                <h6>Trading Card Game</h6>
+              </Link>
 
               <p>Collections, types of cards and building decks.</p>
             </div>
             <div className={styles.btnbox}>
-              <Link href="resources/poketcg">
+              {/* <Link href="resources/poketcg">
                 How to play the game
-                {/* <Button className={styles.button}>Learn more</Button> */}
-              </Link>
+            
+              </Link> */}
             </div>
           </div>
 
@@ -124,14 +130,17 @@ function Resources() {
               </Link>
             </div>
             <div className={styles.text}>
-              <h6>Pokemon Media</h6>
+              <Link href="resources/pokemedia">
+                <h6>Pokemon Media</h6>
+              </Link>
+
               <p>Even more pokemon: tv, film, video games and books.</p>
             </div>
             <div className={styles.btnbox}>
-              <Link href="resources/pokemedia">
+              {/* <Link href="resources/pokemedia">
                 Continue your journey
-                {/* <Button className={styles.button}>Learn more</Button> */}
-              </Link>
+      
+              </Link> */}
             </div>
           </div>
 
@@ -148,15 +157,20 @@ function Resources() {
                 />
               </Link>
             </div>
+
             <div className={styles.text}>
-              <h6>Pokemon Centres</h6>
+              <Link href="resources/pokecenter">
+                {" "}
+                <h6>Pokemon Centres</h6>
+              </Link>
+
               <p>An important destination for trainers, pokemon and fans.</p>
             </div>
             <div className={styles.btnbox}>
-              <Link href="resources/pokecenter">
+              {/* <Link href="resources/pokecenter">
                 Learn More
-                {/* <Button className={styles.button}>Learn more</Button> */}
-              </Link>
+             
+              </Link> */}
             </div>
           </div>
 
@@ -174,17 +188,36 @@ function Resources() {
               </Link>
             </div>
             <div className={styles.text}>
-              <h6>Pokemon Cafe</h6>
+              <Link href="resources/pokecafe">
+                {" "}
+                <h6>Pokemon Cafe</h6>
+              </Link>
+
               <p>A lunch date with your favourite Pokemon Friends.</p>
             </div>
             <div className={styles.btnbox}>
-              <Link href="resources/pokecafe">
+              {/* <Link href="resources/pokecafe">
                 Table for two, please
-                {/* <Button className={styles.button}>Learn more</Button> */}
-              </Link>
+     
+              </Link> */}
             </div>
           </div>
         </div>
+
+        <figure className={styles.figure}>
+          <figcaption className={styles.figcaption}>
+            <i>
+              Source of images: Trading Card Game photo by{" "}
+              <a href="https://unsplash.com/@giorgiotrovato">Giorgio Trovato</a>{" "}
+              on Unsplash, Pokemon Media image by{" "}
+              <a href="https://pixabay.com/users/thor_deichmann-2306827/">
+                Thor_Deichmann
+              </a>{" "}
+              from pixabay, Pokemon Cafe photo from
+              https://www.pokemon-cafe.jp/en/cafe/
+            </i>
+          </figcaption>
+        </figure>
       </div>
     </main>
   );

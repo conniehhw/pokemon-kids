@@ -36,7 +36,7 @@ function pokemedia() {
         <div className={styles.content}>
           <div>
             <div>
-              <h2>More ways Pokemon!</h2>
+              <h2>Continue Your Journey</h2>
               <h4>
                 Besides collecting the cards, there are many other ways to enjoy
                 Pokemon.
@@ -152,16 +152,22 @@ function pokemedia() {
         <div className={styles.sectioncopy}>
           <div className={styles.container}>
             {/* <p className={styles.clearfix}> */}
-
-            <Image
-              className={styles.imgShrink}
-              src="/images/pokemon-snap.png"
-              // layout="responsive"
-              height={281}
-              width={382}
-              alt="pokemon snap"
-            />
-
+            <div className={styles.imgShrink}>
+              <figure className={styles.figure}>
+                <Image
+                  style={{ borderRadius: "20px" }}
+                  // className={styles.imgShrink}
+                  src="/images/pokemon-snap.png"
+                  // layout="responsive"
+                  height={281}
+                  width={382}
+                  alt="pokemon snap"
+                />
+                <figcaption className={styles.figcaption}>
+                  From Pokémon Snap, player taking a photo of Psyduck
+                </figcaption>
+              </figure>
+            </div>
             <div className={styles.sectionText}>
               <p>
                 For the younger Pokemon fans,{" "}
@@ -185,14 +191,24 @@ function pokemedia() {
         {/* <div className={styles.sectionText}> */}
         <div className={styles.sectioncopy}>
           <div className={styles.container}>
-            <Image
-              className={styles.imgShrink}
-              src="/images/pokemon-go.png"
-              // layout="responsive"
-              height={281}
-              width={382}
-              alt="pokemon go"
-            />
+            <div className={styles.imgShrink}>
+              <figure className={styles.figure}>
+                <Image
+                  // className={styles.imgShrink}
+                  style={{ borderRadius: "20px" }}
+                  src="/images/pokemon-go.png"
+                  // layout="responsive"
+                  height={281}
+                  width={382}
+                  alt="pokemon go"
+                />
+                <figcaption className={styles.figcaption}>
+                  Image by{" "}
+                  <a href="https://pixabay.com/users/tumisu-148124">Tumisu</a>{" "}
+                  on pixabay{" "}
+                </figcaption>
+              </figure>
+            </div>
             <div className={styles.sectionText}>
               <h6>Mobile Games</h6>
               <p>
@@ -225,50 +241,24 @@ function pokemedia() {
           </div>
         </div>
 
-        {/* <div className={styles.sectioncopy}>
-          <div className={styles.container}>
-            <Image
-              className={styles.imgShrink}
-              src="/images/pokemon-caferemix.png"
- 
-              height={660}
-              width={1140}
-              alt="pokemon cafe remix"
-            />
-            <div className={styles.sectionText}>
-              <p>
-                In the game{" "}
-                <a href="https://cafemix.pokemon.com/en-us/" target="_blank">
-                  {" "}
-                  Pokemon Cafe Remix,
-                </a>{" "}
-                the player completes puzzles to create drinks and dishes to
-                server at your Pokemon Cafe. You can find a full list of{" "}
-                <a
-                  href="https://www.pokemon.com/us/pokemon-video-games/all-pokemon-games"
-                  target="_blank"
-                >
-                  Pokemon games
-                </a>{" "}
-                on the official website.
-              </p>
-            </div>
-          </div>
-        </div> */}
-
         <div className={styles.section}>
           <div>Books</div>
         </div>
         <div className={styles.sectioncopy}>
           <div className={styles.containerBooks}>
-            <Image
-              className={styles.imgShrink}
-              src="/images/pokemon-visual-companion.png"
-              // layout="responsive"
-              height={200}
-              width={200}
-              alt="pokemon visual companion book"
-            />
+            <div className={styles.imgShrink}>
+              <figure className={styles.figure}>
+                <Image
+                  // className={styles.imgShrink}
+                  src="/images/pokemon-visual-companion.png"
+                  // layout="responsive"
+                  height={300}
+                  width={300}
+                  alt="pokemon visual companion book"
+                />
+                <figcaption></figcaption>
+              </figure>
+            </div>
             <div className={styles.sectionText}>
               <p>
                 Books are a great way for you and your kiddo to immerse in the
@@ -286,16 +276,21 @@ function pokemedia() {
 
         <div className={styles.sectioncopy}>
           <div className={styles.containerBooks}>
-            <Image
-              className={styles.imgShrink}
-              src="/images/essential-handbook.jpg"
-              // layout="responsive"
-              // height={960}
-              // width={660}
-              height={660}
-              width={360}
-              alt="pokemon essential handbook 2024"
-            />
+            <div className={styles.imgShrink}>
+              <figure className={styles.figure}>
+                <Image
+                  className={styles.imgShrink}
+                  src="/images/essential-handbook.jpg"
+                  // layout="responsive"
+                  // height={960}
+                  // width={660}
+                  height={660}
+                  width={360}
+                  alt="pokemon essential handbook 2024"
+                />
+                <figcaption></figcaption>
+              </figure>
+            </div>
             <div className={styles.sectionText}>
               {/* <br></br> */}
               <p>

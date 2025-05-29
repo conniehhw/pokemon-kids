@@ -26,14 +26,24 @@ export default function About() {
 
       <div className={styles.welcome}>
         <div className={styles.alignimg}>
-          <Image
-            className={styles.img}
-            src="/images/talkative-pikachu.png"
-            // layout="responsive"
-            height={580}
-            width={580}
-            alt="talkative Pikachu"
-          />
+          <figure>
+            <Image
+              className={styles.img}
+              src="/images/talkative-pikachu.png"
+              // layout="responsive"
+              height={580}
+              width={580}
+              alt="talkative Pikachu"
+            />
+            <figcaption className={styles.figcaption}>
+              Modified, original image by&nbsp;
+              <a href="https://pixabay.com/users/saiarvind1995-16329347/">
+                saiarvind1995&nbsp;
+              </a>{" "}
+              on&nbsp;
+              <a href="https://pixabay.com">pixabay.</a>
+            </figcaption>
+          </figure>
         </div>
         <div>
           <h3>"Mom, mom! DID YOU KNOW that Pokemon Poke Po ..."</h3>

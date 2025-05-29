@@ -193,23 +193,32 @@ button box */
 
   /* .card { */
   display: inline-block;
-  /* border: 1px solid black;
+}
+/* border: 1px solid black;
     background-color: aquamarine; */
-  /* height: 200px; */
-  /* width: 200px;
+/* height: 200px; */
+/* width: 200px;
     margin-left: 20pt;
     margin-top: 20pt;
     margin-bottom: 20pt;
   } */
 
-  /* .cardtext {
+/* .cardtext {
     padding-top: 8pt;
     padding-bottom: 8pt;
     padding-left: 4pt;
     text-wrap: balance; */
-  /* text-wrap: wrap; */
-  /* line-height: 24px;
+/* text-wrap: wrap; */
+/* line-height: 24px;
   } */
+
+.figure {
+  margin-left: 24pt;
+  margin-right: 24pt;
+}
+
+.figcaption {
+  font-size: 12px;
 }
 
 /* small tablet styles */

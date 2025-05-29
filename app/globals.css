@@ -133,3 +133,12 @@ h4 {
   .projects {
   }
 }
+
+/* desktop styles */
+@media screen and (max-width: 1600px) {
+  body {
+    /* font-size: 20px; */
+  }
+  .projects {
+  }
+}

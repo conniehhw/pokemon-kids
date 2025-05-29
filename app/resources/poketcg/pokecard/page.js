@@ -114,7 +114,7 @@ function pokecard() {
         </div>
       </div>
 
-      <figure className={styles.figure}>
+      <figure className={styles.figureCard}>
         <Image
           className={styles.imgFig}
           src="/images/meowscarada-card.png"

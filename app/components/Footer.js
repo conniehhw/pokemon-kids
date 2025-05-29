@@ -9,9 +9,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 function Footer() {
   return (
     <div className={styles.footer}>
-      Copyright &copy; Your website 2025
-      <Link href="/pokedex"> Pokedex </Link>
-      <Link href="/about">About </Link>
+      Copyright &copy; LolaG 2025
+      {/* <Link href="/pokedex"> Pokedex </Link>
+      <Link href="/about">About </Link> */}
       {/* <Nav expand="lg" className="bg-body-tertiary">
         <Image
           src="/images/pokemon-logo.png" // Route of the image file

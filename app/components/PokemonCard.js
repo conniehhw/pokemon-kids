@@ -95,19 +95,20 @@ export function PokemonCard({ pokemon, name, id, sprites, type }) {
             alt="image"
           />
         </div>
+      </Link>
 
-        <div className={styles.card_text}>
-          {/* {allPokemons.map((pokemon) => {
+      <div className={styles.card_text}>
+        {/* {allPokemons.map((pokemon) => {
             return <><div>Hello</div></>;
           })} */}
 
-          {/* {allPokemons.map((pokemon) => {
+        {/* {allPokemons.map((pokemon) => {
             console.log(pokemon.id);
             console.log(pokemon.name);
             return pokemon.types.map((type) => {
               console.log(type.type.name); */}
 
-          {/* return (
+        {/* return (
                 <>
                   <button
                     style={{
@@ -123,82 +124,82 @@ export function PokemonCard({ pokemon, name, id, sprites, type }) {
               );
             });
           })} */}
-          <h6>#{numericId}</h6>
-          <h3>{name.charAt(0).toUpperCase() + name.slice(1)}</h3>
-        </div>
+        <h6>#{numericId}</h6>
+        <h3>{name.charAt(0).toUpperCase() + name.slice(1)}</h3>
+      </div>
 
-        <div className={styles.type}>
-          {pokemon.types.map((type) => {
-            const typeName = type.type.name;
-            console.log(typeName);
-            // console.log(`${type}`);
+      <div className={styles.type}>
+        {pokemon.types.map((type) => {
+          const typeName = type.type.name;
+          console.log(typeName);
+          // console.log(`${type}`);
 
-            const test = typeName;
-            let colour;
-            if (test === "grass") {
-              colour = "#7AC74C";
-            } else if (test === "fire") {
-              colour = "#EE8130";
-            } else if (test === "poison") {
-              colour = "#A33EA1";
-            } else if (test === "normal") {
-              colour = "#A8A77A";
-            } else if (test === "electric") {
-              colour = "#F7D02C";
-            } else if (test === "dragon") {
-              colour = "#6F35FC";
-            } else if (test === "ice") {
-              colour = "#96D9D6";
-            } else if (test === "fighting") {
-              colour = "C22E28";
-            } else if (test === "ground") {
-              colour = "#E2BF65";
-            } else if (test === "psychic") {
-              colour = "#F95587";
-            } else if (test === "bug") {
-              colour = "#A6B91A";
-            } else if (test === "flying") {
-              colour = "#A98FF3";
-            } else if (test === "rock") {
-              colour = "#B6A136";
-            } else if (test === "water") {
-              colour = "#6390F0";
-            } else if (test === "ghost") {
-              colour = "#735797";
-            } else if (test === "dark") {
-              colour = "#705746";
-            } else if (test === "steel") {
-              colour = "#B7B7CE";
-            } else if (test === "fairy") {
-              colour = "#D685AD";
-            } else {
-              colour = "black";
-            }
+          const test = typeName;
+          let colour;
+          if (test === "grass") {
+            colour = "#7AC74C";
+          } else if (test === "fire") {
+            colour = "#EE8130";
+          } else if (test === "poison") {
+            colour = "#A33EA1";
+          } else if (test === "normal") {
+            colour = "#A8A77A";
+          } else if (test === "electric") {
+            colour = "#F7D02C";
+          } else if (test === "dragon") {
+            colour = "#6F35FC";
+          } else if (test === "ice") {
+            colour = "#96D9D6";
+          } else if (test === "fighting") {
+            colour = "C22E28";
+          } else if (test === "ground") {
+            colour = "#E2BF65";
+          } else if (test === "psychic") {
+            colour = "#F95587";
+          } else if (test === "bug") {
+            colour = "#A6B91A";
+          } else if (test === "flying") {
+            colour = "#A98FF3";
+          } else if (test === "rock") {
+            colour = "#B6A136";
+          } else if (test === "water") {
+            colour = "#6390F0";
+          } else if (test === "ghost") {
+            colour = "#735797";
+          } else if (test === "dark") {
+            colour = "#705746";
+          } else if (test === "steel") {
+            colour = "#B7B7CE";
+          } else if (test === "fairy") {
+            colour = "#D685AD";
+          } else {
+            colour = "black";
+          }
 
-            return (
-              <>
-                <button
-                  style={{
-                    // background: pokeColor,
-                    backgroundColor: colour,
-                    color: "white",
-                    height: "30px",
-                  }}
-                  className={styles.pill}
-                >
-                  {/* {type.type.name} */}
-                  {typeName}
-                </button>
-              </>
-            );
-          })}
-        </div>
+          return (
+            <>
+              <button
+                style={{
+                  // background: pokeColor,
+                  backgroundColor: colour,
+                  color: "white",
+                  height: "30px",
+                }}
+                className={styles.pill}
+              >
+                {/* {type.type.name} */}
+                {typeName}
+              </button>
+            </>
+          );
+        })}
+      </div>
 
-        {/* {pokemonStats.name.charAt(0).toUpperCase() +
+      {/* {pokemonStats.name.charAt(0).toUpperCase() +
               pokemonStats.name.slice(1)} */}
 
-        {/* <h4>{pokemonStats.sprites.other.home.front_default}</h4> */}
-      </Link>
+      {/* <h4>{pokemonStats.sprites.other.home.front_default}</h4> */}
+      {/* </Link> */}
     </div>
   );
 }

@@ -290,6 +290,18 @@
     /* margin-left: 16pt;
       margin-right: 16pt; */
   }
+
+  .figure {
+    margin-left: 48pt;
+    margin-right: 48pt;
+    margin-left: 32px;
+    margin-right: 32px;
+  }
+
+  .figcaption {
+    font-size: 14px;
+    /* text-align: center; */
+  }
 }
 
 /* lg tablets & laptop */
