@@ -58,7 +58,8 @@ function pokecard() {
       <div className={styles.sectioncopy}>
         <div className={styles.container}>
           <Image
-            className={styles.img}
+            className={styles.imgFig}
+            // style={{ border: "1px solid #c0c0c0" }}
             src="/images/parts-of-card.png"
             // layout="responsive"
             height={914}
@@ -117,6 +118,7 @@ function pokecard() {
       <figure className={styles.figureCard}>
         <Image
           className={styles.imgFig}
+          style={{ border: "none" }}
           src="/images/meowscarada-card.png"
           // layout="responsive"
           height={400}

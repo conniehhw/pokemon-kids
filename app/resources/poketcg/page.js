@@ -149,6 +149,7 @@ function poketcg() {
         <div className={styles.container}>
           <Image
             className={styles.img}
+            style={{ borderRadius: "0" }}
             src="/images/trainer-cards.png"
             // layout="responsive"
             height={150}
@@ -230,6 +231,7 @@ function poketcg() {
         <div className={styles.container}>
           <Image
             className={styles.imgShrink}
+            style={{ borderRadius: "0" }}
             src="/images/tcg-layout-easy.png"
             // layout="responsive"
             height={848}
@@ -280,12 +282,14 @@ function poketcg() {
         <div className={styles.container}>
           <Image
             className={styles.img}
+            // style={{ borderRadius: "0" }}
             src="/images/kids-play-tcg.png"
-            layout="responsive"
-            height={362}
-            width={602}
+            // layout="responsive"
+            height={522}
+            width={802}
             alt="kids playing at tcg tournament"
           />
+
           <div className={styles.sectionText}>
             <p>Parts of a Turn - each turn has 3 main parts:</p>
             <ul>

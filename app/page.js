@@ -121,16 +121,16 @@ export default function Home() {
           </div> */}
         </div>
       </div>
-      <div>
-        <figure className={styles.figure}>
-          <figcaption className={styles.figcaption}>
-            <i>
-              Source of images: From Nintendo, Game Freak and Creatures Inc. and
-              https://www.pokemon.com, otherwise indicated elsewhere.
-            </i>
-          </figcaption>
-        </figure>
-      </div>
+      {/* <div> */}
+      <figure className={styles.figure}>
+        <figcaption className={styles.figcaption}>
+          <i>
+            Source of images: From Nintendo, Game Freak and Creatures Inc. and
+            https://www.pokemon.com, otherwise indicated elsewhere.
+          </i>
+        </figcaption>
+      </figure>
+      {/* </div> */}
     </div>
   );
 }

@@ -65,7 +65,7 @@ export default function About() {
               Of course, this idea came about and "Wouldn't it be nice if there
               was one resource that gave me all the basics I needed to know AND
               it would only take 30 minutes to go through?" and this website was
-              started. I hope you will find this website helpful :)
+              started.
             </p>
             <p>
               A special shout out and thank you to my son for his help and kind

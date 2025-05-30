@@ -213,12 +213,16 @@ button box */
   } */
 
 .figure {
-  margin-left: 24pt;
-  margin-right: 24pt;
+  /* margin-left: 24pt;
+  margin-right: 24pt; */
+  padding-left: 24pt;
+  padding-right: 24pt;
+  background-color: #fafafa;
 }
 
 .figcaption {
   font-size: 12px;
+  background-color: #fafafa;
 }
 
 /* small tablet styles */

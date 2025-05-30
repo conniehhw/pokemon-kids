@@ -26,7 +26,10 @@ export default function Contact() {
   return (
     <>
       {/* <div className={styles.contact}> */}
-      If you have any questions, drop me a line!
+      <h5>
+        I hope this website was helpful! If you have any questions or feedback,
+        drop me a line!
+      </h5>
       <form onSubmit={handleSubmit} className={styles.form}>
         <div>
           <ul className={styles.alignMe}>

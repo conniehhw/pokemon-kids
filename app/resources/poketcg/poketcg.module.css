@@ -78,7 +78,7 @@
 .figureCard {
   display: flex;
   flex-flow: column;
-  border: thin #c0c0c0 solid;
+  /* border: thin #c0c0c0 solid; */
   border-radius: 20px;
   /* gap: 4pt; */
   margin-top: 16pt;
@@ -90,8 +90,10 @@
 .imgFig {
   width: 100%;
   height: auto;
-  padding-left: 16pt;
-  padding-right: 16pt;
+  /* border-radius: 20px; */
+  border: thin #c0c0c0 solid;
+  /* padding-left: 16pt;
+  padding-right: 16pt; */
   /* justify-content: center; */
 }
 
@@ -166,7 +168,7 @@
   height: auto;
 
   /* margin-top: 16pt; */
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
 .imgnbr {
@@ -343,7 +345,7 @@
     height: auto;
 
     /* margin-top: 16pt; */
-    border: 1px solid black;
+    /* border: 1px solid black; */
   }
 
   .imgnbr {
@@ -471,17 +473,18 @@
     border-radius: 20px;
     /* gap: 4pt; */
     margin-top: 16pt;
-    margin-left: 16pt;
-    margin-right: 16pt;
+    /* margin-left: 16pt;
+    margin-right: 16pt; */
     justify-content: center;
   }
 
   .imgFig {
     width: 100%;
     height: auto;
-
-    padding-left: 16pt;
-    padding-right: 16pt;
+    /* padding-left: 16pt;
+    padding-right: 16pt; */
+    border: thin #c0c0c0 solid;
+    border-radius: 20px;
     /* justify-content: center; */
   }
 
@@ -517,6 +520,7 @@
     margin-top: 0;
     /* padding-right: 10pt; */
     padding-left: 0pt;
+    padding-top: 0;
     /* padding-top: 10pt; */
     /* padding-bottom: 10pt; */
   }
@@ -539,7 +543,7 @@
       margin-right: 64px; */
       /* padding-top: 24pt; */
       /* margin-bottom: 16pt; */
-      border: 1px solid black;
+      /* border: 1px solid black; */
       /* background-color: lightpink; */
     }
   }
@@ -548,6 +552,7 @@
     /* margin-left: 48pt;
     margin-right: 48pt; */
     /* margin-top: 32px; */
+    /* border: 1px solid black; */
   }
 
   .figcaption {
@@ -571,9 +576,12 @@
   .imgFig {
     width: 100%;
     height: auto;
+    border-radius: 20px;
+    padding: 0;
+    border: thin #c0c0c0 solid;
 
-    padding-left: 20pt;
-    padding-right: 20pt;
+    /* padding-left: 20pt;
+    padding-right: 20pt; */
     /* justify-content: center; */
   }
 
@@ -618,23 +626,14 @@
     margin-left: 48pt;
     margin-right: 48pt;
   }
-  /* border: 1px solid black;
-  } */
-
-  /* .section {
-    margin-left: 48pt;
-    margin-right: 48pt;
-  }
-
-  .sectioncopy {
-    margin-left: 48pt;
-    margin-right: 48pt;
-  } */
 
   .sectionText {
-    width: 80%;
+    width: 100%;
+    /* width: 80%; */
     padding-right: 30pt;
     padding-top: 0;
+    /* border: 1px solid black; */
+    /* background-color: yellow; */
   }
 
   .container {
@@ -660,6 +659,9 @@
     /* width: auto; */
     width: 100%;
     height: auto;
+    /* padding-left: 100px; */
+    /* border: 1px solid black; */
+
     /* border: thin #c0c0c0 solid; */
 
     /* margin-left: 48pt; */
@@ -673,48 +675,7 @@
     border-radius: 20px;
     width: 50%;
     height: auto;
-
-    /* margin-top: 16pt; */
-    /* border: 1px solid black; */
   }
-
-  /* .imgDeck {
-    border-radius: 20px;
-  } */
-
-  /* .imgFloatTest {
-    float: right;
-    width: 270px;
-    height: 170px;
-    border-radius: 20px; */
-  /* margin-right: 20px; */
-  /* } */
-
-  /* .imgFloatTest1 { */
-  /* float: right;
-    width: 200px;
-    height: 300px;
-    border-radius: 20px; */
-  /* 
-    
-    margin-right: 20px; */
-  /* } */
-
-  /* .imgFloatTest2 {
-    float: right;
-    width: 450px;
-    height: 351px;
-    border-radius: 20px; */
-  /* margin-right: 20px; */
-  /* } */
-
-  /* .imgFloatTest3 { */
-  /* float: right;
-    width: 350px;
-    height: 451px;
-    border-radius: 20px; */
-  /* margin-right: 20px; */
-  /* } */
 
   .clearfix {
     overflow: auto;
@@ -763,8 +724,9 @@
   .imgFig {
     width: 100%;
     height: auto;
-    padding-left: 30pt;
-    padding-right: 10pt;
+    border: thin #c0c0c0 solid;
+    /* padding-left: 30pt;
+    padding-right: 10pt; */
     /* justify-content: center; */
   }
 
@@ -861,18 +823,8 @@
     margin-bottom: 16pt;
   }
 
-  /* .sectionText {
-    padding-top: 0;
-    padding-left: 0;
-    padding-right: 26px;
-
-    width: 900px;
-
-
-    border: 1px solid black;
-  } */
   .sectionText {
-    width: 80%;
+    width: 100%;
     padding-right: 30pt;
     padding-top: 0;
     /* border: 1px solid black; */
