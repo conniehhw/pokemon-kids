@@ -1,3 +1,5 @@
+// API call to Pokemon API, endpoint + searched name
+
 const POKEMON_API = "https://pokeapi.co/api/v2/";
 
 export async function getPokemon(name) {

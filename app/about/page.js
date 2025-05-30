@@ -1,18 +1,8 @@
-// import styles from "../page.module.css";
-
 import styles from "../about/about.module.css";
-// import Button from "react-bootstrap/Button";
 import WebForm from "../components/WebForm";
-
 import Image from "next/image";
 
 export default function About() {
-  // const [results, setResults] = useState([]);
-
-  // we want to create another stateful variable
-  // which will contain the results we've gotten back from the API, b/c we want to be able to modify
-  // this array using the search bar and we want to send it into our search results component so it can render it ou
-
   return (
     <div className={styles.main}>
       <div>
@@ -24,6 +14,7 @@ export default function About() {
         </ul>
       </div>
 
+      {/* main content */}
       <div className={styles.welcome}>
         <div className={styles.alignimg}>
           <figure>
@@ -62,14 +53,13 @@ export default function About() {
           </p>
           <div>
             <p>
-              Of course, this idea came about and "Wouldn't it be nice if there
-              was one resource that gave me all the basics I needed to know AND
-              it would only take 30 minutes to go through?" and this website was
-              started.
+              "Wouldn't it be nice if there was one resource that gave me all
+              the basics I needed to know AND it would only take 30 minutes to
+              go through?" and this was how this website was started.
             </p>
             <p>
-              A special shout out and thank you to my son for his help and kind
-              words.
+              A special shout out and thank you to my son for his help,
+              inspiration and kind words.
             </p>
           </div>
         </div>
@@ -77,7 +67,6 @@ export default function About() {
 
       <div className={styles.lgbg}>
         <div className={styles.contact}>
-          {/* <p>If you have any questions, drop me a line!</p> */}
           <WebForm />
         </div>
       </div>
