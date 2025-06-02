@@ -1,12 +1,10 @@
 "use client";
 
 import { useEffect, useState } from "react";
-// import { BiSolidChevronUpSquare } from "react-icons/bi";
-// import { FaChevronUp } from "react-icons/fa";
-// import { BiArrowToTop } from "react-icons/bi";
 import { GoMoveToTop } from "react-icons/go";
-
 import styles from "./components.module.css";
+
+// Component function: Render a scroll button to enable user to scroll screen back up to the top
 
 const ScrollToTopButton = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -36,7 +34,6 @@ const ScrollToTopButton = () => {
 
   return (
     <button
-      // className={`bottom-4 right-4 rounded-full p-2 outline-none}
       className={`transition-opacity duration-200 ${
         isVisible ? "opacity-100" : "opacity-0"
       } ${styles.scrollbutton}`}

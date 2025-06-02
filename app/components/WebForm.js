@@ -1,6 +1,8 @@
 "use client";
 import styles from "../components/components.module.css";
 
+// Component function: Render a webform to enable ability to receive emails submitted
+
 export default function Contact() {
   async function handleSubmit(e) {
     e.preventDefault();
@@ -25,7 +27,6 @@ export default function Contact() {
 
   return (
     <>
-      {/* <div className={styles.contact}> */}
       <h5>
         I hope this website was helpful! If you have any questions or feedback,
         drop me a line!
@@ -38,8 +39,7 @@ export default function Contact() {
               <input type="text" name="name" required placeholder="Your name" />
             </li>
             <br></br>
-            {/* </div> */}
-            {/* <div className={styles.alignMe}> */}
+
             <li>
               <label htmlFor="email">Email</label>
               <input
@@ -50,8 +50,7 @@ export default function Contact() {
               />
             </li>
             <br></br>
-            {/* </div> */}
-            {/* <div className={styles.alignMe}> */}
+
             <li>
               <label htmlFor="message">Message</label>
               <textarea
@@ -71,7 +70,6 @@ export default function Contact() {
           </ul>
         </div>
       </form>
-      {/* </div> */}
     </>
   );
 }

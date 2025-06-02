@@ -6,6 +6,8 @@ import AccordionHeader from "react-bootstrap/AccordionHeader";
 import AccordionItem from "react-bootstrap/AccordionItem";
 import AccordionBody from "react-bootstrap/AccordionBody";
 
+// Page function: Pokemon 101 FAQ
+
 function poke101() {
   return (
     <div className={styles.main}>
@@ -21,20 +23,6 @@ function poke101() {
         </ul>
       </div>
 
-      <div className={styles.grid}>
-        {/* <div>
-          <Image
-            className={styles.img}
-            src="/images/pokemon101-banner.png"
-            layout="responsive"
-            height={361}
-            width={902}
-            alt="pokemons at school banner"
-          />
-        </div> */}
-      </div>
-      {/* <div>Photo by Thimo Pedersen on Unsplash</div> */}
-
       <div className={styles.content}>
         <div>
           <div>
@@ -44,25 +32,9 @@ function poke101() {
         </div>
       </div>
 
-      {/* <div className={styles.title}>
-        Pokemon 101: Frequently Asked Questions
-      </div> */}
       <Accordion defaultActiveKey="0" flush className={styles.accordion}>
         <AccordionItem className={styles.item} eventKey="0">
-          <AccordionHeader>
-            {/* <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="currentColor"
-              class="bi bi-question-circle"
-              viewBox="0 0 16 16"
-            >
-              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-              <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z" />
-            </svg> */}
-            What is a Pokemon?
-          </AccordionHeader>
+          <AccordionHeader>What is a Pokemon?</AccordionHeader>
           <AccordionBody className={styles.clearfix}>
             <Image
               className={styles.imgr}
@@ -78,6 +50,7 @@ function poke101() {
             </div>
           </AccordionBody>
         </AccordionItem>
+
         <AccordionItem eventKey="1">
           <AccordionHeader>What is a Poke Ball?</AccordionHeader>
           <AccordionBody className={styles.clearfix}>
@@ -209,36 +182,19 @@ function poke101() {
                 </figcaption>
               </figure>
             </div>
-            {/* 
-            <div className={styles.textbox}> */}
-            <p>
-              The Pokemon World is mapped into regions on separate continents.
-              Some of the main regions are Kanto, Johto, Paldea, Hoenn, Alola
-              and Sinnoh.
-            </p>
-            <p>
-              Kanto is modern and technological and Professor Oak is the
-              resident Pokémon Professor who gives Pokémon Trainers a choice
-              between Bulbasaur, Charmander, or Squirtle as their starter
-              Pokémon.
-            </p>
-            <br></br>
-            {/* </div> */}
           </AccordionBody>
         </AccordionItem>
         <AccordionItem eventKey="7">
           <AccordionHeader> What do Pokemons eat?</AccordionHeader>
           <AccordionBody className={styles.clearfix}>
-            {/* <div className={styles.shrink1}> */}
             <Image
               className={styles.imgr}
-              // className={styles.imgnbr}
               src="/images/pokemon-berries.png"
               height={240}
               width={180}
               alt="Pokemon Berries"
             />
-            {/* </div> */}
+
             <div className={styles.textbox}>
               In the wild, Pokemon have been known to eat plants and berries.
               With each new generation of Pokemon in games and series, Pokemon
@@ -255,12 +211,9 @@ function poke101() {
             Do Pokemon talk? How do they communicate?
           </AccordionHeader>
           <AccordionBody className={styles.clearfix}>
-            {/* <div className={styles.shrink1}> */}
             <div className={styles.videowrapper}>
               <iframe
                 className={styles.responsiveiframe}
-                // width="560"
-                // height="315"
                 src="https://www.youtube.com/embed/4IeZZ9p4zY4?si=x8wWWaqiAXiT0uRU&amp;autoplay=0&mute=1&start=3&rel=0&border=0&modestbranding=1"
                 title="YouTube video player"
                 frameborder="0"
@@ -269,7 +222,7 @@ function poke101() {
                 allowfullscreen
               ></iframe>
             </div>
-            {/* </div> */}
+
             <div className={styles.textbox1}>
               <p>
                 It appears all Pokemon can understand human speech however
@@ -285,20 +238,8 @@ function poke101() {
             </div>
           </AccordionBody>
         </AccordionItem>
-
-        {/* <AccordionItem eventKey="6">
-          <AccordionHeader>Accordion Item #7</AccordionHeader>
-          <AccordionBody>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </AccordionBody>
-        </AccordionItem> */}
       </Accordion>
+
       <div>
         <figure className={styles.figure}>
           <figcaption className={styles.figcaption}>
@@ -315,7 +256,6 @@ function poke101() {
             <a href="https://Pokémon.fandom.com/wiki/Berry">
               pokemon.fandom.com
             </a>
-            {/* https://bulbapedia.bulbagarden.net/wiki/Region, */}
           </figcaption>
         </figure>
       </div>

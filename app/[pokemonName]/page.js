@@ -1,4 +1,6 @@
 import { getPokemon } from "../utils/PokemonHomeAPI";
+import Image from "next/image";
+import PokemonCard from "../components/PokemonCard";
 import { PokemonImage } from "../components/PokemonImage";
 import styles from "./pokemonName.module.css";
 import Link from "next/link";

@@ -4,18 +4,18 @@ import { useState, useEffect, useRef } from "react";
 import styles from "../about/about.module.css";
 import { PokedexGrid } from "../components/PokedexGrid";
 
+// Page function: Pokdex Home Page; fetch pokemon data from api call, houses the Pokedex Grid (Grid includes search form/bar)
+
 function PokedexHome() {
   const [allPokemons, setAllPokemons] = useState([]);
-  // const [offset, setOffset] = useState(0);
-  // const limit = 10;
 
   const getAllPokemons = async () => {
     const res = await fetch(
-      "https://pokeapi.co/api/v2/pokemon?limit=200&offset=0"
+      "https://pokeapi.co/api/v2/pokemon?limit=20&offset=0"
     );
 
     const data = await res.json();
-    console.log(data); // log results - first 20 pokemons (shows count 1302)
+    console.log(data); // log results - first 20 pokemons
     console.log(data.results); // log array - first 20 pokemons
     console.log(data.next); // get next 20 pokemons
 
@@ -33,7 +33,7 @@ function PokedexHome() {
         setAllPokemons((currentList) => [...currentList, data]); // sort pokemon info
         allPokemons.sort((a, b) => a.id - b.id);
 
-        console.log(data); // same as ln 34
+        console.log(data); // same as ln 31
         console.log(data.id);
         console.log(data.name);
         // console.log(allPokemons);
@@ -42,19 +42,10 @@ function PokedexHome() {
     }
 
     createPokemonObject(data.results);
-    console.log(data.results); // same as ln 22
+    console.log(data.results); // same as ln 22-recheck
     console.log(allPokemons);
     console.log(setAllPokemons);
   };
-
-  // const getNextPokemons = async () => {
-  //   const res = await fetch(
-  //     `https://pokeapi.co/api/v2/pokemon?limit=${limit}&offset=${offset}`
-  //   );
-  //   const data = await res.json();
-  //   console.log(data); // log results - first 20 pokemons (shows count 1302)
-  //   console.log(data.results); // log array - first 20 pokemons
-  // };
 
   const initialized = useRef(false);
 
@@ -63,13 +54,8 @@ function PokedexHome() {
       initialized.current = true;
 
       getAllPokemons();
-      // getNextPokemons();
     }
   }, []);
-
-  // useEffect(() => {
-  //   getAllPokemons();
-  // }, []);
 
   return (
     <>
@@ -85,10 +71,8 @@ function PokedexHome() {
             <li>Pokedex</li>
           </ul>
         </div>
-        {/* <div>Fetch Test</div> */}
 
         <PokedexGrid allPokemons={allPokemons} />
-        {/* <button>LoadMore</button>  */}
       </div>
     </>
   );

@@ -5,6 +5,8 @@ import Link from "next/link";
 import { MdArrowBack } from "react-icons/md";
 import { Style_Script } from "next/font/google";
 
+// Page function: Pokemon Centers in game and real bricks & mortor locations
+
 function pokecenter() {
   return (
     <div>
@@ -19,19 +21,6 @@ function pokecenter() {
             </li>
             <li>Pokemon Centres</li>
           </ul>
-        </div>
-
-        <div className={styles.grid}>
-          {/* <div>
-            <Image
-              className={styles.img}
-              src="/images/pokemoncenter-anime.png"
-              layout="responsive"
-              height={280}
-              width={564}
-              alt="pokemoncenter in anime"
-            />
-          </div> */}
         </div>
 
         <div className={styles.content}>
@@ -50,7 +39,6 @@ function pokecenter() {
         <div className={styles.sectioncopy}>
           <div className={styles.container}>
             <div className={styles.sectionText}>
-              {/* <p> */}
               In Pokemon world, the Pokemon Center is where characters and
               Pokemons can heal after battle. Every center has a Nurse Joy to
               help Pokemons recover their strength. Pokemon centers are alos
@@ -59,7 +47,6 @@ function pokecenter() {
               Marts are also featured inside Pokemon Centers, where supplies can
               be purchased to help with Pokemon training, including potions and
               healing items.
-              {/* </p> */}
             </div>
             <div className={styles.img}>
               <figure className={styles.figure}>
@@ -92,12 +79,10 @@ function pokecenter() {
         <div className={styles.sectioncopy}>
           <div className={styles.container}>
             <div className={styles.sectionText}>
-              {/* <p className={styles.clearfix}> */}
               There are also real life Pokemon Centers fans can visit! Pokemon
               Centers are official shops where you can find original and
               exclusive Pokemon merchandise such as your favourite plushie,
               stationery, cards, key chains and much more.
-              {/* </p> */}
             </div>
             <figure>
               <Image
@@ -118,14 +103,12 @@ function pokecenter() {
         <div className={styles.sectioncopy}>
           <div className={styles.container}>
             <div className={styles.sectionText}>
-              {/* <p className={styles.clearfix}> */}
               The first Pokémon Center store opened in Tokyo, April 1998. There
               are 17 Pokemon Center locations in Japan, each one is based on a
               different concept with special events such as Pokemon Design Lab
               where you can design your own T-shirt, life size characters,
               trading card and game stations, touch screen Pokedex and much
               more.
-              {/* </p> */}
             </div>
             <figure>
               <Image
@@ -144,7 +127,7 @@ function pokecenter() {
         </div>
       </div>
 
-      {/* <div className={styles.grid_small}> */}
+      {/* grid container to organize images */}
       <div className={styles.container_grid}>
         <div className={styles.items}>
           <figure className={styles.figure}>

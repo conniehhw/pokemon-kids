@@ -1,10 +1,8 @@
 import React from "react";
-import Badge from "react-bootstrap/Badge";
 import styles from "../pokecafe/pokecafe.module.css";
-import Container from "react-bootstrap/Container";
-import Col from "react-bootstrap/Col";
-import Row from "react-bootstrap/Row";
 import Image from "next/image";
+
+// Page function: Overview of Pokemon Cafe - locations, menu
 
 function pokecafe() {
   return (
@@ -21,20 +19,6 @@ function pokecafe() {
         </ul>
       </div>
 
-      <div className={styles.grid}>
-        {/* <div>
-          <Image
-            className={styles.img}
-            src="/images/pokemon-cafe-banner.png"
-            layout="responsive"
-            height={140}
-            width={350}
-            alt="pokemon cafe sign banner"
-          />
-        </div> */}
-      </div>
-      {/* <div>Photo by Thimo Pedersen on Unsplash</div> */}
-
       <div className={styles.content}>
         <div>
           <div>
@@ -43,10 +27,6 @@ function pokecafe() {
           </div>
         </div>
       </div>
-
-      {/* <div className={styles.section}>
-        <div>Cafes in Tokyo & Osaka</div>
-      </div> */}
 
       <div className={styles.sectioncopy}>
         <div className={styles.container}>
@@ -87,7 +67,6 @@ function pokecafe() {
         </div>
       </div>
 
-      {/* <div className={styles.gridphoto}> */}
       <div className={styles.container_grid}>
         <div className={styles.items}>
           <figure className={styles.figure}>
@@ -178,29 +157,9 @@ function pokecafe() {
               Remember to book a reservation if you decide to visit the cafe as
               it is quite popular.
             </p>
-            {/* <Image
-          className={styles.img}
-          src="/images/evie-character-greet.png"
-          layout="responsive"
-          height={251}
-          width={502}
-          alt="evie character greet"
-        /> */}
           </div>
         </div>
       </div>
-
-      {/* <div className={styles.title}>
-        pokecafe page
-        <p>
-          You can enjoy a Gengar's Confuse Ray Smoothie or Snorlax's Tummy
-          Filling Nap Lunch Plate, surrounded by your favorite Pokémon, at one
-          of two official Pokemon Cafes.
-        </p>
-        <p>
-          <Badge bg="info">Info Coming Soon!</Badge>
-        </p>
-      </div> */}
     </main>
   );
 }

@@ -2,75 +2,13 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import styles from "../PokedexHome/pokedex.module.css";
-import { propTypes } from "react-bootstrap/esm/Image";
+
+// Component function: Render each card with Pokemon Image, ID, Name and Type
 
 export function PokemonCard({ pokemon, name, id, sprites, type }) {
-  // const [allPokemons, setAllPokemons] = useState([]);
-  // async function Test() {
-
   console.log(pokemon);
 
   const numericId = ("00" + id).slice(-3);
-
-  // const test = `${typeName}`;
-  // let pokeColor = "";
-
-  // switch (test) {
-  //   case "grass":
-  //     pokeColor = "#7AC74C";
-  //     break;
-
-  //   case "poison":
-  //     pokeColor = "#A33EA1";
-  //     break;
-
-  //   case "fire":
-  //     pokeColor = "#EE8130";
-  //     break;
-
-  //   case "water":
-  //     pokeColor = "#6390F0";
-  //     break;
-
-  //   default:
-  //     pokeColor = "gray";
-  // }
-
-  // const pokeType = {type.type.name };
-  // const type1 = `${type}`;
-
-  // const pokeType = `${type}`;
-
-  // let pokeType = { pokemonObject };
-  // let pokeColor = "";
-
-  // let pokeColor = "";
-
-  // switch (type1) {
-  //   case "grass":
-  //     pokeColor = "#7AC74C";
-  //     break;
-
-  //   case "fire":
-  //     pokeColor = "#EE8130";
-  //     break;
-
-  //   case "water":
-  //     pokeColor = "#6390F0";
-  //     break;
-
-  //   case "bug":
-  //     pokeColor = "#A6B91A";
-  //     break;
-
-  //   default:
-  //     pokeColor = "gray";
-  // }
-
-  // console.log(pokeColor); // log color associated with pokemon type
-
-  // console.log(pokeType);
-  // console.log({ type });
 
   return (
     <div className={styles.card}>
@@ -83,9 +21,6 @@ export function PokemonCard({ pokemon, name, id, sprites, type }) {
           }}
         > */}
         <div className={styles.card_image}>
-          {/* <h4>Height: {height}</h4>
-        <h4>Weight: {weight}</h4> */}
-
           <Image
             className={styles.img}
             src={sprites}
@@ -98,41 +33,15 @@ export function PokemonCard({ pokemon, name, id, sprites, type }) {
       </Link>
 
       <div className={styles.card_text}>
-        {/* {allPokemons.map((pokemon) => {
-            return <><div>Hello</div></>;
-          })} */}
-
-        {/* {allPokemons.map((pokemon) => {
-            console.log(pokemon.id);
-            console.log(pokemon.name);
-            return pokemon.types.map((type) => {
-              console.log(type.type.name); */}
-
-        {/* return (
-                <>
-                  <button
-                    style={{
-                      background: pokeColor,
-                      color: "white",
-                      height: "30px",
-                    }}
-                    className={styles.pill}
-                  >
-                    {type.type.name}
-                  </button>
-                </>
-              );
-            });
-          })} */}
         <h6>#{numericId}</h6>
         <h3>{name.charAt(0).toUpperCase() + name.slice(1)}</h3>
       </div>
 
+      {/* map through the individual pokemon data array, finds the type and assigns button colour based on type name and renders the button */}
       <div className={styles.type}>
         {pokemon.types.map((type) => {
           const typeName = type.type.name;
           console.log(typeName);
-          // console.log(`${type}`);
 
           const test = typeName;
           let colour;
@@ -187,19 +96,12 @@ export function PokemonCard({ pokemon, name, id, sprites, type }) {
                 }}
                 className={styles.pill}
               >
-                {/* {type.type.name} */}
                 {typeName}
               </button>
             </>
           );
         })}
       </div>
-
-      {/* {pokemonStats.name.charAt(0).toUpperCase() +
-              pokemonStats.name.slice(1)} */}
-
-      {/* <h4>{pokemonStats.sprites.other.home.front_default}</h4> */}
-      {/* </Link> */}
     </div>
   );
 }
