@@ -1,7 +1,6 @@
 /* Style the list */
 .main {
   display: flex;
-  /* background-color: yellow; */
   flex-direction: column;
   min-height: 100vh;
   border-style: 1px solid;
@@ -46,19 +45,13 @@
   overflow-x: scroll;
   overflow-y: hidden;
   white-space: nowrap;
-  /* border: 1px solid black; */
-  /* margin-top: 76pt; */
   margin-bottom: 24pt;
   display: grid;
   grid-template-columns: repeat(11, 1fr);
   gap: 8pt;
-  /* background-color: hotpink; */
 
   .card {
     display: inline-block;
-    /* border: 1px solid black;
-    background-color: aquamarine; */
-    /* height: 200px; */
     width: 200px;
     margin-left: 20pt;
     margin-top: 20pt;
@@ -70,7 +63,6 @@
     padding-bottom: 8pt;
     padding-left: 4pt;
     text-wrap: balance;
-    /* text-wrap: wrap; */
     line-height: 24px;
   }
 }
@@ -78,9 +70,7 @@
 .figureCard {
   display: flex;
   flex-flow: column;
-  /* border: thin #c0c0c0 solid; */
   border-radius: 20px;
-  /* gap: 4pt; */
   margin-top: 16pt;
   margin-left: 16pt;
   margin-right: 16pt;
@@ -90,11 +80,7 @@
 .imgFig {
   width: 100%;
   height: auto;
-  /* border-radius: 20px; */
   border: thin #c0c0c0 solid;
-  /* padding-left: 16pt;
-  padding-right: 16pt; */
-  /* justify-content: center; */
 }
 
 .figCap {
@@ -104,87 +90,20 @@
   font-style: italic;
 }
 
-/* intro grid */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(11, 1fr);
-  gap: 16pt;
-  row-gap: 8pt;
-  /* margin-top: 84pt; */
-  margin-left: 16pt;
-  margin-right: 16pt;
-  /* padding-top: 24pt; */
-  /* margin-bottom: 16pt; */
-  /* border: 1px solid black; */
-  /* background-color: lightpink; */
-}
-
-/* intro */
-.grid div:nth-child(1) {
-  grid-column: 1/12;
-  grid-row: 1;
-  /* border: 1px solid black; */
-  /* background-color: hotpink; */
-  /* margin-left: 16pt;
-  margin-right: 16pt; */
-}
-
-.grid div:nth-child(2) {
-  grid-column: 1/12;
-  grid-row: 2;
-  /* border: 1px solid black; */
-  /* background-color: hotpink;
-  border: 1px solid black; */
-}
-
-/* .grid div:nth-child(3) {
-  grid-column: 1/12;
-  grid-row: 3;
-  border: 1px solid black;
-
- 
-} */
-
-/* .container {
-} */
-
-.textbox {
-  /* width: 100%;
-  padding: 10pt; */
-}
-
 .img {
   border-radius: 10px;
-
   width: 100%;
   height: auto;
   margin-bottom: 16pt;
-  /* border: thin #c0c0c0 solid; */
 }
 
 .imgShrink {
   border-radius: 20px;
   width: 100%;
   height: auto;
-
-  /* margin-top: 16pt; */
-  /* border: 1px solid black; */
 }
-
-.imgnbr {
-  width: 100%;
-  /* margin-top: 16pt; */
-  margin-bottom: 16pt;
-}
-/* .grid div:nth-child(3) {
-  grid-column: 1/12;
-  grid-row: 2;
-  border: 1px solid black;
-  background-color: hotpink;
-} */
 
 /* cards */
-
 .content {
   display: grid;
   grid-template-columns: repeat(11, 1fr);
@@ -192,39 +111,28 @@
   margin-top: 16pt;
   margin-left: 16pt;
   margin-right: 16pt;
-  /* padding-top: 24pt; */
   margin-bottom: 16t;
-  /* border: 1px solid black;
-  background-color: lightyellow; */
 }
 
 /* cards */
 .content div:nth-child(1) {
   grid-column: 1/12;
   grid-row: 1;
-  /* border: 1px solid black;
-  background-color: yellow; */
 }
 
 .content div:nth-child(2) {
   grid-column: 2/5;
   grid-row: 2;
-  border: 1px solid black;
-  background-color: yellow;
 }
 
 .content div:nth-child(3) {
   grid-column: 5/8;
   grid-row: 2;
-  border: 1px solid black;
-  background-color: yellow;
 }
 
 .content div:nth-child(4) {
   grid-column: 8/11;
   grid-row: 2;
-  border: 1px solid black;
-  background-color: yellow;
 }
 
 .section {
@@ -234,41 +142,24 @@
   margin-top: 16pt;
   margin-left: 16pt;
   margin-right: 16pt;
-  /* padding-top: 24pt; */
-  /* margin-bottom: 16pt; */
-  /* border: 1px solid black; */
-  /* background-color: lightblue; */
 }
 
 .section > div {
   grid-column: 1/12;
   grid-row: 1;
-  /* border: 1px solid black; */
-  /* background-color: yellow; */
   text-align: left;
   border-bottom: 1px solid #599dd0;
   font-size: 1.25rem;
   line-height: 1.083;
-
-  /* margin-left: 16pt; */
 }
 
 .sectioncopy {
   display: flex;
   font-size: 1rem;
-  /* border: 1px solid black; */
   margin-left: 16pt;
   margin-right: 16pt;
   padding-top: 8pt;
-  /* padding-bottom: 8pt; */
   margin-bottom: 16pt;
-}
-
-.sectioncopy1 {
-  margin-left: 16pt;
-  margin-right: 16pt;
-
-  /* padding-top: 32pt; */
 }
 
 .sectionText {
@@ -277,14 +168,6 @@
   padding-left: 0pt;
   padding-top: 10pt;
   padding-bottom: 10pt;
-}
-
-.subtitle {
-  font-weight: 500;
-  /* width: 100%; */
-  margin-left: 16pt;
-  margin-right: 16pt;
-  margin-top: 4pt;
 }
 
 .figure {
@@ -301,38 +184,6 @@
 
 /* small tablet styles */
 @media screen and (min-width: 620px) {
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(11, 1fr);
-    gap: 16pt;
-    row-gap: 8pt;
-    /* margin-top: 84pt; */
-    margin-left: 24pt;
-    margin-right: 24pt;
-    /* padding-top: 24pt; */
-    /* margin-bottom: 16pt; */
-    /* border: 1px solid black; */
-    /* background-color: lightpink; */
-  }
-
-  /* intro */
-  .grid div:nth-child(1) {
-    grid-column: 1/12;
-    grid-row: 1;
-    /* border: 1px solid black; */
-    /* background-color: hotpink; */
-    /* margin-left: 16pt;
-    margin-right: 16pt; */
-  }
-
-  .grid div:nth-child(2) {
-    grid-column: 1/12;
-    grid-row: 2;
-    /* border: 1px solid black; */
-    /* background-color: hotpink;
-    border: 1px solid black; */
-  }
-
   .img {
     border-radius: 20px;
     width: 100%;
@@ -348,12 +199,6 @@
     /* border: 1px solid black; */
   }
 
-  .imgnbr {
-    width: 100%;
-    /* margin-top: 16pt; */
-    margin-bottom: 16pt;
-  }
-
   .content {
     display: grid;
     grid-template-columns: repeat(11, 1fr);
@@ -361,10 +206,7 @@
     margin-top: 16pt;
     margin-left: 24pt;
     margin-right: 24pt;
-    /* padding-top: 24pt; */
     margin-bottom: 16pt;
-    /* border: 1px solid black;
-    background-color: lightyellow; */
   }
 
   .figureCard {
@@ -372,7 +214,6 @@
     flex-flow: row;
     border: thin #c0c0c0 solid;
     border-radius: 20px;
-    /* gap: 4pt; */
     margin-top: 16pt;
     margin-left: 24pt;
     margin-right: 24pt;
@@ -387,46 +228,15 @@
   .section > div {
     grid-column: 1/12;
     grid-row: 1;
-    /* border: 1px solid black; */
-    /* background-color: yellow; */
     text-align: left;
     border-bottom: 1px solid #599dd0;
     font-size: 1.25rem;
     line-height: 1.083;
-
-    /* margin-left: 16pt; */
   }
 
   .sectioncopy {
     margin-left: 24pt;
     margin-right: 24pt;
-  }
-
-  .imgFloatTest {
-    /* float: right;
-    width: 270px;
-    height: 170px;
-    margin-left: 15px;
-    border-radius: 20px; */
-  }
-
-  .imgFloatTest1 {
-    /* float: right;
-    width: 200px;
-    height: 300px;
-    margin-left: 15px;
-    border-radius: 20px; */
-  }
-
-  .imgFloatTest2 {
-    /* width: 100%;
-    height: 100%;
-    border-radius: 20px;
-    margin-bottom: 15px; */
-    /* float: right;
-    width: 450px;
-    height: 351px; */
-    /* margin-right: 20px; */
   }
 
   .clearfix {
@@ -436,20 +246,6 @@
 
 /* lg tablet styles */
 @media screen and (min-width: 820px) {
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(11, 1fr);
-    gap: 16pt;
-    row-gap: 8pt;
-    /* margin-top: 84pt; */
-    margin-left: 48pt;
-    margin-right: 48pt;
-    /* padding-top: 24pt; */
-    /* margin-bottom: 16pt; */
-    /* border: 1px solid black; */
-    /* background-color: lightpink; */
-  }
-
   .figure {
     /* margin-left: 32px;
     margin-right: 32px; */
@@ -471,21 +267,15 @@
     flex-flow: row;
     border: thin #c0c0c0 solid;
     border-radius: 20px;
-    /* gap: 4pt; */
     margin-top: 16pt;
-    /* margin-left: 16pt;
-    margin-right: 16pt; */
     justify-content: center;
   }
 
   .imgFig {
     width: 100%;
     height: auto;
-    /* padding-left: 16pt;
-    padding-right: 16pt; */
     border: thin #c0c0c0 solid;
     border-radius: 20px;
-    /* justify-content: center; */
   }
 
   .figCap {
@@ -500,9 +290,6 @@
     border-radius: 20px;
     width: 50%;
     height: auto;
-
-    /* margin-top: 16pt; */
-    /* border: 1px solid black; */
   }
 
   .container {
@@ -510,44 +297,18 @@
     flex-direction: row-reverse;
     align-items: flex-start;
     padding-top: 10pt;
-    /* border: 1px solid red; */
-    /* column-gap: 10pt; */
   }
 
   .sectionText {
-    /* padding: 10pt; */
     margin-right: 20pt;
     margin-top: 0;
-    /* padding-right: 10pt; */
     padding-left: 0pt;
     padding-top: 0;
-    /* padding-top: 10pt; */
-    /* padding-bottom: 10pt; */
   }
 }
 
 /* lg tablet styles */
 @media screen and (min-width: 1024px) {
-  .grid {
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(11, 1fr);
-      gap: 16pt;
-      row-gap: 8pt;
-      /* margin-top: 84pt; */
-      /* margin-left: 24pt;
-      margin-right: 24pt; */
-      margin-left: 48pt;
-      margin-right: 48pt;
-      /* margin-left: 64px;
-      margin-right: 64px; */
-      /* padding-top: 24pt; */
-      /* margin-bottom: 16pt; */
-      /* border: 1px solid black; */
-      /* background-color: lightpink; */
-    }
-  }
-
   .figure {
     /* margin-left: 48pt;
     margin-right: 48pt; */
@@ -564,9 +325,7 @@
   .figureCard {
     display: flex;
     flex-flow: row;
-    /* border: thin #c0c0c0 solid; */
     border-radius: 20px;
-    /* gap: 4pt; */
     margin-top: 16pt;
     margin-left: 48pt;
     margin-right: 48pt;
@@ -579,15 +338,10 @@
     border-radius: 20px;
     padding: 0;
     border: thin #c0c0c0 solid;
-
-    /* padding-left: 20pt;
-    padding-right: 20pt; */
-    /* justify-content: center; */
   }
 
   .figCap {
     text-align: left;
-
     margin-right: 24pt;
     font-style: italic;
     padding-top: 20pt;
@@ -601,12 +355,7 @@
     margin-top: 16pt;
     margin-left: 48pt;
     margin-right: 48pt;
-
-    /* padding-top: 24pt; */
     margin-bottom: 16pt;
-    /* border: 1px solid black;
-    background-color: lightyellow; */
-    /* border: 1px solid black; */
   }
 
   .section {
@@ -616,7 +365,6 @@
     margin-top: 16pt;
     margin-left: 48pt;
     margin-right: 48pt;
-    /* border: 1px solid black; */
   }
 
   .sectioncopy {
@@ -629,11 +377,8 @@
 
   .sectionText {
     width: 100%;
-    /* width: 80%; */
     padding-right: 30pt;
     padding-top: 0;
-    /* border: 1px solid black; */
-    /* background-color: yellow; */
   }
 
   .container {
@@ -641,34 +386,12 @@
     flex-direction: row-reverse;
     align-items: flex-start;
     padding-top: 10pt;
-    /* border: 1px solid red; */
-    /* column-gap: 10pt; */
-    /* margin-left: 48pt; */
-  }
-
-  .subtitle {
-    font-weight: 500;
-    /* width: 100%; */
-    margin-left: 48pt;
-    margin-right: 48pt;
-    margin-top: 4pt;
   }
 
   .img {
     border-radius: 20px;
-    /* width: auto; */
     width: 100%;
     height: auto;
-    /* padding-left: 100px; */
-    /* border: 1px solid black; */
-
-    /* border: thin #c0c0c0 solid; */
-
-    /* margin-left: 48pt; */
-    /* margin-right: 48pt; */
-
-    /* margin-top: 16pt; */
-    /* border: 1px solid blue; */
   }
 
   .imgShrink {
@@ -684,38 +407,11 @@
 
 /* desktop styles */
 @media screen and (min-width: 1200px) {
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(11, 1fr);
-    /* gap: 16pt; */
-    /* row-gap: 8pt; */
-    /* margin-top: 84pt; */
-    /* margin-left: 150px;
-    margin-right: 150px; */
-    margin-left: 112pt;
-    margin-right: 112pt;
-    /* padding-top: 24pt; */
-    /* margin-bottom: 16pt; */
-    /* border: 1px solid black; */
-    /* background-color: lightpink; */
-  }
-
-  .grid div:nth-child(1) {
-    grid-column: 1/12;
-    grid-row: 1;
-    /* border: 1px solid black; */
-    /* background-color: hotpink; */
-    /* margin-left: 16pt;
-    margin-right: 16pt; */
-  }
-
   .figureCard {
     display: flex;
     flex-flow: row;
     border: thin #c0c0c0 solid;
     border-radius: 20px;
-    /* gap: 4pt; */
-
     margin-left: 112pt;
     margin-right: 112pt;
     justify-content: center;
@@ -725,9 +421,6 @@
     width: 100%;
     height: auto;
     border: thin #c0c0c0 solid;
-    /* padding-left: 30pt;
-    padding-right: 10pt; */
-    /* justify-content: center; */
   }
 
   .figCap {
@@ -735,7 +428,6 @@
     margin-right: 28pt;
     font-style: italic;
     padding-top: 30pt;
-    /* padding-right: 12pt; */
     padding-left: 0;
   }
 
@@ -746,41 +438,28 @@
     margin-top: 16pt;
     margin-left: 112pt;
     margin-right: 112pt;
-    /* margin-left: 150px;
-    margin-right: 150px; */
-    /* padding-top: 24pt; */
     margin-bottom: 16pt;
-    /* border: 1px solid black;
-    background-color: lightyellow; */
   }
 
   /* cards */
   .content div:nth-child(1) {
     grid-column: 1/12;
     grid-row: 1;
-    /* border: 1px solid black;
-    background-color: yellow; */
   }
 
   .content div:nth-child(2) {
     grid-column: 2/5;
     grid-row: 2;
-    border: 1px solid black;
-    background-color: yellow;
   }
 
   .content div:nth-child(3) {
     grid-column: 5/8;
     grid-row: 2;
-    border: 1px solid black;
-    background-color: yellow;
   }
 
   .content div:nth-child(4) {
     grid-column: 8/11;
     grid-row: 2;
-    border: 1px solid black;
-    background-color: yellow;
   }
 
   .section {
@@ -790,36 +469,22 @@
     margin-top: 16pt;
     margin-left: 112pt;
     margin-right: 112pt;
-    /* margin-left: 150px;
-    margin-right: 150px; */
-    /* padding-top: 24pt; */
-    /* margin-bottom: 16pt; */
-    /* border: 1px solid black; */
-    /* background-color: lightblue; */
   }
 
   .section > div {
     grid-column: 1/12;
     grid-row: 1;
-    /* border: 1px solid black; */
-    /* background-color: yellow; */
     text-align: left;
     border-bottom: 1px solid #599dd0;
     font-size: 1.25rem;
     line-height: 1.083;
-
-    /* margin-left: 16pt; */
   }
 
   .sectioncopy {
     font-size: 1rem;
-    /* border: 1px solid black; */
     margin-left: 112pt;
     margin-right: 112pt;
-    /* margin-left: 150px;
-    margin-right: 150px; */
     padding-top: 8pt;
-    /* padding-bottom: 8pt; */
     margin-bottom: 16pt;
   }
 
@@ -827,15 +492,11 @@
     width: 100%;
     padding-right: 30pt;
     padding-top: 0;
-    /* border: 1px solid black; */
   }
 
   .imgShrink {
     border-radius: 20px;
     width: 50%;
     height: auto;
-
-    /* margin-top: 16pt; */
-    /* border: 1px solid black; */
   }
 }

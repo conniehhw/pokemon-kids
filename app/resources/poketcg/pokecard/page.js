@@ -24,20 +24,6 @@ function pokecard() {
         </ul>
       </div>
 
-      <div className={styles.grid}>
-        {/* <div>
-          {" "}
-          <Image
-            className={styles.img}
-            src="/images/pokemon-card.png"
-            // layout="responsive"
-            height={160}
-            width={390}
-            alt="pokemon card evolutions"
-          />
-        </div> */}
-      </div>
-
       <div className={styles.content}>
         <div>
           <div>
@@ -177,14 +163,6 @@ function pokecard() {
               attacks can inflict on another's HP.
             </p>
           </div>
-          {/* <Image
-            className={styles.imgnbr}
-            src="/images/energy-attack-damage.png"
-            layout="responsive"
-            height={1002}
-            width={842}
-            alt="pokemon card parts diagram 2"
-          /> */}
         </div>
       </div>
 
@@ -221,27 +199,6 @@ function pokecard() {
           </div>
         </div>
       </div>
-
-      {/* <div className={styles.sectioncopy}>
-        <div className={styles.container}>
-          <div className={styles.sectionText}>
-            <h6>Cost to Retreat</h6>
-            <p>
-              The amount of energy needed to switch the Pokemon out of the
-              battlefield. For example: To remove this active Pokemon back to
-              the bench, you will need two energy cards of any type to retreat.
-            </p>
-          </div>
-          <Image
-            className={styles.imgnbr}
-            src="/images/weakness-resist-retreat.png"
-            layout="responsive"
-            height={1002}
-            width={842}
-            alt="pokemon card parts diagram 3"
-          />
-        </div>
-      </div> */}
     </div>
   );
 }

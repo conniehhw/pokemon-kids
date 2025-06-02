@@ -1,7 +1,10 @@
 import React from "react";
 import styles from "../poketcg/poketcg.module.css";
 import Image from "next/image";
-import { LoremIpsum } from "react-lorem-ipsum";
+// import { LoremIpsum } from "react-lorem-ipsum";
+
+// Page function: Trading Card Game Details --> links to subpage
+// Types of Pokemon Cards
 
 function poketcg() {
   return (
@@ -17,20 +20,6 @@ function poketcg() {
           <li>TCG</li>
         </ul>
       </div>
-
-      <div className={styles.grid}>
-        {/* <div>
-          <Image
-            className={styles.img}
-            src="/images/tradingcards-banner.png"
-            layout="responsive"
-            height={160}
-            width={390}
-            alt="trading cards banner"
-          />
-        </div> */}
-      </div>
-      {/* <div>Photo by Thimo Pedersen on Unsplash</div> */}
 
       <div className={styles.content}>
         <div>
@@ -54,7 +43,6 @@ function poketcg() {
             <figure className={styles.figure}>
               <Image
                 style={{ borderRadius: "20px" }}
-                // className={styles.img}
                 src="/images/card-deck-char.png"
                 // layout="responsive"
                 height={400}
@@ -84,7 +72,6 @@ function poketcg() {
       <div className={styles.section}>
         <div>Pokemon, Energy & Trainer Cards</div>
       </div>
-      {/* <div className={styles.subtitle}>Pokemon Cards</div> */}
 
       <div className={styles.sectioncopy}>
         <div className={styles.container}>
@@ -117,8 +104,6 @@ function poketcg() {
         </div>
       </div>
 
-      {/* <div className={styles.section}> */}
-      {/* <div className={styles.subtitle}>Energy Cards</div> */}
       <div className={styles.sectioncopy}>
         <div className={styles.container}>
           <Image
@@ -141,10 +126,7 @@ function poketcg() {
           </div>
         </div>
       </div>
-      {/* </div> */}
 
-      {/* <div className={styles.sectioncopy}> */}
-      {/* <div className={styles.subtitle}>Trainer Cards</div> */}
       <div className={styles.sectioncopy}>
         <div className={styles.container}>
           <Image
@@ -211,7 +193,6 @@ function poketcg() {
             Cards and a Discard Pile. For help with setting up your first
             Pokemon Trading Card Game, visit the official Pokemon website to{" "}
             <a
-              // href="https://tcg.pokemon.com/en-us/learn-to-play/"
               href="https://tcg.pokemon.com/en-us/faq-video-series/"
               target="_blank"
             >
