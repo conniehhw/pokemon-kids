@@ -1,10 +1,9 @@
 import React from "react";
-
-// import styles from "../../pokemedia/pokemedia.module.css";
 import styles from "../../poketcg/poketcg.module.css";
-// import Badge from "react-bootstrap/Badge";
 import Image from "next/image";
 import Link from "next/link";
+
+// Page function: Subpage from TCG Home page - parts of a card
 
 function pokecard() {
   return (

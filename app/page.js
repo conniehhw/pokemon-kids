@@ -3,12 +3,13 @@ import styles from "./page.module.css";
 import Image from "next/image";
 import Button from "react-bootstrap/Button";
 import Link from "next/link";
-import { FigureCaption } from "react-bootstrap";
 
 export const metadata = {
-  title: "Pokemon Kids Home Page",
+  title: "Pokemon Kids",
   description: "...",
 };
+
+// Page Function - Home Page for Pokemon Kids website
 
 export default function Home() {
   return (
@@ -60,16 +61,7 @@ export default function Home() {
 
             <p>A parent's guide to the world of Pokemon.</p>
           </div>
-          {/* <Link href="resources/poke101">
-            <div className={styles.button}>
-              <button className={styles.b}>Learn More</button>
-            </div>
-          </Link> */}
         </div>
-
-        {/* <Link href="/resources/poke101">
-              <Button>Learn More</Button>
-            </Link> */}
 
         <div className={styles.projectimg}>
           <div>
@@ -90,10 +82,6 @@ export default function Home() {
             </Link>
             <p>Collections, types of cards and building decks.</p>
           </div>
-          {/* 
-          <div className={styles.button}>
-            <button className={styles.b}>Learn More</button>
-          </div> */}
         </div>
 
         <div className={styles.projectimg}>
@@ -115,13 +103,9 @@ export default function Home() {
             </Link>
             <p>Get the stats on your favourite Pokemon & more.</p>
           </div>
-
-          {/* <div className={styles.button}>
-            <button className={styles.b}>Learn More</button>
-          </div> */}
         </div>
       </div>
-      {/* <div> */}
+
       <figure className={styles.figure}>
         <figcaption className={styles.figcaption}>
           <i>
@@ -130,7 +114,6 @@ export default function Home() {
           </i>
         </figcaption>
       </figure>
-      {/* </div> */}
     </div>
   );
 }

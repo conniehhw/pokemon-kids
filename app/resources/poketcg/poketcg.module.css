@@ -67,6 +67,7 @@
   }
 }
 
+/* styling for pokecard page */
 .figureCard {
   display: flex;
   flex-flow: column;
@@ -89,6 +90,7 @@
   padding-right: 16pt;
   font-style: italic;
 }
+/* end */
 
 .img {
   border-radius: 10px;

@@ -1,4 +1,5 @@
 // API call to Pokemon API, endpoint + searched name
+// Utils to pokemonName slug page
 
 const POKEMON_API = "https://pokeapi.co/api/v2/";
 

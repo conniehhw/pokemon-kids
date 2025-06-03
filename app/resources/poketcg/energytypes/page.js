@@ -1,9 +1,9 @@
 import React from "react";
-// import styles from "../pokemedia/pokemedia.module.css";
 import styles from "../../poketcg/poketcg.module.css";
-// import Badge from "react-bootstrap/Badge";
 import Image from "next/image";
 import Link from "next/link";
+
+// Pending - hidden til copy is ready
 
 function energytypes() {
   return (
@@ -43,12 +43,8 @@ function energytypes() {
               Pokémon Knock Out opposing Pokémon by using attacks or Abilities.
               To power their attacks, Pokémon need Energy cards.
             </p>
-            x
           </div>
         </div>
-        {/* <div>Testing 1</div>
-        <div>testing 1</div>
-        <div>testing 2</div> */}
       </div>
     </div>
   );

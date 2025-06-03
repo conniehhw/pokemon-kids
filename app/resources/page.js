@@ -1,17 +1,8 @@
-// import styles from "../page.module.css";
 import styles from "../resources/resources.module.css";
-// import Container from "react-bootstrap/Container";
-// import Card from "react-bootstrap/Card";
-// import CardImg from "react-bootstrap/CardImg";
 import Link from "next/link";
 import Image from "next/image";
 
-// import CardBody from "react-bootstrap/CardBody";
-// import CardFooter from "react-bootstrap/CardFooter";
-// import CardTitle from "react-bootstrap/CardTitle";
-// import CardText from "react-bootstrap/CardText";
-import Button from "react-bootstrap/Button";
-import { FigureCaption } from "react-bootstrap";
+// Page Function - home page to house resources tiles
 
 function Resources() {
   return (
@@ -31,7 +22,6 @@ function Resources() {
             <div>
               <Link href="resources/poke101">
                 <Image
-                  // className={styles.projectsimg}
                   className={styles.img}
                   src="/images/pokemon101.png"
                   layout="responsive"
@@ -47,19 +37,12 @@ function Resources() {
               </Link>
               <p>A parent's guide to the world of Pokemon.</p>
             </div>
-            <div className={styles.btnbox}>
-              {/* <Link href="resources/poke101">
-                Answers to FAQs
-     
-              </Link> */}
-            </div>
           </div>
 
           <div className={styles.gridchild}>
             <div>
               <Link href="resources/poketcg">
                 <Image
-                  // className={styles.projectsimg}
                   className={styles.img}
                   src="/images/tradingcards.png"
                   layout="responsive"
@@ -77,12 +60,6 @@ function Resources() {
               </Link>
 
               <p>Collections, types of cards and building decks.</p>
-            </div>
-            <div className={styles.btnbox}>
-              {/* <Link href="resources/poketcg">
-                How to play the game
-            
-              </Link> */}
             </div>
           </div>
 
@@ -136,12 +113,6 @@ function Resources() {
 
               <p>Even more pokemon: tv, film, video games and books.</p>
             </div>
-            <div className={styles.btnbox}>
-              {/* <Link href="resources/pokemedia">
-                Continue your journey
-      
-              </Link> */}
-            </div>
           </div>
 
           <div className={styles.gridchild}>
@@ -166,12 +137,6 @@ function Resources() {
 
               <p>An important destination for trainers, pokemon and fans.</p>
             </div>
-            <div className={styles.btnbox}>
-              {/* <Link href="resources/pokecenter">
-                Learn More
-             
-              </Link> */}
-            </div>
           </div>
 
           <div className={styles.gridchild}>
@@ -194,12 +159,6 @@ function Resources() {
               </Link>
 
               <p>A lunch date with your favourite Pokemon Friends.</p>
-            </div>
-            <div className={styles.btnbox}>
-              {/* <Link href="resources/pokecafe">
-                Table for two, please
-     
-              </Link> */}
             </div>
           </div>
         </div>

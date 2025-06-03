@@ -1,11 +1,12 @@
 import { getPokemon } from "../utils/PokemonHomeAPI";
-import Image from "next/image";
-import PokemonCard from "../components/PokemonCard";
+// import Image from "next/image";
+// import PokemonCard from "../components/PokemonCard";
 import { PokemonImage } from "../components/PokemonImage";
 import styles from "./pokemonName.module.css";
 import Link from "next/link";
 
-// pokemon card (details) when clicked from Pokedex Home Page
+// Page Function: pokemon card (slug details) when clicked from Pokedex Home Page
+
 export default async function PokemonPage({ params }) {
   // pokemonName = "pikachu" -> show the Pikachu page, object destructuring, get the API data for pikachu
   const { pokemonName } = params;
