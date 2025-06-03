@@ -40,33 +40,6 @@
   text-decoration: underline;
 }
 
-/* Scrolling Wrapper */
-.scrollingwrapper {
-  overflow-x: scroll;
-  overflow-y: hidden;
-  white-space: nowrap;
-  margin-bottom: 24pt;
-  display: grid;
-  grid-template-columns: repeat(11, 1fr);
-  gap: 8pt;
-
-  .card {
-    display: inline-block;
-    width: 200px;
-    margin-left: 20pt;
-    margin-top: 20pt;
-    margin-bottom: 20pt;
-  }
-
-  .cardtext {
-    padding-top: 8pt;
-    padding-bottom: 8pt;
-    padding-left: 4pt;
-    text-wrap: balance;
-    line-height: 24px;
-  }
-}
-
 /* styling for pokecard page */
 .figureCard {
   display: flex;

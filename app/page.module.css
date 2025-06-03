@@ -122,17 +122,6 @@
   padding-right: 10pt;
 }
 
-.scrollingwrapper {
-  /* overflow-x: scroll;
-  overflow-y: hidden;
-  white-space: nowrap;
-  display: grid;
-  grid-template-columns: repeat(11, 1fr);
-  gap: 8pt;
-  background-color: hotpink;
-  display: inline-block; */
-}
-
 .figure {
   padding-left: 24pt;
   padding-right: 24pt;

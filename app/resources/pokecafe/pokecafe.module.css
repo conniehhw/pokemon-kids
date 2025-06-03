@@ -39,40 +39,6 @@
   text-decoration: underline;
 }
 
-/* Scrolling Wrapper */
-.scrollingwrapper {
-  overflow-x: scroll;
-  overflow-y: hidden;
-  white-space: nowrap;
-  /* border: 1px solid black; */
-  /* margin-top: 76pt; */
-  margin-bottom: 24pt;
-  display: grid;
-  grid-template-columns: repeat(11, 1fr);
-  gap: 8pt;
-  /* background-color: hotpink; */
-
-  .card {
-    display: inline-block;
-    /* border: 1px solid black;
-    background-color: aquamarine; */
-    /* height: 200px; */
-    width: 200px;
-    margin-left: 20pt;
-    margin-top: 20pt;
-    margin-bottom: 20pt;
-  }
-
-  .cardtext {
-    padding-top: 8pt;
-    padding-bottom: 8pt;
-    padding-left: 4pt;
-    text-wrap: balance;
-    /* text-wrap: wrap; */
-    line-height: 24px;
-  }
-}
-
 .img {
   border-radius: 20px;
   width: 100%;

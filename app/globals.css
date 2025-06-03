@@ -25,6 +25,7 @@ body {
   /* background: var(--secondary); */
   overflow-x: hidden; /*push elements off the screen but eliminate scroll bar */
 }
+
 .button {
   background: none;
   border: 2px solid var(--primary);
@@ -59,7 +60,7 @@ a:visited {
 }
 a:hover {
   text-decoration: underline;
-  color: blue;
+  color: #3b4cca;
 }
 a:active {
   /* text-decoration: none; */

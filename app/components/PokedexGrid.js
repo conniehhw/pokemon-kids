@@ -5,7 +5,7 @@ import { PokemonCard } from "../components/PokemonCard";
 import styles from "../PokedexHome/pokedex.module.css";
 
 //Component Function: i) Grid with Search Bar  and ii) Loop through
-// each item in the api data array (allPokemons.filter, filteredPokemonList) and creates a unique card with name of each pokemon (data feeds into PokemonCard component)
+// each item in the api data array (allPokemons.filter, filteredPokemonList) and creates a unique card with name of each pokemon (PokemonCard component)
 
 export function PokedexGrid({ allPokemons }) {
   const [searchText, setSearchText] = useState(""); // start with empty string
@@ -35,11 +35,11 @@ export function PokedexGrid({ allPokemons }) {
               onChange={(e) => setSearchText(e.target.value)}
               // listen for onChange event from client, take the event of that change
               // (the text typed to be saved onto 'e' variable), whenever we type in, it will set Search Text into our actual text
-              // we have an array of data we can filter, we can look at every element in the list and filter- if contains "P", keep it and js filter the name
+              // we have an array of data we can filter, we can look at every element in the list and filter- if contains "a letter from pokemon name", keep it and js filter the name
             />
-            <button className={styles.submitBtn} type="submit">
+            {/* <button className={styles.submitBtn} type="submit">
               Search
-            </button>
+            </button> */}
             {/* inputted pokemon is rendered without needing to use "search" button - need to update so does not look like a button to click */}
           </div>
         </form>
@@ -53,7 +53,6 @@ export function PokedexGrid({ allPokemons }) {
                 sprites={
                   pokemon.sprites.other["official-artwork"].front_default
                 }
-                height={pokemon.height}
                 pokemon={pokemon}
               />
             );

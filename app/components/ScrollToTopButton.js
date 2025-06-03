@@ -4,7 +4,8 @@ import { useEffect, useState } from "react";
 import { GoMoveToTop } from "react-icons/go";
 import styles from "./components.module.css";
 
-// Component function: Render a scroll button to enable user to scroll screen back up to the top
+// Component function: Render a scroll button to enable user to scroll screen back up to the top,
+// Arrow scroll to move back up to top of page
 
 const ScrollToTopButton = () => {
   const [isVisible, setIsVisible] = useState(false);

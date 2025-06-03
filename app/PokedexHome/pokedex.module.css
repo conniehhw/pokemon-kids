@@ -1,3 +1,5 @@
+/* mobile min width: 430px */
+
 .body {
   margin-left: 0;
   margin-right: 0;
@@ -11,35 +13,14 @@
   list-style: none;
 }
 
-/* a:link {
-  text-decoration: none;
-}
-a:visited {
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
-}
-a:active {
-  text-decoration: underline;
-} */
-
 .all_pokemon {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   grid-gap: 2rem;
-
-  /* padding-right: 1rem; */
-  /* margin: 3rem 15rem; */
   padding-top: 1rem;
-  /* padding: 1rem; */
-  /* margin: 2rem 10rem; */
-  /* margin-left: 2rem;
-  margin-right: 2rem; */
   margin-left: 3rem;
   margin-right: 3rem;
   margin-bottom: 0;
-  /* left right 2rem, top bottom 10rem */
   margin-top: 84pt;
 }
 
@@ -63,26 +44,21 @@ a:active {
   height: 250px;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
-  /* border: 1px solid black; */
-  /* padding: 1rem; */
 }
 
 .all_pokemon .card .img {
   width: 100%;
   height: 100%;
-
   object-fit: contain;
   background-color: #fff;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
-  /* border: 1px solid black; */
   padding: 1rem;
 }
 
 .all_pokemon .card .card_body {
   padding: 1rem;
   height: 400px;
-  /* width: 90%; */
   background-color: #fafafa;
   border-bottom-right-radius: 12px;
   border-bottom-left-radius: 12px;
@@ -102,8 +78,6 @@ a:active {
   padding-top: 1.5rem;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
-  /* border-bottom-right-radius: 12px;
-  border-bottom-left-radius: 12px; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -111,7 +85,6 @@ a:active {
   background-color: #fff;
   text-decoration: none;
   text-transform: capitalize;
-  /* opacity: 0.68; */
 }
 
 .pill {
@@ -123,14 +96,7 @@ a:active {
   font-weight: 500;
   padding-left: 1rem;
   padding-right: 1rem;
-  /* padding-left: 1.5rem;
-  padding-right: 1.5rem; */
-  /* padding-top: 0.25rem;
-  padding-bottom: 0.25rem; */
   text-align: center;
-  /* margin: 0.5rem; */
-  /* margin-left: 1rem; */
-  /* margin-right: 0.5rem; */
   margin: auto;
   margin-left: 1.5rem;
 
@@ -147,8 +113,6 @@ a:active {
   font-weight: 500;
   padding-left: 1rem;
   padding-right: 1rem;
-  /* padding-top: 0.25rem;
-  padding-bottom: 0.25rem; */
   text-align: center;
   margin: 0.5rem;
 }
@@ -166,29 +130,6 @@ a:active {
   opacity: 0.68;
 } */
 
-.next {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 4rem 0;
-  padding-bottom: 2rem;
-}
-
-.next button {
-  padding: 1rem 2rem;
-  border: none;
-  border-radius: 8px;
-  background-color: #fff;
-  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.04);
-  cursor: pointer;
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: 500;
-  color: #7263f3;
-  transition: all 0.3s ease;
-}
-
 .searchForm {
   position: relative;
   display: flex;
@@ -205,8 +146,6 @@ a:active {
   width: 24rem;
   margin-bottom: 1rem;
   margin-top: 1rem;
-  /* border: 2px solid #3b4cca; */
-  /* border: 1px black; */
 }
 
 .searchForm .inputControl input {
@@ -215,15 +154,11 @@ a:active {
   outline: none;
   border-radius: 12px;
   background-color: #fafafa;
-  /* background-color: #ffde00;
-  opacity: 0.1; */
   font-family: inherit;
   font-size: inherit;
   color: #333;
   transition: all 0.3s ease;
   border: 2px solid #fafafa;
-  /* border: 2px solid #3b4cca; */
-  /* box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.1); */
 }
 
 .searchForm .inputControl input:focus {
@@ -243,16 +178,13 @@ a:active {
   transform: translateY(-50%);
   padding: 0.5rem 1rem;
   border: none;
-
   border-radius: 8px;
   background-color: #599dd0;
-  /* background-color: #0075be; */
   cursor: pointer;
   font-family: inherit;
   font-size: inherit;
   font-weight: 500;
   color: #fff;
-
   transition: all 0.3s ease;
 }
 
@@ -277,15 +209,9 @@ a:active {
   justify-content: space-evenly;
   min-width: 0;
   height: 60px;
-  /* padding-bottom: 12pt; */
-  /* border: 1px solid black; */
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
   background-color: #fff;
-}
-
-/* mobile */
-@media screen and (min-width: 390px) {
 }
 
 /* small tablet styles */
@@ -315,8 +241,6 @@ a:active {
     width: 37rem;
     margin-bottom: 1rem;
     margin-top: 1rem;
-    /* border: 2px solid #3b4cca; */
-    /* border: 1px black; */
   }
 
   .searchForm .inputControl input {
@@ -325,15 +249,11 @@ a:active {
     outline: none;
     border-radius: 12px;
     background-color: #fafafa;
-    /* background-color: #ffde00;
-    opacity: 0.1; */
     font-family: inherit;
     font-size: inherit;
     color: #333;
     transition: all 0.3s ease;
     border: 2px solid #fafafa;
-    /* border: 2px solid #3b4cca; */
-    /* box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.1); */
   }
 
   .searchForm .inputControl input:focus {
@@ -353,16 +273,13 @@ a:active {
     transform: translateY(-50%);
     padding: 0.5rem 1rem;
     border: none;
-
     border-radius: 8px;
     background-color: #599dd0;
-    /* background-color: #0075be; */
     cursor: pointer;
     font-family: inherit;
     font-size: inherit;
     font-weight: 500;
     color: #fff;
-
     transition: all 0.3s ease;
   }
 
@@ -385,17 +302,11 @@ a:active {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     grid-gap: 2rem;
-    /* padding: 1rem;
-    margin: 3rem 15rem; */
     padding: 1rem;
     margin-left: 3rem;
     margin-right: 3rem;
     margin-bottom: 0;
-    /* margin: 2rem 10rem; */
-    /* margin: 1rem 9rem; */
-    /* left right 2rem, top bottom 10rem */
     margin-top: 84pt;
-    /* border: 1px solid black; */
   }
 }
 
@@ -405,17 +316,11 @@ a:active {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     grid-gap: 2rem;
-    /* padding: 1rem;
-    margin: 3rem 15rem; */
     padding: 1rem;
     margin-left: 3rem;
     margin-right: 3rem;
     margin-bottom: 0;
-    /* margin: 2rem 10rem; */
-    /* margin: 1rem 9rem; */
-    /* left right 2rem, top bottom 10rem */
     margin-top: 84pt;
-    /* border: 1px solid black; */
   }
 }
 
@@ -425,11 +330,8 @@ a:active {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     grid-gap: 2rem;
-    /* padding: 1rem;
-    margin: 3rem 15rem; */
     padding: 1rem;
     margin: 2rem 10rem;
-    /* left right 2rem, top bottom 10rem */
     margin-top: 84pt;
   }
 

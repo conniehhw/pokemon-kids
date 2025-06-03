@@ -14,12 +14,12 @@ export function PokemonCard({ pokemon, name, id, sprites, type }) {
     <div className={styles.card}>
       <Link href={name} key={name + "Card"}>
         {/* <Link
-          href={{
-            pathname: "/pokemonName",
-            // query: { name: "test" },
-            key: { name: "Card" },
-          }}
-        > */}
+        href={{
+          pathname: "/pokemonName",
+          // query: { name: "test" },
+          key: { name: "Card" },
+        }} */}
+
         <div className={styles.card_image}>
           <Image
             className={styles.img}

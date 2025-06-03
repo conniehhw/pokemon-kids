@@ -11,13 +11,13 @@ function PokedexHome() {
 
   const getAllPokemons = async () => {
     const res = await fetch(
-      "https://pokeapi.co/api/v2/pokemon?limit=20&offset=0"
+      "https://pokeapi.co/api/v2/pokemon?limit=200&offset=0"
     );
 
     const data = await res.json();
-    console.log(data); // log results - first 20 pokemons
-    console.log(data.results); // log array - first 20 pokemons
-    console.log(data.next); // get next 20 pokemons
+    console.log(data); // log results - first 200 pokemons
+    console.log(data.results); // log array - first 200 pokemons
+    console.log(data.next); // get next 200 pokemons
 
     function createPokemonObject(results) {
       //create an Object

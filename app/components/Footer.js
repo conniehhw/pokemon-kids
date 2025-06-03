@@ -1,9 +1,6 @@
 import React from "react";
-// import Nav from "react-bootstrap/Nav";
 import Link from "next/link";
 import styles from "../components/components.module.css";
-// import Container from "./container";
-// import Image from "next/image";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function Footer() {
