@@ -14,6 +14,11 @@ export default async function PokemonPage({ params }) {
   console.log(pokemonObject);
 
   const numericId = ("00" + pokemonObject.id).slice(-3);
+  const heightConvert = (pokemonObject.height / 10).toFixed(1);
+  const weightConvert = ((pokemonObject.weight / 10) * 2.20462).toFixed(1);
+  // conversion from https://pokemondb.net/pokedex/stats/height-weight
+  //api data height measurement is in metres divided by 10 (ex: Bulbasaur height = 7, 0.7 m)
+  //api data weight measurement is in kg divided by 10 (ex: Bulbasaur weight = 69, 6.9kg)
 
   return (
     <>
@@ -28,6 +33,7 @@ export default async function PokemonPage({ params }) {
                 <a href="/PokedexHome">Pokedex</a>
               </li>
               <li>{pokemonName}</li>
+              {/* <li>{pokemonChar}</li> */}
             </ul>
           </div>
 
@@ -123,11 +129,11 @@ export default async function PokemonPage({ params }) {
                     </li>
                     <li>
                       <b>Weight</b>
-                      {pokemonObject.weight}
+                      {weightConvert} lbs
                     </li>
                     <li>
                       <b>Height</b>
-                      {pokemonObject.height}
+                      {heightConvert} m
                     </li>
 
                     <li>

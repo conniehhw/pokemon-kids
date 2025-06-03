@@ -10,3 +10,10 @@ export async function getPokemon(name) {
   const data = await response.json();
   return data;
 }
+
+// export async function getPokemonChar(id) {
+//   const response = await fetch(POKEMON_API + "characteristic/" + id);
+
+//   const data = await response.json();
+//   return data;
+// }
