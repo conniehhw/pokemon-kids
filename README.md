@@ -1,19 +1,41 @@
 # Pokemon Kids
 
-![License MIT](https://img.shields.io/badge/License-MIT%2B_License-green)
+---
 
-![Website Home Page](/public/assets/Home%20Page%20ScreenShot.png)
-![Website Home Page](/public/assets/Pokedex%20Screen%20Shot.png)
+---
 
-Check out live platform at http:url
+![License MIT](https://img.shields.io/badge/License-MIT%2B_License-green) ![Framework Nextjs](https://img.shields.io/badge/framework-blue?style=flat&logo=nextdotjs&logoColor=white&label=nextjs&labelColor=%23000000)
 
-## How do I Pokemon?
+A one-stop web app for parents who want to learn about Pokemon so they may connect with their kids who love Pokemon.
+
+![Website Home Page](/public/assets/pokemon_kids_screenshot.png)
+
+<p style="text-align:center">
+Check out live platform at [website]()
+</p>
+
+#### Table of Contents
+
+---
+
+- [About](#about)
+- [Features](#features)
+- [Project](#project)
+- [Technologies](#technologies)
+- [Requirements](#requirements)
+- [Installation](#installation)
+
+### About
+
+---
 
 This Pokemon Kids web app was initially created for younger Pokemon fans ages 5 and up, who are just beginners - to learn more about the Pokemon World using a simple Pokedex interface, create Pokemon Mad Libs and take fun quizzes.
 
 It has since morphed to a one-stop online resource for 'Parents' of younger Pokemon fans where the adults can learn the Pokemon basics, the trading card game and more - so they can have better conversations with their kiddos.
 
-## Features
+### Features
+
+---
 
 - Resource Home Page with links to:
   - Pokemon Crash Course 101 - answers to all your Frequently Asked Questions
@@ -24,32 +46,39 @@ It has since morphed to a one-stop online resource for 'Parents' of younger Poke
 - Contact Form
   - users can leave their email and submit inquiries or share feedback
 
-## Project
+### Project
+
+---
 
 Goals for this web application:
 
 - create a Next.js project
-- consume third-party APIs - fetch data from the RESTful[Pokemon API](https://pokeapi.co/)
+- consume third-party APIs - fetch data from the RESTful [Pokemon API](https://pokeapi.co/)
 - utilize client side, server side rendering
 - static site generation
 - implement react hooks and dynamic routing
 - adapt for responsive design for mobile, tablets and desktops (430px, 820px, 1024px and 1200px)
 
-## Technologies
+### Technologies
+
+---
 
 Built with:
 
-- Nextjs
+- Next.js
 - React
 - Bootstrap
 - VS Code
+- Heroku Deployment
 
-## Requirements
+### Requirements
 
 - [Node.js](https://nodejs.org) v18.18 or later
 - [Next.js](https://nextjs.org)
 
-## Installation
+### Installation
+
+---
 
 To run this project, install it locally using npm:
 
@@ -83,8 +112,11 @@ To run this project, install it locally using npm:
 
 5. Open your browser and navigate to http://localhost:3000
 
-## Citations
+### Citations
 
 copyrights nintendo
 
-## Contact
+#### Contact
+
+For more information about this web application, please feel free to reach out.
+Email: <conniehhw@gmail.com>
