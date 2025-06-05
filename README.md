@@ -66,6 +66,8 @@ Built with:
 
 ### Requirements
 
+---
+
 - [Node.js](https://nodejs.org) v18.18 or later
 - [Next.js](https://nextjs.org)
 
@@ -112,9 +114,13 @@ To run this project, install it locally using npm:
 
 ### Credits
 
+---
+
 Source of images are owned by Nintendo, Game Freak and Creatures Inc., unless otherwise credited in the web app.
 
 ### Contact
+
+---
 
 For more information about this web application, please feel free to reach out.
 
