@@ -2,9 +2,8 @@
 
 ---
 
----
-
 ![License MIT](https://img.shields.io/badge/License-MIT%2B_License-green) ![Framework Nextjs](https://img.shields.io/badge/framework-gray?style=flat&logo=nextdotjs&logoColor=white&label=nextjs&labelColor=%23000000) ![Library React](https://img.shields.io/badge/library-gray?style=flat&logo=react&logoColor=black&label=React&labelColor=%2361DAFB) ![Platform Heroku](https://img.shields.io/badge/platform-gray?style=flat&logo=heroku&logoColor=white&label=Heroku&labelColor=%23430098) ![IDE VSCode](https://img.shields.io/badge/IDE-gray?style=flat&label=Visual%20Studio%20Code&labelColor=%230098FF) ![Bootstrap](https://img.shields.io/badge/CSS%20Framework-gray?style=flat&logo=bootstrap&logoColor=white&label=Bootstrap&labelColor=%237952B3) ![HTML5 CSS3](https://img.shields.io/badge/HTML5-CSS3-%23264de4?style=flat&labelColor=%23e34c26)
+<br></br>
 
 A one-stop web app featuring a searchable Pokedex, quick introductions to all things Pokémon such as the Trading Card Game, FAQs. A resource for parents who want to learn about Pokémon so they may connect with their kids who LOVE Pokémon.
 
@@ -39,6 +38,8 @@ Goals for this web application:
 ### Features
 
 ---
+
+[Back to the Top](#project)
 
 ![Demo Gif](/public/assets/demo.gif)
 
