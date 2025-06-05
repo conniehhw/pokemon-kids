@@ -19,7 +19,7 @@ function pokecard() {
           <li>
             <a href="/resources/poketcg">TCG</a>
           </li>
-          <li>Pokecard</li>
+          <li>Pokémon Cards</li>
         </ul>
       </div>
 

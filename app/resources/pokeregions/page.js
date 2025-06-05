@@ -1,3 +1,5 @@
+// Pending - hidden til copy is ready
+
 // import React from "react";
 // import styles from "../pokeregions/pokeregions.module.css";
 // import Image from "next/image";

@@ -1,7 +1,7 @@
 "use client";
 import styles from "../components/components.module.css";
 
-// Component function: Render a webform to enable ability to receive emails submitted
+// Component function: Render a webform to enable ability to receive emails submitted (used api.web3forms.com)
 
 export default function Contact() {
   async function handleSubmit(e) {
@@ -29,7 +29,7 @@ export default function Contact() {
     <>
       <h5>
         I hope this website was helpful! If you have any questions or feedback,
-        drop me a line!
+        feel free to use this form. I look forward to hearing from you.
       </h5>
       <form onSubmit={handleSubmit} className={styles.form}>
         <div>
@@ -65,6 +65,13 @@ export default function Contact() {
               <label></label>
               <button type="submit" className={styles.b}>
                 Submit
+              </button>
+            </li>
+            <br></br>
+            <li>
+              <label></label>
+              <button type="reset" value="clear" className={styles.bClear}>
+                Clear
               </button>
             </li>
           </ul>

@@ -18,8 +18,9 @@ export default function Home() {
         <div>
           <h1>Welcome!</h1>
           <h6>
-            So you want to be a pokemon trainer? Follow along with Ash and
-            Pikachu and start your journey.
+            So you want to be a Pokémon trainer or just want to know WHAT IS a
+            Pokémon trainer? Follow along with Ash and Pikachu to start your
+            journey.
           </h6>
           <br></br>
           <Link href="/resources">
@@ -56,10 +57,10 @@ export default function Home() {
 
           <div className={styles.projecttext}>
             <Link href="resources/poke101">
-              <h6> Pokemon 101</h6>
+              <h6> Pokémon 101</h6>
             </Link>
 
-            <p>A parent's guide to the world of Pokemon.</p>
+            <p>A parent's guide to the world of Pokémon.</p>
           </div>
         </div>
 
@@ -72,7 +73,7 @@ export default function Home() {
                 layout="responsive"
                 height={200}
                 width={200}
-                alt="Pokemon cards"
+                alt="Trading cards"
               />
             </Link>
           </div>
@@ -101,7 +102,7 @@ export default function Home() {
             <Link href="/PokedexHome">
               <h6>Pokedex</h6>
             </Link>
-            <p>Get the stats on your favourite Pokemon & more.</p>
+            <p>Get the stats on your favourite Pokémon & more.</p>
           </div>
         </div>
       </div>

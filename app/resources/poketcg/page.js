@@ -27,7 +27,7 @@ function poketcg() {
             <h2>Get Ready to Play!</h2>
             <h4>
               Trading Card Game (TCG), a 2-player game in which Trainers choose
-              Pokemons to go to battle.{" "}
+              Pokémon to go to battle.{" "}
             </h4>
           </div>
         </div>
@@ -61,8 +61,8 @@ function poketcg() {
           </div>
 
           <div className={styles.sectionText}>
-            Each player builds a deck of 60 cards which include Pokemon
-            characters, energy cards and supporting cards. Pokemon cards will
+            Each player builds a deck of 60 cards which include Pokémon
+            characters, energy cards and supporting cards. Pokémon cards will
             list the specie's abilities, attacks and the numeric damage it will
             inflict.
           </div>
@@ -70,7 +70,7 @@ function poketcg() {
       </div>
 
       <div className={styles.section}>
-        <div>Pokemon, Energy & Trainer Cards</div>
+        <div>Pokémon, Energy & Trainer Cards</div>
       </div>
 
       <div className={styles.sectioncopy}>
@@ -85,7 +85,7 @@ function poketcg() {
           />
 
           <div className={styles.sectionText}>
-            <h6>Pokemon Cards</h6>
+            <h6>Pokémon Cards</h6>
             <p>
               These cards shown here are Basic, Stage 1 or Stage 2 Pokémon. Look
               at the upper-left corner and you will see the Pokémon’s Stage and
@@ -118,7 +118,7 @@ function poketcg() {
           <div className={styles.sectionText}>
             <h6>Energy Cards</h6>
             <p>
-              Most of the time, Pokemon can't attack without Energy cards.
+              Most of the time, Pokémon can't attack without Energy cards.
               You'll need to match the symbols of the attack cost to the Energy
               card, but any kind of Energy can be used for the colourless/normal
               energy.
@@ -162,12 +162,12 @@ function poketcg() {
             // layout="responsive"
             height={1340}
             width={1140}
-            alt="card deck"
+            alt="card deck list"
           />
           <div className={styles.sectionText}>
             Like building a team - you need players, coaches and sometimes gear.
-            To build your deck around a type of Pokemon such as a Water-type
-            deck - you would need for example: 15 pokemon cards, 9 energy cards
+            To build your deck around a type of Pokémon such as a Water-type
+            deck - you would need for example: 15 Pokémon cards, 9 energy cards
             and 36 trainer cards ~ a mix of Items, Supporters and Stadiums.
           </div>
         </div>
@@ -191,7 +191,7 @@ function poketcg() {
             Layout your cards; each player will have the same set up on their
             respective sides. There are 5 areas: Bench, Active, Deck, Prize
             Cards and a Discard Pile. For help with setting up your first
-            Pokemon Trading Card Game, visit the official Pokemon website to{" "}
+            Pokémon Trading Card Game, visit the official Pokémon website to{" "}
             <a
               href="https://tcg.pokemon.com/en-us/faq-video-series/"
               target="_blank"
@@ -253,7 +253,7 @@ function poketcg() {
           <br></br>
           <ul>
             <li>i) Collect all of your Prize cards or</li>
-            <li>ii) Knock out all of your opponent's Pokemon in play or</li>
+            <li>ii) Knock out all of your opponent's Pokémon in play or</li>
             <li>iii) If your opponent has no more cards in their deck.</li>
           </ul>
         </div>
@@ -276,9 +276,9 @@ function poketcg() {
             <ul>
               <li>1. Draw a card.</li>
               <li>
-                2. Do any actions; put Basic Pokemon cards onto your bench,
-                evolve your Pokemon, attach Energy cards, Play Trainer cards,
-                retreat your Active pokemon and use Abilities.
+                2. Do any actions; put Basic Pokémon cards onto your bench,
+                evolve your Pokémon, attach Energy cards, Play Trainer cards,
+                retreat your Active Pokémon and use Abilities.
               </li>
               <li>3. Attack. Then, end your turn. </li>
             </ul>

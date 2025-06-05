@@ -172,7 +172,7 @@ export default async function PokemonPage({ params }) {
                 color: "white",
               }}
             >
-              Explore More Pokemon
+              Explore More Pokémon
             </Link>
           </button>
         </div>

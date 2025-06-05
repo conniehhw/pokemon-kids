@@ -15,15 +15,15 @@ function pokecafe() {
           <li>
             <a href="/resources">Resources</a>
           </li>
-          <li>Pokemon Cafe</li>
+          <li>Pokémon Cafe</li>
         </ul>
       </div>
 
       <div className={styles.content}>
         <div>
           <div>
-            <h2>Pokemon Cafe</h2>
-            <h4>Enjoy a meal surrounded by your favourite Pokemon Friends</h4>
+            <h2>Pokémon Cafe</h2>
+            <h4>Enjoy a meal surrounded by your favourite Pokémon Friends</h4>
           </div>
         </div>
       </div>
@@ -31,10 +31,10 @@ function pokecafe() {
       <div className={styles.sectioncopy}>
         <div className={styles.container}>
           <div className={styles.sectionText}>
-            There are only two official Pokemon Cafes in the world! The first
+            There are only two official Pokémon Cafes in the world! The first
             opened in 2018 and is located in Tokyo, Japan. The second location
             is in Osaka. If you are lucky, you may sometimes encounter a pop-up
-            Pokemon Cafes.
+            Pokémon Cafes.
           </div>
           <Image
             className={styles.img}
@@ -48,19 +48,19 @@ function pokecafe() {
       </div>
 
       <div className={styles.sectioncopy}>
-        <div className={styles.subtitle}>Pokemon Themes</div>
+        <div className={styles.subtitle}>Pokémon Themes</div>
         <div className={styles.container}>
           <div className={styles.sectionTextnoImg}>
             <p>
-              Besides the Pokemon Menu, you will find small and large Pokemon
+              Besides the Pokémon Menu, you will find small and large Pokémon
               figures to takes photos with, products you can purchase as
-              souvenirs; such as stuffies, cups, plates and also greet a giant
-              Pokemon character during their visits in the dining area.
+              souvenirs; such as plushies, cups, plates and also greet a giant
+              Pokémon character during their visits in the dining area.
             </p>
             <p>
-              You can find more visting information at the official{" "}
+              You can find more visiting information at the official{" "}
               <a href="https://www.pokemon-cafe.jp/en/cafe/" target="_blank">
-                Pokemon Cafe website.
+                Pokémon Cafe website.
               </a>
             </p>
           </div>

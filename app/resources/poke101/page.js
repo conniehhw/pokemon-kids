@@ -19,14 +19,14 @@ function poke101() {
           <li>
             <a href="/resources">Resources</a>
           </li>
-          <li>Pokemon 101</li>
+          <li>Pokémon 101</li>
         </ul>
       </div>
 
       <div className={styles.content}>
         <div>
           <div>
-            <h2>Crash Course Pokemon 101</h2>
+            <h2>Crash Course Pokémon 101</h2>
             <h4>Answers to Frequently Asked Questions</h4>
           </div>
         </div>
@@ -34,7 +34,7 @@ function poke101() {
 
       <Accordion defaultActiveKey="0" flush className={styles.accordion}>
         <AccordionItem className={styles.item} eventKey="0">
-          <AccordionHeader>What is a Pokemon?</AccordionHeader>
+          <AccordionHeader>What is a Pokémon?</AccordionHeader>
           <AccordionBody className={styles.clearfix}>
             <Image
               className={styles.imgr}
@@ -44,9 +44,9 @@ function poke101() {
               alt="Pokemon All Kinds"
             />
             <div className={styles.textbox}>
-              A pokemon is a kind of creature. They can learn different moves.
-              Some pokemons have strong power; like Legendaries, Megas,
-              Mythicals and Ultra beasts.
+              A Pokémon is a kind of creature. They can learn different moves.
+              Some Pokémon have strong power; like Legendaries, Megas, Mythicals
+              and Ultra beasts.
             </div>
           </AccordionBody>
         </AccordionItem>
@@ -62,9 +62,9 @@ function poke101() {
               alt="Pokeball Chart"
             />
             <div className={styles.textbox}>
-              A ball that catches pokemon, when you throw the ball. There are
+              A ball that catches Pokémon, when you throw the ball. There are
               different kinds of poke balls; like the Quick ball, Ultra ball,
-              Master ball and Apecorn ball.
+              and Master ball.
             </div>
           </AccordionBody>
         </AccordionItem>
@@ -83,17 +83,17 @@ function poke101() {
                 alt="Pokemon professors"
               />
             </div>
-            Pokemon trainers are people that catch Pokemon, battle with Pokemon
-            and research pokemon. You have to be at least 10 years old to become
+            Pokémon trainers are people that catch Pokémon, battle with Pokémon
+            and research Pokémon. You have to be at least 10 years old to become
             a trainer. You will work with a professor, who will assign to you a
-            partner; a pokemon. For example, you might have Charmander,
-            Bulbasaur or Squirtle as your pokemon partner. Ash's partner is
+            partner; a Pokémon. For example, you might have Charmander,
+            Bulbasaur or Squirtle as your Pokémon partner. Ash's partner is
             Pikachu.
           </AccordionBody>
         </AccordionItem>
 
         <AccordionItem eventKey="3">
-          <AccordionHeader>What are pokemon battles?</AccordionHeader>
+          <AccordionHeader>What are Pokémon battles?</AccordionHeader>
           <AccordionBody className={styles.clearfix}>
             <Image
               className={styles.imgr}
@@ -103,12 +103,12 @@ function poke101() {
               alt="Pokemon Battle"
             />
             <div className={styles.textbox}>
-              Pokemons and their trainers compete in battles. These take place
-              in different arenas. The trainer calls on a pokemon to battle
-              against another trainer and pokemon pair. <br></br>
-              <br></br>What you want to do, is pick a pokemon from your team
+              Pokémon and their trainers compete in battles. These take place in
+              different arenas. The trainer calls on a Pokémon to battle against
+              another trainer and Pokémon pair. <br></br>
+              <br></br>What you want to do, is pick a Pokémon from your team
               that has abilities and attacks which can win over the opposing
-              pokemon. When you start, you might say "Snorlex Go!"
+              Pokémon. When you start, you might say "Snorlex Go!"
             </div>
           </AccordionBody>
         </AccordionItem>
@@ -116,7 +116,7 @@ function poke101() {
         <AccordionItem eventKey="4">
           <AccordionHeader>
             {" "}
-            What are pokemon types and abilities?
+            What are Pokémon types and abilities?
           </AccordionHeader>
           <AccordionBody className={styles.clearfix}>
             <Image
@@ -138,7 +138,7 @@ function poke101() {
         <AccordionItem eventKey="5">
           <AccordionHeader>
             {" "}
-            What are Evolutions? Why do some pokemons have 2 other names?
+            What are Evolutions? Why do some Pokémon have 2 other names?
           </AccordionHeader>
           <AccordionBody className={styles.clearfix}>
             {/* <div className={styles.shrink1}> */}
@@ -148,14 +148,14 @@ function poke101() {
               src="/images/pokemon-evol.png"
               height={297}
               width={500}
-              alt="Pokemon Evolutions"
+              alt="Pokemon Evolutions Chart"
             />
             {/* </div> */}
             <div className={styles.textbox1}>
-              Some pokemons can evolve 2 times. As it evolves from basic to
-              stage 1 and 2, it becomes more powerful. However, some pokemons do
-              not evolve. <br></br>
-              <br></br>The pokemon in the first row is Charmander in its basic
+              Some Pokémon can evolve 2 times. As it evolves from basic to stage
+              1 and 2, it becomes more powerful. However, some Pokémon do not
+              evolve. <br></br>
+              <br></br>The Pokémon in the first row is Charmander in its basic
               form, it evolves to Charmeleon in its stage 1 form and then
               Charizard - stage 2 form and then can evolve to a temporary
               transformation, the Mega Charizard X.
@@ -164,7 +164,7 @@ function poke101() {
         </AccordionItem>
 
         <AccordionItem eventKey="6">
-          <AccordionHeader> Where do Pokemons come from?</AccordionHeader>
+          <AccordionHeader> Where do Pokémon come from?</AccordionHeader>
           <AccordionBody className={styles.clearfix}>
             <div className={styles.shrink}>
               <figure className={styles.figure}>
@@ -185,7 +185,7 @@ function poke101() {
           </AccordionBody>
         </AccordionItem>
         <AccordionItem eventKey="7">
-          <AccordionHeader> What do Pokemons eat?</AccordionHeader>
+          <AccordionHeader> What do Pokémon eat?</AccordionHeader>
           <AccordionBody className={styles.clearfix}>
             <Image
               className={styles.imgr}
@@ -196,8 +196,8 @@ function poke101() {
             />
 
             <div className={styles.textbox}>
-              In the wild, Pokemon have been known to eat plants and berries.
-              With each new generation of Pokemon in games and series, Pokemon
+              In the wild, Pokémon have been known to eat plants and berries.
+              With each new generation of Pokémon in games and series, Pokémon
               consume a variety of items such as: bait, healing drinks,
               Pokeblock, Poffin, Honey, Poke Puffs, Poke beans, curry and
               sandwiches. <br></br>
@@ -208,7 +208,7 @@ function poke101() {
         <AccordionItem eventKey="8">
           <AccordionHeader>
             {" "}
-            Do Pokemon talk? How do they communicate?
+            Do Pokémon talk? How do they communicate?
           </AccordionHeader>
           <AccordionBody className={styles.clearfix}>
             <div className={styles.videowrapper}>
@@ -225,15 +225,19 @@ function poke101() {
 
             <div className={styles.textbox1}>
               <p>
-                It appears all Pokemon can understand human speech however
-                Pokemon communicate with humans using their species unique
-                cries, body language and sounds like chirps and buzzes.
+                It appears all Pokémon can understand human speech however
+                majority of Pokémon communicate with humans using their species
+                unique cries, body language and sounds like chirps and buzzes.
               </p>
               <p>
-                Often, you will hear Pokemon speak their own names or a
+                Often, you will hear Pokémon speak their own names or a
                 variation of it as a form of communication. Pikachu would say
                 "Pika-CHU!" or "pika-pika-chu" in different tones and intensity
                 to convey its emotion.
+              </p>
+              <p>
+                There are a few Pokémon who can speak in the human language such
+                as "Meowth" and "Arceus".
               </p>
             </div>
           </AccordionBody>
@@ -243,7 +247,7 @@ function poke101() {
       <div>
         <figure className={styles.figure}>
           <figcaption className={styles.figcaption}>
-            Source of images: 'Who are Professors, Where do Pokemons come from'
+            Source of images: 'Who are Professors, Where do Pokémon come from'
             from{" "}
             <a href="https://bulbapedia.bulbagarden.net/wiki/Pokémon_Professor#Other_fields_of_Pok.C3.A9mon_study">
               bulbapedia.bulbagarden.net
@@ -252,7 +256,7 @@ function poke101() {
             <a href="https://vk.com/pokegorussiacommunity">
               vk.com.pokegorussiacommunity,
             </a>{" "}
-            'What do Pokemons eat' from{" "}
+            'What do Pokémon eat' from{" "}
             <a href="https://Pokémon.fandom.com/wiki/Berry">
               pokemon.fandom.com
             </a>

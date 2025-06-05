@@ -16,7 +16,7 @@ function pokemedia() {
             <li>
               <a href="/resources">Resources</a>
             </li>
-            <li>Pokemon Media</li>
+            <li>Pokémon Media</li>
           </ul>
         </div>
 
@@ -26,7 +26,7 @@ function pokemedia() {
               <h2>Continue Your Journey</h2>
               <h4>
                 Besides collecting the cards, there are many other ways to enjoy
-                Pokemon.
+                Pokémon.
               </h4>
             </div>
           </div>
@@ -54,20 +54,20 @@ function pokemedia() {
 
             <div className={styles.sectionText}>
               <p>
-                The first televsion animation launched in 1997. Since then, the
+                The first television animation launched in 1997. Since then, the
                 series has expanded to 25 seasons. Adding to the series, is the
-                latest released in 2025, titled "Pokemon Horizons: Season 2 -
+                latest released in 2025, titled "Pokémon Horizons: Season 2 -
                 The Search for Laqua".
               </p>
               <p>
-                As of 2020, there are 23 Pokemon films along with one
-                live-action film, "Pokemon Detective Pikachu". With the
+                As of 2020, there are 23 Pokémon films along with one
+                live-action film, "Pokémon Detective Pikachu". With the
                 popularity of the franchise, a stop-motion animation,{" "}
                 <a
                   href="https://www.netflix.com/ca/title/81186864"
                   target="_blank"
                 >
-                  Pokemon Concierge"
+                  Pokémon Concierge"
                 </a>{" "}
                 premiered on Netflix in 2023. Visit the{" "}
                 <a href="https://www.pokemon.com/us/animation" target="_blank">
@@ -100,7 +100,7 @@ function pokemedia() {
             <div className={styles.sectionText}>
               <h6>Console Games</h6>
               <p>
-                Pokemon has several types of video games, some of which are
+                Pokémon has several types of video games, some of which are
                 played on Nintendo Game Devices or Consoles or on a tablet and
                 mobile phone.
               </p>
@@ -110,10 +110,10 @@ function pokemedia() {
                   href="https://www.pokemon.com/us/pokemon-video-games/pokemon-scarlet-and-pokemon-violet"
                   target="_blank"
                 >
-                  Pokemon Scarlet & Violet
+                  Pokémon Scarlet & Violet
                 </a>
                 , in this role playing game, the player catches and trades
-                Pokemons and battle other Pokemon Trainers while exploring
+                Pokémon and battle other Pokémon Trainers while exploring
                 different regions.
               </p>
             </div>
@@ -139,16 +139,16 @@ function pokemedia() {
             </div>
             <div className={styles.sectionText}>
               <p>
-                For the younger Pokemon fans,{" "}
+                For the younger Pokémon fans,{" "}
                 <a
                   href="https://www.pokemon.com/us/pokemon-video-games/new-pokemon-snap"
                   target="_blank"
                 >
-                  Pokemon Snap
+                  Pokémon Snap
                 </a>{" "}
                 may be a better fit. It is a console game where you - as the
                 player - explore the Lental region, research and encounter wild
-                Pokemon as you snap photos for your album.
+                Pokémon as you snap photos for your album.
               </p>
             </div>
           </div>
@@ -182,14 +182,14 @@ function pokemedia() {
                   href="https://www.pokemon.com/us/pokemon-video-games/pokemon-go"
                   target="_blank"
                 >
-                  Pokemon Go{" "}
+                  Pokémon Go{" "}
                   {/* Add a note to be careful of surroiunding when playing supervised*/}
                 </a>
                 mobile game which uses the phone's GPS together with augmented
-                reality technology - allowing as though Pokemons appear around
+                reality technology - allowing as though Pokémon appear around
                 you, as you move your avatar within your real world
                 surroundings. The main goal of the game to find and catch
-                Pokemons. Be aware of your surroundings when playing.
+                Pokémon. Be aware of your surroundings when playing.
               </p>
               <p>
                 You can find a full list of{" "}
@@ -197,7 +197,7 @@ function pokemedia() {
                   href="https://www.pokemon.com/us/pokemon-video-games/all-pokemon-games"
                   target="_blank"
                 >
-                  Pokemon games
+                  Pokémon games
                 </a>{" "}
                 on the official website.
               </p>
@@ -225,11 +225,11 @@ function pokemedia() {
             <div className={styles.sectionText}>
               <p>
                 Books are a great way for you and your kiddo to immerse in the
-                Pokemon Universe.
+                Pokémon Universe.
               </p>
               <h6>Recommended Reading</h6>
               <p>
-                The <i>Pokemon Visual Companion</i> is a fact-packed illustrated
+                The <i>Pokémon Visual Companion</i> is a fact-packed illustrated
                 guide to the animated series to learn more about characters like
                 Ash, Professor Sycamore, essential gears and more.{" "}
               </p>
@@ -255,8 +255,8 @@ function pokemedia() {
             </div>
             <div className={styles.sectionText}>
               <p>
-                <i>The Pokemon Essential Handbook</i> series contain the latest
-                list of all the Pokemons and their stats because you "Gotta
+                <i>The Pokémon Essential Handbook</i> series contain the latest
+                list of all the Pokémon and their stats because you "Gotta
                 catch'em all".
               </p>
 

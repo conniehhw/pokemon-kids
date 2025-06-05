@@ -31,7 +31,7 @@ export function PokedexGrid({ allPokemons }) {
               value={searchText}
               id="pokemonName"
               // autoComplete="off"
-              placeholder="Search for a Pokemon... "
+              placeholder="Search Pokemon by Name (#001-300)"
               onChange={(e) => setSearchText(e.target.value)}
               // listen for onChange event from client, take the event of that change
               // (the text typed to be saved onto 'e' variable), whenever we type in, it will set Search Text into our actual text

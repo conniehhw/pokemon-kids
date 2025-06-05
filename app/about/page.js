@@ -37,14 +37,14 @@ export default function About() {
           </figure>
         </div>
         <div>
-          <h3>"Mom, mom! DID YOU KNOW that Pokemon Poke Po ..."</h3>
+          <h3>"Mom, mom! DID YOU KNOW that Pokémon Poke Po ..."</h3>
           <p>
             Imagine this ... now times infinity ... and 24/7 well okay not
-            quite. My 6 year old would be talking about Pokemon as we walk to
+            quite. My 6 year old would be talking about Pokémon as we walk to
             and from school, in the car, while at the shopping for food, etc.
           </p>
           <p>
-            His new love was Pokemon and I wanted to be able to talk to him
+            His new love was Pokémon and I wanted to be able to talk to him
             about his favourite subject. Not the usual, "Hmm, really? Okay,
             that's cool" but really be able to engage with him and ask
             meaningful questions. So I watched a few Youtube videos, read a few

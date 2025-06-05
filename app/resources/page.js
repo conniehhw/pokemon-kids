@@ -27,15 +27,15 @@ function Resources() {
                   layout="responsive"
                   height={200}
                   width={200}
-                  alt="Pokemon Group"
+                  alt="All Pokemon Visual"
                 />
               </Link>
             </div>
             <div className={styles.text}>
               <Link href="resources/poke101">
-                <h6>Pokemon 101</h6>
+                <h6>Pokémon 101</h6>
               </Link>
-              <p>A parent's guide to the world of Pokemon.</p>
+              <p>A parent's guide to the world of Pokémon.</p>
             </div>
           </div>
 
@@ -108,10 +108,10 @@ function Resources() {
             </div>
             <div className={styles.text}>
               <Link href="resources/pokemedia">
-                <h6>Pokemon Media</h6>
+                <h6>Pokémon Media</h6>
               </Link>
 
-              <p>Even more pokemon: tv, film, video games and books.</p>
+              <p>Even more Pokémon: tv, film, video games and books.</p>
             </div>
           </div>
 
@@ -128,14 +128,12 @@ function Resources() {
                 />
               </Link>
             </div>
-
             <div className={styles.text}>
               <Link href="resources/pokecenter">
                 {" "}
-                <h6>Pokemon Centres</h6>
+                <h6>Pokémon Centers</h6>
               </Link>
-
-              <p>An important destination for trainers, pokemon and fans.</p>
+              <p>An important destination for trainers, Pokémon and fans.</p>
             </div>
           </div>
 
@@ -155,10 +153,9 @@ function Resources() {
             <div className={styles.text}>
               <Link href="resources/pokecafe">
                 {" "}
-                <h6>Pokemon Cafe</h6>
+                <h6>Pokémon Cafe</h6>
               </Link>
-
-              <p>A lunch date with your favourite Pokemon Friends.</p>
+              <p>A lunch date with your favourite Pokémon Friends.</p>
             </div>
           </div>
         </div>
@@ -168,11 +165,11 @@ function Resources() {
             <i>
               Source of images: Trading Card Game photo by{" "}
               <a href="https://unsplash.com/@giorgiotrovato">Giorgio Trovato</a>{" "}
-              on Unsplash, Pokemon Media image by{" "}
+              on Unsplash, Pokémon Media image by{" "}
               <a href="https://pixabay.com/users/thor_deichmann-2306827/">
                 Thor_Deichmann
               </a>{" "}
-              from pixabay, Pokemon Cafe photo from
+              from pixabay, Pokémon Cafe photo from
               https://www.pokemon-cafe.jp/en/cafe/
             </i>
           </figcaption>
