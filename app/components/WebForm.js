@@ -28,8 +28,8 @@ export default function Contact() {
   return (
     <>
       <h5>
-        I hope this website was helpful! If you have any questions or feedback,
-        feel free to use this form. I look forward to hearing from you.
+        I hope you found this website helpful. If you have any questions or
+        feedback, email me and I look forward to hearing from you.
       </h5>
       <form onSubmit={handleSubmit} className={styles.form}>
         <div>

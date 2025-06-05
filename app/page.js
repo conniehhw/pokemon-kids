@@ -110,8 +110,11 @@ export default function Home() {
       <figure className={styles.figure}>
         <figcaption className={styles.figcaption}>
           <i>
-            Source of images: From Nintendo, Game Freak and Creatures Inc. and
-            https://www.pokemon.com, otherwise indicated elsewhere.
+            Source of images: From Nintendo, Game Freak and Creatures Inc. and{" "}
+            <a href="https://www.pokemon.com/us" target="_blank">
+              https://www.pokemon.com
+            </a>
+            , otherwise indicated elsewhere.
           </i>
         </figcaption>
       </figure>

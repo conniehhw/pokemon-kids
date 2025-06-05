@@ -292,9 +292,10 @@
   }
 
   .figure {
-    margin-left: 64px;
-    margin-right: 64px;
     margin-top: 32px;
+
+    margin-left: 30px;
+    margin-right: 30px;
   }
 
   .figcaption {
@@ -331,10 +332,22 @@
     margin-right: 150px;
   }
 
+  .shrink {
+    /* margin-left: 64pt;
+    margin-right: 64pt; */
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
   .imgr1 {
     float: right;
     width: 500px;
     height: 297px;
+  }
+
+  .imgnbr {
+    size: 100%;
+    margin-bottom: 4pt;
   }
 
   .textbox1 {
@@ -391,8 +404,8 @@
   }
 
   .figure {
-    margin-left: 150px;
-    margin-right: 150px;
+    margin-left: 30px;
+    margin-right: 30px;
     margin-top: 32px;
   }
 

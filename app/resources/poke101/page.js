@@ -182,6 +182,14 @@ function poke101() {
                 </figcaption>
               </figure>
             </div>
+            {/* <div className={styles.textbox}> */}
+            In the Pokémon world, there are different regions on separate
+            continents. You can find wild Pokémon and there are cities and towns
+            with gyms, stadiums and Pokémon Centers. A majority of regions have
+            their own Pokémon Professor, such as Professor Oak from Kanto region
+            and the first partner Pokémon received from him to new trainers are
+            Bulbasaur, Charmander and Squirtle.
+            {/* </div> */}
           </AccordionBody>
         </AccordionItem>
         <AccordionItem eventKey="7">
@@ -249,15 +257,21 @@ function poke101() {
           <figcaption className={styles.figcaption}>
             Source of images: 'Who are Professors, Where do Pokémon come from'
             from{" "}
-            <a href="https://bulbapedia.bulbagarden.net/wiki/Pokémon_Professor#Other_fields_of_Pok.C3.A9mon_study">
+            <a
+              href="https://bulbapedia.bulbagarden.net/wiki/Pokémon_Professor#Other_fields_of_Pok.C3.A9mon_study"
+              target="_blank"
+            >
               bulbapedia.bulbagarden.net
             </a>
             , 'What are Evolutions' from{" "}
-            <a href="https://vk.com/pokegorussiacommunity">
+            <a href="https://vk.com/pokegorussiacommunity" target="_blank">
               vk.com.pokegorussiacommunity,
             </a>{" "}
             'What do Pokémon eat' from{" "}
-            <a href="https://Pokémon.fandom.com/wiki/Berry">
+            <a
+              href="https://pokemon.fandom.com/wiki/Pok%C3%A9mon"
+              target="_blank"
+            >
               pokemon.fandom.com
             </a>
           </figcaption>

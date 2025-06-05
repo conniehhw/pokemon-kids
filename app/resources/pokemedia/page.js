@@ -67,7 +67,7 @@ function pokemedia() {
                   href="https://www.netflix.com/ca/title/81186864"
                   target="_blank"
                 >
-                  Pokémon Concierge"
+                  "Pokémon Concierge"
                 </a>{" "}
                 premiered on Netflix in 2023. Visit the{" "}
                 <a href="https://www.pokemon.com/us/animation" target="_blank">

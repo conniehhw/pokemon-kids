@@ -28,11 +28,17 @@ export default function About() {
             />
             <figcaption className={styles.figcaption}>
               Modified, original image by&nbsp;
-              <a href="https://pixabay.com/users/saiarvind1995-16329347/">
+              <a
+                href="https://pixabay.com/users/saiarvind1995-16329347/"
+                target="_blank"
+              >
                 saiarvind1995&nbsp;
               </a>{" "}
               on&nbsp;
-              <a href="https://pixabay.com">pixabay.</a>
+              <a href="https://pixabay.com" target="_blank">
+                {" "}
+                pixabay.
+              </a>
             </figcaption>
           </figure>
         </div>
@@ -59,7 +65,7 @@ export default function About() {
             </p>
             <p>
               A special shout out and thank you to my son for his help,
-              inspiration and kind words.
+              inspiration.
             </p>
           </div>
         </div>

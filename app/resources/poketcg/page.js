@@ -52,7 +52,7 @@ function poketcg() {
 
               <figcaption className={styles.figcaption}>
                 Photo by{" "}
-                <a href="https://unsplash.com/@giorgiotrovato">
+                <a href="https://unsplash.com/@giorgiotrovato" target="_blank">
                   Giorgio Trovato
                 </a>{" "}
                 on Unsplash{" "}

@@ -164,13 +164,20 @@ function Resources() {
           <figcaption className={styles.figcaption}>
             <i>
               Source of images: Trading Card Game photo by{" "}
-              <a href="https://unsplash.com/@giorgiotrovato">Giorgio Trovato</a>{" "}
+              <a href="https://unsplash.com/@giorgiotrovato" target="_blank">
+                Giorgio Trovato
+              </a>{" "}
               on Unsplash, Pokémon Media image by{" "}
-              <a href="https://pixabay.com/users/thor_deichmann-2306827/">
+              <a
+                href="https://pixabay.com/users/thor_deichmann-2306827/"
+                target="_blank"
+              >
                 Thor_Deichmann
               </a>{" "}
-              from pixabay, Pokémon Cafe photo from
-              https://www.pokemon-cafe.jp/en/cafe/
+              from pixabay, Pokémon Cafe photo from{" "}
+              <a href="https://www.pokemon-cafe.jp/en/cafe/" target="_blank">
+                https://www.pokemon-cafe.jp/en/cafe/
+              </a>
             </i>
           </figcaption>
         </figure>

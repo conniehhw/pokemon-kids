@@ -89,12 +89,8 @@ function pokecard() {
             <h6>Pokémon Type</h6>
             <p>
               A Pokémon may belong to a single type or two types. There are
-              currently
-              <Link href="/resources/poketcg/energytypes" target="_blank">
-                19 types
-              </Link>{" "}
-              and each type has unique attributes that power different attack
-              moves.
+              currently 19 types and each type has unique attributes that power
+              different attack moves.
             </p>
           </div>
         </div>
