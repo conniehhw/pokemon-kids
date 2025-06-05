@@ -8,7 +8,7 @@ A one-stop web app featuring a searchable Pokedex, quick introductions to all th
 
 <ins>[Demo Here](#features)</ins> and view <ins>[Live Here](website)</ins>
 
-### Table of Contents
+## Table of Contents
 
 - [Project](#project)
 - [Features](#features)
@@ -17,7 +17,7 @@ A one-stop web app featuring a searchable Pokedex, quick introductions to all th
 - [Installation](#installation)
 - [Credits and Contact](#contact)
 
-### Project
+## Project
 
 Goals for this web application:
 
@@ -28,7 +28,7 @@ Goals for this web application:
 - implement react hooks and dynamic routing
 - adapt for responsive design for mobile, tablets and desktops (430px, 820px, 1024px and 1200px)
 
-### Features
+## Features
 
 [Back to the Top](#project)
 
@@ -43,7 +43,7 @@ Goals for this web application:
 - Contact Form
   - users can leave their email and submit inquiries or share feedback
 
-### Technologies
+## Technologies
 
 Built with:
 
@@ -53,12 +53,12 @@ Built with:
 - [VS Code](https://code.visualstudio.com/docs)
 - [Heroku Platform](https://www.heroku.com/platform/)
 
-### Requirements
+## Requirements
 
 - [Node.js](https://nodejs.org) v18.18 or later
 - [Next.js](https://nextjs.org)
 
-### Installation
+## Installation
 
 To run this project, install it locally using npm:
 
@@ -97,11 +97,11 @@ To run this project, install it locally using npm:
 
 5. Open your browser and navigate to http://localhost:3000
 
-### Credits
+## Credits
 
 Source of images are owned by Nintendo, Game Freak and Creatures Inc., unless otherwise credited in the web app.
 
-### Contact
+## Contact
 
 For more information about this web application, please feel free to reach out.
 
