@@ -63,8 +63,8 @@ function poketcg() {
           <div className={styles.sectionText}>
             Each player builds a deck of 60 cards which include Pokémon
             characters, energy cards and supporting cards. Pokémon cards will
-            list the specie's abilities, attacks and the numeric damage it will
-            inflict.
+            list the specie&#39;s abilities, attacks and the numeric damage it
+            will inflict.
           </div>
         </div>
       </div>
@@ -118,10 +118,10 @@ function poketcg() {
           <div className={styles.sectionText}>
             <h6>Energy Cards</h6>
             <p>
-              Most of the time, Pokémon can't attack without Energy cards.
-              You'll need to match the symbols of the attack cost to the Energy
-              card, but any kind of Energy can be used for the colourless/normal
-              energy.
+              Most of the time, Pokémon can&#39;t attack without Energy cards.
+              You&#39;ll need to match the symbols of the attack cost to the
+              Energy card, but any kind of Energy can be used for the
+              colourless/normal energy.
             </p>
           </div>
         </div>
@@ -253,7 +253,7 @@ function poketcg() {
           <br></br>
           <ul>
             <li>i) Collect all of your Prize cards or</li>
-            <li>ii) Knock out all of your opponent's Pokémon in play or</li>
+            <li>ii) Knock out all of your opponent&#39;s Pokémon in play or</li>
             <li>iii) If your opponent has no more cards in their deck.</li>
           </ul>
         </div>

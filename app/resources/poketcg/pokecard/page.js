@@ -55,7 +55,7 @@ function pokecard() {
           <div className={styles.sectionText}>
             <h6>Name and Evolution Stage</h6>
             <p>
-              This is where you find the Pokémon's name and the evolutionary
+              This is where you find the Pokémon&#39;s name and the evolutionary
               stage it is in.{" "}
             </p>
             <p>
@@ -74,10 +74,10 @@ function pokecard() {
           <div className={styles.sectionText}>
             <h6>Hit Points (HP)</h6>
             <p>
-              This number represents the Pokémon's total hit points at the
+              This number represents the Pokémon&#39;s total hit points at the
               beginning of the battle. When a Pokémon is attacked, it depletes
               its hit points (aka health points). When that reaches 0, the
-              Pokémon is considered "Knocked Out".
+              Pokémon is considered &#34;Knocked Out&#34;.
             </p>
           </div>
         </div>
@@ -109,9 +109,10 @@ function pokecard() {
         <figcaption className={styles.figCap}>
           <p>An example: </p>
           <p>
-            Meowscarada is a stage 2, grass type Pokémon. Its attack "Flower
-            Blast" can inflict 130 damage to the opponent Pokémon HP. The attack
-            cost is one grass type energy card plus any other type energy card.
+            Meowscarada is a stage 2, grass type Pokémon. Its attack &#34;Flower
+            Blast&#34; can inflict 130 damage to the opponent Pokémon HP. The
+            attack cost is one grass type energy card plus any other type energy
+            card.
           </p>
           {/* <p>   However, its weakness are fire types - so if Charizard uses its
               attack "Flamethrower", which can inflict 160 damage to
@@ -140,9 +141,9 @@ function pokecard() {
           <div className={styles.sectionText}>
             <h6>Attack Description</h6>
             <p>
-              This is the name of your Pokémon's attacks and a brief description
-              of how the move works. Pokémon can have one or multiple attacks
-              that they can deploy.
+              This is the name of your Pokémon&#39;s attacks and a brief
+              description of how the move works. Pokémon can have one or
+              multiple attacks that they can deploy.
             </p>
           </div>
         </div>
@@ -154,8 +155,8 @@ function pokecard() {
             <h6>Attack Damage</h6>
             <p>
               {" "}
-              This is a number that indicates the amount of damage the Pokémon's
-              attacks can inflict on another's HP.
+              This is a number that indicates the amount of damage the
+              Pokémon&#39;s attacks can inflict on another&#39;s HP.
             </p>
           </div>
         </div>
@@ -170,13 +171,13 @@ function pokecard() {
           <div className={styles.sectionText}>
             <h6>Weakness and Resistance</h6>
             <p>
-              This shows the Pokémon's Weakness to specific types of Pokémon and
-              their corresponding attacks. When a Pokémon is weak to a type, all
-              attacks from that type will hit for double damage.
+              This shows the Pokémon&#39;s Weakness to specific types of Pokémon
+              and their corresponding attacks. When a Pokémon is weak to a type,
+              all attacks from that type will hit for double damage.
             </p>
             <p>
-              This section of the card also shows the Pokémon's resistance to
-              certain types if applicable.
+              This section of the card also shows the Pokémon&#39;s resistance
+              to certain types if applicable.
             </p>
           </div>
         </div>
@@ -187,8 +188,8 @@ function pokecard() {
           <div className={styles.sectionText}>
             <h6>Retreat Cost</h6>
             <p>
-              As your Pokémon's HP decline, you may want to switch them out of
-              the battlefield. This section of the card shows the number of
+              As your Pokémon&#39;s HP decline, you may want to switch them out
+              of the battlefield. This section of the card shows the number of
               energy cards needed to retreat them back to the bench.
             </p>
           </div>

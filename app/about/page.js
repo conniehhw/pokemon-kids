@@ -43,7 +43,7 @@ export default function About() {
           </figure>
         </div>
         <div>
-          <h3>"Mom, mom! DID YOU KNOW that Pokémon Poke Po ..."</h3>
+          <h3>&quot;Mom, mom! DID YOU KNOW that Pokémon Poke Po ...&quot;</h3>
           <p>
             Imagine this ... now times infinity ... and 24/7 well okay not
             quite. My 6 year old would be talking about Pokémon as we walk to
@@ -51,17 +51,17 @@ export default function About() {
           </p>
           <p>
             His new love was Pokémon and I wanted to be able to talk to him
-            about his favourite subject. Not the usual, "Hmm, really? Okay,
-            that's cool" but really be able to engage with him and ask
+            about his favourite subject. Not the usual, &quot;Hmm, really? Okay,
+            that's cool&quot; but really be able to engage with him and ask
             meaningful questions. So I watched a few Youtube videos, read a few
             articles, browsed some books and the official website so I knew what
             on earth he was talking about.
           </p>
           <div>
             <p>
-              "Wouldn't it be nice if there was one resource that gave me all
-              the basics I needed to know AND it would only take 30 minutes to
-              go through?" and this was how this website was started.
+              &quot;Wouldn't it be nice if there was one resource that gave me
+              all the basics I needed to know AND it would only take 30 minutes
+              to go through?&quot; and this was how this website was started.
             </p>
             <p>
               A special shout out and thank you to my son for his help,

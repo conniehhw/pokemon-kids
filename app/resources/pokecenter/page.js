@@ -56,9 +56,10 @@ function pokecenter() {
                 />
 
                 <figcaption className={styles.figcaption}>
-                  A scene from the video game "Pokémon: Let's Go, Eevee!". The
-                  player character is inside a Pokémon Center, with a Nurse Joy
-                  and a Chansey at the counter (Image from&nbsp;
+                  A scene from the video game &#34;Pokémon: Let&#39;s Go,
+                  Eevee!&#34;. The player character is inside a Pokémon Center,
+                  with a Nurse Joy and a Chansey at the counter (Image
+                  from&nbsp;
                   <a
                     href="https://pokemon.fandom.com/wiki/Pok%C3%A9mon_Wiki"
                     target="_blank"

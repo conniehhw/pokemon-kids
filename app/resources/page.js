@@ -35,7 +35,7 @@ function Resources() {
               <Link href="resources/poke101">
                 <h6>Pokémon 101</h6>
               </Link>
-              <p>A parent's guide to the world of Pokémon.</p>
+              <p>A parent&apos;s guide to the world of Pokémon.</p>
             </div>
           </div>
 

@@ -80,7 +80,7 @@ function pokecafe() {
             "
             />
             <figcaption className={styles.figCap}>
-              Pikachu and Bulbasaur's BBF Curry Plate
+              Pikachu and Bulbasaur&#39;s BBF Curry Plate
             </figcaption>
           </figure>
         </div>
@@ -96,7 +96,7 @@ function pokecafe() {
               alt="snorlax plate"
             />
             <figcaption className={styles.figCap}>
-              Snorlax's Tummy Filling Nap Lunch Plate
+              Snorlax&#39;s Tummy Filling Nap Lunch Plate
             </figcaption>
           </figure>
         </div>
@@ -112,7 +112,7 @@ function pokecafe() {
               alt="gengar smoothie"
             />
             <figcaption className={styles.figCap}>
-              Gengar's Confuse Ray Smoothie
+              Gengar&#39;s Confuse Ray Smoothie
             </figcaption>
           </figure>
         </div>
@@ -144,7 +144,7 @@ function pokecafe() {
               alt="poke parfait"
             />
             <figcaption className={styles.figCap}>
-              Pokémon Cafe's Berry Chocolate Parfait
+              Pokémon Cafe&#39;s Berry Chocolate Parfait
             </figcaption>
           </figure>
         </div>

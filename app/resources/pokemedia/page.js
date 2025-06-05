@@ -56,18 +56,18 @@ function pokemedia() {
               <p>
                 The first television animation launched in 1997. Since then, the
                 series has expanded to 25 seasons. Adding to the series, is the
-                latest released in 2025, titled "Pokémon Horizons: Season 2 -
-                The Search for Laqua".
+                latest released in 2025, titled &#34;Pokémon Horizons: Season 2
+                - The Search for Laqua&#34;.
               </p>
               <p>
                 As of 2020, there are 23 Pokémon films along with one
-                live-action film, "Pokémon Detective Pikachu". With the
+                live-action film, &#34;Pokémon Detective Pikachu&#34;. With the
                 popularity of the franchise, a stop-motion animation,{" "}
                 <a
                   href="https://www.netflix.com/ca/title/81186864"
                   target="_blank"
                 >
-                  "Pokémon Concierge"
+                  &#34;Pokémon Concierge&#34;
                 </a>{" "}
                 premiered on Netflix in 2023. Visit the{" "}
                 <a href="https://www.pokemon.com/us/animation" target="_blank">
@@ -185,9 +185,9 @@ function pokemedia() {
                   Pokémon Go{" "}
                   {/* Add a note to be careful of surroiunding when playing supervised*/}
                 </a>
-                mobile game which uses the phone's GPS together with augmented
-                reality technology - allowing as though Pokémon appear around
-                you, as you move your avatar within your real world
+                mobile game which uses the phone&#39;s GPS together with
+                augmented reality technology - allowing as though Pokémon appear
+                around you, as you move your avatar within your real world
                 surroundings. The main goal of the game to find and catch
                 Pokémon. Be aware of your surroundings when playing.
               </p>
@@ -256,8 +256,8 @@ function pokemedia() {
             <div className={styles.sectionText}>
               <p>
                 <i>The Pokémon Essential Handbook</i> series contain the latest
-                list of all the Pokémon and their stats because you "Gotta
-                catch'em all".
+                list of all the Pokémon and their stats because you &#34;Gotta
+                catch&#39;em all&#34;.
               </p>
 
               <p>

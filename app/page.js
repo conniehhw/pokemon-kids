@@ -24,7 +24,7 @@ export default function Home() {
           </h6>
           <br></br>
           <Link href="/resources">
-            <Button className={styles.b}>Let's Go!</Button>
+            <Button className={styles.b}>Let&apos;s Go!</Button>
           </Link>
         </div>
 
@@ -60,7 +60,7 @@ export default function Home() {
               <h6> Pokémon 101</h6>
             </Link>
 
-            <p>A parent's guide to the world of Pokémon.</p>
+            <p>A parent&apos;s guide to the world of Pokémon.</p>
           </div>
         </div>
 

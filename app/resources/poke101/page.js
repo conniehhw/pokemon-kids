@@ -87,7 +87,7 @@ function poke101() {
             and research Pokémon. You have to be at least 10 years old to become
             a trainer. You will work with a professor, who will assign to you a
             partner; a Pokémon. For example, you might have Charmander,
-            Bulbasaur or Squirtle as your Pokémon partner. Ash's partner is
+            Bulbasaur or Squirtle as your Pokémon partner. Ash&apos;s partner is
             Pikachu.
           </AccordionBody>
         </AccordionItem>
@@ -108,7 +108,7 @@ function poke101() {
               another trainer and Pokémon pair. <br></br>
               <br></br>What you want to do, is pick a Pokémon from your team
               that has abilities and attacks which can win over the opposing
-              Pokémon. When you start, you might say "Snorlex Go!"
+              Pokémon. When you start, you might say &quot;Snorlex Go!&quot;
             </div>
           </AccordionBody>
         </AccordionItem>
@@ -178,7 +178,7 @@ function poke101() {
                 <figcaption className={styles.figCap}>
                   A map of Kanto, Johto, Hoenn, and Sinnoh regions along with
                   the Sevii Islands and the Orange Islands, from the animated
-                  series's 10th anniversary.
+                  series&quot;s 10th anniversary.
                 </figcaption>
               </figure>
             </div>
@@ -240,12 +240,12 @@ function poke101() {
               <p>
                 Often, you will hear Pokémon speak their own names or a
                 variation of it as a form of communication. Pikachu would say
-                "Pika-CHU!" or "pika-pika-chu" in different tones and intensity
-                to convey its emotion.
+                &quot;Pika-CHU!&quot; or &quot;pika-pika-chu&quot; in different
+                tones and intensity to convey its emotion.
               </p>
               <p>
                 There are a few Pokémon who can speak in the human language such
-                as "Meowth" and "Arceus".
+                as &quot;Meowth&quot; and &quot;Arceus&quot;.
               </p>
             </div>
           </AccordionBody>
@@ -255,19 +255,19 @@ function poke101() {
       <div>
         <figure className={styles.figure}>
           <figcaption className={styles.figcaption}>
-            Source of images: 'Who are Professors, Where do Pokémon come from'
-            from{" "}
+            Source of images: &#39;Who are Professors, Where do Pokémon come
+            from&#39; from{" "}
             <a
               href="https://bulbapedia.bulbagarden.net/wiki/Pokémon_Professor#Other_fields_of_Pok.C3.A9mon_study"
               target="_blank"
             >
               bulbapedia.bulbagarden.net
             </a>
-            , 'What are Evolutions' from{" "}
+            , &#39;What are Evolutions&#39; from{" "}
             <a href="https://vk.com/pokegorussiacommunity" target="_blank">
               vk.com.pokegorussiacommunity,
             </a>{" "}
-            'What do Pokémon eat' from{" "}
+            &#39;What do Pokémon eat&#39; from{" "}
             <a
               href="https://pokemon.fandom.com/wiki/Pok%C3%A9mon"
               target="_blank"
