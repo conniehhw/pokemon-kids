@@ -55,8 +55,8 @@ function PokedexHome() {
       initialized.current = true;
 
       getAllPokemons();
-      // eslint-disable-next-line react-hooks/exhaustive-deps
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (

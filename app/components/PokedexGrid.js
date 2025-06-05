@@ -48,6 +48,7 @@ export function PokedexGrid({ allPokemons }) {
           {filteredPokemonList.map((pokemon) => {
             return (
               <PokemonCard
+                key={pokemon.id}
                 name={pokemon.name}
                 id={pokemon.id}
                 sprites={
