@@ -253,8 +253,11 @@ function poketcg() {
           <br></br>
           <ul>
             <li>i) Collect all of your Prize cards or</li>
+            <br></br>
             <li>ii) Knock out all of your opponent&#39;s Pokémon in play or</li>
+            <br></br>
             <li>iii) If your opponent has no more cards in their deck.</li>
+            <br></br>
           </ul>
         </div>
       </div>
@@ -275,12 +278,15 @@ function poketcg() {
             <p>Parts of a Turn - each turn has 3 main parts:</p>
             <ul>
               <li>1. Draw a card.</li>
+              <br></br>
               <li>
                 2. Do any actions; put Basic Pokémon cards onto your bench,
                 evolve your Pokémon, attach Energy cards, Play Trainer cards,
                 retreat your Active Pokémon and use Abilities.
               </li>
+              <br></br>
               <li>3. Attack. Then, end your turn. </li>
+              <br></br>
             </ul>
             <p>
               For more detailed instructions, the{" "}

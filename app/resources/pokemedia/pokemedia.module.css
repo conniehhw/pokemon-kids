@@ -11,6 +11,7 @@
   background-color: none;
   margin-top: 84pt;
   margin-left: 0pt;
+  padding-left: 32px;
   text-align: left;
 }
 
@@ -92,7 +93,9 @@
   margin-top: 16pt;
   margin-left: 16pt;
   margin-right: 16pt;
-  margin-bottom: 16t;
+  margin-bottom: 16pt;
+  padding-top: 22px;
+  padding-left: 22px;
 }
 
 /* cards */

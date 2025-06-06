@@ -24,6 +24,7 @@
   background-color: none;
   margin-top: 84pt;
   margin-left: 0pt;
+  padding-left: 32px;
   text-align: left;
 }
 
@@ -110,9 +111,9 @@
   display: inline-block;
   width: 35%;
   position: relative;
-
-  padding-right: 20px; /* Ensures colon does not overlay the text */
+  padding-right: 10px; /* Ensures colon does not overlay the text */
   margin-left: -30px;
+  padding-left: 32px; /* test fix for production - looks odd in dev */
   margin-top: 10px;
 }
 
@@ -239,8 +240,28 @@
     display: inline-block;
     width: 30%;
     position: relative;
-    padding-right: 10px; /* Ensures colon does not overlay the text */
+    padding-right: 10px; /* Ensures colon does not overlay the text, update from 20 to 10px */
     margin-left: -30px;
+    padding-left: 32px; /* test fix for production - looks odd in dev */
+    margin-top: 10px;
+  }
+
+  .alignMe b::after {
+    content: ":";
+    position: absolute;
+    right: 25px;
+  }
+}
+
+/* mobile */
+@media screen and (min-width: 820px) {
+  .alignMe b {
+    display: inline-block;
+    width: 30%;
+    position: relative;
+    padding-right: 10px; /* Ensures colon does not overlay the text, update from 20 to 10px */
+    margin-left: -30px;
+    padding-left: 32px; /* test fix for production - looks odd in dev */
     margin-top: 10px;
   }
 
