@@ -90,10 +90,10 @@
   display: grid;
   grid-template-columns: repeat(11, 1fr);
   gap: 16pt;
-  margin-top: 16pt;
+  /* margin-top: 16pt;
   margin-left: 16pt;
   margin-right: 16pt;
-  margin-bottom: 16pt;
+  margin-bottom: 16pt; */
   padding-top: 22px;
   padding-left: 22px;
 }

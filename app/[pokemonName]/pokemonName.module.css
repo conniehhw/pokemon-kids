@@ -109,9 +109,9 @@
 /* Align stats after : */
 .alignMe b {
   display: inline-block;
-  width: 35%;
+  width: 40%;
   position: relative;
-  padding-right: 10px; /* Ensures colon does not overlay the text */
+  padding-right: 20px; /* Ensures colon does not overlay the text */
   margin-left: -30px;
   padding-left: 32px; /* test fix for production - looks odd in dev */
   margin-top: 10px;
