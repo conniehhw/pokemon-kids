@@ -3,6 +3,7 @@ import styles from "../pokemedia/pokemedia.module.css";
 import Image from "next/image";
 
 // Page function: Overview of other types of Pokemon Media (video games, tv, books)
+// using <u></u> has hack fix as in production, the links text decoration underline is not working
 
 function pokemedia() {
   return (
@@ -67,11 +68,11 @@ function pokemedia() {
                   href="https://www.netflix.com/ca/title/81186864"
                   target="_blank"
                 >
-                  &#34;Pokémon Concierge&#34;
+                  <u>&#34;Pokémon Concierge&#34;</u>
                 </a>{" "}
                 premiered on Netflix in 2023. Visit the{" "}
                 <a href="https://www.pokemon.com/us/animation" target="_blank">
-                  animation
+                  <u>animation</u>
                 </a>{" "}
                 page on the official website to learn more, including where to
                 watch.
@@ -110,7 +111,7 @@ function pokemedia() {
                   href="https://www.pokemon.com/us/pokemon-video-games/pokemon-scarlet-and-pokemon-violet"
                   target="_blank"
                 >
-                  Pokémon Scarlet & Violet
+                  <u>Pokémon Scarlet & Violet</u>
                 </a>
                 , in this role playing game, the player catches and trades
                 Pokémon and battle other Pokémon Trainers while exploring
@@ -144,7 +145,7 @@ function pokemedia() {
                   href="https://www.pokemon.com/us/pokemon-video-games/new-pokemon-snap"
                   target="_blank"
                 >
-                  Pokémon Snap
+                  <u>Pokémon Snap</u>
                 </a>{" "}
                 may be a better fit. It is a console game where you - as the
                 player - explore the Lental region, research and encounter wild
@@ -168,7 +169,9 @@ function pokemedia() {
                 />
                 <figcaption className={styles.figcaption}>
                   Image by{" "}
-                  <a href="https://pixabay.com/users/tumisu-148124">Tumisu</a>{" "}
+                  <a href="https://pixabay.com/users/tumisu-148124">
+                    <u>Tumisu</u>
+                  </a>{" "}
                   on pixabay{" "}
                 </figcaption>
               </figure>
@@ -182,7 +185,7 @@ function pokemedia() {
                   href="https://www.pokemon.com/us/pokemon-video-games/pokemon-go"
                   target="_blank"
                 >
-                  Pokémon Go{" "}
+                  <u>Pokémon Go</u>{" "}
                   {/* Add a note to be careful of surroiunding when playing supervised*/}
                 </a>
                 mobile game which uses the phone&#39;s GPS together with
@@ -197,7 +200,7 @@ function pokemedia() {
                   href="https://www.pokemon.com/us/pokemon-video-games/all-pokemon-games"
                   target="_blank"
                 >
-                  Pokémon games
+                  <u>Pokémon games</u>
                 </a>{" "}
                 on the official website.
               </p>
@@ -227,6 +230,7 @@ function pokemedia() {
                 Books are a great way for you and your kiddo to immerse in the
                 Pokémon Universe.
               </p>
+              <br></br>
               <h6>Recommended Reading</h6>
               <p>
                 The <i>Pokémon Visual Companion</i> is a fact-packed illustrated

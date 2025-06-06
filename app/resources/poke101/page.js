@@ -44,9 +44,12 @@ function poke101() {
               alt="Pokemon All Kinds"
             />
             <div className={styles.textbox}>
-              A Pokémon is a kind of creature. They can learn different moves.
-              Some Pokémon have strong power; like Legendaries, Megas, Mythicals
-              and Ultra beasts.
+              Pokémon, shortened from <i>Pocket Monster(Poketto Monsutaa)</i>{" "}
+              are a group of creatures with unique moves, abilities and are
+              classified by an elemental type. They take form similar to
+              animals, plants, mythical creatures and objects. Most Pokémon can
+              evolve to a more mature version of themselves, usually by
+              levelling up or through specific means.
             </div>
           </AccordionBody>
         </AccordionItem>

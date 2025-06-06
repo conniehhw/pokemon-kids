@@ -55,7 +55,7 @@ a:link {
 }
 
 a:visited {
-  text-decoration: none;
+  /* text-decoration: none; */
   text-decoration: underlined;
   color: black;
 }

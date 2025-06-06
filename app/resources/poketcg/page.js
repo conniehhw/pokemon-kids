@@ -5,6 +5,7 @@ import Image from "next/image";
 
 // Page function: Trading Card Game Details --> links to subpage
 // Types of Pokemon Cards
+// using <u></u> has hack fix as in production, the links text decoration underline is not working
 
 function poketcg() {
   return (
@@ -53,7 +54,7 @@ function poketcg() {
               <figcaption className={styles.figcaption}>
                 Photo by{" "}
                 <a href="https://unsplash.com/@giorgiotrovato" target="_blank">
-                  Giorgio Trovato
+                  <u>Giorgio Trovato</u>
                 </a>{" "}
                 on Unsplash{" "}
               </figcaption>
@@ -95,7 +96,7 @@ function poketcg() {
             <p>
               Learn more about all the{" "}
               <a href="/resources/poketcg/pokecard" target="blank">
-                parts of a Pokémon Card
+                <u>parts of a Pokémon Card</u>
               </a>{" "}
               and where to find its name, evolved form, hit points (HP), type,
               attacks, damage, weaknesses and much more.
@@ -197,12 +198,12 @@ function poketcg() {
               target="_blank"
             >
               {" "}
-              view the video series
+              <u>view the video series</u>
             </a>{" "}
             or to download the{" "}
             <a href="https://tcg.pokemon.com/en-us/learn/" target="_blank">
               {" "}
-              quick start guide.
+              <u>quick start guide.</u>
             </a>
           </div>
         </div>
@@ -227,14 +228,14 @@ function poketcg() {
               href="https://www.pokemon.com/static-assets/content-assets/cms2/pdf/play-pokemon/pokemon-club/playmat/pokemon-tcg-playmat-2.pdf"
               target="_blank"
             >
-              Evie
+              <u>Evie</u>
             </a>{" "}
             and
             <a
               href="https://www.pokemon.com/static-assets/content-assets/cms2/pdf/play-pokemon/pokemon-club/playmat/pokemon-tcg-playmat-1.pdf"
               target="_blank"
             >
-              &nbsp;Pikachu
+              <u>&nbsp;Pikachu</u>
             </a>{" "}
             playmat.
           </div>
@@ -294,7 +295,7 @@ function poketcg() {
                 href="https://www.pokemon.com/static-assets/content-assets/cms2/pdf/trading-card-game/rulebook/twm_rulebook_en.pdf"
                 target="_blank"
               >
-                rulebook{" "}
+                <u>rulebook</u>{" "}
               </a>
               for the TCG game contains all the information you need to get
               started and more.

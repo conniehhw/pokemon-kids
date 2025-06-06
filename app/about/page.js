@@ -33,7 +33,7 @@ export default function About() {
                 target="_blank"
               >
                 saiarvind1995&nbsp;
-              </a>{" "}
+              </a>
               on&nbsp;
               <a href="https://pixabay.com" target="_blank">
                 {" "}
@@ -47,7 +47,8 @@ export default function About() {
           <p>
             Imagine this ... now times infinity ... and 24/7 well okay not
             quite. My 6 year old would be talking about Pokémon as we walk to
-            and from school, in the car, while at the shopping for food, etc.
+            and from school, in the car, while at the grocery store shopping for
+            food, etc.
           </p>
           <p>
             His new love was Pokémon and I wanted to be able to talk to him
@@ -65,7 +66,7 @@ export default function About() {
               started.
             </p>
             <p>
-              A special shout out and thank you to my son for his help,
+              A special shout out and thank you to my son for his help and
               inspiration.
             </p>
           </div>
