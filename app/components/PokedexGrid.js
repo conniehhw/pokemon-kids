@@ -44,7 +44,7 @@ export function PokedexGrid({ allPokemons }) {
           </div>
         </form>
 
-        <div className={styles.all_pokemon} key={pokemon.id}>
+        <div className={styles.all_pokemon}>
           {filteredPokemonList.map((pokemon) => {
             return (
               <PokemonCard

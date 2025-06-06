@@ -67,9 +67,7 @@ function PokedexHome() {
             <li>
               <a href="/">Home</a>
             </li>
-            {/* <li>
-            <a href="/resources">Resources</a>
-          </li> */}
+
             <li>Pokedex</li>
           </ul>
         </div>

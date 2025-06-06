@@ -63,36 +63,6 @@ function Resources() {
             </div>
           </div>
 
-          {/* <div className={styles.gridchild}>
-            <div>
-              <Link href="resources/pokeregions">
-                <Image
-            
-                  className={styles.img}
-                  src="/images/pokemon-regions-icon.png"
-                  a
-                  href="resources/pokeregions"
-                  layout="responsive"
-                  height={200}
-                  width={200}
-                  alt="Regions"
-                />
-              </Link>
-            </div>
-            <div className={styles.text}>
-              <h6>Regions</h6>
-              <p>
-                A guide to the Pokemon world; their home, language and more.
-              </p>
-            </div>
-            <div className={styles.btnbox}>
-              <Link href="resources/pokeregions">
-                Explore regions
-
-              </Link>
-            </div>
-          </div> */}
-
           <div className={styles.gridchild}>
             <div>
               <Link href="resources/pokemedia">
