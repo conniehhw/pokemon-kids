@@ -53,15 +53,18 @@ a:link {
   text-decoration: underlined;
   color: black;
 }
+
 a:visited {
   text-decoration: none;
   text-decoration: underlined;
   color: black;
 }
+
 a:hover {
   text-decoration: underline;
   color: #3b4cca;
 }
+
 a:active {
   /* text-decoration: none; */
   text-decoration: underline;
